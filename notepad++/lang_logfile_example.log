@@ -1,0 +1,6 @@
+2016-11-08 12:15:42,764 FATAL MyClass:25 - Fatal message
+2016-11-08 12:15:42,764 ERROR MyClass:24 - Error message "with a string" inside
+2016-11-08 12:15:42,764 WARN  MyOtherClass:62 - Warn message
+2016-11-08 12:15:42,764 INFO  MyYetAnotherClass:114 - Info message
+2016-11-08 12:15:42,764 DEBUG MyClass:27 - Debug
+
