@@ -1,0 +1,15 @@
+# Tasks
+
+  [] Task
+    [] Subtask 1
+    [] Subtask 2
+  [] Open task, version 1
+  [ ] Open task, version 2
+  [?] Question task
+  [!] Important task
+  [-] Dash task
+  [x] Done task
+
+# More Tasks
+
+  [] Task in another group
