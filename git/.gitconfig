@@ -1,3 +1,18 @@
+[log]
+
+	# Print out ref names on commits by default
+	decorate = short
+
+[push]
+
+	# Push mode for centralized workflows
+	default = simple
+
+[rebase]
+
+	# Automatically stash/unstash the working directory before/after rebases
+	autostash = true
+
 [alias]
 
 	# Log
