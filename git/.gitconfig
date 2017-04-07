@@ -1,6 +1,30 @@
+[core]
+  # Use Notepad++ as default editor
+  editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+[diff]
+  # Default diff tool
+  tool = p4merge
+
+[difftool "p4merge"]
+  # Path to p4merge.exe (cmd is deprecated)
+  path = C:/Program Files/Perforce/p4merge.exe
+
 [log]
   # Print out ref names on commits by default
   decorate = short
+
+[merge]
+  # Default merge tool
+  tool = p4merge
+
+[mergetool "p4merge"]
+  # Path to p4merge.exe (cmd is deprecated)
+  path = C:/Program Files/Perforce/p4merge.exe
+
+[pretty]
+  # Custom log format and colors
+  custom = "%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset"
 
 [push]
   # Push mode for centralized workflows
@@ -13,9 +37,9 @@
 
 [alias]
   # Log
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
-  q = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all -25
-  qq = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all -25 --first-parent master
+  lg = log --graph --pretty=custom --abbrev-commit --date=relative --all
+  q = log --graph --pretty=custom --abbrev-commit --date=relative --all -25
+  qq = log --graph --pretty=custom --abbrev-commit --date=relative --all -25 --first-parent master
   last = log -1 --stat
 
   # Push
