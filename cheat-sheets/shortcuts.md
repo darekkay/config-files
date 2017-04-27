@@ -19,6 +19,8 @@
 
 | Shortcut              | Description            |
 | --------------------- | ---------------------- |
+| Alt + H               | Show file history      |
+| Alt + P               | Plugins                |
 | Alt + V               | Split vertically       |
 
 ## ConEmu
