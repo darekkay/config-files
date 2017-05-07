@@ -1,5 +1,20 @@
 # Shortcuts
 
+## Global
+
+| Shortcut              | Description            |
+| --------------------- | ---------------------- |
+| Win + A               | Launchy                |
+| Win + Ä               | ConEmu                 |
+| Win + Y               | XYPlorer               |
+
+## Windows
+
+| Shortcut                | Description            |
+| ----------------------- | ---------------------- |
+| Ctrl + Task Bar         | Switch window          |
+| Ctrl + Shift + Task Bar | Open as admin          |
+
 ## Editor
 
 | Shortcut              | Description            |
@@ -7,14 +22,20 @@
 | Alt + Shift + Up/Down | Move line up/down      |
 | Ctrl + D              | Duplicate line         |
 | Ctrl + Y              | Delete line            |
+| Ctrl + Backspace      | Delete last word       |
+| Ctrl + Delete         | Delete next word       |
 
 ## Browser
 
-| Shortcut              | Description            |
-| --------------------- | ---------------------- |
-| Ctrl + Shift + Del    | Delete browser data    |
-| Ctrl + Shift + C      | Inspect element        |
-| Shift + Esc           | Task manager (Chrome)  |
+| Shortcut              | Description               |
+| --------------------- | ------------------------- |
+| Ctrl + Shift + Del    | Delete browser data       |
+| Ctrl + Shift + C      | Inspect element           |
+| Ctrl + L              | Select current URL        |
+| Shift + Esc           | Task manager (Chrome)     |
+| Ctrl + 1-8 / 9        | Switch to n-th / last tab |
+
+ - [Chrome Shortcuts](https://support.google.com/chrome/answer/157179)
 
 ## IntelliJ IDEA
 
@@ -30,11 +51,43 @@
 | --------------------- | ---------------------- |
 | Ctrl + E              | Search file            |
 
+## OneNote
+
+| Shortcut              | Description               |
+| --------------------- | ------------------------- |
+| Ctrl + M              | Open a new OneNote window |
+| Ctrl + Shift + N      | Apply normal style        |
+
+ - [OneNote Shortcuts](http://office.microsoft.com/en-us/onenote-help/keyboard-shortcuts-in-onenote-2013-HA102749248.aspx)
+
 ## ConEmu
 
 | Shortcut              | Description            |
 | --------------------- | ---------------------- |
 | Win + ö               | Restart task           |
+
+## Irfan View
+
+| Shortcut              | Description            |
+| --------------------- | ---------------------- |
+| Shift + J             | Loseless opreations    |
+
+## Postbox
+
+| Shortcut              | Description               |
+| --------------------- | ------------------------- |
+| S                     | Mark as Reminder (Sticky) |
+| A                     | Archive                   |
+| V                     | Quick Move                |
+| Shift + C             | Mark all as read          |
+
+ - [Postbox Shortcuts](http://support.postbox-inc.com/hc/en-us/articles/207223207-Postbox-Keyboard-Shortcuts)
+
+## XYPlorer
+
+| Shortcut              | Description               |
+| --------------------- | ------------------------- |
+| Ctrl + Shift + F2     | Swap File Names           |
 
 ## NVDA
 
