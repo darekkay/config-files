@@ -24,6 +24,12 @@
 | Alt + P               | Plugins                |
 | Alt + V               | Split vertically       |
 
+## Visual Studio Code
+
+| Shortcut              | Description            |
+| --------------------- | ---------------------- |
+| Ctrl + E              | Search file            |
+
 ## ConEmu
 
 | Shortcut              | Description            |
