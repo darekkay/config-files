@@ -32,6 +32,9 @@ alias pull-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pu
 alias fetch-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} fetch \;'
 alias status-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} status -s \;'
 
+# Prevent a script from finishing until a key was pressed
+alias pause='echo "Press any key to continue..."; read -n 1 -s'
+
 # Misc
 alias commands='cat ~/.commands'
 
