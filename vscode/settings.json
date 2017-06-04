@@ -1,0 +1,37 @@
+{
+
+// Editor
+
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.scrollBeyondLastLine": false,
+    "editor.mouseWheelZoom": true,
+
+// Window
+
+    "window.restoreFullscreen": true,
+
+// Files
+
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+
+// Integrated Terminal
+
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
+// Telemetry
+
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+
+// TODO Highlight
+
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "black",
+            "backgroundColor": "#FFC010"
+        }
+    ]
+}

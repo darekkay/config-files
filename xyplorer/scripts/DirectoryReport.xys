@@ -1,0 +1,5 @@
+"HTML"
+  writefile("report_<date yyyymmdd_hhnnss>.htm", "<style>table { font-family: 'Consolas', monospace; font-size: 12px; } td { padding-right: 5px; padding-left: 5px; } </style>"."<table><crlf>".folderreport("items:<tr><td>{dir {fullname}|{fullname}</td> <td>{size kbr}</td> <td>{modified yyyy-mm-dd}|}</td></tr>", "r", , "r")."</table>");
+
+"Text"
+  writefile("report_<date yyyymmdd_hhnnss>.txt", folderreport("treeitems:{dir {name}|{name}; {size kbr};}", "r", , "r"));
