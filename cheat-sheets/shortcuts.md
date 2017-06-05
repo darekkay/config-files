@@ -62,9 +62,10 @@
 
 ## ConEmu
 
-| Shortcut              | Description            |
-| --------------------- | ---------------------- |
-| Win + ö               | Restart task           |
+| Shortcut              | Description                      |
+| --------------------- | -------------------------------- |
+| Win + ö               | Restart task                     |
+| Win + Alt + Break     | Kill all processes except shell  |
 
 ## Irfan View
 
