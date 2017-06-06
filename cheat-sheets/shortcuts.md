@@ -86,9 +86,11 @@
 
 ## XYPlorer
 
-| Shortcut              | Description               |
-| --------------------- | ------------------------- |
-| Ctrl + Shift + F2     | Swap File Names           |
+| Shortcut              | Description                    |
+| --------------------- | ------------------------------ |
+| Ctrl + Shift + F2     | Swap File Names                |
+| F11                   | Preview file in [floating preview](https://www.xyplorer.com/release_11.20.php#FloatingPreview) |
+| Ctrl + F11            | Preview file in a preview pane |
 
 ## NVDA
 
