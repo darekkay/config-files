@@ -28,6 +28,7 @@ alias port='netstat -tulpn | grep --color'
 alias ports='netstat -plunt'
 
 # Git
+alias push-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} push \;'
 alias pull-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
 alias fetch-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} fetch \;'
 alias status-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} status -s \;'

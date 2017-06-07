@@ -42,6 +42,9 @@
   qq = log --graph --pretty=custom --abbrev-commit --date=relative --all -25 --first-parent master
   last = log -1 --stat
 
+  # Branch
+  cm = checkout master
+
   # Push
   pom = push origin master
 
