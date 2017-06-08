@@ -39,11 +39,13 @@
 
 ## IntelliJ IDEA
 
-| Shortcut              | Description            |
-| --------------------- | ---------------------- |
-| Alt + H               | Show file history      |
-| Alt + P               | Plugins                |
-| Alt + V               | Split vertically       |
+| Shortcut                 | Description            |
+| ------------------------ | ---------------------- |
+| Alt + H                  | Show file history      |
+| Alt + P                  | Plugins                |
+| Alt + V                  | Split vertically       |
+| Ctrl + Alt + Shift + W   | Show whitespaces       |
+| Ctrl + Alt + Shift + E   | Fix ESLint Problems    |
 
 ## Visual Studio Code
 
@@ -90,7 +92,7 @@
 | --------------------- | ------------------------------ |
 | Ctrl + Shift + F2     | Swap File Names                |
 | F11                   | Preview file in [floating preview](https://www.xyplorer.com/release_11.20.php#FloatingPreview) |
-| Ctrl + F11            | Preview file in a preview pane |
+| Ctrl + F11            | Preview file in a [preview pane](https://www.xyplorer.com/release_16.40.php#PP) |
 
 ## NVDA
 
