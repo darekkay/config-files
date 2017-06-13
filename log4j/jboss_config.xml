@@ -1,0 +1,15 @@
+<file-handler name="APP" autoflush="true">
+    <formatter>
+        <pattern-formatter pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %F:%L - %m%n"/>
+    </formatter>
+  <file relative-to="jboss.server.log.dir" path="app.log"/>
+  <append value="false"/>
+</file-handler>
+
+<logger category="com.custom">
+    <level name="DEBUG"/>
+    <handlers>
+        <handler name="APP"/>
+    </handlers>
+</logger>    
+  
