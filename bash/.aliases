@@ -30,7 +30,7 @@ alias ports='netstat -plunt'
 # Git
 alias q='git q'
 alias push-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} push \;'
-alias pull-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;'
+alias pull-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull --ff-only \;'
 alias fetch-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} fetch \;'
 alias status-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} status -s \;'
 
