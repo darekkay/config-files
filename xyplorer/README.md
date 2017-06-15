@@ -11,6 +11,8 @@
 
  - [Action Log](https://www.xyplorer.com/release_8.60.php#actionlog)
    - Edit → Action Log ...
+ - [Custom File Icons](https://www.xyplorer.com/release_12.40.php#CFI)
+   - Tools → Customize File Icons... (`Ctrl + I`)
  - [Mouse Down Blow Up](https://www.xyplorer.com/highlights.php#mdbu)
  - [Paper folders](https://www.xyplorer.com/release_14.30.php#PF)
  - [Quick select](https://www.xyplorer.com/release_15.00.php#QuickSelect)
