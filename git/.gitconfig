@@ -2,6 +2,9 @@
   # Use Notepad++ as default editor
   editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
+  # Ignore file mode changes (recommended for Windows)
+  filemode = false
+
 [diff]
   # Default diff tool
   tool = p4merge
