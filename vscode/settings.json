@@ -6,6 +6,7 @@
     "editor.wordWrap": "on",
     "editor.scrollBeyondLastLine": false,
     "editor.mouseWheelZoom": true,
+    "editor.minimap.enabled": false,
 
 // Window
 
