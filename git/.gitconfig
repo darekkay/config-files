@@ -50,6 +50,10 @@
 
   # View the current working tree status using the short format
   s = status -s
+  st = status
+
+  # Show the diff for staged files
+  changes = diff --cached
 
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
