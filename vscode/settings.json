@@ -7,6 +7,7 @@
     "editor.scrollBeyondLastLine": false,
     "editor.mouseWheelZoom": true,
     "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
 
 // Window
 
