@@ -29,6 +29,10 @@
   # Custom log format and colors
   custom = "%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset"
 
+[pull]
+  # Allow only fast-forward merges when pulling
+  ff = only
+
 [push]
   # Push mode for centralized workflows
   default = simple
