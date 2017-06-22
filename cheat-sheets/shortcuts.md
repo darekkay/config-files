@@ -46,6 +46,8 @@
 | Alt + V                  | Split vertically       |
 | Ctrl + Alt + Shift + W   | Show whitespaces       |
 | Ctrl + Alt + Shift + E   | Fix ESLint Problems    |
+| Ctrl + Alt + Shift + ↑   | Previous Change (VCS)  |
+| Ctrl + Alt + Shift + ↓   | Next Change (VCS)      |
 
 ## Visual Studio Code
 
