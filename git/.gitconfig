@@ -13,10 +13,6 @@
   # Path to p4merge.exe (cmd is deprecated)
   path = C:/Program Files/Perforce/p4merge.exe
 
-[log]
-  # Print out ref names on commits by default
-  decorate = short
-
 [merge]
   # Default merge tool
   tool = p4merge
@@ -24,6 +20,10 @@
 [mergetool "p4merge"]
   # Path to p4merge.exe (cmd is deprecated)
   path = C:/Program Files/Perforce/p4merge.exe
+
+[log]
+  # Print out ref names on commits by default
+  decorate = short
 
 [pretty]
   # Custom log format and colors
