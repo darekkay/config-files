@@ -23,3 +23,9 @@
 ```
 ::load "script-file"
 ```
+
+## User Defined Buttons
+
+ - Notepad++
+   - Command: `run "C:\Program Files (x86)\Notepad++\notepad++.exe" <selitems>`
+   - Icon: C:\Program Files (x86)\Notepad++\notepad++.exe
