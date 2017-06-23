@@ -1,3 +1,7 @@
+# Use only the identity files configured in the ssh_config files
+Host *
+  IdentitiesOnly yes
+
 Host example.com
   User <username>
   IdentityFile ~/.ssh/<key-file>
