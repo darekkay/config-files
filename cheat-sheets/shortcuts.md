@@ -48,6 +48,8 @@
 | Ctrl + Alt + Shift + E   | Fix ESLint Problems    |
 | Ctrl + Alt + Shift + ↑   | Previous Change (VCS)  |
 | Ctrl + Alt + Shift + ↓   | Next Change (VCS)      |
+| Ctrl + Shift + Y         | Toggle Line Comment    |
+| Ctrl + Alt + Shift + Y   | Toggle Block Comment   |
 
 ## Visual Studio Code
 
