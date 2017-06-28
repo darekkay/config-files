@@ -2,8 +2,13 @@
   # Use Notepad++ as default editor
   editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
-  # Ignore file mode changes (recommended for Windows)
-  filemode = false
+  autocrlf = true      # Automatic conversion between CRLF (working directory) and LF (repository)
+	safecrlf = false     # Don't warn about converting between CRLF and LF
+  filemode = false     # Ignore file mode changes (recommended for Windows)
+  trustctime = false   # Ignore ctime differences between the index and the working tree
+
+[color]
+	ui = true
 
 [diff]
   # Default diff tool
@@ -20,6 +25,11 @@
 [mergetool "p4merge"]
   # Path to p4merge.exe (cmd is deprecated)
   path = C:/Program Files/Perforce/p4merge.exe
+
+[mergetool]
+	keepBackup = false       # Don't create .orig files
+	prompt = false           # Don't prompt before each invocation of the merge tool
+	trustexitcode = false
 
 [log]
   # Print out ref names on commits by default
@@ -49,11 +59,15 @@
   qq = log --graph --pretty=custom --abbrev-commit --date=relative --all -25 --first-parent master
   last = log -1 --stat
 
-  # Branch
+  # Common shortcuts
+  co = checkout
   cm = checkout master
-
-  # Push
+  mt = mergetool
+  rc = rebase --continue
   pom = push origin master
+
+  # Add and commit all changes and new files
+  all = "!f() { git add . && git commit -m \"$1\"; }; f"
 
   # View the current working tree status using the short format
   s = status -s
