@@ -1,0 +1,18 @@
+{
+	"Print to console": {
+		"prefix": "sout",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		]
+	},
+	"Insert 'use strict' statement": {
+		"prefix": "us",
+		"body": "'use strict';\n"
+	},
+	"Insert arrow function": {
+		"prefix": "fu",
+		"body": "($1) => {\n\n}",
+		"description": "description"
+	}
+}
