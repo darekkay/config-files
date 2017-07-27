@@ -8,3 +8,4 @@
 | `git reset`                            | Unstage all staged changes                    |
 | `git checkout .`                       | Revert all modified changes                   |
 | `git clean -f`                         | Remove untracked files from the working tree  |
+| `git reset HEAD~`                      | Undo last commit, leave changes unstaged      |
