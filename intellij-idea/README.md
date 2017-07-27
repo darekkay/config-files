@@ -4,6 +4,10 @@
 
  - [File Watchers](https://plugins.jetbrains.com/plugin/7177-file-watchers)
    - Executes task on file modifications
+ - [Shifter](https://plugins.jetbrains.com/plugin/6149-shifter)
+   - Shifts many types of values up and down with a keyboard shortcut
+ - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
+   - Provides actions for text manipulation
 
 ## Settings
 
