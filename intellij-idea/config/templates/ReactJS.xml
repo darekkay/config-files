@@ -1,0 +1,9 @@
+<templateSet group="ReactJS">
+  <template name="constr" value="constructor(props) {&#10;  super(props);&#10;  $END$&#10;}" description="React component constructor" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
