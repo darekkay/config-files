@@ -1,0 +1,14 @@
+{
+	"Print to console": {
+		"prefix": "sout",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		]
+	},
+	"Insert arrow function": {
+		"prefix": "fu",
+		"body": "($1) => {\n\n}",
+		"description": "description"
+	}
+}
