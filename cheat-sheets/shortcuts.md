@@ -40,19 +40,23 @@
 
 ## IntelliJ IDEA
 
-| Shortcut                 | Description            |
-| ------------------------ | ---------------------- |
-| Alt + H                  | Show file history      |
-| Alt + P                  | Plugins                |
-| Alt + V                  | Split vertically       |
-| Alt + +                  | Shift up               |
-| Alt + -                  | Shift down             |
-| Ctrl + Alt + Shift + W   | Show whitespaces       |
-| Ctrl + Alt + Shift + E   | Fix ESLint Problems    |
-| Ctrl + Alt + Shift + ↑   | Previous Change (VCS)  |
-| Ctrl + Alt + Shift + ↓   | Next Change (VCS)      |
-| Ctrl + Shift + Y         | Toggle Line Comment    |
-| Ctrl + Alt + Shift + Y   | Toggle Block Comment   |
+| Shortcut                 | Description                        |
+| ------------------------ | ---------------------------------- |
+| Alt + H                  | Show file history                  |
+| Alt + P                  | Plugins                            |
+| Alt + V                  | Split vertically                   |
+| Alt + +                  | Shift up                           |
+| Alt + -                  | Shift down                         |
+| Ctrl + Alt + Shift + W   | Show whitespaces                   |
+| Ctrl + Alt + Shift + E   | Fix ESLint Problems                |
+| Ctrl + Alt + Shift + ↑/↓ | Previous/Next Change (VCS)         |
+| Ctrl + Shift + Y         | Toggle Line Comment                |
+| Alt + F1                 | Select file in...                  |
+| Shift + Ctrl + Alt + J   | Select all occurrences (words)     |
+| Ctrl + Alt + T           | Surround with                      |
+| Alt + Home               | Navigation bar popup               |
+| F2                       | Next highlighted error             |
+| Alt + F11                | Grunt/Gulp                         |
 
 ## Visual Studio Code
 
