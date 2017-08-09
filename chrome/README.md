@@ -12,6 +12,7 @@
    - Ctrl + Up: increment by 100
  - [DevTools snippets](https://umaar.com/dev-tips/141-quick-open-menu-snippets/)
  - [Blackbox scripts](https://umaar.com/dev-tips/128-blackboxing/)
+ - [Copy as curl](https://twitter.com/adrian_philipp/status/710438593936932864)
 
  ## Extensions
 
