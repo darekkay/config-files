@@ -28,6 +28,7 @@ alias port='netstat -tulpn | grep --color'
 alias ports='netstat -plunt'
 
 # Git
+alias s='git s'
 alias q='git q'
 alias push-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} push \;'
 alias pull-all='find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull --ff-only \;'
@@ -52,7 +53,7 @@ done
 server() {
   local port="${1:-8000}";
   # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
-  # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
+  # And serve everything as UTF-8 (although not technically correct, this doesnï¿½t break anything for binary files)
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
