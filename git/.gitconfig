@@ -95,3 +95,6 @@
 
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
+
+  # Push master branch to all remotes
+  pushall = !git remote | xargs -L1 -I R git push R master
