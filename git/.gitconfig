@@ -7,6 +7,8 @@
   filemode = false     # Ignore file mode changes (recommended for Windows)
   trustctime = false   # Ignore ctime differences between the index and the working tree
 
+  excludesfile = ~/.gitignore.local  # Add a local ignore file for all repositories
+
 [color]
 	ui = true
 
