@@ -98,3 +98,6 @@
 
   # Push master branch to all remotes
   pushall = !git remote | xargs -L1 -I R git push R master
+
+  # My commits in the last 2 weeks
+  my = log --graph --pretty=custom --abbrev-commit --date=relative --author='darekkay' --since=2.weeks
