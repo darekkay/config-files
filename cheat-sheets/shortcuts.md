@@ -47,6 +47,7 @@
 | Alt + V                  | Split vertically                   |
 | Alt + +                  | Shift up                           |
 | Alt + -                  | Shift down                         |
+| Ctrl + Alt + Shift + K   | Push all (Git)                     |
 | Ctrl + Alt + Shift + W   | Show whitespaces                   |
 | Ctrl + Alt + Shift + E   | Fix ESLint Problems                |
 | Ctrl + Alt + Shift + ↑/↓ | Previous/Next Change (VCS)         |
