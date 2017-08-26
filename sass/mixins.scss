@@ -1,0 +1,51 @@
+// -------------------------------------------------------------------------------------------------
+// https://css-tricks.com/snippets/sass/mixin-offset-positioning/
+
+/// Shorthand mixin for offset positioning
+/// @param {String} $position - Either `relative`, `absolute` or `fixed`
+/// @param {Length} $top [null] - Top offset
+/// @param {Length} $right [null] - Right offset
+/// @param {Length} $bottom [null] - Bottom offset
+/// @param {Length} $left [null] - Left offset
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// -------------------------------------------------------------------------------------------------
+// https://css-tricks.com/snippets/sass/simplifying-contexts-events/
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self (false) - Whether or not to include current selector
+/// @see https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Contexts
+/// @author Hugo Giraudel
+/// @param {String | List} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+// -------------------------------------------------------------------------------------------------
