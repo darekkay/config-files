@@ -60,6 +60,7 @@
   q = log --graph --pretty=custom --abbrev-commit --date=relative --all -25
   qq = log --graph --pretty=custom --abbrev-commit --date=relative --all -25 --first-parent master
   last = log -1 --stat
+  info = show --pretty=short --abbrev-commit --date=relative -s
 
   # Common shortcuts
   co = checkout
