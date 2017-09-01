@@ -1,0 +1,5 @@
+"Pandoc"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """pandoc.exe"" ""$Item"" --from markdown_github --to html --standalone --template=""<home>\.pandoc\templates\github.html5"" --output ""$base.html""";
+  }
