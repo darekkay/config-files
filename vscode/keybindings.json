@@ -89,5 +89,21 @@
   {
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
   }
 ]

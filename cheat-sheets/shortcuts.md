@@ -25,6 +25,7 @@
 | Ctrl + Backspace      | Delete last word       |
 | Ctrl + Delete         | Delete next word       |
 | Ctrl + Shift + Y      | Toggle line comment    |
+| Ctrl + R              | Replace                |
 
 ## Browser
 
