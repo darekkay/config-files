@@ -102,5 +102,13 @@
   # Push master branch to all remotes
   pushall = !git remote | xargs -L1 -I R git push R master
 
+  # Display the status and ahead/behind commits for all local branches and their remotes
+  # state = !git for-each-ref --format='%(color:cyan)%(refname:short) %(color:green)%(push:track)' refs/heads && git status -s
+  state = !git branch-status && git status -s
+
   # My commits in the last 2 weeks
   my = log --graph --pretty=custom --abbrev-commit --date=relative --author='darekkay' --since=2.weeks
+
+  # External scripts
+  branch-status = !$HOME/.git/git-branch-status
+  some = !$HOME/.git/git-some

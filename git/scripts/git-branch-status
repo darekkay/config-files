@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Display ahead/behind commits for all branches and remotes
+# Assume the local and remote branch have the same name
+
+for remote in $(git for-each-ref --format='%(refname:short)' refs/remotes); do
+  for head in $(git for-each-ref --format='%(refname:short)' refs/heads); do
+    local=${remote#*/}
+
+    [ $head != $local ] && continue                 # skip remote branches which don't exist locally
+
+    ahead=$(git rev-list $remote..$local --count)
+    behind=$(git rev-list $local..$remote --count)
+
+    [ $ahead = 0 ] && [ $behind = 0 ] && continue;  # skip when branch is in sync
+
+    echo -e "\e[36m[$remote] \e[32m↑$ahead \e[35m↓$behind\e[0m"
+  done
+done
