@@ -1,0 +1,11 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+
+    <!-- Remove unnecessary buttons / Add tool buttons -->
+
+    <action id="Tool_DevOps_Arc Diff" icon="$APPLICATION_CONFIG_DIR$/icons/diff.png" />
+    <action id="Tool_Git_Push All" icon="$APPLICATION_CONFIG_DIR$/icons/push-all.png" />
+    <action id="Tool_Lint_Stylelint" icon="$APPLICATION_CONFIG_DIR$/icons/stylelint.png" />
+    <action id="Tool_DevOps_Arc Land" icon="$APPLICATION_CONFIG_DIR$/icons/land.png" />
+  </component>
+</application>

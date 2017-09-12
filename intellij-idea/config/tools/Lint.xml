@@ -2,14 +2,14 @@
   <tool name="Prettier" description="Run prettier for the current file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="prettier.cmd" />
-      <option name="PARAMETERS" value="--write $FilePathRelativeToProjectRoot$" />
+      <option name="PARAMETERS" value="--write &quot;$FilePathRelativeToProjectRoot$&quot;" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
   <tool name="Stylelint" description="Run stylelint for the current file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="stylelint.cmd" />
-      <option name="PARAMETERS" value="--fix $FilePathRelativeToProjectRoot$" />
+      <option name="PARAMETERS" value="--fix &quot;$FilePathRelativeToProjectRoot$&quot;" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
