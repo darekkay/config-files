@@ -1,0 +1,22 @@
+    // Example excerpt from https://www.xyplorer.com/xyfc/viewtopic.php?f=7&t=11421
+
+    // Path to "GetLibraryPaths.exe" on your local PC
+    // Do not change it yourself, the script will do it automatically
+    $getLibApp = "<xyscripts>\GetLibraryPaths.exe"; // Default = "<xyscripts>\GetLibraryPaths.exe"
+    $paperFile = "<xypaper>\Libraries.txt"; // Name of the paper folder
+    $paperBaseName = getpathcomponent($paperFile, "base"); // Base name of the paper folder
+    $self = self("file");
+
+    // Locate GetLibraryPaths.exe if it can't be found
+    if (exists($getLibApp) != 1) {
+        $getLibApp = inputfile(self("path"), "exe", "GetLibraryPaths.exe not found! Please locate it...");
+        $content = regexreplace(readfile($self), "(\$[g]etLibApp\s?=\s?"")([^""]+)(.*)", "$1$getLibApp$3");
+        writefile($self, $content);
+    }
+
+    // Show public libraries?
+    if ($showPublicLibs LikeI "unknown") {
+        $showPublicLibs = input("Show public libraries...", "Do you want to show libraries from the user 'Public'?<crlf> 'No' is the default value.<crlf>Enter 'yes'", "no", , , 400, 200);
+        $content = regexreplace(readfile($self), "(\$[s]howPublicLibs\s?=\s?"")([^""]+)(.*)", "$1$showPublicLibs$3");
+        writefile($self, $content);
+    }
