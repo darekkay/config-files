@@ -18,6 +18,10 @@
  - [Quick select](https://www.xyplorer.com/release_15.00.php#QuickSelect)
  - [Tabsets](https://www.xyplorer.com/release_10.70.php#tabsets)
 
+## Scripts
+
+- Flatten folder: `flattenfolder();`
+
 ## Load script file
 
 ```

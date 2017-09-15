@@ -1,4 +1,4 @@
-"Bindestriche korrigieren"
+"Normalize dashes"
  rename s, '–/-';
 
 "Foto Format (Exif)"

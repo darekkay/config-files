@@ -1,5 +1,11 @@
-"Pandoc"
+"Markdown Github"
   foreach($Item, <get selecteditemsnames |>) {
     $base = getpathcomponent($Item, "base");
-    run """pandoc.exe"" ""$Item"" --from markdown_github --to html --standalone --template=""<home>\.pandoc\templates\github.html5"" --output ""$base.html""";
+    run "pandoc.exe ""$Item"" --from markdown_github --to html --standalone --template=""%USERPROFILE%\.pandoc\templates\github.html5"" --output ""$base.html""";
+  }
+
+"CommonMark"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run "pandoc.exe ""$Item"" --from commonmark --to html --standalone --template=""%USERPROFILE%\.pandoc\templates\github.html5"" --output ""$base.html""";
   }
