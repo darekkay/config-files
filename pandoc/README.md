@@ -1,4 +1,5 @@
 # Pandoc
 
-```pandoc <input> --from markdown_github --to html --standalone --template=~/.pandoc/github.html5 --output <output>```
+## Filters
 
+Install [pandoc-filter](https://github.com/mvhenderson/pandoc-filter-node) in the scripts's folder.
