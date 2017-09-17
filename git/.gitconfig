@@ -3,14 +3,14 @@
   editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
   autocrlf = true      # Automatic conversion between CRLF (working directory) and LF (repository)
-	safecrlf = false     # Don't warn about converting between CRLF and LF
+  safecrlf = false     # Don't warn about converting between CRLF and LF
   filemode = false     # Ignore file mode changes (recommended for Windows)
   trustctime = false   # Ignore ctime differences between the index and the working tree
 
   excludesfile = ~/.gitignore.local  # Add a local ignore file for all repositories
 
 [color]
-	ui = true
+  ui = true
 
 [diff]
   # Default diff tool
@@ -29,9 +29,9 @@
   path = C:/Program Files/Perforce/p4merge.exe
 
 [mergetool]
-	keepBackup = false       # Don't create .orig files
-	prompt = false           # Don't prompt before each invocation of the merge tool
-	trustexitcode = false
+  keepBackup = false       # Don't create .orig files
+  prompt = false           # Don't prompt before each invocation of the merge tool
+  trustexitcode = false
 
 [log]
   # Print out ref names on commits by default
