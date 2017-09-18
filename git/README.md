@@ -19,6 +19,27 @@
  - [GitKraken](https://www.gitkraken.com/)
  - [Git Tower](https://www.git-tower.com/windows/)
 
+## Set an editor to prepare commit messages
+
+```ini
+# Vim (default)
+editor = "vim"
+
+# Notepad++
+# Either add the exe to PATH or provide the full path
+editor = "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+editor = "notepad++ -multiInst -notabbar -nosession -noPlugin"
+
+# VSCode
+editor = "code --wait"
+
+# Atom
+editor = "atom --wait"
+
+# Sublime Text 3
+editor = "subl -w"
+```
+
 ## Rebase vs Merge
 
 ![Rebase vs Merge](rebase-vs-merge.jpg)
