@@ -24,6 +24,12 @@
  - Open ComEmu on a specific path
     - ```ConEmu.exe -Dir <path>```
 
+## Tasks
+
+```bash
+"C:\Program Files\Git\git-cmd.exe" --no-cd --command=usr/bin/bash.exe -l -i  -new_console:d:D:\projects\dev\ -c "state-all; pause" -new_console:t:"state-all"
+```
+
 ## Monokai Color Theme
 
 ![ConEmu Monokai](conemu-monokai.png)
