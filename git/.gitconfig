@@ -9,6 +9,9 @@
 
   excludesfile = ~/.gitignore.local  # Add a local ignore file for all repositories
 
+  # Use plink instead of OpenSSH. An alternative to GIT_SSH environment variable, which can be set per-repository.
+  # sshCommand = plink
+
 [color]
   ui = true
 
