@@ -30,6 +30,12 @@
 "C:\Program Files\Git\git-cmd.exe" --no-cd --command=usr/bin/bash.exe -l -i  -new_console:d:D:\projects\dev\ -c "state-all; pause" -new_console:t:"state-all"
 ```
 
-## Monokai Color Theme
+## Color Themes
+
+### Monokai Theme
 
 ![ConEmu Monokai](conemu-monokai.png)
+
+### Light Theme
+
+![ConEmu Light](conemu-light.png)
