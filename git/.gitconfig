@@ -125,4 +125,4 @@
   # External scripts
   branch-status = !$HOME/.git/git-branch-status
   fetch-tracked = !$HOME/.git/git-fetch-tracked
-  some = !$HOME/.git/git-some
+  fake = !$HOME/.git/git-fake

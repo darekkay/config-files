@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+#
+# Generates git commits using randomly-named files, one file per commit.
+#
+# USAGE: git fake <number of commits to generate>
+#
+# Based on: https://github.com/GROSSWEBER/git-some
+
+# Fail script if something goes wrong.
+set -o errexit
+
+# Treat unset variables as an error, and immediately exit.
+set -o nounset
+
+# Default to 1 commit unless specified otherwise.
+commit_count=${1-1}
+
+if grep --quiet --invert-match '^[[:digit:]]*$' <<< $commit_count; then
+  >&2 echo Need a positive number for number of commits to generate, got: $commit_count
+  exit 1
+fi
+
+for ((commit = 1; commit <= $commit_count; commit++)); do
+
+  UUID=$(cat /dev/urandom | tr -dc 'a-f0-9' | fold -w 8 | head -n 1)
+  filename="file-$UUID.txt"
+
+  # Create file.
+  echo contents for $filename > "$filename"
+
+  # Stage file.
+  if ! git add -- "$filename"; then
+    rm -f "$filename"
+    exit 2
+  fi
+
+  # Commit
+  if ! git commit --message "commit message for $filename"; then
+    git rm --force "$filename" > /dev/null
+    exit 4
+  fi
+
+  echo
+done
