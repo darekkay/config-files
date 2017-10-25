@@ -57,6 +57,9 @@
   # Automatically stash/unstash the working directory before/after rebases
   autostash = true
 
+[rerere]
+  # Reuse recorded resolution
+  enabled = true
 
 [alias]
   # Log
