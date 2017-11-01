@@ -108,6 +108,9 @@
   # Find commits by commit message
   fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
+  # Squash all commits. Usage: git squash-all (<commit message>)
+  squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-Init repository}\");};f"
+
   # List contributors with number of commits
   contributors = shortlog --summary --numbered
 
