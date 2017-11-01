@@ -68,6 +68,8 @@
   q    = log --graph --pretty=quick -20
   last = log -1 --stat
   info = show --pretty=short --abbrev-commit --date=relative -s
+  # log --graph --pretty=custom --all --not origin/gh-pages  # Hide origin/gh-pages branch
+  # log --graph --pretty=custom --remotes=*develop*          # Hide all remote branches except "develop"
 
   # Common shortcuts
   co = checkout
