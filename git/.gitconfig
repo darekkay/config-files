@@ -67,7 +67,6 @@
   lga  = log --graph --pretty=custom --all
   q    = log --graph --pretty=quick -20
   last = log -1 --stat
-  info = show --pretty=short --abbrev-commit --date=relative -s
   # log --graph --pretty=custom --all --not origin/gh-pages  # Hide origin/gh-pages branch
   # log --graph --pretty=custom --remotes=*develop*          # Hide all remote branches except "develop"
 
@@ -104,9 +103,6 @@
 
   # Find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
-
-  # Find commits by commit message
-  fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
 
   # Squash all commits. Usage: git squash-all (<commit message>)
   squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-Init repository}\");};f"
