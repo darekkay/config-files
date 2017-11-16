@@ -45,6 +45,10 @@
   custom = "%Cred%h%Creset -%C(cyan)%d%Creset %s %C(green)(%cr) %Cblue<%an>%Creset"
   quick =  "%Cred%h%Creset -%C(cyan)%d%Creset %s %Cblue<%an>%Creset"
 
+[fetch]
+  # Always prune when fetching
+  prune = true
+
 [pull]
   # Allow only fast-forward merges when pulling
   ff = only
