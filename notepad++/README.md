@@ -1,5 +1,10 @@
 # Notepad++
 
+## Settings
+
+- Use UTF-8 encoding per default
+  - New Document → Encoding → `UTF-8`
+
 ## Syntax Highlighting
 
 - [How to install user defined language files](http://docs.notepad-plus-plus.org/index.php/User_Defined_Language_Files#How_to_install_user_defined_language_files)

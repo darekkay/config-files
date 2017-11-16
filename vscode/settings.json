@@ -18,6 +18,13 @@
 
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "onFocusChange",
+    "files.associations": {
+        "*.html5": "html"
+    },
+
+// Git
+
+    "git.enableSmartCommit": true,
 
 // Integrated Terminal
 
