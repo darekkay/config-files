@@ -71,7 +71,7 @@ maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 makezip() { zip -r "${1%%/}.zip" "$1" ; }
 
 # Edit post-receive git hook for repository
-post-receive () { nano ~/git/$1.git/hooks/post-receive; }
+hook () { nano ~/git/$1.git/hooks/post-receive; }
 
 # Extract most know archives with one command
 extract () {

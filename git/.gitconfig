@@ -44,6 +44,7 @@
   # Custom log format and colors
   custom = "%Cred%h%Creset -%C(cyan)%d%Creset %s %C(green)(%cr) %Cblue<%an>%Creset"
   quick =  "%Cred%h%Creset -%C(cyan)%d%Creset %s %Cblue<%an>%Creset"
+  my = "%Cred%h%Creset -%C(cyan)%d%Creset %s %C(green)(%cr)%Creset"
 
 [fetch]
   # Always prune when fetching
@@ -69,37 +70,34 @@
   # Log
   lg   = log --graph --pretty=custom
   lga  = log --graph --pretty=custom --all
-  q    = log --graph --pretty=quick -20
-  last = log -1 --stat
+  q    = log --graph --pretty=quick --first-parent -20       # Quick overview
   # log --graph --pretty=custom --all --not origin/gh-pages  # Hide origin/gh-pages branch
-  # log --graph --pretty=custom --remotes=*develop*          # Hide all remote branches except "develop"
+
+  # My commits in the last 2 weeks
+  my = log --graph --pretty=my --author='darekkay' --since=2.weeks
 
   # Common shortcuts
   co = checkout
   cm = checkout master
+  cd = checkout develop
   mt = mergetool
   rc = rebase --continue
-  pom = push origin master
+
+  # Push and create a remote branch based on the current one (branch → origin/branch)
+  ph = push -u origin HEAD
 
   # Add and commit all changes and new files
   all = "!f() { git add . && git commit -m \"$1\"; }; f"
 
   # View the current working tree status using the short format
   s = status -s
-  st = status
-
-  # Show the diff for staged files
-  changes = diff --cached
 
   # Switch to a branch, creating it if necessary
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
 
-  # Reset hard x commits
-  rollback =  "!f() { git reset --hard HEAD~$1; }; f"
-
   # Show verbose output about tags, branches or remotes
   tags = tag -l
-  branches = branch -a
+  branches = branch -av
   remotes = remote -v
 
   # Amend the currently staged files to the latest commit
@@ -123,9 +121,6 @@
   # Display the status and ahead/behind commits for all local branches and their remotes
   # state = !git for-each-ref --format='%(color:cyan)%(refname:short) %(color:green)%(push:track)' refs/heads && git status -s
   state = !git branch-status && git status -s
-
-  # My commits in the last 2 weeks
-  my = log --graph --pretty=custom --abbrev-commit --date=relative --author='darekkay' --since=2.weeks
 
   # Commit with a random commit message from whatthecommit.com
   whatthecommit = !git commit --allow-empty -m \"$(curl -s whatthecommit.com/index.txt)\"
