@@ -58,6 +58,10 @@ server() {
   python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
 }
 
+# Get a random hash
+# https://gist.github.com/earthgecko/3089509
+random () { echo $(cat /dev/urandom | tr -dc 'a-f0-9' | fold -w ${1-8} | head -n 1); }
+
 # Search for a running process
 task () { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 
