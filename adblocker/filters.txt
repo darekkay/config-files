@@ -1,0 +1,4 @@
+! Title: Darek Kay's custom filter
+! Homepage: https://github.com/darekkay/config-files/
+
+wikipedia.org##.banner
