@@ -19,7 +19,8 @@
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "onFocusChange",
     "files.associations": {
-        "*.html5": "html"
+        "*.html5": "html",
+        "*.icls": "xml"
     },
 
 // Git
