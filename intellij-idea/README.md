@@ -13,6 +13,12 @@
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
   - Provides actions for text manipulation
 
+## Color Themes
+
+### DK Monokai
+
+![DK Monokai color theme](config/colors/dk-monokai.png)
+
 ## Settings
 
 Show current memory usage in the status bar
