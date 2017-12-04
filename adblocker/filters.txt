@@ -1,4 +1,6 @@
 ! Title: Darek Kay's custom filter
 ! Homepage: https://github.com/darekkay/config-files/
 
+hoerzu.images.dvbdata.com
+wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
