@@ -72,6 +72,16 @@ Make project automatically
 Turn off [selected tab underline](https://youtrack.jetbrains.com/issue/IDEA-131683#comment=27-2112280)
   - Registry → `ide.new.editor.tabs.selection`
 
+Speed-up merging
+  - ☑ Tools → Diff & Merge → Automatically apply non-conflicting changes
+
+Use absolute paths for JavaScript imports
+  - ☑ Editor → Color Style → JavaScript → Imports → Use paths relative to the project, resource or sources roots
+
+Set TODO format
+  - Editor → TODO → ☑ Case Sensitive, `\bTODO\b:?`
+
+
 ## VCS Ignore Files
 
 If you decide to share IDE project files with other developers, share:
