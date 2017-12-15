@@ -1,4 +1,4 @@
-<toolSet name="DevOps">
+<toolSet name="Arcanist">
   <tool name="Arc Diff" description="Create arcanist revision" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="arc" />
