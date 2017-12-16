@@ -1,0 +1,19 @@
+# Custom settings
+
+printWidth: 100          # Line width
+
+
+# Unchanged defaults as of prettier 1.9.1
+
+useTabs: false           # Use spaces instead of tabs
+tabWidth: 2              # Use 2 spaces for indentations
+semi: true               # Add a semicolon at the end of every statement
+singleQuote: false       # Use double quotes instead of single quotes
+trailingComma: none      # Don't use trailing commas
+bracketSpacing: true     # Print spaces between brackets in object literals
+arrowParens: avoid       # Omit parentheses around a sole arrow function parameters when possible
+proseWrap: preserve      # Wrap prose as-is
+
+# Settings not supported by prettier
+# - Trim trailing spaces
+# - Insert empty line at the end of the file

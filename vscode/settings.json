@@ -9,6 +9,7 @@
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
     "editor.snippetSuggestions": "top",
+    "editor.renderWhitespace": "all",
 
 // Window
 
@@ -20,11 +21,13 @@
 
 // Files
 
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "onFocusChange",
     "files.associations": {
         "*.html5": "html",
-        "*.icls": "xml"
+        "*.icls": "xml",
+        ".prettierrc": "yaml"
     },
 
 // Git
@@ -39,6 +42,10 @@
 
     "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
+
+// Prettier
+
+    "prettier.printWidth": 100,
 
 // TODO Highlight
 
