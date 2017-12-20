@@ -2,5 +2,6 @@
 ! Homepage: https://github.com/darekkay/config-files/
 
 hoerzu.images.dvbdata.com
+netflix.com##.billboard-row
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
