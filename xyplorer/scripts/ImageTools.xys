@@ -1,0 +1,44 @@
+"Convert to ICO"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.ico""";
+  }
+
+"Convert to PNG"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.png""";
+  }
+
+"Optimize for Web (JPEG)"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base.jpg""";
+  }
+
+"Optimize for Web (JPEG) [Preview]"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base-web.jpg""";
+  }
+
+"Optimize for Web (PNG)"
+  foreach($Item, <get selecteditemspathnames |>) {
+    run """D:\apps\optipng\optipng.exe"" ""$Item""";
+  }
+
+"Moz JPEG"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    run """mozjpeg"" -outfile ""$base-web.jpg"" ""$Item""";
+  }
+
+"Combine into a favicon"
+  run """C:\Program Files\ImageMagick\convert.exe"" <get selecteditemsnames ' '> favicon.ico";
+
+"Add grey border"
+  foreach($Item, <get selecteditemsnames |>) {
+    $base = getpathcomponent($Item, "base");
+    $ext = getpathcomponent($Item, "ext");
+    run """C:\Program Files\ImageMagick\convert.exe"" -border 1 -bordercolor lightgrey ""$Item"" ""$base border.$ext""";
+  }

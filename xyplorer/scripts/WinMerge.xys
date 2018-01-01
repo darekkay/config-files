@@ -1,0 +1,5 @@
+"Selected Items"
+  run """C:\Program Files (x86)\WinMerge\WinMergeU.exe"" /e <selitems>";
+
+"Current Panes"
+  run """C:\Program Files (x86)\WinMerge\WinMergeU.exe"" /e /r ""<get path 1>"" ""<get path 2>""";
