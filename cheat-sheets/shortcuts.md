@@ -103,6 +103,7 @@
 
 | Shortcut              | Description                    |
 | --------------------- | ------------------------------ |
+| F3                    | Quick Search                   |
 | Ctrl + Shift + F2     | Swap File Names                |
 | F11                   | Preview file in [floating preview](https://www.xyplorer.com/release_11.20.php#FloatingPreview) |
 | Ctrl + F11            | Preview file in a [preview pane](https://www.xyplorer.com/release_16.40.php#PP) |
