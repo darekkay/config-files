@@ -25,3 +25,14 @@
 
 - Hide the infobar for [remote debugging](https://stackoverflow.com/questions/18882497/jetbrains-ide-support-extension-how-to-disable-chrome-warnings)
   - `chrome://flags/` → Enable `Silent Debugging`
+
+## Search engines
+
+| Search engine         | Keyword | Query URL |
+| --------------------- | --------|-----------|
+| BoardGameGeek         | bgg     | https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s  |
+| Dict                  | dict    | http://www.dict.cc/?s=%s                                                          |
+| Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                  |
+| IMDb                  | imdb    | http://www.imdb.com/find?s=all;q=%s                                               |
+| Thesaurus             | th      | http://www.thesaurus.com/browse/%s                                                |
+| Ultimate Guitar       | ug      | http://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
