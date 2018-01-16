@@ -1,5 +1,11 @@
 # Node.js
 
+## npm
+
+```bash
+npm outdated         # Show outdated packages
+```
+
 ## n - version manager
 
 - [n](https://github.com/tj/n)
@@ -41,4 +47,15 @@ pm2 reset [process]   # reset meta data (restarted time...)
 pm2 save
 npm install -g pm2
 pm2 update
+```
+
+## create-react-app
+
+- [Advanced Configuration](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration)
+- `.env` file:
+
+```
+PORT=12345
+GENERATE_SOURCEMAP=false
+PUBLIC_URL=.               # Build as a local project/file
 ```
