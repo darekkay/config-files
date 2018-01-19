@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# Creates a changelog out of git commits (pull requests).
+#
+# Usage: `changelog <since>`, e.g. `changelog 0.1.0` to display all commits made since tag 0.1.0.
+#
+CHANGES=$(git log --oneline --pretty="format:%b" --grep="Merge pull request" $1...HEAD)
+echo "### Added"
+echo "$CHANGES" | grep -i -E '^feat|^feature' | sed -e 's/^/- /' | sort
+echo
+echo "### Changed"
+echo "$CHANGES" | grep -i -E -v '^fix|^feat|^feature' | sed -e 's/^/- /'| sort
+echo
+echo "### Fixed"
+echo "$CHANGES" | grep -i -E '^fix' | sed -e 's/^/- /'| sort
