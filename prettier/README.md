@@ -5,5 +5,5 @@
 - Npm script:
 
 ```
-  "format": "prettier --write -- \"{src, public}/**/*.{js,jsx,json,css}\""
+  "format": "prettier --write -- \"{src,public}/**/*.{js,jsx,json,css}\""
 ```
