@@ -1,5 +1,20 @@
 # Node.js
 
+## Global packages
+
+- [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
+- [grunt](https://gruntjs.com/) - Task runner
+- [gulp](https://gruntjs.com/) - Streaming build system
+- [hexo](https://hexo.io/) - Static site generator
+- [mozjpeg](https://github.com/imagemin/mozjpeg-bin) - JPEG optimizer
+- [prettier](https://prettier.io/) - Code formatter
+- [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
+- [svgo](https://github.com/svg/svgo) - SVG optimizer
+
+```
+npm install -g create-react-app grunt-cli gulp hexo-cli mozjpeg prettier svgexport svgo
+```
+
 ## npm
 
 ```bash
