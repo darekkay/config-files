@@ -4,7 +4,6 @@
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
 hoerzu.images.dvbdata.com
-medium.com##.overlay--lighter.overlay
 netflix.com##.billboard-row
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
