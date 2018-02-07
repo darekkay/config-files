@@ -1,10 +1,9 @@
 # Custom settings
 
-printWidth: 100          # Line width
-
 
 # Unchanged defaults as of prettier 1.9.1
 
+printWidth: 80           # Line width
 useTabs: false           # Use spaces instead of tabs
 tabWidth: 2              # Use 2 spaces for indentations
 semi: true               # Add a semicolon at the end of every statement
