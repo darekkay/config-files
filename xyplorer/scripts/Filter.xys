@@ -1,0 +1,13 @@
+﻿"Image Files"
+  filter "*.jpg;*.jpeg;*.png;*.gif;*.bmp;*.ico"
+
+"Label: Green"
+  filter "lbl:green"
+
+"Label: Purple"
+  filter "lbl:purple"
+
+-
+
+"Reset"
+  filter
