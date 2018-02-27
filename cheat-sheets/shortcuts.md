@@ -120,3 +120,13 @@
 | 1-6                   | Next heading of level 1-6         |
 
  - [NVDA Keyboard Shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
+
+## UltraStar
+
+| Shortcut                  | Description                       |
+| ------------------------- | --------------------------------- |
+| +/- (Numpad)              | Whole song 1 note up/down         |
+| -                         | Decrease BPM by 0.05              |
+| Shift + +/- (Numpad)      | Whole song 1 octave up/down       |
+| Ctrl + Shift + Alt + ←/→  | Moves all notes, starting after the selected note, to the left/right |
+
