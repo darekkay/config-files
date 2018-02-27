@@ -1,0 +1,20 @@
+﻿"Songs"
+ D:\misc\ultrastar
+
+"Application"
+ C:\Program Files (x86)\UltraStar Deluxe
+
+"Create Folder|folder.ico"
+  foreach($Item, <get selecteditemspathnames |>) {
+    $base = getpathcomponent($Item, "base");
+    new($base, "dir");
+    new($base . "\" . $base . ".txt");
+    moveto $base, $Item;
+  }
+
+"Video → MP3 (CBR 128k)|convert.ico"
+  foreach($Item, <get selecteditemspathnames |>) {
+    $base = getpathcomponent($Item, "base");
+    $output = getpathcomponent($Item, "path") . "\" . $base . ".mp3";
+    run "ffmpeg -i ""$Item"" -b:a 128k -c:a libmp3lame ""$output""";
+  }

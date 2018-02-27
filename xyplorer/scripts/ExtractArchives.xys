@@ -1,5 +1,5 @@
 // Extract selected archives into separate folders
-foreach($item, <get selecteditemsnames |>) {
+foreach($item, <get selecteditemspathnames |>) {
   $base = getpathcomponent($item, "base");
   run """C:\Program Files\7-Zip\7z.exe"" x ""$item"" -spe -aou -o""$base""";
 }

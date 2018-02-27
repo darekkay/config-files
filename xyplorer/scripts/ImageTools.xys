@@ -2,19 +2,19 @@
 "Convert"
 
 "Convert to ICO|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.ico""";
   }
 
 "Convert to PNG|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.png""";
   }
 
 "Convert SVG to PNG|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """svgexport"" ""$Item"" ""$base.png"" 70%";
   }
@@ -24,13 +24,13 @@
 "Optimize"
 
 "Optimize JPEG|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base.jpg""";
   }
 
 "Optimize JPEG [Preview]|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base-web.jpg""";
   }
@@ -41,13 +41,13 @@
   }
 
 "Moz JPEG|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """mozjpeg"" -quality 85 -outfile ""$base-web.jpg"" ""$Item""";
   }
 
 "Optimize SVG|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """svgo"" ""$Item""";
   }
@@ -57,10 +57,10 @@
 "Misc"
 
 "Combine into a favicon|||1"
-  run """C:\Program Files\ImageMagick\convert.exe"" <get selecteditemsnames ' '> favicon.ico";
+  run """C:\Program Files\ImageMagick\convert.exe"" <get selecteditemspathnames ' '> favicon.ico";
 
 "Add grey border|||1"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     $ext = getpathcomponent($Item, "ext");
     run """C:\Program Files\ImageMagick\convert.exe"" -border 1 -bordercolor lightgrey ""$Item"" ""$base border.$ext""";

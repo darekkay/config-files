@@ -1,16 +1,16 @@
 "Normalize dashes"
- rename s, '–/-';
+ rename s, 'ï¿½/-';
 
 "Foto Format (Exif)"
  rename b, '<dateexif yyyy-mm-dd hh.MM.ss>', p, , 8;
- foreach($item, <get selecteditemsnames |>) {
+ foreach($item, <get selecteditemspathnames |>) {
    $base = getpathcomponent($item, "base");
    $ext = recase(getpathcomponent($item, "ext"), "lower");
    renameitem($ext, $item, 2);
  }
 
 "Extension To Lowercase"
- foreach($item, <get selecteditemsnames |>) {
+ foreach($item, <get selecteditemspathnames |>) {
    $base = getpathcomponent($item, "base");
    $ext = recase(getpathcomponent($item, "ext"), "lower");
    renameitem($ext, $item, 2);

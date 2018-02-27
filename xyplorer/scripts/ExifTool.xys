@@ -1,14 +1,14 @@
 "-1h"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     run """D:\apps\exiftool.exe"" ""-AllDates-=0:0:0 1:0:0"" ""$Item""";
   }
 
 "+1h"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     run """D:\apps\exiftool.exe"" ""-AllDates+=0:0:0 1:0:0"" ""$Item""";
   }
 
 "-6min"
-  foreach($Item, <get selecteditemsnames |>) {
+  foreach($Item, <get selecteditemspathnames |>) {
     run """D:\apps\exiftool.exe"" ""-AllDates-=0:0:0 0:6:0"" ""$Item""";
   }
