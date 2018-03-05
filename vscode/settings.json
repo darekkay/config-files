@@ -1,5 +1,11 @@
 {
 
+// Workbench
+
+    "workbench.colorTheme": "DK Tomorrow",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.showUpdateMessage": false,
+
 // Editor
 
     "editor.tabSize": 2,

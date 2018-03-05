@@ -1,0 +1,166 @@
+{
+	"tokenColors": [
+		{
+			"settings": {
+				"background": "#1C1C1C",
+				"foreground": "#FFFFFF"
+			}
+		},
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"settings": {
+				"foreground": "#808080"
+			}
+		},
+		{
+			"name": "Foreground",
+			"scope": [
+				"keyword.operator.class",
+				"constant.other",
+				"source.php.embedded.line"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#CED1CF"
+			}
+		},
+		{
+			"name": "Variable, Constant, String Link, Regular Expression",
+			"scope": [
+				"variable",
+				"support.other.variable",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"string.other.link",
+				"string.regexp"
+			],
+			"settings": {
+				"foreground": "#61AFEF"
+			}
+		},
+		{
+			"name": "Number, Function Argument, Tag Attribute, Embedded",
+			"scope": [
+				"constant.numeric",
+				"variable.parameter",
+				"punctuation.section.embedded",
+				"keyword.other.unit"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#E04164"
+			}
+		},
+		{
+			"name": "Class, Support",
+			"scope": [
+				"entity.name.class",
+				"entity.name.type.class",
+				"support.type",
+				"support.class"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#E78C45"
+			}
+		},
+		{
+			"name": "Attribute",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#E78C45"
+			}
+		},
+		{
+			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"scope": [
+				"string",
+				"constant.other.symbol",
+				"entity.other.inherited-class",
+				"markup.heading"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#F0C674"
+			}
+		},
+		{
+			"name": "Operator, Misc, Tag name",
+			"scope": [
+				"keyword.operator",
+				"constant.other.color",
+				"entity.name.tag",
+				"meta.tag",
+				"declaration.tag"
+			],
+			"settings": {
+				"foreground": "#C397D8"
+			}
+		},
+		{
+			"name": "Function, Special Method, Block Level",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call",
+				"support.function",
+				"keyword.other.special-method",
+				"meta.block-level"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#B9CA4A"
+			}
+		},
+		{
+			"name": "Keyword, Storage",
+			"scope": [
+				"keyword",
+				"storage",
+				"storage.type",
+				"entity.name.tag.css"
+			],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#B294BB"
+			}
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"settings": {
+				"background": "#DF5F5F",
+				"fontStyle": "",
+				"foreground": "#CED2CF"
+			}
+		},
+		{
+			"name": "Separator",
+			"scope": "meta.separator",
+			"settings": {
+				"background": "#82A3BF",
+				"foreground": "#CED2CF"
+			}
+		},
+		{
+			"name": "Deprecated",
+			"scope": "invalid.deprecated",
+			"settings": {
+				"background": "#B798BF",
+				"fontStyle": "",
+				"foreground": "#CED2CF"
+			}
+		}
+	],
+	"colors": {
+		"editor.background": "#1C1C1C",
+		"editorCursor.foreground": "#AEAFAD",
+		"editor.foreground": "#FFFFFF",
+		"editorWhitespace.foreground": "#4B4E55",
+		"editor.lineHighlightBackground": "#282A2E",
+		"editor.selectionBackground": "#373B41"
+	},
+	"name": "DK Tomorrow"
+}

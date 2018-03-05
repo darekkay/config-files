@@ -1,0 +1,22 @@
+{
+    "name": "darekkay.tomorrow",
+    "displayName": "DK Tomorrow",
+    "description": "DK Tomorrow Theme",
+    "version": "0.0.1",
+    "publisher": "darekkay",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "DK Tomorrow",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dk-tomorrow.json"
+            }
+        ]
+    }
+}
