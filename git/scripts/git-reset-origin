@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# "reset --hard" to origin
+#
+# Based on: https://stackoverflow.com/questions/9301782/need-to-reset-git-branch-to-origin-version
+
+WORK_DIR=$(git symbolic-ref -q HEAD);
+UPSTREAM=$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD));
+
+echo -n -e "reset \\033[0;33m$WORK_DIR\\033[0m to \\033[0;35m$UPSTREAM\\033[0m? (Y/n) ";
+read -r ans;
+if [ \"$ans\" = \"y\" -o \"$ans\" = \"Y\" -o -z \"$ans\" ]; then
+  git reset --hard $UPSTREAM;
+else
+  echo "Catchup aborted";
+fi

@@ -130,3 +130,4 @@
   fetch-tracked = !$HOME/.git/git-fetch-tracked
   fake = !$HOME/.git/git-fake
   changelog = !$HOME/.git/git-changelog
+  reset-origin = !$HOME/.git/git-reset-origin
