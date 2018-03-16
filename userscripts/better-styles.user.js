@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.0.0
+// @version         2.0.1
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -112,6 +112,11 @@ else if (page.url.indexOf('todoist.com') > -1) {
     #editor .arrow { margin-top: 5px !important; }
   `);
 
+  // hide projects dropdown
+  GM_addStyle(`
+    .expansion_panel:nth-child(2) .panel_summary { display: none; }
+    #top_filters { border-bottom: 1px solid #f1f1f1; }
+  `);
 }
 
 
