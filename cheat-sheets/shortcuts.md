@@ -125,6 +125,11 @@
 
 | Shortcut                  | Description                       |
 | ------------------------- | --------------------------------- |
+| **Menu**                  |                                   |
+| R                         | Select a random song              |
+| **Player**                |                                   |
+| S                         | Go to 5 seconds before first note |
+| **Editor**                |                                   |
 | +/- (Numpad)              | Whole song 1 note up/down         |
 | -                         | Decrease BPM by 0.05              |
 | Shift + +/- (Numpad)      | Whole song 1 octave up/down       |
