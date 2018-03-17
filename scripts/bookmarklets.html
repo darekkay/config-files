@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarklets</title>
+  <style>
+    html {
+      /* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+      box-sizing: border-box;
+
+      /* font-size 1em = 10px on default browser settings */
+      font-size: 62.5%;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a,
+    a:hover,
+    a:visited {
+      color: #006aff;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+
+    #bookmarklets>li {
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Bookmarklets</h1>
+  <ul id="bookmarklets">
+    <li>
+      <h2>Software Development</h2>
+      <ul>
+        <li>
+          <a href="javascript:(function()%7Bdocument.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(document.activeElement)%2C%20false)%3BArray.from(document.getElementsByTagName(%22iframe%22)).map(iframe%20%3D%3E%20iframe.contentWindow.document).forEach(iframeDoc%20%3D%3E%20iframeDoc.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(iframeDoc.activeElement)%2C%20false))%7D)()">Log Focus Changes</a>
+        </li>
+      </ul>
+    </li>
+    <li><h2>Todoist</h2>
+      <ul>
+        <li>
+          <a href="javascript:void(Array.from(document.getElementById('editor').getElementsByClassName('cmp_open_arrow_down')).forEach(arrow%20=>%20arrow.click()));">Collapse All</a>
+        </li>
+        <li>
+          <a href="javascript:void(Array.from(document.getElementById('editor').getElementsByClassName('cmp_open_arrow_right')).forEach(arrow%20=>%20arrow.click()));">Expand</a>
+        </li>
+      </ul>
+    </li>
+    <li><h2>RevealJS</h2>
+      <ul>
+        <li>
+          <a href="javascript:(function(){var themeEl = document.getElementById('theme'); var href = themeEl.getAttribute('href'); var newTheme = href.indexOf('dark') > -1 ? href.replace('dark', 'light') : href.replace('light', 'dark'); themeEl.setAttribute('href',newTheme);})();">Switch Theme</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
