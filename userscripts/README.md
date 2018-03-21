@@ -10,7 +10,7 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 
 Brings back square checkboxes, former priority colors and turns off the date parser.
 
-* [**Install**](https://github.com/darekkay/userscripts/raw/master/todoist-enhancements.user.js)
+* [**Install**](https://github.com/darekkay/config-files/raw/master/userscripts/todoist-enhancements.user.js)
 
 ![Todoist Theme](screenshots/todoist-enhancements.png)
 
@@ -18,7 +18,7 @@ Brings back square checkboxes, former priority colors and turns off the date par
 
 Steam rewards 3 Summer/Winter Sale Trading Cards per day for browsing the [Discovery Queue](http://store.steampowered.com/explore/). This script automates the process.
 
-* [**Install**](https://github.com/darekkay/userscripts/raw/master/steam-discovery-queue.user.js)
+* [**Install**](https://github.com/darekkay/config-files/raw/master/userscripts/steam-discovery-queue.user.js)
 
 ### Better styles
 
