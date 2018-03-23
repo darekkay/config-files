@@ -29,6 +29,11 @@
 
 - Flatten folder: `flattenfolder();`
 
+## Apps
+
+- Avidemux: `run """avidemux.exe"" ""<curitem>"" --output-format MP4v2";`
+- ConEmu: ` run """ConEmu.exe"" -Dir <curpath> -run {Bash::Git bash} -new_console"`
+
 ## Load script file
 
 ```
