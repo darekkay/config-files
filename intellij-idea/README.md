@@ -19,6 +19,10 @@
 
 ![DK Monokai color theme](config/colors/dk-monokai.png)
 
+### DK Tomorrow Night
+
+![DK Tomorrow Night color theme](config/colors/dk-tomorrow-night.png)
+
 ## Settings
 
 Show current memory usage in the status bar

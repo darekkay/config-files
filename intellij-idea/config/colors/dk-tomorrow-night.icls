@@ -1,4 +1,4 @@
-<scheme name="DK Tomorrow" version="142" parent_scheme="Default">
+<scheme name="DK Tomorrow Night" version="142" parent_scheme="Default">
   <colors>
     <option name="ADDED_LINES_COLOR" value="b9ca4a" />
     <option name="ANNOTATIONS_COLOR" value="b2c0c6" />
@@ -77,14 +77,16 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
+    <option name="CONSOLE_BLUE_BRIGHT_OUTPUT" baseAttributes="CONSOLE_BLUE_OUTPUT" />
     <option name="CONSOLE_BLUE_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="5394ec" />
+        <option name="FOREGROUND" value="61afef" />
       </value>
     </option>
+    <option name="CONSOLE_CYAN_BRIGHT_OUTPUT" baseAttributes="CONSOLE_CYAN_OUTPUT" />
     <option name="CONSOLE_CYAN_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="61afef" />
+        <option name="FOREGROUND" value="9cdcfe" />
       </value>
     </option>
     <option name="CONSOLE_ERROR_OUTPUT">
@@ -97,14 +99,16 @@
         <option name="FOREGROUND" value="808080" />
       </value>
     </option>
+    <option name="CONSOLE_GREEN_BRIGHT_OUTPUT" baseAttributes="CONSOLE_GREEN_OUTPUT" />
     <option name="CONSOLE_GREEN_OUTPUT">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
       </value>
     </option>
+    <option name="CONSOLE_MAGENTA_BRIGHT_OUTPUT" baseAttributes="CONSOLE_MAGENTA_OUTPUT" />
     <option name="CONSOLE_MAGENTA_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="e04164" />
+        <option name="FOREGROUND" value="c397d8" />
       </value>
     </option>
     <option name="CONSOLE_NORMAL_OUTPUT">
@@ -115,14 +119,15 @@
     <option name="CONSOLE_RANGE_TO_EXECUTE">
       <value />
     </option>
+    <option name="CONSOLE_RED_BRIGHT_OUTPUT" baseAttributes="CONSOLE_RED_OUTPUT" />
     <option name="CONSOLE_RED_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="c397d8" />
+        <option name="FOREGROUND" value="e04164" />
       </value>
     </option>
     <option name="CONSOLE_SYSTEM_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="e04164" />
+        <option name="FOREGROUND" value="c397d8" />
       </value>
     </option>
     <option name="CONSOLE_USER_INPUT">
@@ -130,6 +135,7 @@
         <option name="FOREGROUND" value="74715e" />
       </value>
     </option>
+    <option name="CONSOLE_YELLOW_BRIGHT_OUTPUT" baseAttributes="CONSOLE_YELLOW_OUTPUT" />
     <option name="CONSOLE_YELLOW_OUTPUT">
       <value>
         <option name="FOREGROUND" value="e78c45" />
@@ -585,6 +591,8 @@
         <option name="FOREGROUND" value="e04164" />
       </value>
     </option>
+    <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL" />
+    <option name="JADE_JS_BLOCK" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="JADE_STATEMENTS">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
@@ -602,7 +610,7 @@
     <option name="JS.REGEXP" baseAttributes="DEFAULT_STRING" />
     <option name="LOG_ERROR_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="c397d8" />
+        <option name="FOREGROUND" value="e04164" />
       </value>
     </option>
     <option name="LOG_EXPIRED_ENTRY">
@@ -695,11 +703,20 @@
         <option name="FOREGROUND" value="e78c45" />
       </value>
     </option>
+    <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="PY.BUILTIN_NAME" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
+    <option name="PY.CLASS_DEFINITION" baseAttributes="DEFAULT_CLASS_NAME" />
+    <option name="PY.DECORATOR" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="PY.FUNC_DEFINITION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="PY.KEYWORD_ARGUMENT" baseAttributes="DEFAULT_PARAMETER" />
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
       </value>
     </option>
+    <option name="PY.PREDEFINED_USAGE" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
+    <option name="PY.SELF_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PY.STRING.U" baseAttributes="DEFAULT_STRING" />
     <option name="SASS_MIXIN">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
