@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
-const readline = require("readline");
-const stream = require("stream");
 
 if (process.argv.length < 3) {
   return console.log("Provide a file to transform.");
