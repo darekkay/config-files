@@ -1,0 +1,16 @@
+<profile version="1.0">
+  <option name="myName" value="Default" />
+  <inspection_tool class="SSBasedInspection" enabled="true" level="INFORMATION" enabled_by_default="true">
+    <replaceConfiguration name="Convert to arrow function" created="1522232195281" text="function $functionName$ ( $parameterNames$ ) {&#10;  $content$&#10;}" recursive="false" caseInsensitive="true" type="JavaScript" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="const $functionName$ = ( $parameterNames$ ) =&gt; {&#10;  $content$&#10;};&#10;">
+      <constraint name="__context__" within="" contains="" />
+      <constraint name="functionName" within="" contains="" />
+      <constraint name="parameterNames" minCount="0" maxCount="2147483647" within="" contains="" />
+      <constraint name="content" minCount="0" maxCount="2147483647" within="" contains="" />
+    </replaceConfiguration>
+  </inspection_tool>
+  <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+    <option name="processCode" value="true" />
+    <option name="processLiterals" value="true" />
+    <option name="processComments" value="true" />
+  </inspection_tool>
+</profile>
