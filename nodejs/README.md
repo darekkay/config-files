@@ -3,6 +3,7 @@
 ## Global packages
 
 - [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
+- [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
 - [grunt](https://gruntjs.com/) - Task runner
 - [gulp](https://gruntjs.com/) - Streaming build system
 - [hexo](https://hexo.io/) - Static site generator
