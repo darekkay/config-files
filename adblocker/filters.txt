@@ -11,3 +11,6 @@ stackoverflow.com##.community-bulletin.module
 ||themagiccafe.com/forums/images/header2.gif
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
+
+! Medium sites sticky footer
+##.js-stickyFooter
