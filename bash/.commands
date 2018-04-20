@@ -1,0 +1,31 @@
+
+========================================================================================
+nginx -s reload                      # reload nginx configuration
+sudo nano default -Y nginx           # syntax highlighting for nginx files
+ufw status                           # list firewall port rules
+sudo reboot                          # reboot
+which <command>                      # show full path name of command
+whereis <query>                      # search path and standard directories for word
+apt-cache policy <package name>      # look up a package version before installing
+find <directory> -name <filename>    # find files in a directory
+history | tail -50                   # display the last 50 used commands
+cd -                                 # cd to previous ($OLDPWD) directory
+du -sh                               # directory size
+cat /proc/cpuinfo                    # CPU info
+uname -i                             # 32x (i386) vs 64x (x86_64)
+sudo !!                              # sudo last command
+
+inst                                 # = sudo apt-get install
+ports                                # list open ports
+extract <archive>                    # extract archive
+task <name>                          # search for a running process
+mcd <dir>                            # mkdir + cd
+update                               # update linux and packages
+
+# get SSL certificates
+sudo letsencrypt certonly --config ~/.letsencrypt/darekkay.com.ini
+
+# create folder for a specific user/group
+sudo install -d -o www-data -g adm ./folder/
+========================================================================================
+
