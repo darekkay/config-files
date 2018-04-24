@@ -1,3 +1,5 @@
+# Visual Studio Code
+
 ## Plugins
 
 - Log File Highlighter: `emilast.logfilehighlighter`

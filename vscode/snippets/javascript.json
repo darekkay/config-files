@@ -6,6 +6,10 @@
 			"$2"
 		]
 	},
+	"JSON.stringify": {
+		"prefix": "js",
+		"body": "JSON.stringify($1)"
+	},
 	"Insert 'use strict' statement": {
 		"prefix": "us",
 		"body": "'use strict';\n"
