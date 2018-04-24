@@ -4,9 +4,8 @@
 #   ~/apps/project
 #   ~/git/project.git
 
-# nano project.sh
-# chmod +x project.sh
-# sudo cp project.sh /usr/local/bin/project
+# nano ~/bin/project
+# chmod +x ~/bin/project
 
 
 if [[ $# -eq 0 ]] ; then
