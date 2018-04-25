@@ -8,20 +8,21 @@
 - [gulp](https://gruntjs.com/) - Streaming build system
 - [hexo](https://hexo.io/) - Static site generator
 - [mozjpeg](https://github.com/imagemin/mozjpeg-bin) - JPEG optimizer
-- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
+- [npm-check](https://www.npmjs.com/package/npm-check) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
 - [prettier](https://prettier.io/) - Code formatter
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
 - [svgo](https://github.com/svg/svgo) - SVG optimizer
 
 ```
-npm install -g create-react-app fixpack grunt-cli gulp hexo-cli mozjpeg npm-check-updates ntl prettier svgexport svgo
+npm install -g create-react-app fixpack grunt-cli gulp hexo-cli mozjpeg npm-check ntl prettier svgexport svgo
 ```
 
 ## npm
 
 ```bash
 npm outdated         # Show outdated packages
+npm ls --depth=0     # List package versions
 ```
 
 ## n - version manager
