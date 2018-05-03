@@ -19,7 +19,7 @@
  - [GitKraken](https://www.gitkraken.com/)
  - [Git Tower](https://www.git-tower.com/windows/)
 
-## Set an editor to prepare commit messages
+## Set default editor
 
 ```ini
 # Vim (default)
