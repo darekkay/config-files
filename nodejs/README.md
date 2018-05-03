@@ -1,5 +1,9 @@
 # Node.js
 
+## General
+
+Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
+
 ## Global packages
 
 - [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
@@ -8,7 +12,7 @@
 - [gulp](https://gruntjs.com/) - Streaming build system
 - [hexo](https://hexo.io/) - Static site generator
 - [mozjpeg](https://github.com/imagemin/mozjpeg-bin) - JPEG optimizer
-- [npm-check](https://www.npmjs.com/package/npm-check) - Upgrade package.json dependencies
+- [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
 - [prettier](https://prettier.io/) - Code formatter
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter

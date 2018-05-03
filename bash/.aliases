@@ -1,5 +1,3 @@
-alias ncu="npm-check -u --save-exact --no-emoji --skip-unused"
-
 # Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
