@@ -9,3 +9,11 @@ case "$TERM" in
     xterm-color|cygwin|*-256color) color_prompt=yes;;
 esac
 ```
+
+# Cron
+
+## Debug
+
+```
+* * * * * COMMAND >> /home/user/log.txt 2>&1
+```
