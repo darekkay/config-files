@@ -42,6 +42,12 @@ Wrap long lines
   - ☑ Editor → General → Use soft wraps in console
   - Editor → General → Use custom soft wraps indent: `1`
 
+Trim trailing whitespace
+  - Editor → General → Strip trailing spaces on save: All
+
+Add line feed at file end
+  - ☑ Editor → General → Ensure line feed at file end on save
+
 Add indent according to code styles by pressing Enter
   - ☑ Editor → General → Smart Keys → Enter → Smart indent
 
