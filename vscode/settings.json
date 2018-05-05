@@ -44,6 +44,10 @@
 
     "git.enableSmartCommit": true,
 
+// npm
+
+    "npm.enableScriptExplorer": true,
+
 // Integrated Terminal
 
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
