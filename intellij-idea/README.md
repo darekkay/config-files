@@ -94,6 +94,8 @@ Use absolute paths for JavaScript imports
 Set TODO format
   - Editor → TODO → ☑ Case Sensitive, `\bTODO\b:?`
 
+Use ECMAScript 6 by default (default settings)
+  - Languages & Frameworks → JavaScript → JavaScript language version: ECMAScript 6
 
 ## VCS Ignore Files
 
