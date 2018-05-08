@@ -105,5 +105,9 @@
   {
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "shift+f10",
+    "command": "workbench.action.tasks.runTask"
   }
 ]
