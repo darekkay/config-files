@@ -1,4 +1,19 @@
 // ----------------------------------------------------------------------------
+"Optimize"
+  foreach($Item, <get selecteditemspathnames |>) {
+    $path = getpathcomponent($Item, "path");
+    run "imagemin ""$Item"" --out-dir=""$path""";
+  }
+
+"Optimize [Preview]"
+  foreach($Item, <get selecteditemspathnames |>) {
+    $base = getpathcomponent($Item, "base");
+    $ext = getpathcomponent($Item, "ext");
+    run "imagemin ""$Item"" > ""$base-preview.$ext""";
+  }
+
+
+// ----------------------------------------------------------------------------
 "Convert"
 
 "Convert to ICO|||1"
@@ -17,39 +32,6 @@
   foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     run """svgexport"" ""$Item"" ""$base.png"" 70%";
-  }
-
-
-// ----------------------------------------------------------------------------
-"Optimize"
-
-"Optimize JPEG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base.jpg""";
-  }
-
-"Optimize JPEG [Preview]|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """C:\Program Files\ImageMagick\convert.exe"" -strip -quality 90 ""$Item"" ""$base-web.jpg""";
-  }
-
-"Optimize PNG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    run """D:\apps\optipng\optipng.exe"" ""$Item""";
-  }
-
-"Moz JPEG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """mozjpeg"" -quality 85 -outfile ""$base-web.jpg"" ""$Item""";
-  }
-
-"Optimize SVG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """svgo"" ""$Item""";
   }
 
 
