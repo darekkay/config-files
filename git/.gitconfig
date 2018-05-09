@@ -122,6 +122,9 @@
   # state = !git for-each-ref --format='%(color:cyan)%(refname:short) %(color:green)%(push:track)' refs/heads && git status -s
   state = !git branch-status && git status -s
 
+  # Open the current repository in the browser (use "open" instead of "explorer" for Unix)
+  open = "!explorer `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#https://#' -e 's@com:@com/@'`| head -n1"
+
   # Commit with a random commit message from whatthecommit.com
   whatthecommit = !git commit --allow-empty -m \"$(curl -s whatthecommit.com/index.txt)\"
 
