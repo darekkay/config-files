@@ -45,3 +45,11 @@
 - Notepad++
   - Command: `run "C:\Program Files (x86)\Notepad++\notepad++.exe" <selitems>`
   - Icon: C:\Program Files (x86)\Notepad++\notepad++.exe
+
+## List management
+
+### Find Files → Excluded Files
+
+```
+*node_modules*
+```
