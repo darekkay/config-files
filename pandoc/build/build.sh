@@ -20,9 +20,9 @@ pandoc \
  --metadata title="$TITLE" \
  --standalone \
  --toc \
- --template="$HOME\.pandoc\templates\github.html5" \
- --filter="$HOME\.pandoc\filters\highlight-todos.js" \
- --filter="$HOME\.pandoc\filters\remove-notes.js"
+ --template="$HOME\\.pandoc\\templates\\github.html5" \
+ --filter="$HOME\\.pandoc\\filters\\highlight-todos.js" \
+ --filter="$HOME\\.pandoc\\filters\\remove-notes.js"
 
 # Build speaker handout (with notes)
 pandoc \
@@ -33,8 +33,8 @@ pandoc \
  --metadata title="$TITLE" \
  --standalone \
  --toc \
- --template="$HOME\.pandoc\templates\github.html5" \
- --filter="$HOME\.pandoc\filters\highlight-todos.js"
+ --template="$HOME\\.pandoc\\templates\\github.html5" \
+ --filter="$HOME\\.pandoc\\filters\\highlight-todos.js"
 
 # Build slides
 

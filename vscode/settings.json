@@ -61,6 +61,10 @@
 
     "prettier.printWidth": 80,
 
+// Shellcheck
+
+    "shellcheck.exclude": ["SC1017"],
+
 // TODO Highlight
 
     "todohighlight.keywords": [
