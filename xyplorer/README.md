@@ -51,5 +51,6 @@
 ### Find Files → Excluded Files
 
 ```
+*.git*
 *node_modules*
 ```
