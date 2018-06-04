@@ -20,3 +20,8 @@
 - [Disable " - Shortcut" text](https://www.howtogeek.com/howto/windows-vista/remove-shortcut-text-from-new-shortcuts-in-vista/)
 - Disable Game Bar
   - ☐ Settings → Gaming → Game Bar → Record game clips, screenshots, and broadcast using Game bar
+
+## Commands
+
+- Kill all processes by name:
+  - `taskkill /F /IM app.exe`
