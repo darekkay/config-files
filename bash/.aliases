@@ -7,6 +7,9 @@ alias cd..='cd ..'
 alias l='ls -al --color=auto'
 alias ll='ls -l --color=auto'
 
+# App defaults
+alias ntl='ntl -A -s 25'
+
 # Shortcuts
 alias inst='sudo apt-get install'
 alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
