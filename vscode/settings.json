@@ -37,6 +37,7 @@
     "files.associations": {
         "*.html5": "html",
         "*.icls": "xml",
+        ".aliases": "shellscript",
         ".prettierrc": "yaml"
     },
 
