@@ -27,5 +27,9 @@ sudo letsencrypt certonly --config ~/.letsencrypt/darekkay.com.ini
 
 # create folder for a specific user/group
 sudo install -d -o www-data -g adm ./folder/
+
+# Copy file over SSH
+scp user@example.com:/home/user/file.txt file.txt
+scp -r user@example.com:/home/user/folder folder
 ========================================================================================
 
