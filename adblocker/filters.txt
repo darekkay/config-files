@@ -6,6 +6,8 @@ bahn.de##footer > .notice
 hoerzu.images.dvbdata.com
 netflix.com##.billboard-row
 stackoverflow.com##.community-bulletin.module
+suppenkaspar-magdeburg.de###emotion-header-img
+suppenkaspar-magdeburg.de##.diywebLogo
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image
 ||themagiccafe.com/forums/images/header2.gif
