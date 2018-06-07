@@ -28,6 +28,10 @@ npm outdated         # Show outdated packages
 npm ls --depth=0     # List package versions
 ```
 
+## node-gyp
+
+- Installation on [Windows](https://github.com/nodejs/node-gyp#on-windows)
+
 ## n - version manager
 
 - [n](https://github.com/tj/n)
