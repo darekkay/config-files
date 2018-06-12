@@ -30,11 +30,11 @@ alias download='wget -p -k'
 alias port='netstat -tulpn | grep --color'
 alias ports='netstat -plunt'
 
+# Git
 git4all() {
   find . -mindepth 1 -maxdepth 3 -type d -name '.git' -prune -exec sh -c 'echo ${0%?????}; git -C ${0%?????} $1' {} "$1" \;
 }
 
-# Git
 alias s='git s'
 alias q='git q'
 alias push-all='git4all "push" \;'
@@ -42,6 +42,13 @@ alias pull-all='git4all "pull --ff-only --all" \;'
 alias fetch-all='git4all "fetch --all" \;'
 alias status-all='git4all "status -s" \;'
 alias state-all='git4all "state" \;'
+
+# Npm
+npm4all() {
+  find . -mindepth 1 -maxdepth 2 -type f -name 'package.json' -prune -exec sh -c 'echo ${0%????????????}; npm --prefix ${0%????????????} $1' {} "$1" \;
+}
+
+alias audit-all='npm4all audit'
 
 # Prevent a script from finishing until a key was pressed
 alias pause='echo "Press any key to continue..."; read -n 1 -s'
