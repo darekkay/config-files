@@ -106,6 +106,24 @@ extract () {
    fi
 }
 
+# Find all files with Unix line endings (LF)
+findlf () {
+  find . -not \( \
+    -name .git -prune -o \
+    -name .idea -prune -o \
+    -name node_modules -prune \
+  \) -type f -print0 | xargs -0 unix2dos -ic
+}
+
+# Convert all files with Unix line endings (LF) into Windows line endings (CRLF)
+convertlf () {
+  find . -not \( \
+    -name .git -prune -o \
+    -name .idea -prune -o \
+    -name node_modules -prune \
+  \) -type f -print0 | xargs -0 unix2dos -ic | xargs -d '\n' unix2dos
+}
+
 # Show all colors
 colors() {
   T='gYw'      # The test text
