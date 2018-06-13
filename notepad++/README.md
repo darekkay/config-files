@@ -15,6 +15,12 @@ See my [blog post](https://darekkay.com/blog/turn-notepad-into-a-log-file-analyz
 
 ![Logfile syntax highlighting](lang_logfile_screenshot.png)
 
+### Nginx
+
+Based on the work of [dslatten](https://github.com/dslatten/nginx_npp).
+
+![Nginx syntax highlighting](lang_nginx_screenshot.png)
+
 ### Todo
 
 ![Todo syntax highlighting](lang_todo_screenshot.png)

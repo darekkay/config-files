@@ -1,0 +1,33 @@
+# ######################
+#   nginx example file
+# ######################
+
+server {
+  listen 443 ssl http2;
+  server_name example.com;
+
+  include snippets/common.conf;    # Common settings
+  include snippets/cache.conf;     # Expire headers
+
+  root /home/example/html;
+  index index.php index.html index.htm;
+
+  error_page 403 404 /404.html;
+  error_page 403 404 /404.html;
+
+  access_log /var/log/nginx/example.com/access.log;
+  error_log /var/log/nginx/example.com/error.log;
+
+  ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+
+  # Custom routes
+
+  location  ~ /feed/?       { return 301 https://example.com/atom.xml; }
+  location ^~ /php          { root /home/example/; include snippets/php.conf; }
+
+  location ^~ /reverse-proxy {
+    proxy_pass http://localhost:42918;
+    include snippets/reverse-proxy.conf;
+  }
+}
