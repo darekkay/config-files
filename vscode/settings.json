@@ -14,8 +14,8 @@
     "editor.mouseWheelZoom": true,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": false,
-    "editor.snippetSuggestions": "top",
     "editor.renderWhitespace": "all",
+    "editor.snippetSuggestions": "top",
 
 // Window
 
@@ -24,6 +24,7 @@
 // Workbench
 
     "workbench.statusBar.feedback.visible": false,
+    "workbench.editor.tabCloseButton": "off",
 
 // Explorer
 
