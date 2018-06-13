@@ -4,8 +4,8 @@ alias ...='cd ../..'
 alias cd..='cd ..'
 
 # List files
-alias l='ls -al --color=auto'
-alias ll='ls -l --color=auto'
+alias l='ls -al --color=auto --group-directories-first'
+alias ll='ls -l --color=auto --group-directories-first'
 
 # App defaults
 alias ntl='ntl -A -s 25'
