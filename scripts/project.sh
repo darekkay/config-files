@@ -49,6 +49,9 @@ cd \$GIT_WORK_TREE
 echo "[post-receive] Syncing node_modules with package.json..."
 npm prune && npm update
 
+echo "[post-receive] Building project"
+npm run build
+
 echo "[post-receive] Git repository deployed."
 
 EOT
