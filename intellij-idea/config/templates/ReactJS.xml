@@ -6,4 +6,70 @@
       <option name="JS_STATEMENT" value="false" />
     </context>
   </template>
+  <template name="pta" value="PropTypes.array" description="PropTypes.array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptar" value="PropTypes.array.isRequired" description="PropTypes.array.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptb" value="PropTypes.bool" description="PropTypes.bool" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptbr" value="PropTypes.bool.isRequired" description="PropTypes.bool.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptf" value="PropTypes.func" description="PropTypes.func" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptfr" value="PropTypes.func.isRequired" description="PropTypes.func.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptn" value="PropTypes.number" description="PropTypes.number" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptnr" value="PropTypes.number.isRequired" description="PropTypes.number.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="pto" value="PropTypes.object" description="PropTypes.object" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptor" value="PropTypes.object.isRequired" description="PropTypes.object.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="pts" value="PropTypes.string" description="PropTypes.string" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="ptsr" value="PropTypes.string.isRequired" description="PropTypes.string.isRequired" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="pt" value="$component$.propTypes = {&#10;  $END$&#10;};&#10;&#10;$component$.defaultProps = {&#10;  &#10;};" description="propTypes and defaultProps definition" toReformat="false" toShortenFQNames="true">
+    <variable name="component" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
