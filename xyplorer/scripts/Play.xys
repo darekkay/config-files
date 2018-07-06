@@ -1,0 +1,13 @@
+function play($arguments) {
+  $files = <selitems>;
+  if (!$files) {
+    $files = """<curpath>""";
+  }
+  return """mpc-hc64.exe"" " . $arguments . " $files";
+}
+
+"Play"
+  run play();
+
+"Shuffle"
+  run play("/randomize");
