@@ -103,6 +103,9 @@
   # Amend the currently staged files to the latest commit
   amend = commit --amend --reuse-message=HEAD
 
+  # Delete all fully-merged branches except master, develop and the current one
+  bd = "!f() { git branch | grep -v '^  master$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -d; }; f"
+
   # Find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
 
