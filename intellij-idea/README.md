@@ -31,8 +31,8 @@ Show current memory usage in the status bar
 Adjust for widescreen
   - ☑ Appearance & Behavior → Appearance → Widescreen tool window layout
 
-Reopen last project on startup
-  - ☑ Appearance & Behavior → System Settings → Startup/Shutdown → Reopen last project on startup
+Set default project directory
+  - ☑ Appearance & Behavior → System Settings → Project Opening → Default directory
 
 Zoom with mouse wheel
   - ☑ Editor → General → Change font size (zoom) with Ctrl+Mouse Wheel
