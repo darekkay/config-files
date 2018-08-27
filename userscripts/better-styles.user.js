@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.0.1
+// @version         2.0.2
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -101,7 +101,7 @@ else if (page.url.indexOf('todoist.com') > -1) {
     .generic_left_list .drag_and_drop_handler { padding-top: 7px !important; }
     .generic_left_list .arrow { margin-top: 4px !important; }
     #top_filters { padding-top: 4px !important; }
-    #top_filters .filter { padding-top: 3px !important; padding-bottom: 3px !important; }
+    #top_filters .filter, #top_filters .top_menu_item { padding-top: 3px !important; padding-bottom: 3px !important; }
     #left_menu_tabs { margin-top: 18px !important; }
   `);
 
