@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# After a formatter was applied, commit all changes and push it back to origin
+# Works with detached HEAD for CI intergration
+
+git fetch --all
+
+# Find the (first) remote branch name pointing to the current commit
+REMOTE_BRANCH_REF=$(git branch --remotes --format='%(refname)' --points-at $(git rev-parse HEAD) | sed -n 1p)
+
+# Replace refs/remotes/origin/<branch> with refs/heads/<branch> for pushing
+REMOTE_BRANCH_HEAD=$(echo $REMOTE_BRANCH_REF | sed "s/remotes\/origin/heads/")
+
+if [[ "$REMOTE_BRANCH_HEAD" != "refs/heads/develop" ]]; then
+  git commit -am "Reformat code"
+  {
+    #try
+    echo "Pushing changes"
+    git push --no-verify origin HEAD:$REMOTE_BRANCH_HEAD
+  } || {
+    # catch
+    echo "Could not push changes"
+  }
+fi
