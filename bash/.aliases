@@ -37,6 +37,8 @@ git4all() {
 
 alias s='git s'
 alias q='git q'
+alias amend='git add . && git amend'
+
 alias push-all='git4all "push" \;'
 alias pull-all='git4all "pull --ff-only --all" \;'
 alias fetch-all='git4all "fetch --all" \;'
