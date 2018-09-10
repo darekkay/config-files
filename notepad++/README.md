@@ -25,6 +25,12 @@ Based on the work of [dslatten](https://github.com/dslatten/nginx_npp).
 
 ![Todo syntax highlighting](lang_todo_screenshot.png)
 
+### Markdown
+
+Based on [markdown plus plus](https://github.com/Edditoria/markdown-plus-plus).
+
+![Markdown syntax highlighting](lang_markdown_screenshot.png)
+
 ### XYplorer
 
 Based on the work of [Enternal](https://www.xyplorer.com/xyfc/viewtopic.php?f=7&t=9810).
