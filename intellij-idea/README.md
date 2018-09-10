@@ -67,6 +67,9 @@ Hide file extensions and close icons on tabs
 Open recent tab on closing another tab
   - ☑ Editor → General → Editor Tabs → When closing active editor: Activate most recently opened tab
 
+Open "go to" targets in a new tab
+  - ☐ Open declaration source in the same tab
+
 Exclude some packages and classes from auto import/completion
   - Editor → General → Auto Import → Exclude from Import and Completion
 
