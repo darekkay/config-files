@@ -8,4 +8,7 @@ export PS1='\[\033]0;\W\007\]\n\[\033[34m\]● \[\033[32m\]\w\[\033[36m\]`__git_
 # Avoid duplicate history entries
 export HISTCONTROL=ignoreboth:erasedups
 
+# Sort files with dotfiles first
+export LC_COLLATE="C"
+
 export NODE_OPTIONS=--max-old-space-size=8096
