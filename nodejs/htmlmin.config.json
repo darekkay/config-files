@@ -6,7 +6,6 @@
   "minifyJS": true,
   "processConditionalComments": true,
   "removeComments": true,
-  "removeOptionalTags": true,
   "removeScriptTypeAttributes": true,
   "removeStyleLinkTypeAttributes": true,
   "useShortDoctype": true
