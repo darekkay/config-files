@@ -11,3 +11,8 @@ PuTTY stores all the session information in Windows registry:
 ![PuTTY session shortcut](putty-session-shortcut.png)
 
 [Source](http://www.thegeekstuff.com/2009/07/10-practical-putty-tips-and-tricks-you-probably-didnt-know/)
+
+## Pageant autostart shortcut
+
+- Target: `PAGEANT.EXE key1.ppk key2.ppk`
+- Start in: `C:\Users\USER\.ssh`
