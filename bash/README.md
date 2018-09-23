@@ -17,3 +17,13 @@ esac
 ```
 * * * * * COMMAND >> /home/user/log.txt 2>&1
 ```
+
+# Atop
+
+- [atoptool.nl](https://www.atoptool.nl/) - performance monitor
+- evaluate performance logs:
+
+```
+atopsar -c      # CPU usage stats
+atomsar -R 6    # hourly stats
+```
