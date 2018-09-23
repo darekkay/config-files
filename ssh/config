@@ -2,6 +2,7 @@
 Host *
   IdentitiesOnly yes
 
-Host example.com
+Host example.com 11.22.33.44
   User <username>
+  HostName 11.22.33.44
   IdentityFile ~/.ssh/<key-file>
