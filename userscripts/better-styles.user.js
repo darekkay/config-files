@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.0.2
+// @version         2.0.5
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -97,18 +97,18 @@ else if (page.url.indexOf('todoist.com') > -1) {
 
   // smaller paddings in the navigation bar
   GM_addStyle(`
-    .generic_left_list li table td { padding-top: 5px !important; padding-bottom: 0px !important; }
-    .generic_left_list .drag_and_drop_handler { padding-top: 7px !important; }
-    .generic_left_list .arrow { margin-top: 4px !important; }
+    .generic_left_list li table td { padding-top: 5px !important; padding-bottom: 5px !important; }
+    .generic_left_list .drag_and_drop_handler { padding-top: 2px !important; }
+    .generic_left_list .arrow { margin-top: 3px !important; }
     #top_filters { padding-top: 4px !important; }
-    #top_filters .filter, #top_filters .top_menu_item { padding-top: 3px !important; padding-bottom: 3px !important; }
+    #top_filters .filter, #top_filters .favorite_item { padding-top: 3px !important; padding-bottom: 3px !important; }
     #left_menu_tabs { margin-top: 18px !important; }
   `);
 
   // smaller paddings in the task bar
   GM_addStyle(`
     .task_item tr td.menu, .task_item td { padding-top: 6px !important; padding-bottom: 6px !important; }
-    #editor .drag_and_drop_handler { margin-top: 2px !important; }
+    #editor .drag_and_drop_handler { margin-top: -3px !important; }
     #editor .arrow { margin-top: 5px !important; }
   `);
 
