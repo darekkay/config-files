@@ -14,8 +14,17 @@ esac
 
 ## Debug
 
+Pipe `stdout` and `stderr` to [syslog](https://serverfault.com/questions/137468/better-logging-for-cronjobs-send-cron-output-to-syslog):
+
 ```
-* * * * * COMMAND >> /home/user/log.txt 2>&1
+* * * * * COMMAND 2>&1 | /usr/bin/logger -t <TAG>
+```
+
+Read cron logs:
+
+```
+grep CRON /var/log/syslog
+grep <TAG> /var/log/syslog
 ```
 
 # Atop
