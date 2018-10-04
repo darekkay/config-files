@@ -17,7 +17,9 @@
 - [Disable Explorer Ads](https://www.thurrott.com/windows/windows-10/106424/windows-10-tip-turn-off-file-explorer-advertising)
   - ☐ Folder → Options → View → Show sync provider notifications
 - [Enable Hibernate](https://www.pcworld.com/article/3078533/windows/how-to-add-a-hibernate-option-to-the-windows-10-start-menu.html)
-- [Disable " - Shortcut" text](https://www.howtogeek.com/howto/windows-vista/remove-shortcut-text-from-new-shortcuts-in-vista/)
+- Disable " - Shortcut" text:
+  - [Windows 7](https://www.howtogeek.com/howto/windows-vista/remove-shortcut-text-from-new-shortcuts-in-vista/)
+  - [Windows 10](https://winaero.com/blog/change-or-disable-the-shortcut-text-for-shortcuts-in-windows-10/)
 - Disable Game Bar
   - ☐ Settings → Gaming → Game Bar → Record game clips, screenshots, and broadcast using Game bar
 
