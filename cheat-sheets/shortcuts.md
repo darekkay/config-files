@@ -44,6 +44,7 @@
 | Shortcut                 | Description                        |
 | ------------------------ | ---------------------------------- |
 | Alt + H                  | Show file history                  |
+| Alt + L                  | Show local file history                  |
 | Alt + P                  | Plugins                            |
 | Alt + V                  | Split vertically                   |
 | Alt + +                  | Shift up                           |
