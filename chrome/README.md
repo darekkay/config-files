@@ -31,9 +31,11 @@
 
 | Search engine         | Keyword | Query URL |
 | --------------------- | --------|-----------|
-| BoardGameGeek         | bgg     | https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s  |
-| Dict                  | dict    | http://www.dict.cc/?s=%s                                                          |
-| Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                  |
-| IMDb                  | imdb    | http://www.imdb.com/find?s=all;q=%s                                               |
-| Thesaurus             | th      | http://www.thesaurus.com/browse/%s                                                |
-| Ultimate Guitar       | ug      | http://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
+| BoardGameGeek         | bgg     | https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s   |
+| DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
+| Dict                  | dict    | https://www.dict.cc/?s=%s                                                          |
+| Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
+| IMDb                  | imdb    | https://www.imdb.com/find?s=all;q=%s                                               |
+| Lodash                | lodash  | https://devdocs.io/#q=lodash %s                                                    |
+| Thesaurus             | th      | https://www.thesaurus.com/browse/%s                                                |
+| Ultimate Guitar       | ug      | https://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
