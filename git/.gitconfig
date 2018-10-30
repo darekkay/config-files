@@ -135,8 +135,8 @@
   party = reset
 
   # External scripts
-  branch-status = !$HOME/.git/git-branch-status
-  fetch-tracked = !$HOME/.git/git-fetch-tracked
-  fake = !$HOME/.git/git-fake
-  changelog = !$HOME/.git/git-changelog
-  reset-origin = !$HOME/.git/git-reset-origin
+  branch-status = !$HOME/bin/git-branch-status
+  fetch-tracked = !$HOME/bin/git-fetch-tracked
+  fake = !$HOME/bin/git-fake
+  changelog = !$HOME/bin/git-changelog
+  reset-origin = !$HOME/bin/git-reset-origin
