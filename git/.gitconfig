@@ -131,6 +131,9 @@
   # Commit with a random commit message from whatthecommit.com
   whatthecommit = !git commit --allow-empty -m \"$(curl -s whatthecommit.com/index.txt)\"
 
+  # Party --hard
+  party = reset
+
   # External scripts
   branch-status = !$HOME/.git/git-branch-status
   fetch-tracked = !$HOME/.git/git-fetch-tracked
