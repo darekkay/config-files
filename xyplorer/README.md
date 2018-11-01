@@ -11,6 +11,9 @@
 - Use the [Live Filter Box](https://www.xyplorer.com/release_17.00.php#LFB) as default typeahead search:
   - Filters & Type Ahead Find → Type Ahead Find → Enable type ahead find
   - Configuration → Filters & Type Ahead Find → Type Ahead Find → Redirect typing to Live Filter Box
+- Highlight selected tab
+  - Colors and Styles → Colors → Match selected tab with breadcrumb
+
 
 ## Features
 
