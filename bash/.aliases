@@ -39,10 +39,9 @@ alias s='git s'
 alias q='git q'
 alias amend='git add . && git amend'
 
-alias push-all='git4all "push" \;'
-alias pull-all='git4all "pull --ff-only --all" \;'
-alias fetch-all='git4all "fetch --all" \;'
-alias status-all='git4all "status -s" \;'
+alias push-all='git4all "push --quiet"'
+alias pull-all='git4all "pull --rebase --all --quiet"'
+alias fetch-all='git4all "fetch --all --quiet" \;'
 alias state-all='git4all "state" \;'
 
 # Npm

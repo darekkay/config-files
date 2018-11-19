@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#
+# Synchronizes all repositories in a working directory
+#
+
+find . -mindepth 1 -maxdepth 3 -type d -name '.git' -prune -print0 | while IFS= read -r -d $'\0' line; do
+    path=${line%.git};
+    echo "$path"
+    git -C "$path" pull --rebase --all --quiet
+    git -C "$path" push --quiet
+    git -C "$path" state
+done

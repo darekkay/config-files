@@ -140,3 +140,4 @@
   fake = !$HOME/bin/git-fake
   changelog = !$HOME/bin/git-changelog
   reset-origin = !$HOME/bin/git-reset-origin
+  sync = !$HOME/bin/git-sync

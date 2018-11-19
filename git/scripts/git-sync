@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git pull --rebase --all --quiet
+git push --quiet
+git state
