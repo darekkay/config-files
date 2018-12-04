@@ -7,7 +7,7 @@
 - :rocket: Enhancement, performance
 - :book: Documentation
 - :gem: Refactor, style, tests
-- :construction_worker_man: Build, CI, chore, dependencies
+- :construction_worker: Build, CI, chore, dependencies
 - :back: Revert
 - :boom: Breaking change
 - :tada: Announcement
