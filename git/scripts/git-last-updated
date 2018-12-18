@@ -1,0 +1,6 @@
+#!/bin/bash
+for filename in ./*.*; do
+  UPDATED_DATE=$(git log --follow -1 --format="%ad" --date=format:'%Y-%m-%d' -- "$filename")
+  # echo -e "updated: $UPDATED_DATE\n$(cat $filename)" > "$filename"
+  echo $UPDATED_DATE;
+done
