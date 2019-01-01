@@ -12,6 +12,11 @@
     run "imagemin ""$Item"" > ""$base-preview.$ext""";
   }
 
+"Auto-rotate"
+  foreach($Item, <get selecteditemspathnames |>) {
+    run """C:\Program Files\ImageMagick\mogrify.exe"" -auto-orient ""$Item""";
+  }
+
 
 // ----------------------------------------------------------------------------
 "Convert"
