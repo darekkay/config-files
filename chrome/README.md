@@ -39,3 +39,21 @@
 | Lodash                | lodash  | https://devdocs.io/#q=lodash %s                                                    |
 | Thesaurus             | th      | https://www.thesaurus.com/browse/%s                                                |
 | Ultimate Guitar       | ug      | https://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
+
+## Override server response headers (ModHeader)
+
+```
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: http://localhost
+Content-Security-Policy: <see below>
+```
+
+```
+default-src *  data: blob: 'unsafe-inline' 'unsafe-eval';
+script-src * data: blob: 'unsafe-inline' 'unsafe-eval';
+connect-src * data: blob: 'unsafe-inline';
+img-src * data: blob: 'unsafe-inline';
+frame-src * data: blob: ;
+style-src * data: blob: 'unsafe-inline';
+font-src * data: blob: 'unsafe-inline';
+```
