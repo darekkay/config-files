@@ -7,6 +7,7 @@ Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
 ## Global packages
 
 - [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
+- [envinfo](https://github.com/tabrindle/envinfo) - Development environment report
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
 - [grunt](https://gruntjs.com/) - Task runner
 - [gulp](https://gruntjs.com/) - Streaming build system
