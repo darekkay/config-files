@@ -33,6 +33,22 @@ npm ls --depth=0     # List package versions
 
 - Installation on [Windows](https://github.com/nodejs/node-gyp#on-windows)
 
+## npm settings
+
+```
+npm config set prefer-offline true
+npm config set progress false
+npm config set save-exact true
+```
+
+## yarn settings
+
+```
+yarn config set no-progress
+yarn config set yarn-offline-mirror ~/AppData/Roaming/yarn-offline
+yarn config set yarn-offline-mirror-pruning true
+```
+
 ## n - version manager
 
 - [n](https://github.com/tj/n)
