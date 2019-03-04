@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name            Amazon Smile Redirect
-// @version         1.0.0
+// @version         1.0.1
 // @description     Redirect Amazon to Amazon Smile
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/amazon-smile.user.js
-// @include         http*://amazon.*
-// @include         http*://www.amazon.*
+// @include         http*://amazon.de
+// @include         http*://www.amazon.de
 // @exclude         http*://smile.amazon.*
 // @exclude         http*://www.smile.amazon.*
 // @grant       none
