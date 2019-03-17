@@ -1,0 +1,18 @@
+! Title: Chat and helpdesk widgets
+! Homepage: https://github.com/darekkay/config-files/
+! Updated: 2019-03-17
+!
+! Based on: https://github.com/bcye/Hello-Goodbye/
+
+||widget.intercom.io/*
+||connect.facebook.net/en_US/sdk/xfbml.customerchat.js
+||assets.producthunt.com/assets/upwigloader.js
+||js.driftt.com/include/*
+||*.crisp.chat/*
+||*.intergram.xyz/js/*
+||widget.mfy.im/*
+||connect.podium.com/*
+||app.hubspot.com/*
+||static.getchipbot.com/*
+||static.zdassets.com/ekr/snippet.js^
+||www.couchbase.com/webfiles/1552355627964/js/contact-popup-form.js
