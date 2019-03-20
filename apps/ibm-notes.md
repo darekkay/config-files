@@ -9,3 +9,5 @@
   - Sametime → Notifications → One-on-one / Multi-party chat → ☐ Bring window to front on new chat / chat response
 - Sync on exit:
   - Replication and Sync → ☑ Replicate/Sync when I shut down the client
+- Create a local replica:
+  - File → Application → Make Available Offline
