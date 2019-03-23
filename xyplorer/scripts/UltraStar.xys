@@ -1,20 +1,27 @@
-﻿"Songs"
- D:\misc\ultrastar
+include "include/shared.xys";
+
+"Songs"
+  D:\misc\ultrastar
 
 "Application"
- C:\Program Files (x86)\UltraStar Deluxe
+  C:\Program Files (x86)\UltraStar Deluxe
 
 "Create Folder|folder.ico"
   foreach($Item, <get selecteditemspathnames |>) {
     $base = getpathcomponent($Item, "base");
     new($base, "dir");
-    new($base . "\" . $base . ".txt");
+    // new($base . "\" . $base . ".txt");
     moveto $base, $Item;
   }
 
-"Video → MP3 (CBR 128k)|convert.ico"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    $output = getpathcomponent($Item, "path") . "\" . $base . ".mp3";
-    run "ffmpeg -i ""$Item"" -b:a 128k -c:a libmp3lame ""$output""";
-  }
+"Video to MP3 (CBR 128k)|convert.ico"
+  runSelected("ffmpeg", "-i §file -b:a 128k -c:a libmp3lame ""§path\§base.mp3""");
+
+//  foreach($Item, <get selecteditemspathnames |>) {
+//    $base = getpathcomponent($Item, "base");
+//    $output = getpathcomponent($Item, "path") . "\" . $base . ".mp3";
+//    run "ffmpeg -i ""$Item"" -b:a 128k -c:a libmp3lame ""$output""";
+//  }
+
+"Shorten note duration"
+  run """node"" ""D:/projects/dev/config-files/scripts/ultrastar-shorten.js"" ""<curname>""";

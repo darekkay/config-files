@@ -1,0 +1,10 @@
+include "include/shared.xys";
+
+"Directory Report"
+  ::Load('DirectoryReport');
+
+"Flatten Folder"
+  flattenfolder();
+
+"Pandoc"
+  ::Load('Pandoc');

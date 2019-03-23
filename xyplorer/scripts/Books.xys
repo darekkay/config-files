@@ -1,9 +1,0 @@
-// ----------------------------------------------------------------------------
-"Convert to azw3"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run "ebook-convert.exe ""$Item"" ""$base.azw3""";
-  }
-
-"Move to Kindle"
-  moveto "C:\Users\darek\Documents\My Kindle Content", ":list";

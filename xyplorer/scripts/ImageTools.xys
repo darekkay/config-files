@@ -1,43 +1,16 @@
+include "include/shared.xys";
+
 // ----------------------------------------------------------------------------
 "Optimize"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $path = getpathcomponent($Item, "path");
-    run "imagemin ""$Item"" --out-dir=""$path""";
-  }
+  runSelected("imagemin", "§file --out-dir=""§path""");
 
 "Optimize [Preview]"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    $ext = getpathcomponent($Item, "ext");
-    run "imagemin ""$Item"" > ""$base-preview.$ext""";
-  }
+  runSelected("imagemin", "§file > ""§base-preview.§ext""");
 
-"Auto-rotate"
-  foreach($Item, <get selecteditemspathnames |>) {
-    run """C:\Program Files\ImageMagick\mogrify.exe"" -auto-orient ""$Item""";
-  }
-
-
+  
 // ----------------------------------------------------------------------------
-"Convert"
-
-"Convert to ICO|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.ico""";
-  }
-
-"Convert to PNG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """C:\Program Files\ImageMagick\convert.exe"" -background transparent ""$Item"" ""$base.png""";
-  }
-
-"Convert SVG to PNG|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    run """svgexport"" ""$Item"" ""$base.png"" 70%";
-  }
+"Primitive"
+  runSelected("C:\Users\User\go\bin\primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1");
 
 
 // ----------------------------------------------------------------------------
@@ -47,8 +20,4 @@
   run """C:\Program Files\ImageMagick\convert.exe"" <get selecteditemspathnames ' '> favicon.ico";
 
 "Add grey border|||1"
-  foreach($Item, <get selecteditemspathnames |>) {
-    $base = getpathcomponent($Item, "base");
-    $ext = getpathcomponent($Item, "ext");
-    run """C:\Program Files\ImageMagick\convert.exe"" -border 1 -bordercolor lightgrey ""$Item"" ""$base border.$ext""";
-  }
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-border 1 -bordercolor lightgrey §file ""§base-border.§ext""");

@@ -1,5 +1,4 @@
+include "include/shared.xys";
+
 // Extract selected archives into separate folders
-foreach($item, <get selecteditemspathnames |>) {
-  $base = getpathcomponent($item, "base");
-  run """C:\Program Files\7-Zip\7z.exe"" x ""$item"" -spe -aou -o""$base""";
-}
+runSelected("7z.exe", "x §file -spe -aou -o""§base""");

@@ -1,0 +1,16 @@
+include "include/shared.xys";
+
+"Convert to MP4"
+  runSelected("HandBrakeCLI", "-i §file -o ""§base.mp4""");
+
+"Convert to PDF"
+  runSelected("ebook-convert.exe", "§file ""§base.pdf""");
+
+"Convert to ICO"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.ico""");
+
+"Convert to PNG"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.png""");
+
+"Convert SVG to PNG"
+  runSelected("svgexport", """§file"" ""§base.png"" 70%");

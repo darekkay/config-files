@@ -1,0 +1,7 @@
+include "include/shared.xys";
+
+"-1h"
+  runSelected("D:\apps\exiftool.exe", """-AllDates-=0:0:0 1:0:0"" ""§file""");
+
+"+1h"
+  runSelected("D:\apps\exiftool.exe", """-AllDates+=0:0:0 1:0:0"" ""§file""");

@@ -1,24 +1,22 @@
-"Normalize dashes"
- rename s, '�/-';
-
 "Foto Format (Exif)"
- rename b, '<dateexif yyyy-mm-dd hh.MM.ss>', p, , 8;
- foreach($item, <get selecteditemspathnames |>) {
-   $base = getpathcomponent($item, "base");
-   $ext = recase(getpathcomponent($item, "ext"), "lower");
-   renameitem($ext, $item, 2);
- }
+  rename b, '<dateexif yyyy-mm-dd hh.MM.ss>', p, , 8;
+  foreach($item, <get selecteditemspathnames |>) {
+    $base = getpathcomponent($item, "base");
+    $ext = recase(getpathcomponent($item, "ext"), "lower");
+    renameitem($ext, $item, 2);
+  }
+
+"Normalize"
+  rename s, '–/-';
+  rename s, ' (HD)/';
+  rename s, ' (LD)/';
+  rename s, ' (480p)/';
+  rename s, ' (720p)/';
+  rename s, ' (1080p)/';
 
 "Extension To Lowercase"
- foreach($item, <get selecteditemspathnames |>) {
-   $base = getpathcomponent($item, "base");
-   $ext = recase(getpathcomponent($item, "ext"), "lower");
-   renameitem($ext, $item, 2);
- }
-
-"Remove Video Suffix"
- rename s, ' (HD)/';
- rename s, ' (LD)/';
- rename s, ' (480p)/';
- rename s, ' (720p)/';
- rename s, ' (1080p)/';
+  foreach($item, <get selecteditemspathnames |>) {
+    $base = getpathcomponent($item, "base");
+    $ext = recase(getpathcomponent($item, "ext"), "lower");
+    renameitem($ext, $item, 2);
+  }
