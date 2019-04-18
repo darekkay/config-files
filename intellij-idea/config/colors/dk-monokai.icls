@@ -111,7 +111,9 @@
       </value>
     </option>
     <option name="CONSOLE_RANGE_TO_EXECUTE">
-      <value />
+      <value>
+        <option name="EFFECT_COLOR" value="74715e" />
+      </value>
     </option>
     <option name="CONSOLE_RED_OUTPUT">
       <value>
