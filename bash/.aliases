@@ -32,7 +32,7 @@ alias ports='netstat -plunt'
 
 # Git
 git4all() {
-  find . -mindepth 1 -maxdepth 3 -type d -name '.git' -prune -exec sh -c 'echo ${0%?????}; git -C ${0%?????} $1' {} "$1" \;
+  find . -mindepth 1 -maxdepth 2 -type d -name '.git' -prune -exec sh -c 'echo ${0%?????}; git -C ${0%?????} $1' {} "$1" \;
 }
 
 alias s='git s'
