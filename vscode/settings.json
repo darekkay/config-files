@@ -1,79 +1,94 @@
 {
 
-// Workbench
+    // Workbench
 
-    "workbench.colorTheme": "DK Tomorrow",
-    "workbench.iconTheme": "material-icon-theme",
-    "material-icon-theme.showUpdateMessage": false,
+        "workbench.colorTheme": "DK Tomorrow",
+        "workbench.iconTheme": "material-icon-theme",
+        "material-icon-theme.showUpdateMessage": false,
 
-// Editor
+    // Editor
 
-    "editor.tabSize": 2,
-    "editor.wordWrap": "on",
-    "editor.scrollBeyondLastLine": false,
-    "editor.mouseWheelZoom": true,
-    "editor.minimap.enabled": false,
-    "editor.renderIndentGuides": false,
-    "editor.renderWhitespace": "all",
-    "editor.snippetSuggestions": "top",
+        "editor.tabSize": 2,
+        "editor.wordWrap": "on",
+        "editor.scrollBeyondLastLine": false,
+        "editor.mouseWheelZoom": true,
+        "editor.minimap.enabled": false,
+        "editor.renderIndentGuides": false,
+        "editor.renderWhitespace": "all",
+        "editor.snippetSuggestions": "top",
+        "editor.accessibilitySupport": "off",
 
-// Window
+    // Window
 
-    "window.restoreFullscreen": true,
+        "window.restoreFullscreen": true,
 
-// Workbench
+    // Workbench
 
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.editor.tabCloseButton": "off",
+        "workbench.statusBar.feedback.visible": false,
+        "workbench.editor.tabCloseButton": "off",
 
-// Explorer
+    // Explorer
 
-    "explorer.autoReveal": false,
+        "explorer.autoReveal": false,
+        "explorer.confirmDragAndDrop": false,
 
-// Files
+    // Files
 
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange",
-    "files.associations": {
-        "*.html5": "html",
-        "*.icls": "xml",
-        ".aliases": "shellscript",
-        ".prettierrc": "yaml"
-    },
+        "files.insertFinalNewline": true,
+        "files.trimTrailingWhitespace": true,
+        "files.autoSave": "onFocusChange",
+        "files.associations": {
+            "*.html5": "html",
+            "*.icls": "xml",
+            ".aliases": "shellscript",
+            ".prettierrc": "yaml"
+        },
 
-// Git
+    // Git
 
-    "git.enableSmartCommit": true,
+        "git.enableSmartCommit": true,
 
-// npm
+    // npm
 
-    "npm.enableScriptExplorer": true,
+        "npm.enableScriptExplorer": true,
 
-// Integrated Terminal
+    // Integrated Terminal
 
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+        "terminal.integrated.rendererType": "dom",
 
-// Telemetry
+    // Telemetry
 
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+        "telemetry.enableTelemetry": false,
+        "telemetry.enableCrashReporter": false,
 
-// Prettier
+    // ESLint / Prettier / Formatter
 
-    "prettier.printWidth": 80,
+        "prettier.printWidth": 80,
+        "prettier.eslintIntegration": true,
+        "prettier.stylelintIntegration": true,
+        "javascript.preferences.quoteStyle": "double",
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[html]": {
+            "editor.defaultFormatter": "vscode.html-language-features"
+        },
 
-// Shellcheck
+    // Shellcheck
 
-    "shellcheck.exclude": ["SC1017"],
+        "shellcheck.exclude": ["SC1017"],
 
-// TODO Highlight
+    // TODO Highlight
 
-    "todohighlight.keywords": [
-        {
-            "text": "TODO:",
-            "color": "black",
-            "backgroundColor": "#FFC010"
-        }
-    ]
-}
+        "todohighlight.keywords": [
+            {
+                "text": "TODO:",
+                "color": "black",
+                "backgroundColor": "#FFC010"
+            }
+        ]
+    }
