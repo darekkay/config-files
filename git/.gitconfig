@@ -47,8 +47,8 @@
   my = "%Cred%h%Creset -%C(cyan)%d%Creset %s %C(green)(%cr)%Creset"
 
 [fetch]
-  # Always prune when fetching
-  prune = true
+  prune = true              # Always prune when fetching
+  recurseSubmodules = true  # Sync a repository with its submodules
 
 [pull]
   # Allow only fast-forward merges when pulling
