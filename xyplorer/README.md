@@ -15,7 +15,8 @@
   - Colors and Styles → Colors → Match selected tab with breadcrumb
 - Show [folder contents](https://www.xyplorer.com/release_19.20.php) on icon mouse up
   - Mouse Down Blow Up → Mouse Up on Folder Icons → ☑ Folder contents preview
-
+- Open external folders in a new tab
+  - Startup & Exit → ☑ Open commandline start path in new tab
 
 ## Features
 
