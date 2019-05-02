@@ -1,0 +1,9 @@
+{
+  "name": "pandoc-filters",
+  "description": "Pandoc Filters",
+  "version": "1.0.0",
+  "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
+  "dependencies": {
+    "pandoc-filter": "1.0.0"
+  }
+}

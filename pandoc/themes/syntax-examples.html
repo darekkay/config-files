@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--==============================================================================
+	           "GitHub HTML5 Pandoc Template" v1.2 — by Tristano Ajmone
+	==============================================================================
+	(c) Tristano Ajmone, 2017, MIT License (MIT). Project's home repository:
+
+	- https://github.com/tajmone/pandoc-goodies
+
+	This template reuses source code taken from the following projects:
+
+	- GitHub Markdown CSS: © Sindre Sorhus, MIT License (MIT):
+	  https://github.com/sindresorhus/github-markdown-css
+
+	- Primer CSS: © 2016 GitHub Inc., MIT License (MIT):
+	  http://primercss.io/
+	==============================================================================-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Syntax Highlighter Examples</title>
+  <style type="text/css">@font-face{font-family:octicons-link;src:url(data:font/woff;charset=utf-8;base64,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) format('woff')}.markdown-body{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:#24292e;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;line-height:1.5;word-wrap:break-word;box-sizing:border-box;min-width:200px;max-width:980px;margin:0 auto;}.markdown-body .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown-body a{background-color:transparent;-webkit-text-decoration-skip:objects;color:#0366d6;text-decoration:none}.markdown-body a:active,.markdown-body a:hover{outline-width:0}.markdown-body h1{margin:.67em 0}.markdown-body img{border-style:none}.markdown-body svg:not(:root){overflow:hidden}.markdown-body code,.markdown-body kbd,.markdown-body pre{font-family:monospace,monospace}.markdown-body input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}.markdown-body [type=checkbox]{box-sizing:border-box;padding:0}.markdown-body *{box-sizing:border-box}.markdown-body a:hover{text-decoration:underline}.markdown-body strong{font-weight:600}.markdown-body hr{box-sizing:content-box;overflow:hidden;background:0 0;border-bottom:1px solid #dfe2e5}.markdown-body hr::before{display:table;content:""}.markdown-body hr::after{display:table;clear:both;content:""}.markdown-body table{border-spacing:0;border-collapse:collapse;display:block;width:100%;overflow:auto}.markdown-body td,.markdown-body th{padding:0}.markdown-body blockquote{margin:0}.markdown-body ol ol,.markdown-body ul ol{list-style-type:lower-roman}.markdown-body ol ol ol,.markdown-body ol ul ol,.markdown-body ul ol ol,.markdown-body ul ul ol{list-style-type:lower-alpha}.markdown-body dd{margin-left:0}.markdown-body code{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}.markdown-body pre{font:12px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;word-wrap:normal}.markdown-body .pl-0{padding-left:0!important}.markdown-body .pl-1{padding-left:4px!important}.markdown-body .pl-2{padding-left:8px!important}.markdown-body .pl-3{padding-left:16px!important}.markdown-body .pl-4{padding-left:24px!important}.markdown-body .pl-5{padding-left:32px!important}.markdown-body .pl-6{padding-left:40px!important}.markdown-body::before{display:table;content:""}.markdown-body::after{display:table;clear:both;content:""}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:0}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e1e4e8;border:0}.markdown-body blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid #dfe2e5}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd{font-size:11px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1{padding-bottom:.3em;font-size:2em;border-bottom:1px solid #eaecef}.markdown-body h2{padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid #eaecef}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#6a737d}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table th{font-weight:600}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #dfe2e5}.markdown-body table tr{background-color:#fff;border-top:1px solid #c6cbd1}.markdown-body table tr:nth-child(2n){background-color:#f6f8fa}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body code{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown-body code::after,.markdown-body code::before{letter-spacing:-.2em;content:"\00a0"}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;border-radius:3px}.markdown-body pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code::after,.markdown-body pre code::before{content:normal}.markdown-body .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown-body kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fcfcfc;border:1px solid #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}.markdown-body :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown-body .task-list-item{list-style-type:none}.markdown-body .task-list-item+.task-list-item{margin-top:3px}.markdown-body .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown-body hr{border-bottom-color:#eee}.flash{position:relative;padding:16px;color:#246;background-color:#e2eef9;border:1px solid #bac6d3;border-radius:3px}.flash p:last-child{margin-bottom:0}.flash-messages{margin-bottom:24px}.flash-warn{color:#4c4a42;background-color:#fff9ea;border-color:#dfd8c2}.flash-error{color:#911;background-color:#fcdede;border-color:#d2b2b2}.flash-success{color:#22662c;background-color:#e2f9e5;border-color:#bad3be}.flash-plain{color:#4c4a42;background-color:#f5f5f5;border-color:#c1c1c1}</style>
+  <style type="text/css">
+    .markdown-body { padding: 0 15px; }
+    @media (min-width: 768px) { .markdown-body { padding: 0 45px 45px; } }
+    code { white-space: pre-wrap }
+
+    pre.note { border: 1px solid lightgrey; background-color: #dcffd9; }
+    pre.note code { word-wrap: break-word; white-space: pre-wrap; }
+    .todo { font-weight: bold; color: red; }
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #232629;
+    color: #7a7c7d;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #7a7c7d;  padding-left: 4px; }
+div.sourceCode
+  { color: #eaeaea; background-color: #202020; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span. { color: #cfcfc2; } /* Normal */
+code span.al { color: #e04164; } /* Alert */
+code span.an { color: #74715e; } /* Annotation */
+code span.at { color: #f0c674; } /* Attribute */
+code span.bn { color: #e78c45; } /* BaseN */
+code span.bu { color: #e78c45; } /* BuiltIn */
+code span.cf { color: #c397d8; } /* ControlFlow */
+code span.ch { color: #e78c45; } /* Char */
+code span.cn { color: #f1486d; } /* Constant */
+code span.co { color: #969896; } /* Comment */
+code span.cv { color: #969896; } /* CommentVar */
+code span.do { color: #74715e; } /* Documentation */
+code span.dt { color: #e78c45; } /* DataType */
+code span.dv { color: #e78c45; } /* DecVal */
+code span.er { color: #e04164; } /* Error */
+code span.ex { color: #eaeaea; } /* Extension */
+code span.fl { color: #e78c45; } /* Float */
+code span.fu { color: #7aa6da; } /* Function */
+code span.im { color: #eaeaea; } /* Import */
+code span.in { color: #f0c674; } /* Information */
+code span.kw { color: #c397d8; } /* Keyword */
+code span.op { color: #c397d8; } /* Operator */
+code span.ot { color: #7aa6da; } /* Other */
+code span.pp { color: #61afef; } /* Preprocessor */
+code span.re { color: #74715e; } /* RegionMarker */
+code span.sc { color: #e78c45; } /* SpecialChar */
+code span.ss { color: #b9ca4a; } /* SpecialString */
+code span.st { color: #b9ca4a; } /* String */
+code span.va { color: #f1486d; } /* Variable */
+code span.vs { color: #b9ca4a; } /* VerbatimString */
+code span.wa { color: #e04164; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article class="markdown-body">
+<header>
+<h1 class="title">Syntax Highlighter Examples</h1>
+</header>
+<h1 id="syntax-highlighter-examples">Syntax Highlighter Examples</h1>
+<h2 id="html">HTML</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dt">&lt;!DOCTYPE </span>html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;<span class="dt">&gt;</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">&lt;html</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.w3.org/1999/xhtml&quot;</span><span class="ot"> xml:lang=</span><span class="st">&quot;en&quot;</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">&lt;head&gt;</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">    <span class="kw">&lt;meta</span><span class="ot"> http-equiv=</span><span class="st">&quot;Content-Type&quot;</span><span class="ot"> content=</span><span class="st">&quot;text/html; charset=UTF-8&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">    <span class="kw">&lt;title&gt;</span>PHP Code Example<span class="kw">&lt;/title&gt;</span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">&lt;/head&gt;</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">&lt;body&gt;</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8">    <span class="kw">&lt;h1&gt;</span>PHP Code Example<span class="kw">&lt;/h1&gt;</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"> </a>
+<a class="sourceLine" id="cb1-10" data-line-number="10">    <span class="kw">&lt;p&gt;&lt;?php</span> echo &#39;Hello World!&#39;; <span class="kw">?&gt;&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"> </a>
+<a class="sourceLine" id="cb1-12" data-line-number="12">    <span class="kw">&lt;p&gt;</span>This line is highlighted.<span class="kw">&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"> </a>
+<a class="sourceLine" id="cb1-14" data-line-number="14">    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;foobar&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15">        This    is  an</a>
+<a class="sourceLine" id="cb1-16" data-line-number="16">        example of  smart</a>
+<a class="sourceLine" id="cb1-17" data-line-number="17">        tabs.</a>
+<a class="sourceLine" id="cb1-18" data-line-number="18">    <span class="kw">&lt;/div&gt;</span></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19"> </a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">    <span class="kw">&lt;p&gt;&lt;a</span><span class="ot"> href=</span><span class="st">&quot;http://wordpress.org/&quot;</span><span class="kw">&gt;</span>WordPress<span class="kw">&lt;/a&gt;&lt;/p&gt;</span></a>
+<a class="sourceLine" id="cb1-21" data-line-number="21"><span class="kw">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb1-22" data-line-number="22"><span class="kw">&lt;/html&gt;</span></a></code></pre></div>
+<h2 id="java">Java</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">package</span><span class="im"> tutorial;</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">import</span><span class="im"> com.opensymphony.xwork2.ActionSupport;</span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">public</span> <span class="kw">class</span> HelloWorld <span class="kw">extends</span> ActionSupport {</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">  <span class="kw">private</span> <span class="bu">String</span> name;</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="kw">public</span> <span class="bu">String</span> <span class="fu">getName</span>() {</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">  <span class="kw">return</span> name;</a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">  }</a>
+<a class="sourceLine" id="cb2-8" data-line-number="8">  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">setName</span>(<span class="bu">String</span> name) {</a>
+<a class="sourceLine" id="cb2-9" data-line-number="9">      <span class="kw">this</span>.<span class="fu">name</span> = name;</a>
+<a class="sourceLine" id="cb2-10" data-line-number="10">  }</a>
+<a class="sourceLine" id="cb2-11" data-line-number="11">  <span class="kw">public</span> <span class="bu">String</span> <span class="fu">execute</span>() {</a>
+<a class="sourceLine" id="cb2-12" data-line-number="12">      name = <span class="st">&quot;Hello, &quot;</span> + name + <span class="st">&quot;!&quot;</span>; </a>
+<a class="sourceLine" id="cb2-13" data-line-number="13">      <span class="kw">return</span> SUCCESS;</a>
+<a class="sourceLine" id="cb2-14" data-line-number="14">  }</a>
+<a class="sourceLine" id="cb2-15" data-line-number="15">}</a></code></pre></div>
+<h2 id="javascript">Javascript</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">var</span> globalVar<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co"> * Constructor for </span><span class="kw">&lt;code&gt;</span><span class="co">AjaxRequest</span><span class="kw">&lt;/code&gt;</span><span class="co"> class</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">url</span><span class="co"> the url for the request</span><span class="kw">&lt;p/&gt;</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6"><span class="kw">function</span> <span class="at">AjaxRequest</span>(url) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="kw">var</span> urls <span class="op">=</span> [ <span class="st">&quot;www.cnn.com&quot;</span><span class="op">,</span> <span class="dv">5</span><span class="op">,</span> globalVar]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">    <span class="kw">this</span>.<span class="at">request</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">XMLHttpRequest</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">    url <span class="op">=</span> <span class="va">url</span>.<span class="at">replace</span>(<span class="ss">/</span><span class="sc">^\s*(</span><span class="ss">.</span><span class="sc">*)</span><span class="ss">/</span><span class="op">,</span> <span class="st">&quot;$1&quot;</span>)<span class="op">;</span> <span class="co">// skip leading whitespace</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10">    <span class="co">/* check the url to be in urls */</span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">    <span class="kw">var</span> a <span class="op">=</span> <span class="st">&quot;</span><span class="sc">\u1111\n</span><span class="st">&quot;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12">    <span class="kw">this</span>.<span class="at">foo</span> <span class="op">=</span> <span class="kw">new</span> <span class="kw">function</span>() <span class="op">{};</span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">    <span class="at">foo</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15">    <span class="va">document</span>.<span class="at">evaluate</span>(<span class="st">&quot;//prefix:*[ext:name() = &#39;changes&#39;]/element[(position() mod 2) = $pos + 1]/parent::*&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-16" data-line-number="16"><span class="op">}</span></a>
+<a class="sourceLine" id="cb3-17" data-line-number="17"></a>
+<a class="sourceLine" id="cb3-18" data-line-number="18"><span class="kw">new</span> <span class="at">AjaxRequest</span>(<span class="st">&quot;&quot;</span>)<span class="op">;</span></a></code></pre></div>
+<h2 id="php">PHP</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode php"><code class="sourceCode php"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">&lt;?php</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">if</span> <span class="ot">(</span>!<span class="fu">defined</span><span class="ot">(</span><span class="st">&#39;MEDIAWIKI&#39;</span><span class="ot">))</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="kw">exit</span><span class="ot">(</span><span class="dv">1</span><span class="ot">);</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"> </a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="kw">$wgExtensionFunctions</span><span class="ot">[]</span> = <span class="st">&quot;wfSyntaxHighlighterExtension&quot;</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"> </a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="kw">$wgExtensionCredits</span><span class="ot">[</span><span class="st">&#39;other&#39;</span><span class="ot">][]</span> = <span class="kw">array</span><span class="ot">(</span></a>
+<a class="sourceLine" id="cb4-8" data-line-number="8">  <span class="st">&#39;name&#39;</span> =&gt; <span class="st">&#39;SyntaxHighlighter&#39;</span><span class="ot">,</span></a>
+<a class="sourceLine" id="cb4-9" data-line-number="9">  <span class="st">&#39;author&#39;</span> =&gt; <span class="kw">array</span><span class="ot">(</span><span class="st">&#39;Alex Gorbatchev&#39;</span><span class="ot">),</span></a>
+<a class="sourceLine" id="cb4-10" data-line-number="10">  <span class="st">&#39;version&#39;</span> =&gt; <span class="st">&#39;1.0&#39;</span><span class="ot">,</span></a>
+<a class="sourceLine" id="cb4-11" data-line-number="11">  <span class="st">&#39;url&#39;</span> =&gt; <span class="st">&#39;http://alexgorbatchev.com/projects/syntaxhighlighter&#39;</span><span class="ot">,</span></a>
+<a class="sourceLine" id="cb4-12" data-line-number="12">  <span class="st">&#39;description&#39;</span> =&gt; <span class="st">&#39;Provides tight integration with SyntaxHighlighter.&#39;</span></a>
+<a class="sourceLine" id="cb4-13" data-line-number="13"><span class="ot">);</span></a>
+<a class="sourceLine" id="cb4-14" data-line-number="14"> </a>
+<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">// Path to the SyntaxHighlighter scripts</span></a>
+<a class="sourceLine" id="cb4-16" data-line-number="16"><span class="kw">$wgSyntaxHighlighterScriptPath</span> = <span class="st">&quot;</span><span class="kw">{$wgScriptPath}</span><span class="st">/extensions/SyntaxHighlighter/scripts&quot;</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-17" data-line-number="17"> </a>
+<a class="sourceLine" id="cb4-18" data-line-number="18"><span class="co">// Path to the SyntaxHighlighter styles</span></a>
+<a class="sourceLine" id="cb4-19" data-line-number="19"><span class="kw">$wgSyntaxHighlighterStylesPath</span> = <span class="st">&quot;</span><span class="kw">{$wgScriptPath}</span><span class="st">/extensions/SyntaxHighlighter/styles&quot;</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-20" data-line-number="20"> </a>
+<a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co">// Theme CSS file</span></a>
+<a class="sourceLine" id="cb4-22" data-line-number="22"><span class="kw">$wgSyntaxHighlighterTheme</span> = <span class="st">&quot;shThemeDefault.css&quot;</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-23" data-line-number="23"> </a>
+<a class="sourceLine" id="cb4-24" data-line-number="24"><span class="co">// Brushes to include on the page</span></a>
+<a class="sourceLine" id="cb4-25" data-line-number="25"><span class="kw">$wgSyntaxHighlighterBrushes</span> = <span class="kw">array</span><span class="ot">(</span></a>
+<a class="sourceLine" id="cb4-26" data-line-number="26">  <span class="st">&#39;shBrushBash.js&#39;</span><span class="ot">,</span></a>
+<a class="sourceLine" id="cb4-27" data-line-number="27">  <span class="st">&#39;shBrushCpp.js&#39;</span></a>
+<a class="sourceLine" id="cb4-28" data-line-number="28"><span class="ot">);</span></a>
+<a class="sourceLine" id="cb4-29" data-line-number="29"> </a>
+<a class="sourceLine" id="cb4-30" data-line-number="30"><span class="kw">$dir</span> = <span class="fu">dirname</span><span class="ot">(</span><span class="kw">__FILE__</span><span class="ot">)</span> . <span class="st">&#39;/&#39;</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-31" data-line-number="31"> </a>
+<a class="sourceLine" id="cb4-32" data-line-number="32"><span class="kw">function</span> wfSyntaxHighlighterExtension<span class="ot">()</span></a>
+<a class="sourceLine" id="cb4-33" data-line-number="33">{</a>
+<a class="sourceLine" id="cb4-34" data-line-number="34">  <span class="kw">global</span> <span class="kw">$wgOut</span><span class="ot">,</span> <span class="kw">$wgScriptPath</span><span class="ot">,</span> <span class="kw">$wgParser</span><span class="ot">,</span> </a>
+<a class="sourceLine" id="cb4-35" data-line-number="35">      <span class="kw">$wgSyntaxHighlighterBrushes</span><span class="ot">,</span> <span class="kw">$wgSyntaxHighlighterScriptPath</span><span class="ot">,</span> </a>
+<a class="sourceLine" id="cb4-36" data-line-number="36">      <span class="kw">$wgSyntaxHighlighterStylesPath</span><span class="ot">,</span> <span class="kw">$wgSyntaxHighlighterTheme</span><span class="ot">;</span></a>
+<a class="sourceLine" id="cb4-37" data-line-number="37">   </a>
+<a class="sourceLine" id="cb4-38" data-line-number="38">  <span class="co">// Make shCore.js the very first script to be included (before all the brushes)</span></a>
+<a class="sourceLine" id="cb4-39" data-line-number="39">  <span class="fu">array_unshift</span><span class="ot">(</span><span class="kw">$wgSyntaxHighlighterBrushes</span><span class="ot">,</span> <span class="st">&#39;shCore.js&#39;</span><span class="ot">);</span></a></code></pre></div>
+<h2 id="bash">Bash</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="va">X=</span>3</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="va">Y=</span>4</a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="va">empty_string=</span><span class="st">&quot;&quot;</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="kw">if</span><span class="bu"> [</span> <span class="va">$X</span> <span class="ot">-lt</span> <span class="va">$Y</span><span class="bu"> ]</span>  # <span class="ex">is</span> <span class="va">$X</span> less than <span class="va">$Y</span> ? </a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="kw">then</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7">  <span class="bu">echo</span> <span class="st">&quot;</span><span class="dt">\$</span><span class="st">X=</span><span class="va">${X}</span><span class="st">, which is smaller than </span><span class="dt">\$</span><span class="st">Y=</span><span class="va">${Y}</span><span class="st">&quot;</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="kw">fi</span></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"> </a>
+<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="kw">if</span><span class="bu"> [</span> <span class="ot">-n</span> <span class="st">&quot;</span><span class="va">$empty_string</span><span class="st">&quot;</span><span class="bu"> ]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb5-11" data-line-number="11">  <span class="bu">echo</span> <span class="st">&quot;empty string is non_empty&quot;</span></a>
+<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="kw">fi</span></a>
+<a class="sourceLine" id="cb5-13" data-line-number="13"> </a>
+<a class="sourceLine" id="cb5-14" data-line-number="14"><span class="kw">if</span><span class="bu"> [</span> <span class="ot">-e</span> <span class="st">&quot;</span><span class="va">${HOME}</span><span class="st">/.fvwmrc&quot;</span><span class="bu"> ]</span>; <span class="kw">then</span>             # <span class="bu">test</span> to see if ~/.fvwmrc exists</a>
+<a class="sourceLine" id="cb5-15" data-line-number="15">  <span class="bu">echo</span> <span class="st">&quot;you have a .fvwmrc file&quot;</span></a>
+<a class="sourceLine" id="cb5-16" data-line-number="16">  <span class="kw">if</span><span class="bu"> [</span> <span class="ot">-L</span> <span class="st">&quot;</span><span class="va">${HOME}</span><span class="st">/.fvwmrc&quot;</span><span class="bu"> ]</span>; <span class="kw">then</span>       # <span class="ex">is</span> it a symlink ?  </a>
+<a class="sourceLine" id="cb5-17" data-line-number="17">      <span class="bu">echo</span> <span class="st">&quot;it&#39;s a symbolic link&quot;</span></a>
+<a class="sourceLine" id="cb5-18" data-line-number="18">  <span class="kw">elif</span><span class="bu"> [</span> <span class="ot">-f</span> <span class="st">&quot;</span><span class="va">${HOME}</span><span class="st">/.fvwmrc&quot;</span><span class="bu"> ]</span>; <span class="kw">then</span>     # <span class="ex">is</span> it a regular file ?</a>
+<a class="sourceLine" id="cb5-19" data-line-number="19">      <span class="bu">echo</span> <span class="st">&quot;it&#39;s a regular file&quot;</span></a>
+<a class="sourceLine" id="cb5-20" data-line-number="20">  <span class="kw">fi</span></a>
+<a class="sourceLine" id="cb5-21" data-line-number="21"><span class="kw">else</span></a>
+<a class="sourceLine" id="cb5-22" data-line-number="22">  <span class="bu">echo</span> <span class="st">&quot;you have no .fvwmrc file&quot;</span></a>
+<a class="sourceLine" id="cb5-23" data-line-number="23"><span class="kw">fi</span></a></code></pre></div>
+</article>
+</body>
+</html>

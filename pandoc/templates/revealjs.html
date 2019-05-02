@@ -1,0 +1,100 @@
+<!doctype html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Dariusz Krolikowski">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link rel="stylesheet" href="css/theme/dk-light.min.css" id="theme">
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h2>$title$</h2>
+        <p><mark>Dariusz Krolikowski</mark></p>
+        <br>
+        <small class="float-left">
+          <a href="https://twitter.com/darek_kay" target="_blank" rel="noopener">@darek_kay</a>
+        </small>
+        <small class="float-right">
+          <a href="https://darekkay.com" target="_blank" rel="noopener">darekkay.com</a>
+        </small>
+
+        <aside class="notes">
+
+        </aside>
+        <div id="schedule"></div>
+      </section>
+
+$body$
+
+      <section style="font-size: 1.2em;">
+        <h2 style="padding-bottom: 25px;">Thank you!</h2>
+        <p style="padding-bottom: 20px;">
+          <a href="https://github.com/darekkay/presentations" class="text-nowrap">
+            <span class="highlight-3">github.com</span>
+            <span> / </span>
+            <span class="highlight-2">darekkay</span>
+            <span> / </span>
+            <span class="highlight-1">presentations</span>
+          </a>
+        </p>
+        <p>Dariusz Krolikowski</p>
+        <small class="float-left">
+          <a href="https://twitter.com/darek_kay" target="_blank" rel="noopener">@darek_kay</a>
+        </small>
+        <small class="float-right">
+          <a href="https://darekkay.com" target="_blank" rel="noopener">darekkay.com</a>
+        </small>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="js/head.min.js"></script>
+  <script src="js/reveal.min.js"></script>
+
+  <script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: true,
+      history: true,
+      center: true,
+      controlsTutorial: false,
+      autoPlayMedia: true,
+
+      transition: "none", // none/fade/slide/convex/concave/zoom
+
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        {
+          src: "js/classList.min.js", condition: function () {
+            return !document.body.classList;
+          }
+        },
+        {
+          src: "plugin/highlight/highlight.js", async: true, callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        { src: "plugin/notes/notes.js", async: true },
+        { src: "plugin/schedule/schedule.js", async: true }
+      ]
+    });
+
+  </script>
+  </body>
+</html>

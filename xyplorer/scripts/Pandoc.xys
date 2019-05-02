@@ -1,7 +1,7 @@
 include "include/shared.xys";
 
 "Markdown Github"
-  runSelected("pandoc.exe", "§file --from markdown_github --to html --standalone --template=""%USERPROFILE%\.pandoc\templates\github.html5"" --output ""§base.html""");
+  runSelected("pandoc.exe", "§file --from gfm --to html --standalone --template=""%USERPROFILE%\.pandoc\templates\github.html5"" --output ""§base.html""");
 
 "CommonMark"
   runSelected("pandoc.exe", "§file --from commonmark --to html --standalone --template=""%USERPROFILE%\.pandoc\templates\github.html5"" --output ""§base.html""");

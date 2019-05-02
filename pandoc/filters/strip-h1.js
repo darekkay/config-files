@@ -1,15 +1,18 @@
 #!/usr/bin/env node
 
 /**
- * Remove all notes (```note ```)
+ * Strip all level 1 headlines
  */
 
 const pandoc = require('pandoc-filter');
 const { Null } = pandoc;
 
 function action(type, value) {
-  if (type === 'CodeBlock' && value[0][1][0] === 'note') {
-    return Null();
+  if (type === 'Header') {
+    const level = value[0];
+    if (level === 1) {
+      return Null();
+    }
   }
 }
 

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$if(description)$
+  <meta name="description" content="$description$" />
+  <link rel="icon" href="./favicon.ico" sizes="16x16 32x32">
+$endif$
+  <title>$if(title)$$title$$else$$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$$endif$</title>
+  <style>
+    html {font-size: 62.5%;box-sizing: border-box;background-repeat: no-repeat}
+    *, ::after, ::before {box-sizing: inherit;background-repeat: inherit}
+    body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;font-size: 1.8rem;line-height: 1.5;margin: 0;color: #2b3236}
+
+    a {text-decoration: none}
+    a:hover {text-decoration: underline}
+    a, a:hover, a:visited {color: #005aff}
+
+    h1, h2, h3, h4, h5, h6 {font-weight: 600}
+    h1 {font-size: 3.2rem}
+    h2 {
+      font-size: 2.4rem;
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+      padding-bottom: .3rem;
+      border-bottom: 1px solid #eaecef;
+    }
+    h3 {font-size: 2rem}
+
+    hr {border: none;border-top: 1px solid #ccc}
+
+    code, pre {font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size: 1.7rem}
+    code {white-space: pre;word-break: break-word;padding: 0.2rem 0.4rem;background-color: #f9f2f4;color: #c7254e;}
+    pre code {padding: 0;color: inherit; background-color: inherit;}
+    pre {overflow: auto;padding: 1.5rem;border-radius: 3px;}
+    pre:not(.sourceCode) {background-color: #f6f8fa;}
+
+    table {border-collapse: collapse}
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 1rem 2.5rem;
+    }
+
+    header, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      padding: 0;
+      border: none;
+      cursor: default;
+    }
+
+    footer {
+      flex-direction: column;
+      font-size: 1.6rem;
+    }
+
+    footer > * {
+      margin: 0.6rem;
+    }
+
+    .inverted {
+      background: #202020;
+      color: #fff;
+    }
+
+    .inverted a, .inverted a:hover, .inverted a:visited {
+      color: #ff9e07;
+    }
+
+    .icon {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .icon-right {
+      margin-left: 0.5rem;
+    }
+
+    .text-center { text-align: center; }
+
+    .d-flex { display: flex; }
+
+    .align-items-center { align-items: center; }
+
+    /* Anchor Links */
+
+    a.anchor {
+      display: flex;
+      align-items: center;
+
+      position: absolute;
+      margin-left: -2rem;
+      width: 2rem;
+      height: 100%;
+    }
+
+    a.anchor:hover {
+      text-decoration: none;
+    }
+
+    a.anchor:before {
+      background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTQgOWgxdjFINGMtMS41IDAtMy0xLjY5LTMtMy41UzIuNTUgMyA0IDNoNGMxLjQ1IDAgMyAxLjY5IDMgMy41IDAgMS40MS0uOTEgMi43Mi0yIDMuMjVWOC41OWMuNTgtLjQ1IDEtMS4yNyAxLTIuMDlDMTAgNS4yMiA4Ljk4IDQgOCA0SDRjLS45OCAwLTIgMS4yMi0yIDIuNVMzIDkgNCA5em05LTNoLTF2MWgxYzEgMCAyIDEuMjIgMiAyLjVTMTMuOTggMTIgMTMgMTJIOWMtLjk4IDAtMi0xLjIyLTItMi41IDAtLjgzLjQyLTEuNjQgMS0yLjA5VjYuMjVjLTEuMDkuNTMtMiAxLjg0LTIgMy4yNUM2IDExLjMxIDcuNTUgMTMgOSAxM2g0YzEuNDUgMCAzLTEuNjkgMy0zLjVTMTQuNSA2IDEzIDZ6Ii8+PC9zdmc+') no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: block;
+      content: "";
+
+      visibility: hidden;
+    }
+
+    h2, h3, h4 {
+      position: relative;
+    }
+
+    h2:hover .anchor:before,
+    h3:hover .anchor:before,
+    h4:hover .anchor:before {
+      visibility: visible;
+    }
+
+  </style>
+  <style>
+    pre.shell code a:before,
+    pre.bash code a:before {content: "\$$ "; text-decoration: none;}
+  </style>
+
+$if(highlighting-css)$
+  <style type="text/css">
+$highlighting-css$
+  </style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+  <header class="inverted">
+    <h1>$title$</h1>
+  </header>
+<main>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(toc)$
+<nav id="$idprefix$TOC">
+$table-of-contents$
+</nav>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</main>
+<footer class="inverted">
+  $if(author)$
+  <span>Handmade with &hearts; by <a href="$authorUrl$" target="_blank" rel="noopener">$author$</a></span>
+  $endif$
+
+  $if(githubUrl)$
+  <div class="d-flex align-items-center">
+      <span>
+        Fork me on <a href="$githubUrl$" target="_blank" rel="noopener">GitHub</a>
+      </span>
+    <svg aria-hidden="true" focusable="false" class="icon icon-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+      <path fill="#fff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+    </svg>
+  </div>
+  $endif$
+</footer>
+</body>
+</html>
