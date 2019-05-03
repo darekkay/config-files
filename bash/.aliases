@@ -14,6 +14,9 @@ alias ntl='ntl -A -s 25'
 alias inst='sudo apt-get install'
 alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
 
+## Applications
+alias xy='XYplorer.exe $(pwd)'
+
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
 
