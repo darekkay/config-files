@@ -27,6 +27,8 @@
 
 - Hide the infobar for [remote debugging](https://stackoverflow.com/questions/18882497/jetbrains-ide-support-extension-how-to-disable-chrome-warnings)
   - `chrome://flags/` → Enable `Silent Debugging`
+- Disable media keys:
+  - `chrome://flags` → Hardware Media Key Handling
 
 ## Search engines
 
