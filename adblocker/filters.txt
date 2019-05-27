@@ -4,6 +4,7 @@
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
 hoerzu.images.dvbdata.com
+minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
 stackoverflow.com##.community-bulletin.module
 suppenkaspar-magdeburg.de###emotion-header-img
