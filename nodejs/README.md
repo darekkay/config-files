@@ -19,7 +19,7 @@ Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
 
 ```
-npm install -g create-react-app fixpack grunt-cli gulp hexo-cli imagemin-cli npm-check-updates ntl prettier svgexport
+npm install -g create-react-app fixpack grunt-cli hexo-cli imagemin-cli npm-check-updates ntl prettier release-it svgexport
 ```
 
 ## npm
