@@ -38,6 +38,7 @@ PATH=\$PATH:/home/darekkay/n/bin
 
 echo "[post-receive] node version: \$(node --version)"
 echo "[post-receive] npm  version: \$(npm --version)"
+echo "[post-receive] yarn version: $(yarn --version)"
 
 # Checkout repository into work tree
 git checkout -f
@@ -45,12 +46,16 @@ git checkout -f
 # Switch into work tree
 cd \$GIT_WORK_TREE
 
+# Reset git variables for yarn
+unset GIT_DIR
+unset GIT_WORK_TREE
+
 # Sync installed node_modules with package.json
 echo "[post-receive] Syncing node_modules with package.json..."
-npm prune && npm update
+yarn install --pure-lockfile --prefer-offline
 
 echo "[post-receive] Building project"
-npm run build
+yarn build
 
 echo "[post-receive] Git repository deployed."
 
