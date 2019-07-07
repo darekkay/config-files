@@ -23,3 +23,11 @@
     $ext = recase(getpathcomponent($item, "ext"), "lower");
     renameitem($ext, $item, 2);
   }
+
+"Audio (Artist - Title)"
+    setting "BackgroundFileOps", 0;
+    foreach($file, <get SelectedItemsPathNames |>, , "e") {
+        if (gpc($file, "ext") LikeI "mp3") {
+            renameitem(report("{prop:#mp3.artist} - {prop:#mp3.title}", $file), $file, 1+4);
+        }
+    }
