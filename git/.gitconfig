@@ -80,6 +80,7 @@
   co = checkout
   cm = checkout master
   cd = checkout develop
+  cp = cherry-pick
   mt = mergetool
   rc = rebase --continue
 
