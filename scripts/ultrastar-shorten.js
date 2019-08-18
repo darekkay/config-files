@@ -21,7 +21,7 @@ const result = lines
   .join("\n");
 
 fs.writeFile(
-  `-${process.argv[2]}`,
+  `${process.argv[2]}`,
   result,
   err => (err ? console.error(err) : console.log("Successfully transformed file."))
 );
