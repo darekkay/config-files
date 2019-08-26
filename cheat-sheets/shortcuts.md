@@ -62,6 +62,7 @@
 | Alt + Home               | Navigation bar popup               |
 | F2                       | Next highlighted error             |
 | Alt + F11                | Grunt/Gulp                         |
+| Ctrl + Shift + I         | Definition preview                 |
 
 ## Visual Studio Code
 
