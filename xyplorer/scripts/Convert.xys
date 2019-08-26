@@ -6,11 +6,17 @@ include "include/shared.xys";
 "Convert to PDF"
   runSelected("ebook-convert.exe", "§file ""§base.pdf""");
 
+"Convert to AZW3"
+  runSelected("ebook-convert.exe", "§file ""§base.azw3""");
+
 "Convert to ICO"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.ico""");
 
 "Convert to PNG"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.png""");
+
+"Convert SVG to PNG (16px)"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-size 16x16 -background transparent ""§file"" ""§base.png""");
 
 "Convert SVG to PNG"
   runSelected("svgexport", """§file"" ""§base.png"" 70%");
