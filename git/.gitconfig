@@ -23,6 +23,9 @@
   # Path to p4merge.exe (cmd is deprecated)
   path = C:/Program Files/Perforce/p4merge.exe
 
+  # Mac
+  # path = /Applications/p4merge.app/Contents/MacOS/p4merge
+
 [merge]
   # Default merge tool
   tool = p4merge
@@ -30,6 +33,9 @@
 [mergetool "p4merge"]
   # Path to p4merge.exe (cmd is deprecated)
   path = C:/Program Files/Perforce/p4merge.exe
+
+  # Mac
+  # path = /Applications/p4merge.app/Contents/MacOS/p4merge
 
 [mergetool]
   keepBackup = false       # Don't create .orig files
