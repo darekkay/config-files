@@ -45,3 +45,16 @@ editor = "subl -w"
 ![Rebase vs Merge](rebase-vs-merge.jpg)
 
 [Source](https://twitter.com/michaelhenke/status/585142133167751169)
+
+## Do not fetch any tags
+
+```
+[remote "origin"]
+  tagopt = --no-tags
+```
+
+- Delete all existing local tags:
+
+```
+git tag | xargs git tag -d
+```
