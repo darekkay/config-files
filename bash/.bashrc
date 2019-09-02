@@ -12,3 +12,6 @@ export HISTCONTROL=ignoreboth:erasedups
 export LC_COLLATE="C"
 
 export NODE_OPTIONS=--max-old-space-size=8096
+
+# Use yarn instead of npm for the ntl package
+export NTL_RUNNER=yarn ntl
