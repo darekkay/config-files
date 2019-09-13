@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Settings
 TITLE=""
 PARSER=gfm

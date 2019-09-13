@@ -7,6 +7,10 @@
 # nano ~/bin/project
 # chmod +x ~/bin/project
 
+set -e           # exit on error
+set -o pipefail  # trace ERR through pipes
+set -o errtrace  # trace ERR through 'time command' and other functions
+set -o errexit   # exit the script if any statement returns a non-true return value
 
 if [[ $# -eq 0 ]] ; then
     echo 'Error: project name required.'
