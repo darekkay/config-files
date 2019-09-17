@@ -67,7 +67,7 @@
           <a href="javascript:(function()%7Bdocument.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(document.activeElement)%2C%20false)%3BArray.from(document.getElementsByTagName(%22iframe%22)).map(iframe%20%3D%3E%20iframe.contentWindow.document).forEach(iframeDoc%20%3D%3E%20iframeDoc.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(iframeDoc.activeElement)%2C%20false))%7D)()">Log Focus Changes</a>
         </li>
         <li>
-          <a href="javascript:(function()%7Bconst%20searchParams%20%3D%20new%20URLSearchParams(window.location.search)%3Bwindow.location%20%3D%20%60http%3A%2F%2Flocalhost%3A6006%2Fiframe.html%3FselectedKind%3D%24%7BsearchParams.get(%22selectedKind%22)%7D%26selectedStory%3D%24%7BsearchParams.get(%22selectedStory%22)%7D%60%7D)()">Storybook IFrame</a> (Open current Story in IFrame)
+          <a href="javascript:void%20function(){javascript:(function(){const%20a=new%20URLSearchParams(window.location.search);window.location=`${window.location.protocol}//${window.location.host}/iframe.html%3FselectedKind=${a.get(%22selectedKind%22)}%26selectedStory=${a.get(%22selectedStory%22)}`})()}();">Storybook IFrame</a> (Open current Story in IFrame)
         </li>
       </ul>
     </li>
