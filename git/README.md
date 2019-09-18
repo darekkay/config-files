@@ -38,6 +38,12 @@ editor = "atom --wait"
 
 # Sublime Text 3
 editor = "subl -w"
+
+# TextMate
+# If "mate" is not available:
+# ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
+editor = "mate -w""
+
 ```
 
 ## Rebase vs Merge
