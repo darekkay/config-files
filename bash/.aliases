@@ -110,6 +110,9 @@ extract () {
    fi
 }
 
+# On Mac, use gxargs instead
+# brew install findutils
+
 # Find all files with Unix line endings (LF)
 findlf () {
   find . -not \( \
@@ -126,6 +129,24 @@ convertlf () {
     -name .idea -prune -o \
     -name node_modules -prune \
   \) -type f -print0 | xargs -0 unix2dos -ic | xargs -d '\n' unix2dos
+}
+
+# Find all files with Windows line endings (CRLF)
+findcrlf () {
+  find . -not \( \
+    -name .git -prune -o \
+    -name .idea -prune -o \
+    -name node_modules -prune \
+  \) -type f -print0 | xargs -0 dos2unix -ic
+}
+
+# Convert all files with Windows line endings (CRLF) into Unix line endings (LF)
+convertcrlf () {
+  find . -not \( \
+    -name .git -prune -o \
+    -name .idea -prune -o \
+    -name node_modules -prune \
+  \) -type f -print0 | xargs -0 dos2unix -ic | xargs -d '\n' dos2unix
 }
 
 # Show all colors
