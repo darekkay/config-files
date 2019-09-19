@@ -1,4 +1,4 @@
-﻿  filter;
+  filter;
   $allFiles = listpane(, , 1+4);
   $files    = gettoken(formatlist($allFiles, "x"), 10, "|", , 1);
   filter "$files", 1+4;
