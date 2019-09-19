@@ -1,13 +1,19 @@
 [core]
-  # Use Notepad++ as default editor
-  editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-
-  autocrlf = true      # Automatic conversion between CRLF (working directory) and LF (repository)
+  # Windows
+  autocrlf = true      # Automatic conversion between CRLF (working directory) and LF (repository) (Windows)
   safecrlf = false     # Don't warn about converting between CRLF and LF
   filemode = false     # Ignore file mode changes (recommended for Windows)
   trustctime = false   # Ignore ctime differences between the index and the working tree
 
+  # Unix
+  # autocrlf = input   # Use LF on Unix (and for the repository) and CRLF on Windows
+  # safecrlf = true    # Warn about converting between CRLF and LF
+  # filemode = true    # Do not ignore file mode changes (recommended for Mac)
+
   excludesfile = ~/.gitignore.local  # Add a local ignore file for all repositories
+
+  # Use Notepad++ as default editor
+  editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
   # Use plink instead of OpenSSH. An alternative to GIT_SSH environment variable, which can be set per-repository.
   # sshCommand = plink
