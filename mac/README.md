@@ -24,6 +24,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 ## Shortcuts
 
 - `Cmd` + `Space`: Global Search
+- `Return`: Rename selected file
 
 ## Transition from Windows
 
