@@ -16,6 +16,7 @@ alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dis
 
 ## Applications
 alias xy='XYplorer.exe $(pwd)'
+# alias start=open    # Mac alias
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
