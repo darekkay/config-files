@@ -62,6 +62,12 @@
         "telemetry.enableTelemetry": false,
         "telemetry.enableCrashReporter": false,
 
+    // Emmet
+
+        "emmet.includeLanguages": {
+            "javascript": "javascriptreact"
+        },
+
     // ESLint / Prettier / Formatter
 
         "prettier.printWidth": 80,
