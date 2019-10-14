@@ -129,7 +129,7 @@
   contributors = shortlog --summary --numbered
 
   # Commit count (from HEAD)
-  count = git log --oneline | wc -l
+  count = !git log --oneline | wc -l
 
   # Push master branch to all remotes
   pushall = !git remote | xargs -L1 -I R git push R master
