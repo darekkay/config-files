@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.0.5
+// @version         2.0.6
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -107,7 +107,7 @@ else if (page.url.indexOf('todoist.com') > -1) {
 
   // smaller paddings in the task bar
   GM_addStyle(`
-    .task_item tr td.menu, .task_item td { padding-top: 6px !important; padding-bottom: 6px !important; }
+    .task_item_details { padding-top: 6px !important; padding-bottom: 6px !important; }
     #editor .drag_and_drop_handler { margin-top: -3px !important; }
     #editor .arrow { margin-top: 5px !important; }
   `);
