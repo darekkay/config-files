@@ -35,7 +35,7 @@ for ((commit = 1; commit <= $commit_count; commit++)); do
   fi
 
   # Commit
-  if ! git commit --message "commit message for $filename"; then
+  if ! git commit --message "C$(git rev-list --all --count)"; then
     git rm --force "$filename" > /dev/null
     exit 4
   fi
