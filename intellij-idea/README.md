@@ -4,6 +4,8 @@
 
 - [File Watchers](https://plugins.jetbrains.com/plugin/7177-file-watchers)
   - Executes task on file modifications
+- [Grazie](https://plugins.jetbrains.com/plugin/12175-grazie/)
+  - Advanced spelling and grammar checker
 - [Ignore](https://plugins.jetbrains.com/plugin/7495--ignore)
   - Support for ignore files
 - [Presentation Assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant)
