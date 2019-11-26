@@ -7,9 +7,16 @@
 - Show address bar in Finder
   - Finder → View → Show Path Bar
 - Set default Finder options
-  - View → Show View Options → ... → Use as defaults
+  - Finder → View → Show View Options → ... → Use as defaults
 - Move Toolbar between monitors
   - Slide down on the touchpad on the monitor which should display the Toolbar
+- Lock the Dock on the primary monitor
+  - ☐ System Preferences → Mission Control → Displays have separate Spaces
+- Disable thesaurus:
+  - ☐ System Preferences > Trackpad > Look up & data detectors
+- Make modal buttons toggable
+  - ☑ System Preferences → Keyboard → Shortcuts → Full Keyboard Access → All Controls
+- Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
 
 ```bash
 # Show hidden files in Finder
@@ -25,6 +32,7 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 - `Cmd` + `Space`: Global Search
 - `Return`: Rename selected file
+- `F11`: Show desktop
 
 ## Transition from Windows
 
