@@ -4,7 +4,7 @@
 
 - :sparkles: New feature
 - :bug: Bug fix
-- :rocket: Enhancement, performance
+- :rocket: Performance improvement
 - :book: Documentation
 - :gem: Refactor, style, tests
 - :construction_worker: Build, CI, chore, dependencies
