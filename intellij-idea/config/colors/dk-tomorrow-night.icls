@@ -39,6 +39,7 @@
     <option name="VCS_ANNOTATIONS_COLOR_3" value="41444a" />
     <option name="VCS_ANNOTATIONS_COLOR_4" value="484248" />
     <option name="VCS_ANNOTATIONS_COLOR_5" value="4c393a" />
+    <option name="VISUAL_INDENT_GUIDE" value="323232" />
     <option name="WHITESPACES" value="505050" />
     <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="f2f2f2" />
   </colors>
@@ -46,6 +47,29 @@
     <option name="ANNOTATION_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="9cdcfe" />
+      </value>
+    </option>
+    <option name="ASCIIDOC_MONO">
+      <value>
+        <option name="FOREGROUND" value="e04164" />
+      </value>
+    </option>
+    <option name="ASCIIDOC_MONOBOLD">
+      <value>
+        <option name="FOREGROUND" value="de4367" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ASCIIDOC_MONOBOLDITALIC">
+      <value>
+        <option name="FOREGROUND" value="e04164" />
+        <option name="FONT_TYPE" value="3" />
+      </value>
+    </option>
+    <option name="ASCIIDOC_MONOITALIC">
+      <value>
+        <option name="FOREGROUND" value="de4367" />
+        <option name="FONT_TYPE" value="2" />
       </value>
     </option>
     <option name="BAD_CHARACTER">
@@ -59,6 +83,9 @@
         <option name="FOREGROUND" value="c57633" />
         <option name="FONT_TYPE" value="2" />
       </value>
+    </option>
+    <option name="BASH.HERE_DOC">
+      <value />
     </option>
     <option name="BASH.INTERNAL_COMMAND">
       <value>
@@ -117,9 +144,7 @@
       </value>
     </option>
     <option name="CONSOLE_RANGE_TO_EXECUTE">
-      <value>
-        <option name="EFFECT_COLOR" value="74715e" />
-      </value>
+      <value />
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT" baseAttributes="CONSOLE_RED_OUTPUT" />
     <option name="CONSOLE_RED_OUTPUT">
@@ -346,7 +371,6 @@
     <option name="DEFAULT_KEYWORD">
       <value>
         <option name="FOREGROUND" value="c397d8" />
-        <option name="BACKGROUND" value="1c1c1c" />
       </value>
     </option>
     <option name="DEFAULT_LABEL">
@@ -491,8 +515,8 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="287bde" />
-        <option name="EFFECT_COLOR" value="287bde" />
+        <option name="FOREGROUND" value="61afef" />
+        <option name="EFFECT_COLOR" value="61afef" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -503,6 +527,25 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
+    <option name="GHERKIN_OUTLINE_PARAMETER_SUBSTITUTION">
+      <value>
+        <option name="FOREGROUND" value="e68a45" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="GHERKIN_PYSTRING">
+      <value>
+        <option name="FOREGROUND" value="9cdcfe" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="GHERKIN_REGEXP_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="61afef" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="GROOVY_KEYWORD" baseAttributes="JAVA_KEYWORD" />
     <option name="HTTP_REQUEST_MULTIPART_BOUNDARY" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE" />
     <option name="HTTP_REQUEST_PARAMETER_NAME">
       <value>
@@ -516,8 +559,8 @@
     </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="287bde" />
-        <option name="EFFECT_COLOR" value="287bde" />
+        <option name="FOREGROUND" value="61aeed" />
+        <option name="EFFECT_COLOR" value="61aeed" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -593,8 +636,6 @@
         <option name="FOREGROUND" value="e04164" />
       </value>
     </option>
-    <option name="JADE_FILTER_NAME" baseAttributes="DEFAULT_LABEL" />
-    <option name="JADE_JS_BLOCK" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="JADE_STATEMENTS">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
@@ -610,6 +651,36 @@
       </value>
     </option>
     <option name="JS.REGEXP" baseAttributes="DEFAULT_STRING" />
+    <option name="KOTLIN_ANNOTATION" baseAttributes="ANNOTATION_NAME_ATTRIBUTES" />
+    <option name="KOTLIN_LABEL">
+      <value>
+        <option name="FOREGROUND" value="61afef" />
+      </value>
+    </option>
+    <option name="KOTLIN_MUTABLE_VARIABLE">
+      <value>
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="KOTLIN_NAMED_ARGUMENT">
+      <value>
+        <option name="FOREGROUND" value="61aeed" />
+      </value>
+    </option>
+    <option name="KOTLIN_SMART_CAST_RECEIVER">
+      <value />
+    </option>
+    <option name="KOTLIN_SMART_CAST_VALUE">
+      <value />
+    </option>
+    <option name="KOTLIN_SMART_CONSTANT">
+      <value />
+    </option>
+    <option name="LOG_DEBUG_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="9cdcfe" />
+      </value>
+    </option>
     <option name="LOG_ERROR_OUTPUT">
       <value>
         <option name="FOREGROUND" value="e04164" />
@@ -620,9 +691,19 @@
         <option name="FOREGROUND" value="74715e" />
       </value>
     </option>
+    <option name="LOG_INFO_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="b9ca4a" />
+      </value>
+    </option>
+    <option name="LOG_VERBOSE_OUTPUT">
+      <value>
+        <option name="FOREGROUND" value="61aeed" />
+      </value>
+    </option>
     <option name="LOG_WARNING_OUTPUT">
       <value>
-        <option name="FOREGROUND" value="ffffff" />
+        <option name="FOREGROUND" value="e78c45" />
       </value>
     </option>
     <option name="List/map to object conversion">
@@ -705,20 +786,16 @@
         <option name="FOREGROUND" value="e78c45" />
       </value>
     </option>
-    <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
-    <option name="PY.BUILTIN_NAME" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
-    <option name="PY.CLASS_DEFINITION" baseAttributes="DEFAULT_CLASS_NAME" />
-    <option name="PY.DECORATOR" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PY.FUNC_DEFINITION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
-    <option name="PY.KEYWORD_ARGUMENT" baseAttributes="DEFAULT_PARAMETER" />
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
       </value>
     </option>
-    <option name="PY.PREDEFINED_USAGE" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
-    <option name="PY.SELF_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
-    <option name="PY.STRING.U" baseAttributes="DEFAULT_STRING" />
+    <option name="REGEXP.QUANTIFIER">
+      <value>
+        <option name="FOREGROUND" value="b9ca4a" />
+      </value>
+    </option>
     <option name="SASS_MIXIN">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
@@ -776,14 +853,7 @@
         <option name="FOREGROUND" value="cfbfad" />
       </value>
     </option>
-    <option name="Static property reference ID">
-      <value>
-        <option name="FOREGROUND" value="d0d0ff" />
-        <option name="FONT_TYPE" value="2" />
-        <option name="EFFECT_COLOR" value="ffffff" />
-        <option name="EFFECT_TYPE" value="1" />
-      </value>
-    </option>
+    <option name="Static property reference ID" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="ffffff" />
@@ -806,6 +876,14 @@
         <option name="FOREGROUND" value="0" />
         <option name="BACKGROUND" value="fef629" />
         <option name="ERROR_STRIPE_COLOR" value="287bde" />
+      </value>
+    </option>
+    <option name="TS.TYPE_GUARD">
+      <value />
+    </option>
+    <option name="TS.TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="9cdcfe" />
       </value>
     </option>
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
@@ -857,5 +935,10 @@
       </value>
     </option>
     <option name="XML_PROLOGUE" baseAttributes="TEXT" />
+    <option name="YAML_ANCHOR">
+      <value>
+        <option name="FOREGROUND" value="61afef" />
+      </value>
+    </option>
   </attributes>
 </scheme>
