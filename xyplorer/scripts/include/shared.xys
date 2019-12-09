@@ -1,18 +1,23 @@
+// Escape path (Windows > Unix)
+function escapePath($string) {
+  return replace($string, "\", "/");
+}
+
 // Runs a command for all selected files. 
 // Replaces the arguments template values:
 //   §file - full path and file (escaped)
 //   §path - full path
 //   §base - base file name
 //   §ext  - file extension
-function runSelected($command, $argumentsTemplate){
+function runSelected($command, $argumentsTemplate) {
   foreach($item, <get selecteditemspathnames |>) {
     $path = getpathcomponent($item, "path");
     $base = getpathcomponent($item, "base");
     $ext  = getpathcomponent($item, "ext");
-    
+
     $arguments = $argumentsTemplate;
-    $arguments = replace($arguments, "§file", """$item""");
-    $arguments = replace($arguments, "§path", $path);
+    $arguments = replace($arguments, "§file", quote(escapePath($item)));
+    $arguments = replace($arguments, "§path", escapePath($path));
     $arguments = replace($arguments, "§base", $base);
     $arguments = replace($arguments, "§ext", $ext);
     // echo """$command"" $arguments";
