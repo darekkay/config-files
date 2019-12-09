@@ -13,6 +13,7 @@ Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
 - [gulp](https://gruntjs.com/) - Streaming build system
 - [hexo](https://hexo.io/) - Static site generator
 - [http-server](https://www.npmjs.com/package/http-server) - Local HTTP server
+  - `hs --cors`
 - [imagemin-cli](https://www.npmjs.com/package/imagemin-cli) - Image minifier
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
@@ -49,6 +50,12 @@ yarn config set no-progress
 yarn config set yarn-offline-mirror ~/AppData/Roaming/yarn-offline
 yarn config set yarn-offline-mirror-pruning true
 ```
+
+## Semantic Versioning
+
+- Major.Minor.Patch
+- Caret (`^`): `3.^.^`
+- Tilde (`~`): `3.9.~`
 
 ## n - version manager
 
