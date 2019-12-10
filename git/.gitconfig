@@ -15,6 +15,10 @@
   # Use Notepad++ as default editor
   editor = "'C:/Program Files (x86)/Notepad++/Notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
 
+  # Use less only if required and keep the output
+  # https://superuser.com/questions/1353944/how-to-configure-zsh-with-oh-my-zsh-to-keep-git-history-visible-after-pressing
+  # pager = less -FRSX
+
   # Use plink instead of OpenSSH. An alternative to GIT_SSH environment variable, which can be set per-repository.
   # sshCommand = plink
 
