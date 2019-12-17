@@ -36,6 +36,7 @@
 | --------------------- | --------|-----------|
 | BoardGameGeek         | bgg     | https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s   |
 | DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
+| DuckDuckGo            | ddg     | https://duckduckgo.com/?q=%s                                                       |
 | Dict                  | dict    | https://www.dict.cc/?s=%s                                                          |
 | Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
 | IMDb                  | imdb    | https://www.imdb.com/find?s=all;q=%s                                               |
