@@ -12,7 +12,13 @@
 
  - UNSYNCEDLYRICS HAS "Artist :"
 
- ## Actions
+## Fix lyrics
+
+- Koverter: Tag → Tag
+  - From: `UNSYNCEDLYRICS`
+  - To: `$regexp(%UNSYNCEDLYRICS%,External links.*,)`
+
+## Actions
 
  Remove Tag fields except:
 
