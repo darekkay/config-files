@@ -36,3 +36,16 @@ grep <TAG> /var/log/syslog
 atopsar -c      # CPU usage stats
 atomsar -R 6    # hourly stats
 ```
+
+# Nano
+
+## Improved syntax highlighting
+
+- upload backup (`~/.nano`, `~/.nanorc`)
+- system-wide: `/etc/nanorc`:
+
+```ini
+include "/home/USER/.nano/syntax/*.nanorc"
+```
+
+- OR: [nanorc](https://github.com/scopatz/nanorc)
