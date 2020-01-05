@@ -3,11 +3,11 @@
 ## 1.0.1 (2018-11-09)
 
 - :sparkles: New feature
+- :rocket: Enhancement (user-centered)
 - :bug: Bug fix
-- :rocket: Performance improvement
+- :gem: Refactor, style (formatting), tests, architecture
+- :hammer: Build, CI, chore, dependencies
 - :book: Documentation
-- :gem: Refactor, style, tests
-- :construction_worker: Build, CI, chore, dependencies
 - :back: Revert
 - :boom: Breaking change
 - :tada: Announcement
