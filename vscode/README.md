@@ -2,6 +2,7 @@
 
 ## Plugins
 
+- LinkMe: `ragnoroct.linkme`
 - Log File Highlighter: `emilast.logfilehighlighter`
 - Material Icon Theme: `PKief.material-icon-theme`
 - Open in Browser: `techer.open-in-browser`
