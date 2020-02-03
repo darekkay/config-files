@@ -38,12 +38,13 @@
 | DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
 | DuckDuckGo            | ddg     | https://duckduckgo.com/?q=%s                                                       |
 | Dict                  | dict    | https://www.dict.cc/?s=%s                                                          |
-| Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
 | GoodReads             | gr      | https://www.goodreads.com/search/search?search_type=books&search[query]=%s         |
+| Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
 | IMDb                  | imdb    | https://www.imdb.com/find?s=all;q=%s                                               |
-| Lodash                | lodash  | https://devdocs.io/#q=lodash %s                                                    |
 | Thesaurus             | th      | https://www.thesaurus.com/browse/%s                                                |
 | Ultimate Guitar       | ug      | https://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
+| Wikipedia             | w       | https://en.wikipedia.org/wiki/Special:Search/%s                                    |
+| YouTube               | y       | https://www.youtube.com/results?search_query=%s                                    |
 
 ## Override server response headers (ModHeader)
 
