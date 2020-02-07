@@ -17,3 +17,6 @@ wikipedia.org##.banner
 
 ! Medium sites sticky footer
 ##.js-stickyFooter
+
+! Remove w3schools results from DuckDuckGo
+duckduckgo.com##[data-domain="www.w3schools.com"]
