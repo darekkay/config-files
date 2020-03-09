@@ -35,6 +35,8 @@ defaults write com.apple.finder AppleShowAllFiles YES
 - `Cmd` + `Space`: Global Search
 - `Return`: Rename selected file
 - `F11`: Show desktop
+- `Ctrl` + `Down`: Show all windows of the current app
+- `Cmd` + `<`: Focus next window (custom)
 
 ## Transition from Windows
 
