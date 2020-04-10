@@ -63,3 +63,7 @@ frame-src * data: blob: ;
 style-src * data: blob: 'unsafe-inline';
 font-src * data: blob: 'unsafe-inline';
 ```
+
+## Bypass SSL warning page
+
+- Type `thisisunsafe` [into the webpage](https://stackoverflow.com/questions/7580508/getting-chrome-to-accept-self-signed-localhost-certificate/47646463#47646463).
