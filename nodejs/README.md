@@ -90,6 +90,8 @@ pm2 describe 0        # display all information about a specific process
 
 pm2 logs [app]        # display logs
 pm2 reset [process]   # reset meta data (restarted time...)
+
+pm2 install typescript   # Add Typescript support
 ```
 
 - [Update pm2](http://pm2.keymetrics.io/docs/usage/update-pm2/)
