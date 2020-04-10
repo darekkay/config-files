@@ -29,12 +29,14 @@
 | Ctrl + Shift + Y      | Toggle line comment    |
 | Ctrl + R              | Replace                |
 
-## Browser
+## Chrome
 
 | Shortcut              | Description               |
 | --------------------- | ------------------------- |
 | Ctrl + Shift + Del    | Delete browser data       |
 | Ctrl + Shift + C      | Inspect element           |
+| Ctrl + Shift + M      | Toggle mobile view        |
+| Ctrl + Shift + P      | Command Palette           |
 | Ctrl + L              | Select current URL        |
 | Shift + Esc           | Task manager (Chrome)     |
 | Ctrl + 1-8 / 9        | Switch to n-th / last tab |
