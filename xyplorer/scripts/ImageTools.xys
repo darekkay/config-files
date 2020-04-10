@@ -7,7 +7,9 @@ include "include/shared.xys";
 "Optimize [Preview]"
   runSelected("imagemin", "§file > ""§base-preview.§ext""");
 
-  
+"Album Art"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-resize 500x500 §file ""cover-art.jpg""");
+
 // ----------------------------------------------------------------------------
 "Primitive"
   runSelected("C:\Users\User\go\bin\primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1");
