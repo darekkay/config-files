@@ -40,11 +40,12 @@
 }
 
 /// Contexts
-/// @author Hugo Giraudel
 /// @param {String | List} $context
 @mixin when-inside($context) {
-  #{$context} & {
-    @content;
+  @for $i from 0 to length($context) {
+    #{nth($context, $i + 1)} & {
+      @content;
+    }
   }
 }
 
