@@ -15,6 +15,10 @@
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
   - Provides actions for text manipulation
 
+## Features
+
+- [Compound run configurations](https://www.jetbrains.com/help/idea/creating-compound-run-debug-configuration.html#)
+
 ## Color Themes
 
 ### DK Monokai
