@@ -1,7 +1,7 @@
 {
     "name": "darekkay.tomorrow",
-    "displayName": "DK Tomorrow",
-    "description": "DK Tomorrow Theme",
+    "displayName": "Tomorrow Evening",
+    "description": "Tomorrow Evening Theme",
     "version": "0.0.1",
     "publisher": "darekkay",
     "engines": {
@@ -13,7 +13,7 @@
     "contributes": {
         "themes": [
             {
-                "label": "DK Tomorrow",
+                "label": "Tomorrow Evening",
                 "uiTheme": "vs-dark",
                 "path": "./themes/dk-tomorrow.json"
             }

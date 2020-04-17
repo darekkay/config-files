@@ -10,7 +10,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#808080"
+				"foreground": "#848484"
 			}
 		},
 		{
@@ -50,7 +50,7 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#E04164"
+				"foreground": "#e35374"
 			}
 		},
 		{
@@ -162,5 +162,5 @@
 		"editor.lineHighlightBackground": "#282A2E",
 		"editor.selectionBackground": "#373B41"
 	},
-	"name": "DK Tomorrow"
+	"name": "Tomorrow Evening"
 }

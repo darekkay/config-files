@@ -1,7 +1,7 @@
 {
   // Workbench
 
-  "workbench.colorTheme": "DK Tomorrow",
+  "workbench.colorTheme": "Tomorrow Evening",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.showUpdateMessage": false,
   "workbench.statusBar.feedback.visible": false,

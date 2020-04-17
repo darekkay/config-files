@@ -5,7 +5,7 @@
 	<key>comment</key>
 	<string>https://darekkay.com</string>
 	<key>name</key>
-	<string>DK Tomorrow</string>
+	<string>Tomorrow Evening</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -33,7 +33,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#808080</string>
+				<string>#848484</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#E04164</string>
+				<string>#e35374</string>
 			</dict>
 		</dict>
 		<dict>
