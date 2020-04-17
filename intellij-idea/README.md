@@ -25,9 +25,13 @@
 
 ![DK Monokai color theme](config/colors/dk-monokai.png)
 
+- [Blog post](https://darekkay.com/blog/monokai-theme-intellij/)
+
 ### DK Tomorrow Night
 
 ![DK Tomorrow Night color theme](config/colors/dk-tomorrow-night.png)
+
+- [Blog post](https://darekkay.com/blog/tomorrow-night-theme-intellij/)
 
 ## Settings
 
