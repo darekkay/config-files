@@ -46,18 +46,18 @@
   <value name="ColorTable01" type="dword" data="00dc9d00"/>
   <value name="ColorTable02" type="dword" data="002ee2a7"/>
   <value name="ColorTable03" type="dword" data="0004d2ff"/>
-  <value name="ColorTable04" type="dword" data="000826fb"/>
+  <value name="ColorTable04" type="dword" data="002828ff"/>
   <value name="ColorTable05" type="dword" data="00ff55ff"/>
   <value name="ColorTable06" type="dword" data="00eed966"/>
-  <value name="ColorTable07" type="dword" data="00d8d8d9"/>
-  <value name="ColorTable08" type="dword" data="007c7c7c"/>
+  <value name="ColorTable07" type="dword" data="00ffffff"/>
+  <value name="ColorTable08" type="dword" data="00ffffff"/>
   <value name="ColorTable09" type="dword" data="00dc9d00"/>
   <value name="ColorTable10" type="dword" data="002ee2a7"/>
   <value name="ColorTable11" type="dword" data="0004d2ff"/>
-  <value name="ColorTable12" type="dword" data="000826fb"/>
+  <value name="ColorTable12" type="dword" data="002828ff"/>
   <value name="ColorTable13" type="dword" data="00ff55ff"/>
   <value name="ColorTable14" type="dword" data="00eed966"/>
-  <value name="ColorTable15" type="dword" data="00ffffff"/>
+  <value name="ColorTable15" type="dword" data="005e8194"/>
   <value name="ExtendColors" type="hex" data="00"/>
   <value name="ExtendColorIdx" type="hex" data="0e"/>
   <value name="TextColorIdx" type="hex" data="10"/>
