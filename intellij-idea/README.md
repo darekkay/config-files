@@ -27,9 +27,9 @@
 
 - [Blog post](https://darekkay.com/blog/monokai-theme-intellij/)
 
-### DK Tomorrow Night
+### Tomorrow Evening
 
-![DK Tomorrow Night color theme](config/colors/dk-tomorrow-night.png)
+![DK Tomorrow Night color theme](config/colors/dk-tomorrow-evening.png)
 
 - [Blog post](https://darekkay.com/blog/tomorrow-night-theme-intellij/)
 
