@@ -1,0 +1,21 @@
+{
+  "name": "tomorrow-evening",
+  "description": "Tomorrow Evening theme",
+  "version": "1.0.0",
+  "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
+  "keywords": [
+    "color scheme",
+    "theme",
+    "tomorrow evening",
+    "tomorrow night"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "themer -c ./tomorrow-evening.js -t themer-conemu -o dist"
+  },
+  "dependencies": {
+    "themer": "3.3.1",
+    "themer-colors-default": "1.0.10",
+    "themer-conemu": "1.1.0"
+  }
+}
