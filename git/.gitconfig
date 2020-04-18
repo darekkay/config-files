@@ -99,6 +99,7 @@
   cp = cherry-pick
   mt = mergetool
   rc = rebase --continue
+  fa = fetch --all
 
   # Push and create a remote branch based on the current one (branch → origin/branch)
   ph = push -u origin HEAD
