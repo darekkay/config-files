@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<!DOCTYPE index>
+<!-- Some xml example -->
+<index version="1.0" xmlns:exsl="http://exslt.org/common">
+    <name>Main Index</name>
+    <indexitem text="rename" target="refactoring.rename"/>
+    <indexitem text="move" target="refactoring.move"/>
+    <indexitem text="migrate" target="refactoring.migrate"/>
+    <indexitem text="usage search" target="find.findUsages"/>
+    &amp; &#x00B7;   <indexitem text="project" target="project.management"/>   <exsl:foo exsl:bar="bar"/>
+</index>
