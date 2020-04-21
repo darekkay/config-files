@@ -34,6 +34,7 @@
 
 | Search engine         | Keyword | Query URL |
 | --------------------- | --------|-----------|
+| Amazon                | amazon  | https://smile.amazon.de/s/k=%s                                                     |
 | BoardGameGeek         | bgg     | https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=%s   |
 | DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
 | DuckDuckGo            | ddg     | https://duckduckgo.com/?q=%s                                                       |
