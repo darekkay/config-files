@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Todoist Enhancements
-// @version         1.4.2
+// @version         1.4.3
 // @description     Brings back square checkboxes, former priority colors and turns off the date parser
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -19,7 +19,7 @@ GM_addStyle(`
   .priority_4 .ist_checkbox { background-color: #d24726 !important; border-color: #b33d20 !important; }
 `);
 
-waitForClass("t_date", removeDate);
+waitForClass("richtextinput_match", removeDate);
 
 function removeDate(node) {
   $(node).click();

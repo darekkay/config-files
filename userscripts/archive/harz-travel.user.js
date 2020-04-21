@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name            Harz Travel
 // @version         1.0.0
+// @description     Enable arrow navigation on Harz Travel
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @include         http*://*harz-travel.de*
-// @grant           GM_addStyle
 // @run-at          document-end
 // ==/UserScript==
 

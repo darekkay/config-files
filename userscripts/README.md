@@ -25,3 +25,10 @@ Steam rewards 3 Summer/Winter Sale Trading Cards per day for browsing the [Disco
 My custom website CSS changes.
 
 * [**Install**](https://github.com/darekkay/config-files/raw/master/userscripts/better-styles.user.js)
+
+
+### Other scripts
+
+* [Amazon Smile Redirect](https://github.com/darekkay/config-files/raw/master/userscripts/amazon-smile.user.js) (Germany only)
+* [Enforce English page versions](https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js)
+* [UltraStarDB](https://github.com/darekkay/config-files/raw/master/userscripts/usdb.user.js)
