@@ -72,6 +72,15 @@
 | --------------------- | ---------------------- |
 | Ctrl + E              | Search file            |
 
+## Terminal
+
+| Shortcut              | Description            |
+| --------------------- | ---------------------- |
+| Ctrl + W              | Delete word            |
+| Alt + Backspace       | Delete word            |
+| Ctrl + U              | Delete line            |
+| Ctrl + R              | Search in history      |
+	
 ## OneNote
 
 | Shortcut              | Description               |
@@ -141,4 +150,3 @@
 | -                         | Decrease BPM by 0.05              |
 | Shift + +/- (Numpad)      | Whole song 1 octave up/down       |
 | Ctrl + Shift + Alt + ←/→  | Moves all notes, starting after the selected note, to the left/right |
-

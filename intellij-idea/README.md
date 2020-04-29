@@ -18,6 +18,7 @@
 ## Features
 
 - [Compound run configurations](https://www.jetbrains.com/help/idea/creating-compound-run-debug-configuration.html#)
+- Internal clipboard: `Ctrl` + `Shift` + `V`
 
 ## Color Themes
 

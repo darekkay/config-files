@@ -28,6 +28,17 @@
 - Kill all processes by name:
   - `taskkill /F /IM app.exe`
 
+## Locations
+
+- Taskbar icons: `%APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar`
+
+## Free up space
+
+- [Disk Cleanup](https://support.microsoft.com/en-us/help/4026616/windows-10-disk-cleanup)
+- [Clean Up the WinSxS Folder](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/clean-up-the-winsxs-folder)
+  - `Dism.exe /online /Cleanup-Image /StartComponentCleanup /ResetBase`
+  - `Dism.exe /online /Cleanup-Image /SPSuperseded`
+
 ## Linux tools under Git Bash
 
 - [pacman](http://www2.futureware.at/~nickoe/msys2-mirror/msys/x86_64/)

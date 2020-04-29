@@ -1,5 +1,12 @@
 # Firefox
 
+## Extensions
+
+- [Copy Markdown link](https://addons.mozilla.org/en-US/firefox/addon/copy-markdown-link/)
+- [Default Bookmark Folder](https://addons.mozilla.org/en-US/firefox/addon/default-bookmark-folder/)
+- [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+- [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+
 ## Settings
 
 - Disable telemetry:
