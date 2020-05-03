@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name            URL Cleaner
-// @version         1.0.0
+// @version         1.0.1
 // @description     Clean URLs from unnecessary parameters
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/url-cleaner.user.js
 // @run-at          document-start
 
+// @include         http*://*amazon.de/*
+// @include         http*://*amazon.com/*
 // @include         http*://*imdb.com/*
 // @include         http*://stackoverflow.blog/*
 
@@ -22,7 +24,7 @@ const globalQueryParameterFilter = [
 ];
 
 const queryParameterFilter = {
-  // "amazon.de": ["dchild", "i", "qid", "ref", "sr", "__mk_de_DE"],
+  "amazon.de": ["dchild", "i", "qid", "ref", "sr", "__mk_de_DE"],
   "imdb.com": ["ref_"],
   "stackoverflow.blog": []
 };
@@ -34,7 +36,8 @@ Object.entries(queryParameterFilter).forEach(([domain, filters]) => {
     const allFilters = [...filters, ...globalQueryParameterFilter];
     if (allFilters.some(filter => searchParams.has(filter))) {
       allFilters.forEach(filter => searchParams.delete(filter));
-      window.location.search = searchParams.toString();
+      const queryString = searchParams.toString() ? `?${searchParams.toString()}` : "";
+      window.location.replace(`${window.location.origin}${window.location.pathname}${queryString}`);
     }
   }
 });
