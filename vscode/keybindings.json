@@ -107,7 +107,15 @@
     "command": "-workbench.action.replaceInFiles"
   },
   {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.openSettingsJson"
+  },
+  {
     "key": "shift+f10",
     "command": "workbench.action.tasks.runTask"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.scm.focus"
   }
 ]
