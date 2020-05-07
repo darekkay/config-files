@@ -116,6 +116,10 @@
   },
   {
     "key": "ctrl+k",
-    "command": "workbench.scm.focus"
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
   }
 ]
