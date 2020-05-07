@@ -23,6 +23,15 @@ case "$TERM" in
 esac
 ```
 
+## Brace expansion
+
+```
+$ echo a{b,c,d}e
+abe ace ade
+```
+
+- [Manual](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
+
 # Cron
 
 ## Debug
