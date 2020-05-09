@@ -18,6 +18,7 @@ Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
 - [prettier](https://prettier.io/) - Code formatter
+- [release-it](https://www.npmjs.com/package/release-it) - Automate versioning and package publishing tasks.
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
 
 ```
