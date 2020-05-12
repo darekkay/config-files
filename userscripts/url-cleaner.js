@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            URL Cleaner
-// @version         1.0.1
+// @version         1.0.2
 // @description     Clean URLs from unnecessary parameters
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -9,6 +9,7 @@
 
 // @include         http*://*amazon.de/*
 // @include         http*://*amazon.com/*
+// @include         http*://*goodreads.com/*
 // @include         http*://*imdb.com/*
 // @include         http*://stackoverflow.blog/*
 
@@ -25,6 +26,7 @@ const globalQueryParameterFilter = [
 
 const queryParameterFilter = {
   "amazon.de": ["dchild", "i", "qid", "ref", "sr", "__mk_de_DE"],
+  "goodreads.com": ["from_search", "from_srp", "qid", "rank"],
   "imdb.com": ["ref_"],
   "stackoverflow.blog": []
 };
