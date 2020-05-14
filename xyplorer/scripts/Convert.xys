@@ -12,6 +12,9 @@ include "include/shared.xys";
 "Convert to ICO"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.ico""");
 
+"Convert to JPG"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.jpg""");
+
 "Convert to PNG"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.png""");
 

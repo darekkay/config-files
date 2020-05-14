@@ -16,6 +16,7 @@
   rename s, '_480p/';
   rename s, '_720p/';
   rename s, '_1080p/';
+  rename s, '_2160p/';
 
 "Extension To Lowercase"
   foreach($item, <get selecteditemspathnames |>) {
