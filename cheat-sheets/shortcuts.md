@@ -48,7 +48,7 @@
 | Shortcut                 | Description                        |
 | ------------------------ | ---------------------------------- |
 | Alt + H                  | Show file history                  |
-| Alt + L                  | Show local file history            |
+| Alt + Shift + H          | Show local file history            |
 | Alt + P                  | Plugins                            |
 | Alt + V                  | Split vertically                   |
 | Alt + +                  | Shift up                           |
@@ -63,7 +63,7 @@
 | Ctrl + Alt + T           | Surround with                      |
 | Alt + Home               | Navigation bar popup               |
 | F2                       | Next highlighted error             |
-| Alt + F11                | Grunt/Gulp                         |
+| Alt + F11                | Show Grunt/Gulp/npm tasks          |
 | Ctrl + Shift + I         | Definition preview                 |
 
 ## Visual Studio Code
@@ -80,7 +80,7 @@
 | Alt + Backspace       | Delete word            |
 | Ctrl + U              | Delete line            |
 | Ctrl + R              | Search in history      |
-	
+
 ## OneNote
 
 | Shortcut              | Description               |
