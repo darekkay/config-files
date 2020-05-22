@@ -19,6 +19,8 @@
 - Enable natural text selection
   - iTerm2 → Preferences → Profiles → Keys → Load Preset... → Natural Text Editing
 - Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
+- Save screenshots [immediately](https://osxdaily.com/2019/08/02/disable-screenshot-thumbnail-preview-mac/)
+  - ☐ Screenshot (App) → Options → Show Floating Thumbnail
 
 ```bash
 # Show hidden files in Finder

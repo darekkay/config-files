@@ -27,6 +27,8 @@
 
 - Kill all processes by name:
   - `taskkill /F /IM app.exe`
+- Find and repair damaged files:
+  - `sfc /scannow`
 
 ## Locations
 
