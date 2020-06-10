@@ -54,6 +54,7 @@ https://github.com/nvm-sh/nvm/issues/1782
 - [Homebrew](https://brew.sh/)
 - [iHosts](https://apps.apple.com/us/app/ihosts-etc-hosts-editor/id1102004240) - Switch hosts via GUI
 - [iTerm2](https://www.iterm2.com/downloads.html)
+- [RetinaCapture](https://www.retinacapture.com/)
 - [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/) - Support for additional mouse buttons
 - [TextMate](https://macromates.com/)
 - [Visual Studio Code](https://code.visualstudio.com/Download)
