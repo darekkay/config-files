@@ -32,6 +32,10 @@
   - `chrome://flags/` → Enable `Silent Debugging`
 - Disable media keys:
   - `chrome://flags` → Hardware Media Key Handling
+- Show full URLs:
+  - `chrome://flags` → Context menu show full URLs
+  - Restart
+  - Right click the address bar and select "Always show full URLs"
 
 ## Search engines
 
