@@ -12,3 +12,4 @@
 ## External Filter lists
 
 - [EasyList Cookie List](https://easylist-downloads.adblockplus.org/easylist-cookie.txt)
+- [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/)
