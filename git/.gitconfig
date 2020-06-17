@@ -104,6 +104,9 @@
   # Push and create a remote branch based on the current one (branch → origin/branch)
   ph = push -u origin HEAD
 
+  # Force-push the changes (safer than "-f")
+  pf = push --force-with-lease
+
   # Add and commit all changes and new files
   all = "!f() { git add . && git commit -m \"$1\"; }; f"
 
