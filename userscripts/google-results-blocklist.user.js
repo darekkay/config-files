@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name            Google Results Blacklist
-// @version         1.0.1
+// @name            Google Results Blocklist
+// @version         1.0.2
 // @description     Filter out Google results based on the domain
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
-// @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/google-results-blacklist.user.js
+// @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/google-results-blocklist.user.js
 // @run-at          document-end
 
 // @include         http*://*google.*/*
@@ -16,7 +16,7 @@
 
 const page = { url: window.location.href };
 
-const blacklistURLs = ["w3schools.com", "geeksforgeeks.org", "tutorialspoint.com"];
+const blocklistURLs = ["w3schools.com", "geeksforgeeks.org", "tutorialspoint.com"];
 
 function clearURLs(urls) {
   var i, j, arr, res, url;
@@ -34,9 +34,9 @@ function clearURLs(urls) {
 
   for (i = 0; i < arr.length; i++) {
     url = res[arr[i]].firstChild.firstChild.getAttribute('href');
-    console.log("Blacklisted URL: " + url)
+    console.log("Blocked URL: " + url)
     res[arr[i]].parentElement.innerHTML = "";
   }
 }
 
-clearURLs(blacklistURLs);
+clearURLs(blocklistURLs);
