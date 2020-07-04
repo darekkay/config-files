@@ -71,8 +71,8 @@
   ff = only
 
 [push]
-  # Push mode for centralized workflows
-  default = simple
+  default = simple               # Push mode for centralized workflows
+  recurseSubmodules = on-demand  # Sync a repository with its submodules
 
 [rebase]
   # Automatically stash/unstash the working directory before/after rebases
@@ -81,6 +81,10 @@
 [rerere]
   # Reuse recorded resolution
   enabled = true
+
+[submodule]
+  # Sync a repository with its submodules
+  recurse = true
 
 [alias]
   # Log
