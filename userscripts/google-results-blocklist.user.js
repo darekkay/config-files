@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Google Results Blocklist
-// @version         1.0.2
+// @version         1.0.3
 // @description     Filter out Google results based on the domain
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -16,7 +16,7 @@
 
 const page = { url: window.location.href };
 
-const blocklistURLs = ["w3schools.com", "geeksforgeeks.org", "tutorialspoint.com"];
+const blocklistURLs = ["w3schools.com", "geeksforgeeks.org", "tutorialspoint.com", "gitmemory.com"];
 
 function clearURLs(urls) {
   var i, j, arr, res, url;
