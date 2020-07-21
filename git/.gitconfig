@@ -78,6 +78,9 @@
   # Automatically stash/unstash the working directory before/after rebases
   autostash = true
 
+  # Enable --autosquash option by default
+  autosquash = true
+
 [rerere]
   # Reuse recorded resolution
   enabled = true
@@ -104,6 +107,7 @@
   mt = mergetool
   rc = rebase --continue
   fa = fetch --all
+  pr = pull --rebase
 
   # Push and create a remote branch based on the current one (branch → origin/branch)
   ph = push -u origin HEAD
@@ -111,8 +115,13 @@
   # Force-push the changes (safer than "-f")
   pf = push --force-with-lease
 
+  # Push master branch to all remotes
+  pa = !git remote | xargs -L1 -I R git push R master
+  pushall = pa
+  paf = !git remote | xargs -L1 -I R git push R master --force-with-lease
+
   # Add and commit all changes and new files
-  all = "!f() { git add . && git commit -m \"$1\"; }; f"
+  ca = "!f() { git add . && git commit -m \"$1\"; }; f"
 
   # View the current working tree status using the short format
   s = status -s
@@ -128,8 +137,12 @@
   # Amend the currently staged files to the latest commit
   amend = commit --amend --reuse-message=HEAD
 
+  # Amend the currently staged files to another commit
+  fixup = "!f() { git commit --fixup $1 && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash ${1}~1; }; f"
+
   # Delete all fully-merged branches except master, develop and the current one
   bd = "!f() { git branch | grep -v '^  master$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -d; }; f"
+  bdf = "!f() { git branch | grep -v '^  master$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -D; }; f"
 
   # Find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
@@ -143,15 +156,9 @@
   # Commit count (from HEAD)
   count = !git log --oneline | wc -l
 
-  # Push master branch to all remotes
-  pushall = !git remote | xargs -L1 -I R git push R master
-
   # Display the status and ahead/behind commits for all local branches and their remotes
   # state = !git for-each-ref --format='%(color:cyan)%(refname:short) %(color:green)%(push:track)' refs/heads && git status -s
   state = !git branch-status && git status -s
-
-  # Open the current repository in the browser (use "open" instead of "explorer" for Unix)
-  open = "!explorer `git remote -v | awk '/fetch/{print $2}' | sed -Ee 's#(git@|git://)#https://#' -e 's@com:@com/@'`| head -n1"
 
   # Commit with a random commit message from whatthecommit.com
   whatthecommit = !git commit --allow-empty -m \"$(curl -s whatthecommit.com/index.txt)\"
