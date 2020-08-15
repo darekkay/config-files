@@ -18,12 +18,6 @@ My custom website CSS changes.
 
 * [**Install**](https://github.com/darekkay/config-files/raw/master/userscripts/better-styles.user.js)
 
-### Google results blocklist
-
-Block unwanted domains in Google search results.
-
-* [**Install**](https://github.com/darekkay/config-files/raw/master/userscripts/google-results-blocklist.user.js)
-
 ### URL Cleaner
 
 Clean URLs from unnecessary parameters.

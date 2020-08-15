@@ -14,6 +14,8 @@
 // See also: https://greasyfork.org/en/scripts/1682-google-hit-hider-by-domain-search-filter-block-sites
 // See also: https://github.com/iorate/uBlacklist
 
+// This script was replaced with uBlock Origin filters, e.g. "google.*##.g:has(a[href*=".w3schools.com"])"
+
 const page = { url: window.location.href };
 
 const blocklistURLs = ["w3schools.com", "geeksforgeeks.org", "tutorialspoint.com", "gitmemory.com"];

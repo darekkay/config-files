@@ -9,6 +9,7 @@ netflix.com##.billboard-row
 stackoverflow.com##.community-bulletin.module
 suppenkaspar-magdeburg.de###emotion-header-img
 suppenkaspar-magdeburg.de##.diywebLogo
+tabs.ultimate-guitar.com##video
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image
 ||themagiccafe.com/forums/images/header2.gif
@@ -18,5 +19,11 @@ wikipedia.org##.banner
 ! Medium sites sticky footer
 ##.js-stickyFooter
 
-! Remove w3schools results from DuckDuckGo
+! Remove certain domains from DuckDuckGo
 duckduckgo.com##[data-domain="www.w3schools.com"]
+
+! Remove certain domains from Google search results
+google.*##.g:has(a[href*=".geeksforgeeks.org"])
+google.*##.g:has(a[href*=".gitmemory.com"])
+google.*##.g:has(a[href*=".tutorialspoint.com"])
+google.*##.g:has(a[href*=".w3schools.com"])
