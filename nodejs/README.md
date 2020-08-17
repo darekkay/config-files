@@ -2,7 +2,8 @@
 
 ## General
 
-Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
+- Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
+- Use [different npm module versions](https://mariosfakiolas.com/blog/install-multiple-major-versions-of-a-node-module-with-npm/) at the same time.
 
 ## Global packages
 
