@@ -147,6 +147,9 @@
   # Find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
 
+  # Change the commit and author date to right now
+  rewrite-date = "!LC_ALL=C GIT_COMMITTER_DATE=\"$(date)\" git commit --amend --no-edit --date \"$(date)\""
+
   # Squash all commits. Usage: git squash-all (<commit message>)
   squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-Init repository}\");};f"
 
