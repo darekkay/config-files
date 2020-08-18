@@ -117,7 +117,7 @@
 
   # Push master branch to all remotes
   pa = !git remote | xargs -L1 -I R git push R master
-  pushall = pa
+  pushall = !git pa
   paf = !git remote | xargs -L1 -I R git push R master --force-with-lease
 
   # Add and commit all changes and new files
