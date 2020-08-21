@@ -104,6 +104,16 @@ npm install -g pm2
 pm2 update
 ```
 
+- Enable [logrotate](https://github.com/keymetrics/pm2-logrotate)
+
+```bash
+pm2 install pm2-logrotate
+pm2 set pm2-logrotate:max_size 1M
+pm2 set pm2-logrotate:retain 50
+pm2 set pm2-logrotate:rotateInterval "0 1 1 1 *"
+pm2 set pm2-logrotate:workerInterval 3600
+```
+
 ## create-react-app
 
 - [Advanced Configuration](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration)
