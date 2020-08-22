@@ -64,7 +64,6 @@
 
 [fetch]
   prune = true              # Always prune when fetching
-  recurseSubmodules = true  # Sync a repository with its submodules
 
 [pull]
   # Allow only fast-forward merges when pulling
@@ -72,7 +71,6 @@
 
 [push]
   default = simple               # Push mode for centralized workflows
-  recurseSubmodules = on-demand  # Sync a repository with its submodules
 
 [rebase]
   # Automatically stash/unstash the working directory before/after rebases
@@ -84,10 +82,6 @@
 [rerere]
   # Reuse recorded resolution
   enabled = true
-
-[submodule]
-  # Sync a repository with its submodules
-  recurse = true
 
 [alias]
   # Log
