@@ -4,6 +4,8 @@
 
 - Switch Function Keys
   - ☑ System Preferences → Keyboard → Use F1, F2, etc. keys as standard function keys
+- Always show scroll bars
+  - System Preferences → General → Show scroll bars: Always
 - Show address bar in Finder
   - Finder → View → Show Path Bar
 - Set default Finder options
