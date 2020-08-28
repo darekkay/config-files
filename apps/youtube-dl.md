@@ -11,3 +11,9 @@ youtube-dl -F <url>
 ```
 youtube-dl -f <format> <url>
 ```
+
+## Download a private vimeo video
+
+```
+youtube-dl -v https://player.vimeo.com/video/ID --referer https://example.com
+```
