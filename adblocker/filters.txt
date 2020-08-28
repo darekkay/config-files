@@ -3,6 +3,9 @@
 
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
+filmweb.pl###skyBanner
+filmweb.pl##.facebookLoginButton
+filmweb.pl##.FilmActionBox
 hoerzu.images.dvbdata.com
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
