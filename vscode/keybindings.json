@@ -121,5 +121,15 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+alt+j",
+    "command": "editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
   }
 ]

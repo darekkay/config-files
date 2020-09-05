@@ -6,6 +6,7 @@
   "material-icon-theme.showUpdateMessage": false,
   "workbench.statusBar.feedback.visible": false,
   "workbench.editor.tabCloseButton": "off",
+  "workbench.settings.editor": "json",
 
   // Editor
 
@@ -69,16 +70,20 @@
 
   "prettier.printWidth": 80,
   "javascript.preferences.quoteStyle": "double",
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
