@@ -27,7 +27,9 @@
 | Ctrl + Backspace      | Delete last word       |
 | Ctrl + Delete         | Delete next word       |
 | Ctrl + Shift + Y      | Toggle line comment    |
-| Ctrl + R              | Replace                |
+| Ctrl/Cmd + R          | Replace                |
+| Ctrl/Cmd + Shift + R  | Replace in files       |
+| Ctrl/Cmd + Shift + F  | Find in files          |
 
 ## Chrome
 
