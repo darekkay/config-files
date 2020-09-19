@@ -61,6 +61,10 @@ https://github.com/nvm-sh/nvm/issues/1782
 - [TextMate](https://macromates.com/)
 - [Visual Studio Code](https://code.visualstudio.com/Download)
 
+### Homebrew
+
+- [Install fonts with homebrew](https://changelog.com/posts/you-can-install-fonts-with-homebrew)
+
 ## Oh My Zsh Configuration
 
 - [Gist](https://gist.github.com/kevin-smets/8568070)
