@@ -1,4 +1,7 @@
 <keymap version="1" name="Eclectide" parent="$default">
+  <action id="ChangesView.Refresh">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="shift ctrl slash" />
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
@@ -13,6 +16,27 @@
   <action id="EditorToggleShowWhitespaces">
     <keyboard-shortcut first-keystroke="shift ctrl alt w" />
   </action>
+  <action id="ExpandAllRegions">
+    <keyboard-shortcut first-keystroke="shift ctrl add" />
+    <keyboard-shortcut first-keystroke="shift ctrl plus" />
+  </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="ctrl add" />
+    <keyboard-shortcut first-keystroke="ctrl plus" />
+  </action>
+  <action id="ExpandRegionRecursively">
+    <keyboard-shortcut first-keystroke="ctrl alt add" />
+    <keyboard-shortcut first-keystroke="ctrl alt plus" />
+  </action>
+  <action id="Javascript.Linters.EsLint.Fix">
+    <keyboard-shortcut first-keystroke="shift ctrl alt e" />
+  </action>
+  <action id="JumpToLastChange" />
+  <action id="LocalHistory.ShowHistory">
+    <keyboard-shortcut first-keystroke="shift alt h" />
+  </action>
+  <action id="ResizeToolWindowLeft" />
+  <action id="ResizeToolWindowRight" />
   <action id="ShiftDownAction">
     <keyboard-shortcut first-keystroke="alt subtract" />
   </action>
@@ -41,6 +65,13 @@
   </action>
   <action id="ToggleFullScreen">
     <keyboard-shortcut first-keystroke="shift ctrl f11" />
+  </action>
+  <action id="ToggleZenMode">
+    <keyboard-shortcut first-keystroke="alt f" />
+  </action>
+  <action id="Unwrap">
+    <keyboard-shortcut first-keystroke="shift ctrl delete" />
+    <keyboard-shortcut first-keystroke="shift ctrl back_space" />
   </action>
   <action id="Vcs.Show.Local.Changes">
     <keyboard-shortcut first-keystroke="alt l" />

@@ -11,3 +11,7 @@
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): `humao.rest-client`
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): `wayou.vscode-todo-highlight`
 - [VSCode Shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck): `timonwong.shellcheck`
+
+## Features
+
+- [Emmet](https://www.stefanjudis.com/blog/emmet-vs-code-bindings-to-level-up-html-editing/)

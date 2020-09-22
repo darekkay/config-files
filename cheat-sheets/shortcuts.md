@@ -55,7 +55,8 @@
 | Alt + V                  | Split vertically                   |
 | Alt + +                  | Shift up                           |
 | Alt + -                  | Shift down                         |
-| Ctrl + Alt + Shift + K   | Push all (Git)                     |
+| Ctrl + +                 | Expand (code folding)              |
+| Ctrl + -                 | Collapse (code folding)            |
 | Ctrl + Alt + Shift + W   | Show whitespaces                   |
 | Ctrl + Alt + Shift + E   | Fix ESLint Problems                |
 | Ctrl + Alt + Shift + ↑/↓ | Previous/Next Change (VCS)         |
@@ -63,10 +64,14 @@
 | Alt + F1                 | Select file in...                  |
 | Shift + Ctrl + Alt + J   | Select all occurrences (words)     |
 | Ctrl + Alt + T           | Surround with                      |
+| Ctrl + Shift + Delete    | Unwrap                             |
 | Alt + Home               | Navigation bar popup               |
 | F2                       | Next highlighted error             |
 | Alt + F11                | Show Grunt/Gulp/npm tasks          |
-| Ctrl + Shift + I         | Definition preview                 |
+| Ctrl + Shift + I         | Quick definition                   |
+| Ctrl + P                 | Parameter info                     |
+| Ctrl + Q                 | Quick documentation                |
+
 
 ## Visual Studio Code
 
@@ -103,7 +108,7 @@
 
 | Shortcut              | Description            |
 | --------------------- | ---------------------- |
-| Shift + J             | Loseless opreations    |
+| Shift + J             | Loseless operations    |
 
 ## Postbox
 

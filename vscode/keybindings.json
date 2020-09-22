@@ -1,12 +1,13 @@
 [
+  // Delete current line
   {
     "key": "ctrl+y",
-    "command": "-redo",
+    "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+y",
-    "command": "editor.action.deleteLines",
+    "command": "-redo",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -14,6 +15,8 @@
     "command": "-editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly"
   },
+
+  // Move lines up
   {
     "key": "shift+alt+up",
     "command": "editor.action.moveLinesUpAction",
@@ -24,6 +27,8 @@
     "command": "-editor.action.moveLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
   },
+
+  // Move lines down
   {
     "key": "shift+alt+down",
     "command": "editor.action.moveLinesDownAction",
@@ -34,6 +39,8 @@
     "command": "-editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
+
+  // Duplicate lines
   {
     "key": "ctrl+d",
     "command": "editor.action.copyLinesDownAction",
@@ -44,6 +51,8 @@
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
   },
+
+  // Format file
   {
     "key": "ctrl+alt+l",
     "command": "editor.action.formatDocument",
@@ -54,16 +63,8 @@
     "command": "-editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
   },
-  {
-    "key": "ctrl+shift+alt+y",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
+
+  // Line comment
   {
     "key": "ctrl+shift+y",
     "command": "editor.action.commentLine",
@@ -74,6 +75,20 @@
     "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
+
+  // Block comment
+  {
+    "key": "ctrl+shift+alt+y",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // Show commands
   {
     "key": "ctrl+shift+a",
     "command": "workbench.action.showCommands"
@@ -82,6 +97,14 @@
     "key": "ctrl+shift+p",
     "command": "-workbench.action.showCommands"
   },
+
+  // Edit settings
+  {
+    "key": "ctrl+alt+s",
+    "command": "workbench.action.openSettingsJson"
+  },
+
+  // Plugins
   {
     "key": "alt+p",
     "command": "workbench.view.extensions"
@@ -90,6 +113,8 @@
     "key": "ctrl+shift+x",
     "command": "-workbench.view.extensions"
   },
+
+  // Replace
   {
     "key": "ctrl+r",
     "command": "editor.action.startFindReplaceAction"
@@ -98,6 +123,8 @@
     "key": "ctrl+h",
     "command": "-editor.action.startFindReplaceAction"
   },
+
+  // Replace in files
   {
     "key": "ctrl+shift+r",
     "command": "workbench.action.replaceInFiles"
@@ -106,14 +133,14 @@
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
   },
-  {
-    "key": "ctrl+alt+s",
-    "command": "workbench.action.openSettingsJson"
-  },
+
+  // Run task
   {
     "key": "shift+f10",
     "command": "workbench.action.tasks.runTask"
   },
+
+  // Commit dialog
   {
     "key": "ctrl+k",
     "command": "workbench.view.scm"
@@ -122,6 +149,8 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
   },
+
+  // Select all occurrences
   {
     "key": "ctrl+shift+alt+j",
     "command": "editor.action.selectHighlights",
@@ -131,5 +160,31 @@
     "key": "ctrl+shift+l",
     "command": "-editor.action.selectHighlights",
     "when": "editorFocus"
+  },
+
+  // Split editor vertically
+  {
+    "key": "alt+v",
+    "command": "workbench.action.splitEditor"
+  },
+  {
+    "key": "ctrl+oem_5",
+    "command": "-workbench.action.splitEditor"
+  },
+
+  // Show file history
+  {
+    "key": "alt+h",
+    "command": "gitlens.showFileHistoryInView"
+  },
+  {
+    "key": "alt+h",
+    "command": "-gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'alternate'"
+  },
+  {
+    "key": "ctrl+shift+g h",
+    "command": "-gitlens.showQuickFileHistory",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
   }
 ]
