@@ -17,3 +17,7 @@
   - `about:preferences#home` → Firefox Home Content
 - Disable Pocket:
   - `extensions.pocket.enabled: false`
+- Disable media keys:
+  - `media.hardwaremediakeys.enabled: false`
+- Disable picture-in-picture:
+  - ☐ Settings → General → Browser → Enable picture-in-picture video controls
