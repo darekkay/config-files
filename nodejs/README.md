@@ -29,8 +29,9 @@ npm install -g create-react-app fixpack grunt-cli hexo-cli imagemin-cli npm-chec
 ## npm
 
 ```bash
-npm outdated         # Show outdated packages
-npm ls --depth=0     # List package versions
+npm outdated                 # Show outdated packages
+npm ls --depth=0             # List package versions
+npm publish --access public  # Publish @scoped package
 ```
 
 ## node-gyp
