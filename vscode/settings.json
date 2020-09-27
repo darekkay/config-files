@@ -123,5 +123,12 @@
       "backgroundColor": "#808080",
       "isWholeLine": true
     }
-  ]
+  ],
+
+  // GitLens
+
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false
 }
