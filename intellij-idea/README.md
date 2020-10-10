@@ -2,18 +2,24 @@
 
 ## Plugins
 
+- [Darcula Darker Theme](https://plugins.jetbrains.com/plugin/12692-darcula-darker-theme)
+  - A dark theme based on Darcula, but with more contrasting tones.
 - [File Watchers](https://plugins.jetbrains.com/plugin/7177-file-watchers)
   - Executes task on file modifications
 - [Grazie](https://plugins.jetbrains.com/plugin/12175-grazie/)
   - Advanced spelling and grammar checker
 - [Ignore](https://plugins.jetbrains.com/plugin/7495--ignore)
   - Support for ignore files
+- [MDX Support](https://www.jetbrains.com/webstorm/guide/tips/mdx-plugin/)
+  - Add support for MDX files
 - [Presentation Assistant](https://plugins.jetbrains.com/plugin/7345-presentation-assistant)
   - Display shortcuts for invoked actions
 - [Shifter](https://plugins.jetbrains.com/plugin/6149-shifter)
   - Shifts many types of values up and down with a keyboard shortcut
 - [String Manipulation](https://plugins.jetbrains.com/plugin/2162-string-manipulation)
   - Provides actions for text manipulation
+- [Twig support](https://plugins.jetbrains.com/plugin/7303-twig)
+  - Adds support for Twig and similar languages (e.g. Nunjucks)
 
 ## Features
 
@@ -30,7 +36,7 @@
 
 ### Tomorrow Evening
 
-![DK Tomorrow Night color theme](config/colors/dk-tomorrow-evening.png)
+![DK Tomorrow Night color theme](config/colors/tomorrow-evening.png)
 
 - [Blog post](https://darekkay.com/blog/tomorrow-night-theme-intellij/)
 
