@@ -21,7 +21,7 @@
 
 | Shortcut              | Description            |
 | --------------------- | ---------------------- |
-| Alt + Shift + Up/Down | Move line up/down      |
+| Alt + Shift + ↑/↓     | Move line up/down      |
 | Ctrl + D              | Duplicate line         |
 | Ctrl + Y              | Delete line            |
 | Ctrl + Backspace      | Delete last word       |
@@ -71,6 +71,7 @@
 | Ctrl + Shift + I         | Quick definition                   |
 | Ctrl + P                 | Parameter info                     |
 | Ctrl + Q                 | Quick documentation                |
+| Ctrl + Shift + ↑/↓       | Move statement up/down             |
 
 
 ## Visual Studio Code
