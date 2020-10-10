@@ -4,7 +4,6 @@
   "workbench.colorTheme": "Tomorrow Evening",
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.showUpdateMessage": false,
-  "workbench.statusBar.feedback.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.settings.editor": "json",
 
@@ -12,6 +11,7 @@
 
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  "editor.lineNumbers": "off",
   "editor.scrollBeyondLastLine": false,
   "editor.mouseWheelZoom": true,
   "editor.minimap.enabled": false,
