@@ -1,14 +1,16 @@
 [core]
   # Windows
-  autocrlf = true      # Automatic conversion between CRLF (working directory) and LF (repository) (Windows)
+  autocrlf = input     # Turn off automatic conversion between CRLF (working directory) and LF (repository)
   safecrlf = false     # Don't warn about converting between CRLF and LF
   filemode = false     # Ignore file mode changes (recommended for Windows)
   trustctime = false   # Ignore ctime differences between the index and the working tree
 
   # Unix
-  # autocrlf = input   # Use LF on Unix (and for the repository) and CRLF on Windows
+  # autocrlf = input   # Prevent checking in CRLF files
   # safecrlf = true    # Warn about converting between CRLF and LF
   # filemode = true    # Do not ignore file mode changes (recommended for Mac)
+
+  eol = lf             # Enforce LF line endings
 
   excludesfile = ~/.gitignore.local  # Add a local ignore file for all repositories
 
