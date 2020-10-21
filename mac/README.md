@@ -65,6 +65,11 @@ https://github.com/nvm-sh/nvm/issues/1782
 
 - [Install fonts with homebrew](https://changelog.com/posts/you-can-install-fonts-with-homebrew)
 
+```
+brew search font-
+brew cask install font-fira-code
+```
+
 ## Oh My Zsh Configuration
 
 - [Gist](https://gist.github.com/kevin-smets/8568070)
