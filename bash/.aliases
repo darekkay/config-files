@@ -55,6 +55,8 @@ npm4all() {
 
 alias audit-all='npm4all audit'
 
+alias kn='killall node'
+
 # Release-it
 alias release='release-it --disable-metrics'
 
