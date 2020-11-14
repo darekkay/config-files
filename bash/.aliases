@@ -48,6 +48,27 @@ alias pull-all='git4all "pull --rebase --all --quiet"'
 alias fetch-all='git4all "fetch --all --quiet" \;'
 alias state-all='git4all "state" \;'
 
+# Quick change Git config
+# gitc user       - add user
+# gitc production - add production remote
+# gitc github     - add github remote
+gitc() {
+   if [ "$1" = "user" ]
+   then
+     git config --local user.name "USER NAME"
+     git config --local user.username "USERNAME"
+     git config --local user.email "USER@EXAMPLE.COM"
+   elif [ "$1" = "production" ]
+   then
+     git remote add production "ssh://USER@EXAMPLE.COM/home/USER/DIR/${PWD##*/}.git"
+   elif [ "$1" = "github" ]
+   then
+     git remote add origin "git@github.com:USER/${PWD##*/}.git"
+   else
+      echo "gitc user | production | github"
+   fi
+}
+
 # Npm
 npm4all() {
   find . -mindepth 1 -maxdepth 2 -type f -name 'package.json' -prune -exec sh -c 'echo ${0%????????????}; npm --prefix ${0%????????????} $1' {} "$1" \;
@@ -56,6 +77,11 @@ npm4all() {
 alias audit-all='npm4all audit'
 
 alias kn='killall node'
+
+# LAN transfer commands
+transfer-to() { rsync --rsync-path=/bin/rsync -e ssh "$1" "USER@NAS:/DIR/${1##*/}"; }
+transfer-from() { rsync --remove-source-files --rsync-path=/bin/rsync -e ssh "USER@NAS:/DIR/$1" "$1"; }
+transfer-list() { rsync --list-only --rsync-path=/bin/rsync -e ssh "USER@NAS:/DIR/"; }
 
 # Release-it
 alias release='release-it --disable-metrics'
