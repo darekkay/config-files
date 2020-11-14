@@ -28,6 +28,7 @@
 
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
 
   // Files
 
