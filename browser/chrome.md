@@ -46,6 +46,7 @@
 | DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
 | DuckDuckGo            | ddg     | https://duckduckgo.com/?q=%s                                                       |
 | Dict                  | dict    | https://www.dict.cc/?s=%s                                                          |
+| Font Awesome          | fa      | https://fontawesome.com/icons?d=gallery&q=%s                                       |
 | GoodReads             | gr      | https://www.goodreads.com/search/search?search_type=books&search[query]=%s         |
 | Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
 | IMDb                  | imdb    | https://www.imdb.com/find?s=all;q=%s                                               |
