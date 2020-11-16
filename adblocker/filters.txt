@@ -1,6 +1,10 @@
 ! Title: Darek Kay's custom filter
 ! Homepage: https://github.com/darekkay/config-files/
 
+9gag.com###sidebar
+9gag.com##.section-sidebar
+9gag.com##.featured-tag
+9gag.com##.board-system
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
 filmweb.pl###skyBanner
