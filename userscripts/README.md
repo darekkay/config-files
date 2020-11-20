@@ -28,4 +28,5 @@ Clean URLs from unnecessary parameters.
 
 * [Amazon Smile Redirect](https://github.com/darekkay/config-files/raw/master/userscripts/amazon-smile.user.js) (Germany only)
 * [Enforce English page versions](https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js)
+* [Nitter Redirect](https://github.com/darekkay/config-files/raw/master/userscripts/nitter-redirect.user.js)
 * [UltraStarDB](https://github.com/darekkay/config-files/raw/master/userscripts/usdb.user.js)
