@@ -117,6 +117,9 @@ Set TODO format
 Use ECMAScript 6 by default (default settings)
   - Languages & Frameworks → JavaScript → JavaScript language version: ECMAScript 6
 
+Use high-contrast scrollbars
+  - ☑ Appearance & Behavior → Appearance → Accessibility → Use contrast scrollbars
+
 ## VCS Ignore Files
 
 If you decide to share IDE project files with other developers, share:
