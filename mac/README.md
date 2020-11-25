@@ -1,5 +1,7 @@
 # Mac
 
+Run `./config.sh` to initialize custom settings.
+
 ## Settings
 
 - Switch Function Keys
@@ -23,11 +25,6 @@
 - Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
 - Save screenshots [immediately](https://osxdaily.com/2019/08/02/disable-screenshot-thumbnail-preview-mac/)
   - ☐ Screenshot (App) → Options → Show Floating Thumbnail
-
-```bash
-# Show hidden files in Finder
-defaults write com.apple.finder AppleShowAllFiles YES
-```
 
 ## Features
 
