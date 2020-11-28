@@ -49,6 +49,14 @@ grep CRON /var/log/syslog
 grep <TAG> /var/log/syslog
 ```
 
+# rsync
+
+- Use `--dry-run --itemize-changes --stats` to test the command
+- Directory sync:
+  - `rsync path/source target`: `target/source/*`
+  - `rsync path/source/ target`: `target/*`
+
+
 # Atop
 
 - [atoptool.nl](https://www.atoptool.nl/) - performance monitor
