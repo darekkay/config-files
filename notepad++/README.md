@@ -4,6 +4,8 @@
 
 - Use UTF-8 encoding per default
   - New Document → Encoding → `UTF-8`
+- Update files automatically:
+  - ☑ Preferences → Misc. → Update silently
 
 ## Syntax Highlighting
 
