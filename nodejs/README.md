@@ -5,13 +5,13 @@
 - Give Node.js more RAM: `NODE_OPTIONS="--max-old-space-size=8096" node`
 - Use [different npm module versions](https://mariosfakiolas.com/blog/install-multiple-major-versions-of-a-node-module-with-npm/) at the same time.
 
+### Packages
+
 ## Global packages
 
-- [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
-- [envinfo](https://github.com/tabrindle/envinfo) - Development environment report
+- [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
 - [grunt](https://gruntjs.com/) - Task runner
-- [gulp](https://gruntjs.com/) - Streaming build system
 - [hexo](https://hexo.io/) - Static site generator
 - [http-server](https://www.npmjs.com/package/http-server) - Local HTTP server
   - `hs --cors`
@@ -20,11 +20,19 @@
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
 - [prettier](https://prettier.io/) - Code formatter
 - [release-it](https://www.npmjs.com/package/release-it) - Automate versioning and package publishing tasks.
+  - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
 
 ```
-npm install -g create-react-app fixpack grunt-cli hexo-cli imagemin-cli npm-check-updates ntl prettier release-it svgexport
+npm install -g evaluatory fixpack grunt-cli hexo-cli imagemin-cli npm-check-updates ntl prettier release-it @release-it/keep-a-changelog svgexport
 ```
+
+## Other packages
+
+- [alex](https://github.com/get-alex/alex) - Catch insensitive, inconsiderate writing
+- [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
+- [envinfo](https://github.com/tabrindle/envinfo) - Development environment report
+- [gulp](https://gruntjs.com/) - Streaming build system
 
 ## npm
 
