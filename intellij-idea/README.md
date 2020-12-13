@@ -120,6 +120,9 @@ Use ECMAScript 6 by default (default settings)
 Use high-contrast scrollbars
   - ☑ Appearance & Behavior → Appearance → Accessibility → Use contrast scrollbars
 
+Disable popup message for debugging websites
+  - ☑ Build, Execution, Deployment → Debugger → Allow unsigned requests
+
 ## VCS Ignore Files
 
 If you decide to share IDE project files with other developers, share:
