@@ -15,3 +15,4 @@
 ## Features
 
 - [Emmet](https://www.stefanjudis.com/blog/emmet-vs-code-bindings-to-level-up-html-editing/)
+- Open a file from file select in [a split view](https://mobile.twitter.com/stefanjudis/status/1334248000156299265) by pressing `Ctrl` + `Enter`
