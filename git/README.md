@@ -64,3 +64,10 @@ editor = "mate -w""
 ```
 git tag | xargs git tag -d
 ```
+
+## Conditional configuration
+
+```
+[includeIf "gitdir:~/personal/"]
+  path = .gitconfig-personal
+```
