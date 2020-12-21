@@ -5,12 +5,16 @@
 9gag.com##.section-sidebar
 9gag.com##.featured-tag
 9gag.com##.board-system
+9gag.com##.cp-background
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
 filmweb.pl###skyBanner
 filmweb.pl##.facebookLoginButton
 filmweb.pl##.FilmActionBox
 hoerzu.images.dvbdata.com
+imdb.com##[data-testid="videos-section"]
+imdb.com##.ipc-page-section:has([data-testid="photos-title"])
+imdb.com##[class^="TitleMainRightRailGroup__SidebarContainer"]
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
 stackoverflow.com##.community-bulletin.module
