@@ -1,4 +1,4 @@
-! Title: Darek Kay's custom filter
+! Title: Darek Kay's custom filters
 ! Homepage: https://github.com/darekkay/config-files/
 
 9gag.com###sidebar
