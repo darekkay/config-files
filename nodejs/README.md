@@ -11,8 +11,6 @@
 
 - [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
-- [grunt](https://gruntjs.com/) - Task runner
-- [hexo](https://hexo.io/) - Static site generator
 - [http-server](https://www.npmjs.com/package/http-server) - Local HTTP server
   - `hs --cors`
 - [imagemin-cli](https://www.npmjs.com/package/imagemin-cli) - Image minifier
@@ -24,7 +22,7 @@
 - [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
 
 ```
-npm install -g evaluatory fixpack grunt-cli hexo-cli imagemin-cli npm-check-updates ntl prettier release-it @release-it/keep-a-changelog svgexport
+npm install -g evaluatory fixpack imagemin-cli npm-check-updates ntl prettier release-it @release-it/keep-a-changelog svgexport
 ```
 
 ## Other packages
