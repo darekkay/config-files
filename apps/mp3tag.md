@@ -8,6 +8,7 @@
 - $replace(%album%, (Soundtrack), )- $replace(%title%,_, )
 - $replace($replace(%album%, (Soundtrack), )- $num(%track%,2) - %title%,_, )
 - %artist% - %year% - %album%\%artist% - %track% - %title%
+- $num(%track%,3) - %album%
 
 ## Filter
 
