@@ -1,5 +1,12 @@
 # Snippets
 
+## General
+
+| Snippet       | Description                       |
+| ------------- | --------------------------------- |
+| date          | Current date                      |
+| datetime      | Current date and time             |
+
 ## JavaScript
 
 | Snippet       | Description                       |

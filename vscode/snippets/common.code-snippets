@@ -1,0 +1,13 @@
+{
+  "Current date": {
+    "prefix": "date",
+    "body": ["$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}"]
+  },
+
+  "Current date and time": {
+    "prefix": "datetime",
+    "body": [
+      "$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE} $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND"
+    ]
+  }
+}

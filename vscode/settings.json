@@ -17,6 +17,7 @@
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
   "editor.renderWhitespace": "all",
+  "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
   "editor.accessibilitySupport": "off",
 
