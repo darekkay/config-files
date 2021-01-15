@@ -37,7 +37,7 @@ Run `./config.sh` to initialize custom settings.
 - `Return`: Rename selected file
 - `F11`: Show desktop
 - `Ctrl` + `Down`: Show all windows of the current app
-- `Cmd` + `<`: Focus next window (custom)
+- `Cmd` + `H`: Hide current window
 
 ## Transition from Windows
 
