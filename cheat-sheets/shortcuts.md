@@ -72,6 +72,7 @@
 | Ctrl + P                 | Parameter info                     |
 | Ctrl + Q                 | Quick documentation                |
 | Ctrl + Shift + ↑/↓       | Move statement up/down             |
+| Ctrl + Shift + M         | Jump to matching brace             |
 
 
 ## Visual Studio Code
