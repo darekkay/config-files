@@ -17,6 +17,13 @@
   rename s, '_720p/';
   rename s, '_1080p/';
   rename s, '_2160p/';
+  rename s, '_/ ';
+
+"Title Case"
+  foreach($item, <get selecteditemspathnames |>) {
+    $new = recase($item, "title", 1);
+    renameitem($new, $item, 3,);
+  }
 
 "Extension To Lowercase"
   foreach($item, <get selecteditemspathnames |>) {

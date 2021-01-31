@@ -18,6 +18,18 @@ include "include/shared.xys";
 "Convert to PNG"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent ""§file"" ""§base.png""");
 
+"Convert to AVIF (Image Magick)"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent -quality 75 ""§file"" ""§base.avif""");
+
+"Convert to AVIF (Squoosh)"
+  runSelected("squoosh-cli", "--avif '{speed:2}' ""§file""");
+
+"Convert to WEBP (75)"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent -quality 75 ""§file"" ""§base.webp""");
+  
+"Convert to WEBP (90)"
+  runSelected("C:\Program Files\ImageMagick\convert.exe", "-background transparent -quality 90 ""§file"" ""§base.webp""");
+
 "Convert SVG to PNG (16px)"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-size 16x16 -background transparent ""§file"" ""§base.png""");
 
