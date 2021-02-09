@@ -3,7 +3,5 @@
 
 ! Deemphasize Twitter images and videos without an accessible label
 ! https://meyerweb.com/eric/thoughts/2021/01/01/highlighting-accessible-twitter-content/
-twitter.com##div[aria-label="Image"]:style(filter: grayscale(1) contrast(0.5))
-twitter.com##div[aria-label="Embedded video"]:style(filter: grayscale(1) contrast(0.5))
-twitter.com##div[aria-label="Image"]:hover:style(filter: none)
-twitter.com##div[aria-label="Embedded video"]:hover:style(filter: none)
+twitter.com##div[aria-label="Image"]:hover:style(filter: grayscale(1) contrast(0.5))
+twitter.com##div[aria-label="Embedded video"]:hover:style(filter: grayscale(1) contrast(0.5))
