@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name            Nitter Redirect
-// @version         1.0.1
+// @version         1.0.2
 // @description     Redirect Nitter to Twitter
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/nitter-redirect.user.js
 // @include         https://nitter.net/*
+// @include         https://nitter.nixnet.services/*
 // @grant       none
 // ==/UserScript==
 
@@ -15,7 +16,9 @@
  */
 
 var url = window.location.href;
-var redirectUrl = url.replace("nitter.net", "twitter.com");
+var redirectUrl = url
+  .replace("nitter.net", "twitter.com")
+  .replace("nitter.nixnet.services", "twitter.com");
 
 console.log("Redirecting to Twitter: " + redirectUrl);
 window.location.replace(redirectUrl);
