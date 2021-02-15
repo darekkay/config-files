@@ -36,6 +36,9 @@
   - `chrome://flags` → Context menu show full URLs
   - Restart
   - Right click the address bar and select "Always show full URLs"
+- Re-enable "space" completion for custom search engines:
+  - `chrome://flags/#omnibox-keyword-search-button`: Disabled
+  - `chrome://flags/#omnibox-suggestion-button-row`: Disabled
 
 ## Search engines
 
