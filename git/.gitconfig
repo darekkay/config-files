@@ -137,8 +137,8 @@
   fixup = "!f() { git commit --fixup $1 && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash ${1}~1; }; f"
 
   # Delete all fully-merged branches except master, develop and the current one
-  bd = "!f() { git branch | grep -v '^  master$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -d; }; f"
-  bdf = "!f() { git branch | grep -v '^  master$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -D; }; f"
+  bd = "!f() { git branch | grep -v '^  master$' | grep -v '^  main$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -d; }; f"
+  bdf = "!f() { git branch | grep -v '^  master$' | grep -v '^  main$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -D; }; f"
 
   # Find branches containing commit
   fb = "!f() { git branch -a --contains $1; }; f"
