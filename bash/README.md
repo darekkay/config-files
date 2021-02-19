@@ -32,6 +32,15 @@ abe ace ade
 
 - [Manual](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html)
 
+# Zsh
+
+## Plugins
+
+- [npm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm): Adds completion and aliases for `npm` commands.
+- [yarn](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn): Adds completion and aliases for `yarn` commands.
+- [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo): Press double ESC to add `sudo` to the previous command.
+- `zsh-autosuggestions`: Suggest commands from history.
+
 # Cron
 
 ## Debug
