@@ -104,8 +104,8 @@
     { "command": "newTab", "keys": "ctrl+t" },
 
     // Scroll page
-    { "command": "scrollDownPage", "keys": "pgdn" },
-    { "command": "scrollUpPage", "keys": "pgup" },
+    { "command": "scrollDownPage", "keys": "shift+pgdn" },
+    { "command": "scrollUpPage", "keys": "shift+pgup" },
 
     // Split pane
     {
