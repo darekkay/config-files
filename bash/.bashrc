@@ -11,6 +11,11 @@ export HISTCONTROL=ignoreboth:erasedups
 # Sort files with dotfiles first
 export LC_COLLATE="C"
 
+# Disable terminal sounds
+setterm -blength 0
+unsetopt beep
+
+# Set Node.js RAM
 export NODE_OPTIONS=--max-old-space-size=8096
 
 # Use yarn instead of npm for the ntl package

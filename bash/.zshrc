@@ -77,7 +77,11 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 source ~/.aliases
 
-# Node RAM
+# Disable terminal sounds
+unsetopt beep
+export LESS="$LESS -Q"
+
+# Set Node.js RAM
 export NODE_OPTIONS=--max-old-space-size=8096
 
 # Use yarn instead of npm for the ntl package
