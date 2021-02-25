@@ -32,4 +32,6 @@ datareporting.healthreport.uploadEnabled: false
 datareporting.policy.dataSubmissionEnabled: false
 network.captive-portal-service.enabled: false
 toolkit.telemetry.server: "data:,"
+browser.newtabpage.activity-stream.showSponsored: false
+browser.newtabpage.activity-stream.showSponsoredTopSites: false
 ```
