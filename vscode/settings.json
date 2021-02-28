@@ -6,6 +6,8 @@
   "material-icon-theme.showUpdateMessage": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.settings.editor": "json",
+  "workbench.enableExperiments": false,
+  "workbench.tips.enabled": false,
 
   // Editor
 
@@ -61,6 +63,13 @@
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
+
+  // Update
+  "update.showReleaseNotes": false,
+
+  // Extensions
+
+  "extensions.ignoreRecommendations": true,
 
   // Emmet
 
