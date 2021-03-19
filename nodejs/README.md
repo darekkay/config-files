@@ -11,6 +11,7 @@
 
 - [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
+- [get-changelog-cli](https://www.npmjs.com/package/get-changelog-cli) - Find module changelogs
 - [http-server](https://www.npmjs.com/package/http-server) - Local HTTP server
   - `hs --cors`
 - [imagemin-cli](https://www.npmjs.com/package/imagemin-cli) - Image minifier

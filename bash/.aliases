@@ -91,6 +91,9 @@ transfer-list() { rsync --list-only --rsync-path=/bin/rsync -e ssh "USER@NAS:/DI
 # Release-it
 alias release='release-it --disable-metrics'
 
+# Get changelog
+changelog() { npx get-changelog -o -m "$1"; }
+
 # Prevent a script from finishing until a key was pressed
 alias pause='echo "Press any key to continue..."; read -n 1 -s'
 
