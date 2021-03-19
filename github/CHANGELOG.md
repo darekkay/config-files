@@ -7,8 +7,8 @@
 - :sparkles: New feature
 - :rocket: Enhancement (user-centered)
 - :bug: Bug fix
-- :gem: Refactor, style (formatting), tests, architecture
-- :hammer: Build, CI, chore, dependencies
+- :gem: Design change
+- :hammer: Maintenance (build, CI, chore, dependencies, refactor, tests)
 - :book: Documentation
 - :back: Revert
 - :boom: Breaking change
