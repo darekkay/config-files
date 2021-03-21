@@ -31,18 +31,19 @@
 | Ctrl/Cmd + Shift + R  | Replace in files       |
 | Ctrl/Cmd + Shift + F  | Find in files          |
 
-## Chrome
+## Chrome / Firefox
 
 | Shortcut              | Description               |
 | --------------------- | ------------------------- |
-| Ctrl + Shift + Del    | Delete browser data       |
-| Ctrl + Shift + C      | Inspect element           |
-| Ctrl + Shift + M      | Toggle mobile view        |
-| Ctrl + Shift + P      | Command Palette           |
-| Ctrl + L              | Select current URL        |
+| Ctrl + Shift + Del *  | Delete browser data       |
+| Ctrl + Shift + C *    | Inspect element           |
+| Ctrl + Shift + M *    | Toggle mobile view        |
+| Ctrl + L *            | Select current URL        |
+| Ctrl + 1-8 / 9 *      | Switch to n-th / last tab |
 | Shift + Esc           | Task manager (Chrome)     |
-| Ctrl + 1-8 / 9        | Switch to n-th / last tab |
+| Ctrl + Shift + P      | Command Palette           |
 
+ - * works also in Firefox
  - [Chrome Shortcuts](https://support.google.com/chrome/answer/157179)
 
 ## IntelliJ IDEA
