@@ -39,6 +39,8 @@
 - Re-enable "space" completion for custom search engines:
   - `chrome://flags/#omnibox-keyword-search-button`: Disabled
   - `chrome://flags/#omnibox-suggestion-button-row`: Disabled
+- Disable reading list:
+  - `chrome://flags/#read-later`: Disabled
 
 ## Search engines
 
