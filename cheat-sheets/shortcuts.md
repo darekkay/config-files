@@ -19,31 +19,34 @@
 
 ## Editor
 
-| Shortcut              | Description            |
-| --------------------- | ---------------------- |
-| Alt + Shift + ↑/↓     | Move line up/down      |
-| Ctrl + D              | Duplicate line         |
-| Ctrl + Y              | Delete line            |
-| Ctrl + Backspace      | Delete last word       |
-| Ctrl + Delete         | Delete next word       |
-| Ctrl + Shift + Y      | Toggle line comment    |
-| Ctrl/Cmd + R          | Replace                |
-| Ctrl/Cmd + Shift + R  | Replace in files       |
-| Ctrl/Cmd + Shift + F  | Find in files          |
+| Shortcut               | Description            |
+| ---------------------- | ---------------------- |
+| Alt + Shift + ↑/↓      | Move line up/down      |
+| Ctrl + D               | Duplicate line         |
+| Ctrl + Y               | Delete line            |
+| Ctrl + Backspace       | Delete last word       |
+| Ctrl + Delete          | Delete next word       |
+| Ctrl + Shift + Y       | Toggle line comment    |
+| Ctrl + Alt + Shift + Y | Toggle block comment   |
+| Ctrl/Cmd + R           | Replace                |
+| Ctrl/Cmd + Shift + R   | Replace in files       |
+| Ctrl/Cmd + F           | Find                   |
+| Ctrl/Cmd + Shift + F   | Find in files          |
 
-## Chrome / Firefox
+These shortcuts are configured to be equal among IDEA, VSCode and Notepad++.
 
-| Shortcut              | Description               |
-| --------------------- | ------------------------- |
-| Ctrl + Shift + Del *  | Delete browser data       |
-| Ctrl + Shift + C *    | Inspect element           |
-| Ctrl + Shift + M *    | Toggle mobile view        |
-| Ctrl + L *            | Select current URL        |
-| Ctrl + 1-8 / 9 *      | Switch to n-th / last tab |
-| Shift + Esc           | Task manager (Chrome)     |
-| Ctrl + Shift + P      | Command Palette           |
+## Browser (Chrome / Firefox)
 
- - * works also in Firefox
+| Shortcut              | Description               | Chrome | Firefox |
+| --------------------- | ------------------------- | :----: | :-----: |
+| Ctrl + Shift + Del    | Delete browser data       |   ✓    |    ✓    |
+| Ctrl + Shift + C      | Inspect element           |   ✓    |    ✓    |
+| Ctrl + Shift + M      | Toggle mobile view        |   ✓    |    ✓    |
+| Ctrl + L              | Select current URL        |   ✓    |    ✓    |
+| Ctrl + 1-8 / 9        | Switch to n-th / last tab |   ✓    |    ✓    |
+| Shift + Esc           | Task manager (Chrome)     |   ✓    |         |
+| Ctrl + Shift + P      | Command Palette           |   ✓    |         |
+
  - [Chrome Shortcuts](https://support.google.com/chrome/answer/157179)
 
 ## IntelliJ IDEA

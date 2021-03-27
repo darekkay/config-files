@@ -150,6 +150,18 @@
     "command": "-workbench.view.scm"
   },
 
+  // Select next occurrence
+  {
+    "key": "alt+j",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+
   // Select all occurrences
   {
     "key": "ctrl+shift+alt+j",
