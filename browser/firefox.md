@@ -21,6 +21,10 @@
   - `media.hardwaremediakeys.enabled: false`
 - Disable picture-in-picture:
   - ☐ Settings → General → Browser → Enable picture-in-picture video controls
+- Disable search suggestions in Firefox address bar
+  - ☐ Settings → Search → Search Suggestions → Provide search suggestions
+- Remove "this time search with" box:
+  - Settings → Search → Search Shortcuts → Remove all checkmarks
 
 Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
 
