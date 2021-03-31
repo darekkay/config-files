@@ -8,6 +8,7 @@
 9gag.com##.cp-background
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
+chess24.com##.bubble
 filmweb.pl###skyBanner
 filmweb.pl##.facebookLoginButton
 filmweb.pl##.FilmActionBox
@@ -20,6 +21,7 @@ netflix.com##.billboard-row
 stackoverflow.com##.community-bulletin.module
 suppenkaspar-magdeburg.de###emotion-header-img
 suppenkaspar-magdeburg.de##.diywebLogo
+tabs.ultimate-guitar.com##.is_sticky_player
 tabs.ultimate-guitar.com##video
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image

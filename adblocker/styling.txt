@@ -1,6 +1,9 @@
 ! Title: Darek Kay's custom styling filters
 ! Homepage: https://github.com/darekkay/config-files/
 
+! General site improvements
+tonsky.me##body:style(background: none !important)
+
 ! Deemphasize Twitter images and videos without an accessible label
 ! https://meyerweb.com/eric/thoughts/2021/01/01/highlighting-accessible-twitter-content/
 twitter.com##div[aria-label="Image"]:hover:style(filter: grayscale(1) contrast(0.5))
