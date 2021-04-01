@@ -17,10 +17,10 @@
 - [imagemin-cli](https://www.npmjs.com/package/imagemin-cli) - Image minifier
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
-- [prettier](https://prettier.io/) - Code formatter
 - [release-it](https://www.npmjs.com/package/release-it) - Automate versioning and package publishing tasks.
   - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
-- [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG vonverter
+- [@squoosh/cli](https://www.npmjs.com/package/@squoosh/cli) - Image converter (especially AVIF)
+- [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG converter
 
 ```
 npm install -g evaluatory fixpack imagemin-cli npm-check-updates ntl prettier release-it @release-it/keep-a-changelog svgexport

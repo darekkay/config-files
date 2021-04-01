@@ -55,6 +55,7 @@
 | GoodReads             | gr      | https://www.goodreads.com/search/search?search_type=books&search[query]=%s         |
 | Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
 | IMDb                  | imdb    | https://www.imdb.com/find?s=all;q=%s                                               |
+| Npm.js                | npmjs   | https://www.npmjs.com/search?q=%s                                                  |
 | Thesaurus             | th      | https://www.thesaurus.com/browse/%s                                                |
 | Ultimate Guitar       | ug      | https://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
 | Wikipedia             | w       | https://en.wikipedia.org/wiki/Special:Search/%s                                    |
