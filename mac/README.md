@@ -45,10 +45,8 @@ Run `./config.sh` to initialize custom settings.
 
 ## Apps
 
--  Install XCode Command Line Tools: xcode-select --install
-
-https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/macxcodecommandlinetools.html
-https://github.com/nvm-sh/nvm/issues/1782
+- Install XCode Command Line Tools: xcode-select --install
+  - [Installation instructions](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/macxcodecommandlinetools.html)
 
 - [Homebrew](https://brew.sh/)
 - [iHosts](https://apps.apple.com/us/app/ihosts-etc-hosts-editor/id1102004240) - Switch hosts via GUI
