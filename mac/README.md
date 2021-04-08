@@ -33,11 +33,17 @@ Run `./config.sh` to initialize custom settings.
 
 ## Shortcuts
 
-- `Cmd` + `Space`: Global Search
-- `Return`: Rename selected file
-- `F11`: Show desktop
-- `Ctrl` + `Down`: Show all windows of the current app
-- `Cmd` + `H`: Hide current window
+| Shortcut           | Description                           |
+| ------------------ | ------------------------------------- |
+| Cmd + Space        | Global Search (Alfred)                |
+| Return             | Rename selected file                  |
+| F11                | Show desktop                          |
+| Ctrl + Down        | Show all windows of the current app   |
+| Cmd + H            | Hide current window                   |
+| Ctrl + Alt + Left  | Move window to left half (Rectangle)  |
+| Ctrl + Alt + Right | Move window to right half (Rectangle) |
+| Ctrl + Alt + Up    | Maximize window (Rectangle)           |
+| Ctrl + Alt + Left  | Restore window (Rectangle)            |
 
 ## Transition from Windows
 
@@ -45,13 +51,12 @@ Run `./config.sh` to initialize custom settings.
 
 ## Apps
 
-- Install XCode Command Line Tools: xcode-select --install
-  - [Installation instructions](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/macxcodecommandlinetools.html)
-
+- [Install](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/macxcodecommandlinetools.html) XCode Command Line Tools: `xcode-select --install`
 - [Homebrew](https://brew.sh/)
 - [iHosts](https://apps.apple.com/us/app/ihosts-etc-hosts-editor/id1102004240) - Switch hosts via GUI
 - [iTerm2](https://www.iterm2.com/downloads.html)
 - [qView](https://interversehq.com/qview/)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
 - [RetinaCapture](https://www.retinacapture.com/)
 - [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/) - Support for additional mouse buttons
 - [TextMate](https://macromates.com/)
