@@ -26,6 +26,8 @@ tabs.ultimate-guitar.com##video
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image
 ||themagiccafe.com/forums/images/header2.gif
+twitter.com##[aria-label="Timeline: Trending now"]
+twitter.com##[aria-label="Who to follow"]
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
 
