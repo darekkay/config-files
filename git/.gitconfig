@@ -58,17 +58,17 @@
   trustexitcode = false
 
 [interactive]
-    # Delta interactive diff filter
-    diffFilter = delta --color-only
+  # Delta interactive diff filter
+  diffFilter = delta --color-only
 
 [delta]
-    features = side-by-side line-numbers   # Delta features
-    hunk-header-style = omit               # Hide hunk header
-    commit-decoration-style = none         # Don't use any decoration for the commit hash
-    file-style = cyan                      # File name style
-    file-decoration-style = blue ul        # File decoration, below the file name
-    line-numbers-left-style = blue         # Line number line style
-    line-numbers-right-style = blue        # Line number line style
+  features = side-by-side line-numbers   # Delta features
+  hunk-header-style = omit               # Hide hunk header
+  commit-decoration-style = none         # Don't use any decoration for the commit hash
+  file-style = cyan                      # File name style
+  file-decoration-style = blue ul        # File decoration, below the file name
+  line-numbers-left-style = blue         # Line number line style
+  line-numbers-right-style = blue        # Line number line style
 
 [log]
   # Print out ref names on commits by default
@@ -94,7 +94,7 @@
   # Automatically stash/unstash the working directory before/after rebases
   autostash = true
 
-  # Enable --autosquash option by default
+  # Enable --autosquash option by default: squash !fixup commits automatically
   autosquash = true
 
 [rerere]
