@@ -30,6 +30,16 @@
 "C:\Program Files\Git\git-cmd.exe" --no-cd --command=usr/bin/bash.exe -l -i  -new_console:d:D:\projects\dev\ -c "state-all; pause" -new_console:t:"state-all"
 ```
 
+- Open in Windows Terminal:
+```
+run "wt -w 0 nt -d ""<curpath>"""
+```
+
+- Open in ConEmu:
+```
+run """ConEmu.exe"" -Dir ""<curpath>"" -run {Bash::Git bash} -new_console"
+```
+
 ## Color Themes
 
 ### Monokai Theme
