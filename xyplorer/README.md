@@ -68,3 +68,8 @@
   tabset('load', 'default-left as: wip-left', 1);
   tabset('load', 'default-right as: wip-right', 2);
 ```
+
+## Search Template
+
+- `Ctrl` + `F9` → Save current search as search template
+- Script: `::loadsearch "template name"`
