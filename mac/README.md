@@ -53,6 +53,7 @@ Run `./config.sh` to initialize custom settings.
 
 - [Install](https://www.ics.uci.edu/~pattis/common/handouts/macmingweclipse/allexperimental/macxcodecommandlinetools.html) XCode Command Line Tools: `xcode-select --install`
 - [Homebrew](https://brew.sh/)
+- [Alfred](https://www.alfredapp.com/)
 - [iHosts](https://apps.apple.com/us/app/ihosts-etc-hosts-editor/id1102004240) - Switch hosts via GUI
 - [iTerm2](https://www.iterm2.com/downloads.html)
 - [qView](https://interversehq.com/qview/)
@@ -70,6 +71,10 @@ Run `./config.sh` to initialize custom settings.
 brew search font-
 brew cask install font-fira-code
 ```
+
+### Alfred
+
+- [iTerm integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
 
 ## Oh My Zsh Configuration
 
