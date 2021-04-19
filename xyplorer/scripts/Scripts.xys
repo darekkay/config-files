@@ -1,10 +1,17 @@
 include "include/shared.xys";
 
-"Directory Report"
-  ::Load('DirectoryReport');
-
 "Flatten Folder"
   flattenfolder();
 
+"Transfer to NAS"
+  $path = getpathcomponent(<curitem>, "file");
+  copyitem <curitem>, "\\PEGASUS\shared\transfer\$path"
+
+"Directory Report"
+  ::Load('DirectoryReport');
+  
 "Pandoc"
   ::Load('Pandoc');
+
+"Everything"
+  ::Load('Everything');

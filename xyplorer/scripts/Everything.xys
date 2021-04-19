@@ -1,0 +1,312 @@
+
+/*EVERYTHING IN XYPLORER — Rev. 0.98 / 2020/07/19.#################################################
+The code is divided into logical sections, each one identified by a line in
+the form "/*TITLE.###…" . Below that line a comment section like this one is
+found, which summarizes what happens below.
+-------------------------------------------------------------------------------------------------*/
+
+/* Original source: https://www.xyplorer.com/xyfc/viewtopic.php?f=7&t=12054&start=150 
+Credits to Marco / highend from XYplorer forum */
+
+/*ES.EXE SYNTAX.###################################################################################
+-r = Use a basic POSIX regular expression
+-i = Case-sensitive search
+-w = Whole word search
+-p = Full path search
+-n = Limit the amount of results to <num>
+-s = Sort by full path
+
+Note: a query containing a minus preceded by a blank (or in first position) and not followed by any
+of the letters above always produces the help, and no search results.
+-------------------------------------------------------------------------------------------------*/
+
+/*CUSTOMIZATIONS.##################################################################################
+
+$path      : The path of the folder containing the es.exe executable. The default assume
+             - reasonably - that XYplorer and Everything, being both portable, reside in the same
+             root folder.
+
+$paper     : The base name of the paper folder containing the search results, without extension.
+
+$mode      : Controls how the minus sign, which introduces switches in es.exe, is treated/escaped.
+             Three modes are available.
+
+             Total: Everything in Xyplorer will behave as if it was a window of Everything. The
+             minus sign will ALWAYS be escaped with double quotes, thus the functionality provided
+             by es.exe switches won't be available, however the search syntax will absolutely be
+             the same of that of the graphical user interface of Everything;
+
+             Smart: Everything in Xyplorer will behave as an "advanced" interface to es.exe. The
+             minus sign will be escaped with double quotes AS LONG AS it is not introducing a
+             switch, EXCEPT for -h, --help and -n when NOT followed by a blank and one or more
+             digits. This mode allows the use of switches, keeping at the same time the syntax of
+             search queries involving actual hyphens identical to the one used by Everything. In
+             order for it to work properly, non-ambiguous syntax must be used, i.e. if you really
+             want to look for an item named "-p" (without quotes) then you must quote it. The odds
+             of such kind of queries are low so the attention required for such corner cases is a
+             more than acceptable tradeoff for the smartness provided by this mode. Also known as
+             "The best of the two worlds…™".
+
+             None: the minus sign will NEVER be escaped, giving full control on how each minus is
+             passed to the command line. Remember: Proper escaping consists of double quotes for a
+             "text" minus, while a "switch" minus shall not be modified.
+
+             Whatever mode is entered that doesn't match "Total" or "Smart" is treated as "None".
+
+$ipc       : If set to TRUE the availability of Everything via IPC is tested, i.e. the script
+             checks whether es.exe can successfully communicate with Everything and obtain search
+             results, and starts Everything if not.
+
+$loc_aware : If set to TRUE it limits the scope of search to the current location and all its
+             subfolders. This behaviour can be temporarily overridden with the custom switch "-l".
+
+$diacritics: If set to TRUE it matches diacritical marks, therefore a ≠ à. This behaviour can be
+             temporarily overridden with the custom switch "-d".
+
+$extNotes  : (ext = extended). If set to TRUE it will show all additional possible "es.exe" switches in the input
+             dialog for the query. If you already know them by heart you can set it to FALSE, to
+             disable this behaviour.
+
+$saveQuery : If set to TRUE it will store the current query in a permanent variable and restore
+             it on the next run.
+
+$tmpPath   : It only makes sense to use this if you have a ram drive where you want to store the
+             two temporary UTF(8/16) files (written by es.exe). E.g. if your "%TEMP%" paths points
+             to a SSD and you want to avoid these files being written to it on each run.
+
+Note       : The custom switches above must be placed at the very start of the query in order to
+             be recognized, and the last letter must be followed by a blank space. They can be
+             compounded and order doesn't matter, so "-dl " = "-ld ". However each letter must
+             not be repeated, so "-ll " is not valid syntax.
+
+-------------------------------------------------------------------------------------------------*/
+
+    $path       = "D:\apps\Everything\";
+    $paper      = "Everything";
+    $mode       = "Smart";                       // "Smart"
+    $ipc        = TRUE;                          // FALSE
+    $loc_aware  = FALSE;                          // TRUE
+    $diacritics = FALSE;                         // TRUE
+    $extNotes   = TRUE;                          // TRUE
+    $saveQuery  = TRUE;                          // TRUE
+    $tmpPath    = "";                            // E.g.: "R:\TMP"
+
+/*GO!##############################################################################################
+First of all a test is made to make sure that es.exe can obtain results from Everything. A simple
+call is made:
+   cmd /c es * -n 1
+This asks for just one file, with no conditions at all on its name. This is easier than matching
+against the four possible error messages provided by es.exe, i.e. (according to its source code)
+
+   Everything IPC service not running.
+   Everything IPC window not found, IPC unavailable.
+   failed to register IPCTEST window class
+   failed to create IPCTEST window
+
+Then the output obtained via runret() is matched against a very simple expression consisting of any
+capital letter of the Latin alphabet followed by a colon and then anything or two consecutive
+backslashes for network paths. This is because Everything could return just "C:", perfectly valid
+path for the system drive. If nothing can be matched it means either Everything database is empty
+or there is some problem with the IPC interface. Both can be usually be solved by simply starting
+Everything and so the script will take care of this, repeating the steps if necessary until it gets
+a result.
+
+The user is asked to enter the search query if not done before, then custom switches are searched
+for. The approach consists in isolating whatever matches the regular expression "^-[dl]* " first,
+and then counting the occurences of each letter in it. If a letter is found more than once the
+whole match is dismissed, i.e. it is not considered a switch or a composition of switches.
+Otherwise it is kept in memory and removed from the query. If what remains of the query is not
+empty, then the query itself is valid and the script can go on.
+While an approach with foreach() loops might be deemed as overkill for just two letters, it can be
+expanded very easily in the future (linear complexity), should more switches be needed.
+
+The custom switches can now perform their action. Their overriding action against the parameters
+defined on top is calculated via a XOR operation.
+To confine a search to the current path, this is appended to the query as:
+
+   "Shall we dance" path:"G:\Movies"
+
+The current path is retrieved via <curpath>. If it contains the string "paper:" it means a paper
+folder is currently browsed: No standard path can be obtained, so location-awareness is disabled
+and the search will be system-wide. Otherwise the current path is processed to resolve all the
+junctions in it (because Everything works with the real paths).
+Diacritics can be matched simply by enclosing the query like this:
+
+   diacritics:háček façade Pokémon
+
+Then the minus sign is escaped according to the mode set above. Susbsequently, other special
+characters are escaped, namely the ones that can be used as search modifiers in Everything or in a
+normal regular expression and that are known to be "problematic" in a command line. Further info on
+http://forum.voidtools.com/viewtopic.php?f=5&t=1970&sid=2590f752481d94429e91191e55b6a261 and
+http://www.robvanderwoude.com/escapechars.php
+
+Once a "command line-friendly" query is obtained, the proper command can be run.
+
+To be unicode aware, the codepage of the console must be changed to 65001 (UTF-8) with the chcp
+command. This change is temporary, so this is a portable/stealth solution that doesn't alter the
+system. The call to es.exe can simply be concatenated ( && ) and the results will be written on
+disk to an output file ( > ).
+
+The console will write a list of matches encoded in UTF-8 without BOM to disk. However the absence
+of a BOM causes the generation of gibberish in place of CJK characters. Therefore a little trick is
+required: the BOM of the future paper folder file is written beforehand. In order to be immune to
+variations in system encoding/locale/codepage, the BOM is provided to the writefile() function as a
+conversion from hex values (0xEF 0xBB 0xBF).
+
+Now the paper folder can be opened. If another, non-paper tab is focused, a new tab will be opened,
+otherwise the current tab is overwritten. Finally, the status bar will show the search query as
+Everything would have seen it, i.e. with no special character escapings.
+
+And that's all, folks.
+-------------------------------------------------------------------------------------------------*/
+
+/*IPC TEST.########################################################################################
+-------------------------------------------------------------------------------------------------*/
+
+    $path = trim(resolvepath($path), "\", "R");
+
+    $es = "$path\es.exe";
+    $ev = "$path\Everything.exe";
+    $message = " does not exist in:" . <crlf> . quote($path) . <crlf 2> . "Aborted!";
+    end (exists($es) != 1), quote(gpc($es, "file")) . $message;
+    end (exists($ev) != 1), quote(gpc($ev, "file")) . $message;
+
+    if ($ipc) {
+        if (!regexmatches(runret("""$es"" * -n 1", $path), "^([a-z]:|\\\\)")) {
+            if (!confirm("Everything is not running!<crlf 2>Click OK to start it now")) { end true; }
+
+            $time = 0; $maxTime = 5;
+            if (!regexmatches(runret("""$es"" * -n 1", $path), "^([a-z]:|\\\\)")) {
+                run """$ev"" -startup", $path, 0, 0;
+                $appStarted = false;
+                while (!$appStarted OR $time <= $maxTime) {
+                    if (regexmatches(runret("""$es"" * -n 1", $path), "^([a-z]:|\\\\)")) {
+                        $appStarted = true;
+                        break 1;
+                    }
+                    status "Waiting for Everything, time: $time seconds...", , "progress";
+                    wait 100;
+                    $time = $time + 0.1;
+                }
+                end (!$appStarted), "Everything could not be started, aborted!";
+            }
+        }
+    }
+
+
+/*QUERY DECLARATION AND VALIDATION.################################################################
+-------------------------------------------------------------------------------------------------*/
+
+    $lastQuery = "";
+    if ($saveQuery) {
+        perm $P_Everything_Query;
+        $lastQuery = $P_Everything_Query;
+    }
+
+    $notes = "Type your search query as you would in Everything!";
+    if (isset($extNotes) && $extNotes) {
+        $notes = <<<>>>
+            Type your search query as you would in Everything!
+
+            Possible "es.exe" switches are:
+            -r = Use a basic POSIX regular expression
+            -i = Case-sensitive search
+            -w = Whole word search
+            -p = Full path search
+            -n = Limit the amount of results to <num>
+            -s = Sort by full path
+        >>>;
+        $notes = regexreplace($notes, "^[ \t]+");
+    }
+
+    $valid = FALSE;
+    while (!$valid) {
+        $query = trim(input("Everything", $notes, ($lastQuery) ? $lastQuery : "<query>", "s"));
+        if (trim($query) == "") {
+            if ($saveQuery) { $P_Everything_Query = ""; writepv; }
+            msg "No search query entered, aborted!"; end true;
+        }
+        $lastQuery = $query;
+
+        $switches = formatlist(regexmatches($query, "^-[ld]* "), "p", <crlf>);
+        // Don't allow a switch to occur more than one time
+        if ($switches != "") {
+            foreach($switch, "l|d") {
+                if (gettokenindex($switch, $switches, <crlf>, "c") > 1) {
+                    $switches = "";
+                    break;
+                }
+            }
+        }
+        // Remove switches from query
+        $query = trim(substr($query, strlen(replace($switches, <crlf>))));
+        $valid = ($query == "") ? FALSE : TRUE;
+    }
+    $start = now("yyyy-mm-dd hh:nn:ss.ffff");
+    if ($saveQuery) { $P_Everything_Query = $lastQuery; writepv; }
+
+
+/*TRANSLATION OF CUSTOM SWITCHES.##################################################################
+-------------------------------------------------------------------------------------------------*/
+
+    $curPath = (<curpath> Like "*paper:*") ? "*" : property("#ResolveJunctionsAll", <curpath>);
+
+    // Surrounding parentheses removed for $query (deprecated)
+    $query = ($diacritics XOR ($switches Like "*d*")) ? "diacritics:$query" : $query;
+    // " AND " removed (deprecated)
+    $query = ($loc_aware  XOR ($switches Like "*l*")) ? "$query path:""$curPath""" : $query;
+
+
+/*ESCAPING OF MINUS SIGNS AND OTHER PARTICULAR CHARACTERS.#########################################
+-------------------------------------------------------------------------------------------------*/
+
+    if ($mode LikeI "smart") {
+        $cl = regexreplace($query, '\b-(?!([riwps]|n (?!\d))\b)', '"-"');
+    } elseif ($mode LikeI "total") {
+        $cl = replace($query, '-', '"-"');
+    }
+    // Do NOT escape double quotes!
+    $cl = replacelist($cl, '< > & | ^', '^< ^> ^& ^| ^^', " ");
+
+
+/*UNICODE METHOD WITH OUTPUT REDIRECTION.##########################################################
+-------------------------------------------------------------------------------------------------*/
+
+    $tmpPaperPath = "%TEMP%";
+    if (exists($tmpPath) == 2) {
+        $tmpPaperPath = trim($tmpPath, "\", "R");
+    }
+    setting "BackgroundFileOps", 0;
+
+    // Create UTF-16 LE BOM out of UTF-8 (which es.exe will write)
+    $tmpUTF8  = "$tmpPaperPath\$paper" . "_utf8.txt";
+    $tmpUTF16 = "$tmpPaperPath\$paper" . "_utf16.txt";
+    run """cmd"" /c chcp 65001 && ""$es"" $cl>""$tmpUTF8""", $path, 2, 0;
+    writefile($tmpUTF16, readfile($tmpUTF8, "t", , 65001), , "tu");
+    delete 0, 0, $tmpUTF8;
+
+
+/*RESULTS PRESENTATION.############################################################################
+-------------------------------------------------------------------------------------------------*/
+
+    // No results
+    if (filesize($tmpUTF16) == 0) {
+        if ((regexmatches($switches, "l") && !$loc_aware) || $loc_aware) {
+            msg "No match(es) found...<crlf 2>Maybe location awareness is responsible for this result?";
+        } else {
+            msg "No match(es) found...";
+        }
+
+    // Results
+    } else {
+        if (tab("get", "path") UnLikeI "paper:$paper") {
+            tab("new");
+        }
+
+        paperfolder("paper:$paper", readfile($tmpUTF16), , "nl");
+        delete 0, 0, $tmpUTF16;
+
+        $diff = round(datediff($start, now("yyyy-mm-dd hh:nn:ss.ffff"), "us") / 1000);
+        if ($diff < 0) { $diff *= -1; }
+        status "Query: $query [Time: " . $diff . " ms]";
+    }
