@@ -6,6 +6,7 @@
 - [LinkMe](https://marketplace.visualstudio.com/items?itemName=ragnoroct.linkme): `ragnoroct.linkme`
 - [Log File Highlighter](https://marketplace.visualstudio.com/items?itemName=emilast.logfilehighlighter): `emilast.logfilehighlighter`
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme): `PKief.material-icon-theme`
+- [NumberMonger](https://marketplace.visualstudio.com/items?itemName=softwareape.numbermonger): `softwareape.numbermonger`
 - [Open in Browser](https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser): `techer.open-in-browser`
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): `esbenp.prettier-vscode`
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): `humao.rest-client`
