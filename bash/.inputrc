@@ -1,0 +1,3 @@
+# disable bash flickering
+# https://github.com/microsoft/terminal/issues/7200#issuecomment-672786518
+set bell-style none
