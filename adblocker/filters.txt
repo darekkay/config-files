@@ -18,6 +18,8 @@ imdb.com##.ipc-page-section:has([data-testid="photos-title"])
 imdb.com##[class^="TitleMainRightRailGroup__SidebarContainer"]
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
+psprices.com##.ad-placeholder
+stackexchange.com##.js-consent-banner
 stackoverflow.com##.community-bulletin.module
 suppenkaspar-magdeburg.de###emotion-header-img
 suppenkaspar-magdeburg.de##.diywebLogo
