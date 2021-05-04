@@ -89,7 +89,8 @@ transfer-from() { rsync --remove-source-files --rsync-path=/bin/rsync -e ssh "US
 transfer-list() { rsync --list-only --rsync-path=/bin/rsync -e ssh "USER@NAS:/DIR/"; }
 
 # Release-it
-alias release='release-it --disable-metrics'
+release () { release-it --disable-metrics --only-version --config ~/.release-it/.release-it-default.yaml --npm.otp="$1"; }
+releasec () { release-it --disable-metrics --only-version --config ~/.release-it/.release-it-changelog.yaml --npm.otp="$1"; }
 
 # Get changelog
 changelog() { npx get-changelog -o -m "$1"; }
