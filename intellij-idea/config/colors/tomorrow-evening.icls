@@ -3,7 +3,7 @@
     <property name="created">2020-04-17T18:13:51</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2020-04-17T18:22:44</property>
+    <property name="modified">2021-05-04T20:17:52</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="b9ca4a" />
@@ -12,6 +12,8 @@
     <option name="CARET_ROW_COLOR" value="282a2e" />
     <option name="CONSOLE_BACKGROUND_KEY" value="1c1c1c" />
     <option name="DELETED_LINES_COLOR" value="e35374" />
+    <option name="DOCUMENTATION_COLOR" value="46484a" />
+    <option name="ERROR_HINT" value="383838" />
     <option name="FILESTATUS_ADDED" value="629755" />
     <option name="FILESTATUS_DELETED" value="6c6c6c" />
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6c6c6c" />
@@ -33,6 +35,7 @@
     <option name="INDENT_GUIDE" value="373737" />
     <option name="METHOD_SEPARATORS_COLOR" value="5b5a4e" />
     <option name="MODIFIED_LINES_COLOR" value="61afef" />
+    <option name="RECENT_LOCATIONS_SELECTION" value="383838" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="574300" />
     <option name="RIGHT_MARGIN_COLOR" value="323232" />
     <option name="SELECTED_INDENT_GUIDE" value="505050" />
@@ -195,8 +198,8 @@
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="589df6" />
-        <option name="EFFECT_COLOR" value="589df6" />
+        <option name="FOREGROUND" value="61afef" />
+        <option name="EFFECT_COLOR" value="61afef" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -281,14 +284,10 @@
       </value>
     </option>
     <option name="DEFAULT_BRACES">
-      <value>
-        <option name="FOREGROUND" value="f9faf4" />
-      </value>
+      <value />
     </option>
     <option name="DEFAULT_BRACKETS">
-      <value>
-        <option name="FOREGROUND" value="f9faf4" />
-      </value>
+      <value />
     </option>
     <option name="DEFAULT_CLASS_NAME">
       <value />
@@ -414,9 +413,7 @@
       </value>
     </option>
     <option name="DEFAULT_PARENTHS">
-      <value>
-        <option name="FOREGROUND" value="f9faf4" />
-      </value>
+      <value />
     </option>
     <option name="DEFAULT_PREDEFINED_SYMBOL" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="DEFAULT_SEMICOLON">
@@ -503,7 +500,7 @@
     <option name="ERRORS_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="bc3f3c" />
-        <option name="ERROR_STRIPE_COLOR" value="d62220" />
+        <option name="ERROR_STRIPE_COLOR" value="f51e1c" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
@@ -528,7 +525,7 @@
     <option name="GENERIC_SERVER_ERROR_OR_WARNING">
       <value>
         <option name="EFFECT_COLOR" value="c27310" />
-        <option name="ERROR_STRIPE_COLOR" value="cc7110" />
+        <option name="ERROR_STRIPE_COLOR" value="ff7e1a" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -625,10 +622,28 @@
         <option name="FOREGROUND" value="ffffff" />
       </value>
     </option>
+    <option name="INLAY_DEFAULT">
+      <value>
+        <option name="FOREGROUND" value="929292" />
+        <option name="BACKGROUND" value="2c2c2c" />
+      </value>
+    </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
         <option name="FOREGROUND" value="929292" />
-        <option name="BACKGROUND" value="393939" />
+        <option name="BACKGROUND" value="2c2c2c" />
+      </value>
+    </option>
+    <option name="INLINE_PARAMETER_HINT_CURRENT">
+      <value>
+        <option name="FOREGROUND" value="929292" />
+        <option name="BACKGROUND" value="2c2c2c" />
+      </value>
+    </option>
+    <option name="INLINE_PARAMETER_HINT_HIGHLIGHTED">
+      <value>
+        <option name="FOREGROUND" value="929292" />
+        <option name="BACKGROUND" value="2c2c2c" />
       </value>
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
@@ -681,6 +696,11 @@
     </option>
     <option name="KOTLIN_SMART_CONSTANT">
       <value />
+    </option>
+    <option name="LIVE_TEMPLATE_ATTRIBUTES">
+      <value>
+        <option name="EFFECT_COLOR" value="61afef" />
+      </value>
     </option>
     <option name="LOG_DEBUG_OUTPUT">
       <value>
@@ -793,19 +813,11 @@
       </value>
     </option>
     <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
-    <option name="PY.BUILTIN_NAME" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
-    <option name="PY.CLASS_DEFINITION" baseAttributes="DEFAULT_CLASS_NAME" />
-    <option name="PY.DECORATOR" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="PY.FUNC_DEFINITION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
-    <option name="PY.KEYWORD_ARGUMENT" baseAttributes="DEFAULT_PARAMETER" />
     <option name="PY.PREDEFINED_DEFINITION">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
       </value>
     </option>
-    <option name="PY.PREDEFINED_USAGE" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
-    <option name="PY.SELF_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
-    <option name="PY.STRING.U" baseAttributes="DEFAULT_STRING" />
     <option name="REGEXP.QUANTIFIER">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
@@ -874,6 +886,11 @@
         <option name="FOREGROUND" value="ffffff" />
       </value>
     </option>
+    <option name="TERMINAL_COMMAND_TO_RUN_USING_IDE">
+      <value>
+        <option name="BACKGROUND" value="40503c" />
+      </value>
+    </option>
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="ffffff" />
@@ -928,7 +945,7 @@
     <option name="WARNING_ATTRIBUTES">
       <value>
         <option name="BACKGROUND" value="52503a" />
-        <option name="ERROR_STRIPE_COLOR" value="cc7110" />
+        <option name="ERROR_STRIPE_COLOR" value="ff7e1a" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
