@@ -62,9 +62,6 @@ DEFAULT_USER=$(whoami)
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -74,17 +71,12 @@ plugins=(npm yarn sudo zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
+# Zsh syntax highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # User configuration
 source ~/.aliases
 
 # Disable terminal sounds
 unsetopt beep
 export LESS="$LESS -Q"
-
-# Set Node.js RAM
-export NODE_OPTIONS=--max-old-space-size=8096
-
-# Use yarn instead of npm for the ntl package
-export NTL_RUNNER=yarn ntl
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -1,3 +1,18 @@
+# Set Node.js RAM
+export NODE_OPTIONS=--max-old-space-size=8096
+
+# Use yarn instead of npm for the ntl package
+export NTL_RUNNER=yarn ntl
+
+# Volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# Workaround for https://youtrack.jetbrains.com/issue/WEB-44867
+export PATH="$VOLTA_HOME/tools/image/yarn/1.22.10/bin:$PATH"
+
+# ----------------------------------------------
+
 # Navigation
 alias ..='cd ..'
 alias ...='cd ../..'
