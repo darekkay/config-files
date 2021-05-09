@@ -9,6 +9,7 @@
 
 ## Global packages
 
+- [cloc](https://www.npmjs.com/package/cloc) - Count lines of code
 - [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
 - [get-changelog-cli](https://www.npmjs.com/package/get-changelog-cli) - Find module changelogs
@@ -20,11 +21,12 @@
 - [release-it](https://www.npmjs.com/package/release-it) - Automate versioning and package publishing tasks.
   - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
 - [@squoosh/cli](https://www.npmjs.com/package/@squoosh/cli) - Image converter (especially AVIF)
-- [svgexport](https://github.com/shakiba/svgexport) - SVG → PNG/JPEG converter
 
 ```
-npm install -g evaluatory fixpack imagemin-cli npm-check-updates ntl prettier release-it @release-it/keep-a-changelog svgexport
+npm install -g cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog @squoosh/cli
 ```
+
+- With yarn: `yarn global add`
 
 ## Other packages
 
@@ -41,13 +43,9 @@ npm ls --depth=0             # List package versions
 npm publish --access public  # Publish @scoped package
 ```
 
-## node-gyp
-
-- Installation on [Windows](https://github.com/nodejs/node-gyp#on-windows)
-
 ## npm settings
 
-```
+```bash
 npm config set prefer-offline true
 npm config set progress false
 npm config set save-exact true
@@ -55,17 +53,21 @@ npm config set save-exact true
 
 ## yarn settings
 
-```
+```bash
 yarn config set no-progress
 yarn config set yarn-offline-mirror ~/AppData/Roaming/yarn-offline
 yarn config set yarn-offline-mirror-pruning true
 ```
 
-## Semantic Versioning
+## volta
 
-- Major.Minor.Patch
-- Caret (`^`): `3.^.^`
-- Tilde (`~`): `3.9.~`
+- [volta.sh](https://volta.sh/)
+
+```bash
+curl https://get.volta.sh | bash
+volta install node@16
+volta install yarn
+```
 
 ## n - version manager
 
@@ -74,7 +76,7 @@ yarn config set yarn-offline-mirror-pruning true
 
 Install:
 
-```
+```bash
 curl -L https://git.io/n-install | bash
 ```
 
@@ -122,6 +124,11 @@ pm2 set pm2-logrotate:rotateInterval "0 1 1 1 *"
 pm2 set pm2-logrotate:workerInterval 3600
 ```
 
+## node-gyp
+
+- Installation on [Windows](https://github.com/nodejs/node-gyp#on-windows)
+
+
 ## create-react-app
 
 - [Advanced Configuration](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#advanced-configuration)
@@ -132,3 +139,9 @@ PORT=12345
 GENERATE_SOURCEMAP=false
 PUBLIC_URL=.               # Build as a local project/file
 ```
+
+## Semantic Versioning
+
+- Major.Minor.Patch
+- Caret (`^`): `3.^.^`
+- Tilde (`~`): `3.9.~`
