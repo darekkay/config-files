@@ -96,6 +96,8 @@ yarn4all() {
 
 alias audit-all='npm4all audit'
 
+alias nuke='rm -rf node_modules && yarn'
+
 alias kn='killall node'
 
 # LAN transfer commands
