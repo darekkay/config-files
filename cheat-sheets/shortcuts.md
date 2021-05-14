@@ -77,6 +77,8 @@ These shortcuts are configured to be equal among IDEA, VSCode and Notepad++.
 | Ctrl + Q                 | Quick documentation                |
 | Ctrl + Shift + ↑/↓       | Move statement up/down             |
 | Ctrl + Shift + M         | Jump to matching brace             |
+| Ctrl + F4                | Close editor tab                   |
+| Ctrl + Shift + F4        | Close all editor tabs              |
 
 
 ## Visual Studio Code
