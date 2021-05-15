@@ -1,9 +1,0 @@
-<toolSet name="Git">
-  <tool name="Push All" description="Push to all remotes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="git" />
-      <option name="PARAMETERS" value="pushall" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
-    </exec>
-  </tool>
-</toolSet>

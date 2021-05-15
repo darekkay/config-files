@@ -1,16 +1,9 @@
 <toolSet name="Lint">
-  <tool name="Prettier" description="Run local prettier for the current file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+  <tool name="Alex" description="AlexJS" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
-      <option name="COMMAND" value="$ProjectFileDir$\node_modules\.bin\prettier.cmd" />
-      <option name="PARAMETERS" value="--write &quot;$FilePathRelativeToProjectRoot$&quot;" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
-    </exec>
-  </tool>
-  <tool name="Prettier (global)" description="Run global prettier for the current file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
-    <exec>
-      <option name="COMMAND" value="prettier.cmd" />
-      <option name="PARAMETERS" value="--write &quot;$FilePath$&quot;" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+      <option name="COMMAND" value="alex.cmd" />
+      <option name="PARAMETERS" value="$FileName$" />
+      <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
   <tool name="Stylelint" description="Run stylelint for the current file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">

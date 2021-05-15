@@ -1,19 +1,12 @@
 <toolSet name="Open in...">
-  <tool name="Console" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+  <tool name="Windows Terminal" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
-      <option name="COMMAND" value="cmd.exe" />
-      <option name="PARAMETERS" value="/C start" />
+      <option name="COMMAND" value="wt" />
+      <option name="PARAMETERS" value="-w 0 nt -d $FileDir$" />
       <option name="WORKING_DIRECTORY" value="$FileDir$" />
     </exec>
   </tool>
-  <tool name="SourceTree" description="Open this project in SourceTree" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
-    <exec>
-      <option name="COMMAND" value="C:\Program Files (x86)\Atlassian\SourceTree\SourceTree.exe" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
-    </exec>
-  </tool>
-  <tool name="XYplorer" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+  <tool name="XYplorer" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
     <exec>
       <option name="COMMAND" value="C:\Program Files (x86)\XYplorer\XYplorer.exe" />
       <option name="PARAMETERS" value="$FileDir$" />
