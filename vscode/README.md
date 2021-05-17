@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-## Plugins
+## Extensions
 
 - [Faker](https://marketplace.visualstudio.com/items?itemName=deerawan.vscode-faker): `deerawan.vscode-faker`
 - [LinkMe](https://marketplace.visualstudio.com/items?itemName=ragnoroct.linkme): `ragnoroct.linkme`
@@ -12,6 +12,16 @@
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client): `humao.rest-client`
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): `wayou.vscode-todo-highlight`
 - [VSCode Shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck): `timonwong.shellcheck`
+
+### Backup / Restore
+
+```bash
+# backup
+code --list-extensions > "visual-studio-code-extensions.txt"
+
+# restore
+< "visual-studio-code-extensions.txt" xargs -L 1 code --install-extension
+```
 
 ## Features
 
