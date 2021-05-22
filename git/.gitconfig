@@ -90,6 +90,10 @@
 [push]
   default = simple               # Push mode for centralized workflows
 
+[merge]
+  # Automatically stash/unstash the working directory before/after merging
+  autostash = true
+
 [rebase]
   # Automatically stash/unstash the working directory before/after rebases
   autostash = true
