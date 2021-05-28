@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            URL Cleaner
-// @version         1.1.0
+// @version         1.1.1
 // @description     Clean URLs from unnecessary parameters
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
