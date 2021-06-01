@@ -1,6 +1,6 @@
 <templateSet group="JavaScript Testing">
-  <template name="descr" value="describe(&quot;$NAME$&quot;, () =&gt; {&#10;  $END$&#10;});" description="Inserts describe() block" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="jsMethodName()" defaultValue="" alwaysStopAt="true" />
+  <template name="descr" value="describe(&quot;$FILE_NAME_BASE$&quot;, () =&gt; {&#10;  test(&quot;$END$&quot;, () =&gt; {&#10;  });&#10;});" description="Inserts describe() block" toReformat="true" toShortenFQNames="true">
+    <variable name="FILE_NAME_BASE" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context />
   </template>
   <template name="bfe" value="beforeEach(() =&gt; {&#10;  $END$&#10;});" description="Inserts beforeEach() block" toReformat="true" toShortenFQNames="true">
