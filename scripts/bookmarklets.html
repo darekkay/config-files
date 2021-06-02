@@ -64,10 +64,16 @@
       <h2>Software Development</h2>
       <ul>
         <li>
-          <a href="javascript:(function()%7Bdocument.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(document.activeElement)%2C%20false)%3BArray.from(document.getElementsByTagName(%22iframe%22)).map(iframe%20%3D%3E%20iframe.contentWindow.document).forEach(iframeDoc%20%3D%3E%20iframeDoc.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(iframeDoc.activeElement)%2C%20false))%7D)()">Log Focus Changes</a>
+          <a href="javascript:(function()%7BsetTimeout(()%20%3D%3E%20%7B%20debugger%20%7D%2C%203000)%7D)()">Debugger</a> - Starts the debugger after 3 seconds
         </li>
         <li>
-          <a href="javascript:void%20function(){javascript:(function(){const%20a=new%20URLSearchParams(window.location.search);window.location=`${window.location.protocol}//${window.location.host}/iframe.html%3FselectedKind=${a.get(%22selectedKind%22)}%26selectedStory=${a.get(%22selectedStory%22)}`})()}();">Storybook IFrame</a> (Open current Story in IFrame)
+          <a href="javascript:(function()%7Bdocument.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(document.activeElement)%2C%20false)%3BArray.from(document.getElementsByTagName(%22iframe%22)).map(iframe%20%3D%3E%20iframe.contentWindow.document).forEach(iframeDoc%20%3D%3E%20iframeDoc.addEventListener('focusin'%2C%20()%20%3D%3E%20console.log(iframeDoc.activeElement)%2C%20false))%7D)()">Log Focus Changes</a> - Logs the currently focused element
+        </li>
+        <li>
+          <a href="javascript:(function()%7Bdocument.designMode%20%3D%20document.designMode%3D%3D%3D%22on%22%20%3F%20%22off%22%20%3A%20%22on%22%7D)()%3B">Design Mode</a> - Makes website content editable (toggle)
+        </li>
+        <li>
+          <a href="javascript:void%20function(){javascript:(function(){const%20a=new%20URLSearchParams(window.location.search);window.location=`${window.location.protocol}//${window.location.host}/iframe.html%3FselectedKind=${a.get(%22selectedKind%22)}%26selectedStory=${a.get(%22selectedStory%22)}`})()}();">Storybook IFrame</a> - Opens current Story in an IFrame
         </li>
       </ul>
     </li>
