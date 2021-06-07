@@ -24,6 +24,7 @@
   - Edit → Action Log ...
 - [Custom File Icons](https://www.xyplorer.com/release_12.40.php#CFI)
   - Tools → Customize File Icons... (`Ctrl + I`)
+- [Folder View Settings](https://www.xyplorer.com/tour.php?page=fvs)
 - [Live Filter Box](https://www.xyplorer.com/release_17.00.php#LFB)
 - [Mouse Down Blow Up](https://www.xyplorer.com/highlights.php#mdbu)
 - [Paper folders](https://www.xyplorer.com/release_14.30.php#PF)
@@ -73,3 +74,10 @@
 
 - `Ctrl` + `F9` → Save current search as search template
 - Script: `::loadsearch "template name"`
+- Load script and reset to default:
+
+```
+"Custom Search"
+  loadsearch "Custom Search";
+  loadsearch "Default Search", l;   // <- "Default Search" is also a saved search template
+```
