@@ -9,6 +9,7 @@
 
 ## Global packages
 
+- [alex](https://www.npmjs.com/package/alex) - Catch insensitive, inconsiderate writing
 - [cloc](https://www.npmjs.com/package/cloc) - Count lines of code
 - [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
 - [fixpack](https://www.npmjs.com/package/fixpack) - Sort package.json
@@ -23,10 +24,10 @@
 - [@squoosh/cli](https://www.npmjs.com/package/@squoosh/cli) - Image converter (especially AVIF)
 
 ```
-npm install -g cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog @squoosh/cli
+yarn global add alex cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog @squoosh/cli
 ```
 
-- With yarn: `yarn global add`
+- With npm: `npm install -g`
 
 ## Other packages
 
