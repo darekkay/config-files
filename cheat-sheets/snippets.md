@@ -22,7 +22,7 @@
 | ------------- | --------------------------------- |
 | bfe           | beforeEach() block                |
 | descr         | describe() block                  |
-| it            | it() block                        |
+| test          | test() block                      |
 
 ## ReactJS
 
