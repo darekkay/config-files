@@ -18,6 +18,8 @@ null ?? "default"      // "default"
 undefined ?? "default" // "default"
 "" ?? "default"        // ""
 0  ?? "default"        // 0
+true ?? "default"      // true
+false ?? "default"     // false
 ```
 
 - [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
