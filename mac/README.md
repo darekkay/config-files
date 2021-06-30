@@ -74,7 +74,10 @@ brew cask install font-fira-code
 
 ### Alfred
 
+- [Snippets](../cheat-sheets/snippets.md)
 - [iTerm integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
+- [Alfred Fakeum](https://github.com/deanishe/alfred-fakeum)
+  - Change workflow snippet key to `xxfake` and remove `\\` prefix
 
 ## Oh My Zsh Configuration
 
