@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.0.6
+// @version         2.1.0
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -8,7 +8,6 @@
 // @run-at          document-start
 
 // @include         http*://news.ycombinator.com/*
-// @include         http*://*imdb.com/*
 // @include         http*://*slack.com/messages/*
 // @include         http*://stackoverflow.com/*
 // @include         http*://*todoist.com/app*
@@ -40,24 +39,6 @@ if (page.url.indexOf('news.ycombinator.com') > -1) {
     .comhead font { color: #5a5a5a !important }
     input { color: black !important; }
     textarea {background-color: #E0E0E0 !important; border-left: 12px solid #CCCCCC !important; }
-  `);
-}
-
-
-// ======================== //
-// ========= IMDB ========= //
-// ======================== //
-
-else if (page.url.indexOf('imdb.com') > -1) {
-  GM_addStyle(`
-    #nb_extra, #navNewsMenu + li.spacer, #navNewsMenu, #prometer_container, #maindetails_sidebar_bottom, .watch-bar, .watchbar2, .footer, #sidebar, #content-2-wide:before { display: none; }
-    #maindetails_center_top, #maindetails_center_bottom{ width: auto !important; margin-right: 20px !important; }
-    #navbar, #root { width: 800px !important; }
-    #main_top, #main_bottom { width: 100% !important; max-width: 100% !important; }
-    .quicksearch_dropdown_wrapper { right: 124px !important; }
-    #nb_search { width: 569px !important; }
-    div#content-2-wide { margin-top: 10px !important; }
-    .article.title-overview #title-overview-widget { padding-bottom: 5px !important; }
   `);
 }
 

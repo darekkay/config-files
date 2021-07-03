@@ -16,6 +16,13 @@ hoerzu.images.dvbdata.com
 imdb.com##[data-testid="videos-section"]
 imdb.com##.ipc-page-section:has([data-testid="photos-title"])
 imdb.com##[class^="TitleMainRightRailGroup__SidebarContainer"]
+imdb.com##[data-testid='banner-container']
+imdb.com##[data-testid="title-hero-proupsell"]
+imdb.com##[data-testid="title-cast-proupsell"]
+imdb.com##[data-testid="title-details-companycredits"]
+imdb.com##[data-testid="contribution"]
+imdb.com##[class*="Hero__ProLinkBelowLarge"]
+imdb.com##a[href^='https://pro.imdb.com/']
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
 psprices.com##.ad-placeholder
