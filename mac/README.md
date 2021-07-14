@@ -69,7 +69,7 @@ Run `./config.sh` to initialize custom settings.
 
 ```
 brew search font-
-brew cask install font-fira-code
+brew install --cask font-fira-code
 ```
 
 ### Alfred
