@@ -39,6 +39,7 @@ tabs.ultimate-guitar.com##video
 theverge.com##.m-privacy-consent
 twitter.com##[aria-label="Timeline: Trending now"]
 twitter.com##[aria-label="Who to follow"]
+unsplash.com##[rel="sponsored"]
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
 
