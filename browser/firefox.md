@@ -4,6 +4,8 @@
 
 - [Copy Markdown link](https://addons.mozilla.org/en-US/firefox/addon/copy-markdown-link/)
 - [Default Bookmark Folder](https://addons.mozilla.org/en-US/firefox/addon/default-bookmark-folder/)
+- [Refined GitHub](https://github.com/sindresorhus/refined-github)
+  - Disable `align-issue-labels`, `clean-rich-text-editor`, `extend-diff-expander`, `hide-own-stars`, `suggest-commit-title-limit`.
 - [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 
