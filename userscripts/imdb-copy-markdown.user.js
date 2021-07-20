@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name            IMDB Copy
+// @name            IMDB Copy (Markdown)
 // @version         1.1.0
 // @description     Create a TODO out of the current IMDB site
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
-// @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy.user.js
+// @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-markdown.user.js
 // @run-at          document-end
 
 // @include         http*://*imdb.com/*
