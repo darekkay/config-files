@@ -30,6 +30,22 @@ const [a, b, ...rest] = [10, 20, 30, 40, 50];
 const { a, b } = { a: 10, b: 20 };
 ```
 
+
+## Loops
+
+- A regular `for` loop is fine but quite verbose.
+- A `for-in` loop seems to be a worse choice in most cases.
+- A `forEach()` loop is a great choice in most synchronous situations.
+- A `for-of` loop is necessary when using `await` or `yield` within a loop.
+
+```js
+for (const elem of someArray) { ... }
+for (const [key, value] of someObject) { ... }
+```
+
+- [Looping over Arrays](https://2ality.com/2021/01/looping-over-arrays.html)
+
+
 ## window.location
 
 - `https://www.darekkay.com/projects/?filter=JS#2`
@@ -47,6 +63,7 @@ window.location.origin   → 'https://www.darekkay.com'
 ```
 
 - Based on [this source](https://dev.to/samanthaming/window-location-cheatsheet-4edl)
+
 
 ## Screen/Window/Page size
 
