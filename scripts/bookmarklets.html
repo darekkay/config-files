@@ -75,6 +75,9 @@
         <li>
           <a href="javascript:void%20function(){javascript:(function(){const%20a=new%20URLSearchParams(window.location.search);window.location=`${window.location.protocol}//${window.location.host}/iframe.html%3FselectedKind=${a.get(%22selectedKind%22)}%26selectedStory=${a.get(%22selectedStory%22)}`})()}();">Storybook IFrame</a> - Opens current Story in an IFrame
         </li>
+        <li>
+          <a href="javascript:(function()%7Bvar%20style%20%3D%20document.createElement('style')%3Bdocument.head.appendChild(style)%3Bstyle.sheet.insertRule('body%2C%20*%20%7B%20font-family%3A%20Redacted%20Script%20!important%3B%20%7D')%3BArray.prototype.map.call(document.querySelectorAll('*')%2C%20function(elem)%7Belem.style.fontFamily%20%3D%20'Redacted%20Script'%7D)%7D)()">Redact</a> - Use Redacted Script font for all elements
+        </li>
       </ul>
     </li>
     <li><h2>Todoist</h2>

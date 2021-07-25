@@ -69,8 +69,10 @@ Run `./config.sh` to initialize custom settings.
 
 ```
 brew search font-
-brew install --cask font-fira-code
+brew install --cask font-aldrich font-anaheim font-anton font-assistant font-cuprum font-dosis font-fira-code font-gudea font-lato font-noto-sans font-open-sans font-oswald font-redacted-script
 ```
+
+- [Blokk Neue](https://github.com/los-gordos/BLOKK) TTF needs to be copied manually
 
 ### Alfred
 
