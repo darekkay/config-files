@@ -124,6 +124,7 @@
   rc = rebase --continue
   fa = fetch --all
   pr = pull --rebase
+  rl = reset HEAD~1
 
   # Push and create a remote branch based on the current one (branch → origin/branch)
   ph = push -u origin HEAD
