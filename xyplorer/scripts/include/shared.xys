@@ -3,7 +3,7 @@ function escapePath($string) {
   return replace($string, "\", "/");
 }
 
-// Runs a command for all selected files. 
+// Runs a command for all selected files.
 // Replaces the arguments template values:
 //   §file - full path and file (escaped)
 //   §path - full path
@@ -20,6 +20,7 @@ function runSelected($command, $argumentsTemplate) {
     $arguments = replace($arguments, "§path", escapePath($path));
     $arguments = replace($arguments, "§base", $base);
     $arguments = replace($arguments, "§ext", $ext);
+    // echo $arguments;
     // echo """$command"" $arguments";
     run """$command"" $arguments";
   }
