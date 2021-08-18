@@ -9,10 +9,12 @@
 9gag.com##.featured-tag
 9gag.com##.section-sidebar
 9gag.com###sidebar
+9gag.com##.signup-list-banner
 bahn.de###hafasImgBar
 bahn.de##footer > .notice
 chess24.com##.bubble
 css-tricks.com##.fem-sidebar-ad
+fandom.com##.article-featured-video
 filmweb.pl##.facebookLoginButton
 filmweb.pl##.FilmActionBox
 filmweb.pl###skyBanner
@@ -30,6 +32,7 @@ imdb.com##a[href^='https://pro.imdb.com/']
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
 psprices.com##.ad-placeholder
+psprices.com##.promo__ads_off
 stackexchange.com##.js-consent-banner
 stackoverflow.com##.community-bulletin.module
 suppenkaspar-magdeburg.de##.diywebLogo
@@ -42,6 +45,11 @@ twitter.com##[aria-label="Who to follow"]
 unsplash.com##[rel="sponsored"]
 wikia.com##.featured-video__wrapper
 wikipedia.org##.banner
+
+! Cookie banners
+###cookie-banner
+###eu-cookie-law
+###tracking-consent-dialog
 
 ! Medium sites sticky footer
 ##.js-stickyFooter
