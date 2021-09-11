@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.1.0
+// @version         2.1.1
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -78,6 +78,8 @@ else if (page.url.indexOf('todoist.com') > -1) {
 
   // smaller paddings in the navigation bar
   GM_addStyle(`
+    .generic_left_list td.td_color .counter_color, .generic_left_list td.menu .icon { height: 20px !important; }
+    .generic_left_list td.name, .generic_left_list td.counter, .generic_left_list td.menu { height: 20px !important; line-height: 20px !important; }
     .generic_left_list li table td { padding-top: 5px !important; padding-bottom: 5px !important; }
     .generic_left_list .drag_and_drop_handler { padding-top: 2px !important; }
     .generic_left_list .arrow { margin-top: 3px !important; }
@@ -97,29 +99,6 @@ else if (page.url.indexOf('todoist.com') > -1) {
   GM_addStyle(`
     .expansion_panel:nth-child(2) .panel_summary { display: none; }
     #top_filters { border-bottom: 1px solid #f1f1f1; }
-  `);
-}
-
-
-// ======================== //
-// ===== Google Music ===== //
-// ======================== //
-
-else if (page.url.indexOf('play.google.com/music') > -1) {
-  GM_addStyle(`
-    .material-detail-view .has-hero-image { margin-top: 35px !important; }
-    core-image { display: none !important }
-    .material .song-row .song-indicator { margin-top: 0px !important; }
-    .material .song-row .hover-button[data-id='play'] { width: 45px !important; height: 45px !important; top: 0px !important }
-    .material .song-row td, .material .upload-progress-row td { height: 40px !important; line-height: 40px !important; min-height: 40px !important; }
-    .song-row .column-content { height: 40px !important; overflow: visible !important; }
-    .material .song-table [data-col='title'] img, .material .song-table.mini [data-col='song-details'] img { height: 45px !important; width: 45px !important; padding: 0 8px 0 0 !important; }
-    .material .song-row sj-icon-button[data-id='menu'] { margin-top: 6px !important }
-    .material .song-row .rating-container.thumbs [data-rating='1'], .material .song-row .rating-container.thumbs [data-rating='5'] { margin-top: 0px !important; }
-    .song-row .rating-container { margin-top: 14px !important; }
-    .material .nav-item-container { padding-top: 4px !important; padding-bottom: 4px !important; }
-    .material .nav-section-divider { padding-top: 7px !important; padding-top: 7px !important; }
-    .nav-toolbar .menu-logo { display: none !important; }
   `);
 }
 
