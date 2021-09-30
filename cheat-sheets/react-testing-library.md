@@ -42,3 +42,14 @@ userEvent.click(button);
 | **AltText**         | img alt attribute                |
 | **Title**           | title attribute or svg title tag |
 | **TestId**          | data-testid attribute            |
+
+## Nested searches
+
+```jsx
+import { screen, render, within } from "@testing-library/react";
+
+render(<nav><button>Click me</button></nav>);
+
+const navigation = screen.getByRole("navigation");
+const button = within(navigation).getByRole("button");
+```
