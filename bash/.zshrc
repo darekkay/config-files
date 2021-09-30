@@ -80,3 +80,6 @@ source ~/.aliases
 # Disable terminal sounds
 unsetopt beep
 export LESS="$LESS -Q"
+
+# Ignore commands starting with a space within bash history
+setopt HIST_IGNORE_SPACE
