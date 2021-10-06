@@ -4,6 +4,8 @@ Run `./config.sh` to initialize custom settings.
 
 ## Settings
 
+- Scale display
+  - System Preferences → Displays → Scaled
 - Switch Function Keys
   - ☑ System Preferences → Keyboard → Use F1, F2, etc. keys as standard function keys
 - Always show scroll bars
