@@ -42,11 +42,11 @@ run """ConEmu.exe"" -Dir ""<curpath>"" -run {Bash::Git bash} -new_console"
 
 ## Color Themes
 
-### Monokai Theme
+### DK Monokai
 
 ![ConEmu Monokai](conemu-monokai.png)
 
-### Light Theme
+### DK Light
 
 ![ConEmu Light](conemu-light.png)
 

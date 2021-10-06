@@ -1,5 +1,5 @@
 <key name="Palette1" modified="2017-11-01 10:41:03" build="161206">
-  <value name="Name" type="string" data="Eclectide Light"/>
+  <value name="Name" type="string" data="DK Light"/>
   <value name="ExtendColors" type="hex" data="00"/>
   <value name="ExtendColorIdx" type="hex" data="0e"/>
   <value name="TextColorIdx" type="hex" data="10"/>
@@ -41,7 +41,7 @@
 </key>
 
 <key name="Palette2" modified="2017-11-01 10:41:03" build="161206">
-  <value name="Name" type="string" data="Eclectide Monokai"/>
+  <value name="Name" type="string" data="DK Monokai"/>
   <value name="ColorTable00" type="dword" data="001c1c1c"/>
   <value name="ColorTable01" type="dword" data="00dc9d00"/>
   <value name="ColorTable02" type="dword" data="002ee2a7"/>

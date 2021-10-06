@@ -3,6 +3,11 @@
 - [Themer](https://themer.dev/)
 - [Base16](http://chriskempson.com/projects/base16/)
 
+## My color schemes
+
+- [Tomorrow Evening](./themes/tomorrow-evening/README.md)
+- [DK Monokai](./themes/dk-monokai/README.md)
+
 ## Base16:Themer Mapping
 
 | Base 16 | Themer  |
