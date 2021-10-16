@@ -45,3 +45,11 @@
 
 - [pacman](http://www2.futureware.at/~nickoe/msys2-mirror/msys/x86_64/)
   - [rsync](https://blog.tiger-workshop.com/add-rsync-to-git-bash-for-windows/)
+
+## Enforce privacy & security
+
+- [awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy)
+- [privacy.sexy](https://privacy.sexy/)
+  - [Source code](https://github.com/undergroundwires/privacy.sexy/tree/master/src/application/collections)
+- [Sophia Script](https://github.com/farag2/Sophia-Script-for-Windows)
+  - [Sophia Script Wrapper GUI](https://benchtweakgaming.com/2020/11/12/windows-10-debloat-tool/)
