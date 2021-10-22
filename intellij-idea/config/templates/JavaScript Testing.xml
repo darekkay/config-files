@@ -6,8 +6,9 @@
   <template name="bfe" value="beforeEach(() =&gt; {&#10;  $END$&#10;});" description="Inserts beforeEach() block" toReformat="true" toShortenFQNames="true">
     <context />
   </template>
-  <template name="test" value="test(&quot;$NAME$&quot;, () =&gt; {&#10;  $END$&#10;}); " description="Inserts test() block" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
+  <template name="test" value="test(&quot;$END$&quot;, () =&gt; {&#10;  &#10;}); " description="Inserts test() block" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
   </template>
 </templateSet>
