@@ -13,6 +13,8 @@
 
 - Disable telemetry:
   - ☐ Options → Privacy & Security → Firefox Data Collection and Use
+- Disable background update service:
+  - ☐ Options → Automatically install updates → When Firefox Developer Edition is not running
 - Use logical tab order:
   - `browser.ctrlTab.recentlyUsedOrder`: `false`
 - Customize startpage:
@@ -27,6 +29,8 @@
   - ☐ Settings → Search → Search Suggestions → Provide search suggestions
 - Remove "this time search with" box:
   - Settings → Search → Search Shortcuts → Remove all checkmarks
+- Disable dark mode on web pages:
+  - `layout.css.prefers-color-scheme.content-override: 1`
 
 Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
 

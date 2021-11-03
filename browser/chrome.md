@@ -45,6 +45,7 @@
   - `chrome://flags/#omnibox-suggestion-button-row`: Disabled
 - Disable reading list:
   - `chrome://flags/#read-later`: Disabled
+  - `chrome://flags/#side-panel`: Enabled
 
 ## Search engines
 
@@ -55,6 +56,7 @@
 | DevDocs               | dd      | https://devdocs.io/#q=%s                                                           |
 | DuckDuckGo            | ddg     | https://duckduckgo.com/?q=%s                                                       |
 | Dict                  | dict    | https://www.dict.cc/?s=%s                                                          |
+| eBay                  | ebay    | http://www.ebay.de/sch/i.html?_nkw=%s                                              |
 | Font Awesome          | fa      | https://fontawesome.com/icons?d=gallery&q=%s                                       |
 | GoodReads             | gr      | https://www.goodreads.com/search/search?search_type=books&search[query]=%s         |
 | Google Play           | app     | https://play.google.com/store/search?q=%s&c=apps                                   |
@@ -64,6 +66,8 @@
 | Ultimate Guitar       | ug      | https://www.ultimate-guitar.com/search.php?search_type=title&value=%s              |
 | Wikipedia             | w       | https://en.wikipedia.org/wiki/Special:Search/%s                                    |
 | YouTube               | y       | https://www.youtube.com/results?search_query=%s                                    |
+
+- [Mycroft Project](https://mycroftproject.com)
 
 ## Override server response headers (ModHeader)
 
