@@ -54,8 +54,39 @@ wikipedia.org##.banner
 ! Medium sites sticky footer
 ##.js-stickyFooter
 
+
 ! Remove certain domains from DuckDuckGo
-duckduckgo.com##[data-domain="www.w3schools.com"]
+duckduckgo.com##[data-domain*="www.w3schools.com"]
+duckduckgo.com##[data-domain*="geeksforgeeks.org"]
+duckduckgo.com##[data-domain*="gutefrage.net"]
+duckduckgo.com##[data-domain*="quora.com"]
+duckduckgo.com##[data-domain*="stackshare.io"]
+duckduckgo.com##[data-domain*="tutorialspoint.com"]
+duckduckgo.com##[data-domain*="w3schools.com"]
+
+duckduckgo.com##[data-domain*="answeright.com"]
+duckduckgo.com##[data-domain*="askdev.info"]
+duckduckgo.com##[data-domain*="askdev.io"]
+duckduckgo.com##[data-domain*="blogmepost.com"]
+duckduckgo.com##[data-domain*="c-sharpcorner.com"]
+duckduckgo.com##[data-domain*="code-examples.net"]
+duckduckgo.com##[data-domain*="codegrepper.com"]
+duckduckgo.com##[data-domain*="codeflow.site"]
+duckduckgo.com##[data-domain*="gitmemory.cn"]
+duckduckgo.com##[data-domain*="gitmemory.com"]
+duckduckgo.com##[data-domain*="intellipaat.com"]
+duckduckgo.com##[data-domain*="javaer101.com"]
+duckduckgo.com##[data-domain*="programmerstart.com"]
+duckduckgo.com##[data-domain*="programmersought.com"]
+duckduckgo.com##[data-domain*="qastack.com"]
+duckduckgo.com##[data-domain*="roboflow.ai"]
+duckduckgo.com##[data-domain*="stackanswers.net"]
+duckduckgo.com##[data-domain*="stackoom.com"]
+duckduckgo.com##[data-domain*="stackovernet.com"]
+duckduckgo.com##[data-domain*="stackovernet.xyz"]
+duckduckgo.com##[data-domain*="stackoverrun.com"]
+duckduckgo.com##[data-domain*="thetopsites.net"]
+duckduckgo.com##[data-domain*="ubuntugeeks.com"]
 
 ! Remove certain domains from Google search results
 google.*##.g:has(a[href*="geeksforgeeks.org"])
