@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            IMDB Copy (Richtext)
-// @version         1.1.0
+// @version         1.2.0
 // @description     Create a TODO out of the current IMDB site
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -12,7 +12,12 @@
 // @grant           GM_addStyle
 // ==/UserScript==
 
-GM_addStyle(".copy-button { color: gold; cursor: pointer; font-weight: bold; font-size: 16px; } ");
+GM_addStyle(".copy-button { color: gold; cursor: pointer; font-weight: bold; font-size: 16px; margin-left: 15px; } ");
+
+const transformDuration = duration => {
+  const [hour, minutes] = duration.replace("PT", "").replace("H", ":").replace("M","h").split(":")
+  return `${hour}:${minutes.padStart(3, "0")}`;
+}
 
 const runScript = () => {
 
@@ -22,7 +27,7 @@ const runScript = () => {
 
     var movie = JSON.parse(document.querySelector("script[type='application/ld+json']").textContent);
     var title = [].reduce.call(document.querySelector("h1").childNodes, function(a, b) { return a + (b.nodeType === 3 ? b?.textContent : ''); }, '').trim();
-    var description = ` — ${movie.genre.join ? movie.genre.join(", ") : movie.genre}, ${movie.duration.replace("PT", "").replace("H", ":").replace("M","h")}`;
+    var description = ` — ${movie.genre.join ? movie.genre.join(", ") : movie.genre}, ${transformDuration(movie.duration)}`;
 
     // clipboard textarea
     var clip = document.createElement('div');
