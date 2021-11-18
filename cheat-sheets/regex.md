@@ -2,12 +2,12 @@
 
 ## Anchors
 
-|      |                                                         |
-| ---- | ------------------------------------------------------- |
-| `^`  | Start of string, or start of line in multi-line pattern |
-| `$`  | End of string, or end of line in multi-line pattern     |
-| `\b` | Word boundary                                           |
-| `\B` | Not word boundary                                       |
+|      |                                   |
+| ---- | --------------------------------- |
+| `^`  | Start of string, or start of line |
+| `$`  | End of string, or end of line     |
+| `\b` | Word boundary                     |
+| `\B` | Not word boundary                 |
 
 ## Character classes
 
@@ -33,6 +33,23 @@
 
 Add a `?` to a quantifier to make it ungreedy.
 
+## Group & References
+
+|        |                     |
+| ------ | ------------------- |
+| `()`   | Group               |
+| `\1`   | Reference           |
+| `(?:)` | Non-capturing Group |
+
+## Flags
+
+|     |             |
+| --- | ----------- |
+| `i` | Ignore Case |
+| `g` | Global      |
+| `m` | Multiline   |
+
 ## Resources
 
 - https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+- https://regexlearn.com/cheatsheet
