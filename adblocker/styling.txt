@@ -2,6 +2,7 @@
 ! Homepage: https://github.com/darekkay/config-files/
 
 ! General site improvements
+brandur.org##article:style(font-family: "Nunito", Arial, sans-serif !important)
 tonsky.me##body:style(background: none !important)
 
 ! Deemphasize Twitter images and videos without an accessible label
