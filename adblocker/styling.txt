@@ -9,3 +9,9 @@ tonsky.me##body:style(background: none !important)
 ! https://meyerweb.com/eric/thoughts/2021/01/01/highlighting-accessible-twitter-content/
 twitter.com##div[aria-label="Image"]:hover:style(filter: grayscale(1) contrast(0.5))
 twitter.com##div[aria-label="Embedded video"]:hover:style(filter: grayscale(1) contrast(0.5))
+
+! Pokewiki mobile version
+pokewiki.de###pw-sidebar-menu1:style(width: 100% !important; max-width: 995px !important;)
+pokewiki.de###gl-content-wrapper:style(width: 100% !important; max-width: 995px !important;)
+pokewiki.de###gl-content:style(width: 100% !important; max-width: 995px !important;)
+pokewiki.de###pw-logobar:style(width: 100% !important; max-width: 995px !important;)
