@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Amazon Smile Redirect
-// @version         1.0.2
+// @version         1.1.0
 // @description     Redirect Amazon to Amazon Smile
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -12,10 +12,14 @@
 // @grant       none
 // ==/UserScript==
 
-var url = window.location.href;
-var redirectUrl = url
-  .replace("//www.amazon", "//smile.amazon")
-  .replace("//amazon.", "//smile.amazon.");
+// smile only works for logged-in users
+if(!document.querySelector("a[href^='https://www.amazon.de/ap/signin'")) {
 
-console.log("Redirecting to Amazon Smile: " + redirectUrl);
-window.location.replace(redirectUrl);
+  var url = window.location.href;
+  var redirectUrl = url
+    .replace("//www.amazon", "//smile.amazon")
+    .replace("//amazon.", "//smile.amazon.");
+
+  console.log("Redirecting to Amazon Smile: " + redirectUrl);
+  window.location.replace(redirectUrl);
+}
