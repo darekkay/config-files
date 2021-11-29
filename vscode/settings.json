@@ -123,6 +123,12 @@
       "isWholeLine": true
     },
     {
+      "text": "[+]",
+      "color": "black",
+      "backgroundColor": "#e78c45",
+      "isWholeLine": true
+    },
+    {
       "text": "[-]",
       "color": "black",
       "backgroundColor": "#61AFEF",
