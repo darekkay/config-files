@@ -26,6 +26,8 @@ Clean URLs from unnecessary parameters.
 
 * [Amazon Smile Redirect](https://github.com/darekkay/config-files/raw/master/userscripts/amazon-smile.user.js) (Germany only)
 * [Enforce English page versions](https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js)
+* [HN Comments in New Tab](https://github.com/darekkay/config-files/raw/master/userscripts/hn-new-tab.user.js)
+* [IMDB Copy](https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-richtext.user.js)
 * [UltraStarDB](https://github.com/darekkay/config-files/raw/master/userscripts/usdb.user.js)
 
 ## External scripts
