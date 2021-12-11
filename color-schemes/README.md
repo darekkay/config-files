@@ -8,6 +8,11 @@
 - [Tomorrow Evening](./themes/tomorrow-evening/README.md)
 - [DK Monokai](./themes/dk-monokai/README.md)
 
+## Other color schemes
+
+- [Nord](https://www.nordtheme.com)
+- [Dracula](https://draculatheme.com/)
+
 ## Base16:Themer Mapping
 
 | Base 16 | Themer  |
