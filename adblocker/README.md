@@ -4,10 +4,12 @@
 
 ## Filter lists
 
-- [Custom Filters](filters.txt)
-- [Chat and Helpdesk widgets](fakenews.txt)
+- [Custom filters](filters.txt)
+- [Custom styling](styling.txt)
+- [Chat and Helpdesk widgets](chats.txt)
 - [Fake News websites](fakenews.txt)
 - [Gambling websites](gambling.txt)
+- [Search engine domains](search-engines.txt)
 
 ## External Filter lists
 

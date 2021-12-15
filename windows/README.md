@@ -53,3 +53,7 @@
   - [Source code](https://github.com/undergroundwires/privacy.sexy/tree/master/src/application/collections)
 - [Sophia Script](https://github.com/farag2/Sophia-Script-for-Windows)
   - [Sophia Script Wrapper GUI](https://benchtweakgaming.com/2020/11/12/windows-10-debloat-tool/)
+- gpedit.msc → Computerkonfiguration → Administrative Vorlagen → Windows-Komponenten → Datensammlung und Vorabversionen
+  - Telemetrie zulassen: Deaktiviert
+- Aufgabenplanung → Microsoft → Windows → Application Experience
+  - Microsoft Compatibility Appraiser: Deaktiviert
