@@ -33,6 +33,7 @@ codenong.com
 coder.work
 coderedirect.com
 coderoad.ru
+configrouter.com
 culinarydegree.info
 debugcn.com
 developreference.com
@@ -42,10 +43,13 @@ ec-europe.org
 ecnf2016.org
 exceptionshub.com
 faithcov.org
+farath.com
 findbestopensource.com
 fitforlearning.org
 fixes.pub
 fluffyfables.com
+fluttercorner.com
+forpythons.com
 generacodice.blog
 generacodice.com
 generacodice.it
@@ -58,6 +62,7 @@ githubmemory.com
 gitmemory.cn
 gitmemory.com
 gupgallery.com
+howtofix.io
 intellipaat.com
 isolution.pro
 issueexplorer.com
@@ -75,6 +80,7 @@ kotaeta.com
 laravelquestions.com
 living-sun.com
 lycaeum.dev
+lzomedia.com
 narkive.jp
 newbedev.com
 noblenaz.org
@@ -91,6 +97,7 @@ programmersought.com
 programmerstart.com
 projectbackpack.org
 py4u.net
+python.engineering
 pythonwd.com
 qa-stack.pl
 qapicks.com
@@ -129,6 +136,7 @@ stackovernet.xyz
 stackoverrun.com
 stackqna.com
 stormcrow.dev
+studytonight.com
 sunflowercreations.org
 theshuggahpies.com
 thetopsites.net
