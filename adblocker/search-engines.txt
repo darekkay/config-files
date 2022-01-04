@@ -159,7 +159,7 @@ duckduckgo.com##[data-domain*="xsprogram.com"]
 duckduckgo.com##[data-domain*="zsharp.org"]
 
 
-! GOOGLE
+! Google
 
 ! Low quality
 google.*##.g:has(a[href*="geeksforgeeks.org"])
@@ -311,3 +311,4 @@ google.*##.g:has(a[href*="wenyanet.com"])
 google.*##.g:has(a[href*="xiu2.net"])
 google.*##.g:has(a[href*="xsprogram.com"])
 google.*##.g:has(a[href*="zsharp.org"])
+
