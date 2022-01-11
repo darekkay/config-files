@@ -123,6 +123,11 @@ Use high-contrast scrollbars
 Disable popup message for debugging websites
   - ☑ Build, Execution, Deployment → Debugger → Allow unsigned requests
 
+## Config folder
+
+- Help → Edit Custom Properties
+  - Check location of `idea.properties`
+
 ## VCS Ignore Files
 
 If you decide to share IDE project files with other developers, share:
