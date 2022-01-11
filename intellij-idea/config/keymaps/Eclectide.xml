@@ -2,6 +2,10 @@
   <action id="ChangesView.Refresh">
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="CloseActiveTab" />
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="shift ctrl f4" />
+  </action>
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="shift ctrl slash" />
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
@@ -35,8 +39,13 @@
   <action id="LocalHistory.ShowHistory">
     <keyboard-shortcut first-keystroke="shift alt h" />
   </action>
+  <action id="ResizeToolWindowDown" />
   <action id="ResizeToolWindowLeft" />
   <action id="ResizeToolWindowRight" />
+  <action id="ResizeToolWindowUp" />
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="shift ctrl alt r" />
+  </action>
   <action id="ShiftDownAction">
     <keyboard-shortcut first-keystroke="alt subtract" />
   </action>

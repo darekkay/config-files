@@ -52,6 +52,10 @@
   <action id="ActivateVersionControlToolWindow">
     <keyboard-shortcut first-keystroke="meta 9" />
   </action>
+  <action id="CloseActiveTab" />
+  <action id="CloseAllEditors">
+    <keyboard-shortcut first-keystroke="shift ctrl f4" />
+  </action>
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="shift ctrl slash" />
     <keyboard-shortcut first-keystroke="shift ctrl divide" />
@@ -92,6 +96,15 @@
   <action id="EditorToggleShowWhitespaces">
     <keyboard-shortcut first-keystroke="shift ctrl alt w" />
   </action>
+  <action id="ExpandAllRegions">
+    <keyboard-shortcut first-keystroke="shift ctrl add" />
+  </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="ctrl add" />
+  </action>
+  <action id="ExpandRegionRecursively">
+    <keyboard-shortcut first-keystroke="ctrl alt add" />
+  </action>
   <action id="Find">
     <keyboard-shortcut first-keystroke="alt f3" />
     <keyboard-shortcut first-keystroke="meta f" />
@@ -108,18 +121,29 @@
     <mouse-shortcut keystroke="button2" />
     <mouse-shortcut keystroke="meta button1" />
   </action>
+  <action id="GotoFile">
+    <keyboard-shortcut first-keystroke="shift ctrl n" />
+    <keyboard-shortcut first-keystroke="shift meta n" />
+  </action>
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift ctrl b" />
     <mouse-shortcut keystroke="shift meta button1" />
   </action>
+  <action id="HippieBackwardCompletion" />
+  <action id="HippieCompletion" />
   <action id="IntroduceFunctionalParameter" />
+  <action id="JumpToLastChange" />
   <action id="LocalHistory.ShowHistory">
     <keyboard-shortcut first-keystroke="shift alt h" />
   </action>
   <action id="MethodOverloadSwitchDown" />
   <action id="MethodOverloadSwitchUp" />
-  <action id="MoveStatementDown" />
-  <action id="MoveStatementUp" />
+  <action id="MoveStatementDown">
+    <keyboard-shortcut first-keystroke="shift meta down" />
+  </action>
+  <action id="MoveStatementUp">
+    <keyboard-shortcut first-keystroke="shift meta up" />
+  </action>
   <action id="Replace">
     <keyboard-shortcut first-keystroke="meta r" />
   </action>
@@ -139,6 +163,9 @@
   <action id="SearchEverywhere.NavigateToPrevGroup">
     <keyboard-shortcut first-keystroke="page_up" />
   </action>
+  <action id="SelectInProjectView">
+    <keyboard-shortcut first-keystroke="shift ctrl alt r" />
+  </action>
   <action id="ShiftDownAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt comma" />
     <keyboard-shortcut first-keystroke="alt minus" />
@@ -149,6 +176,10 @@
   </action>
   <action id="ShowBookmarks" />
   <action id="ShowErrorDescription" />
+  <action id="ShowNavBar">
+    <keyboard-shortcut first-keystroke="alt home" />
+    <keyboard-shortcut first-keystroke="shift meta b" />
+  </action>
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
@@ -189,6 +220,10 @@
   </action>
   <action id="Tool_Web_Search on DevDocs">
     <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="Unwrap">
+    <keyboard-shortcut first-keystroke="shift ctrl delete" />
+    <keyboard-shortcut first-keystroke="shift ctrl back_space" />
   </action>
   <action id="Vcs.ShowTabbedFileHistory">
     <keyboard-shortcut first-keystroke="alt h" />

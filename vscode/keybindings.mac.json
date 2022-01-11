@@ -213,6 +213,12 @@
     "command": "gitlens.showFileHistoryInView"
   },
 
+  // Reveal active file in sidebar
+  {
+    "key": "ctrl+shift+alt+r",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+
   // Go to file (default for Windows)
   {
     "key": "cmd+e",

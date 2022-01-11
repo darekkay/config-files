@@ -198,5 +198,11 @@
     "key": "ctrl+shift+g h",
     "command": "-gitlens.showQuickFileHistory",
     "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
+
+  // Reveal active file in sidebar
+  {
+    "key": "ctrl+shift+alt+r",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]

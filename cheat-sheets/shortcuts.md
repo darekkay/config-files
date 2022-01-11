@@ -19,21 +19,22 @@
 
 ## Editor
 
-| Shortcut               | Description          |
-| ---------------------- | -------------------- |
-| Alt + Shift + ↑/↓      | Move line up/down    |
-| Ctrl + D               | Duplicate line       |
-| Ctrl + Y               | Delete line          |
-| Ctrl + Backspace       | Delete last word     |
-| Ctrl + Delete          | Delete next word     |
-| Ctrl + Shift + Y       | Toggle line comment  |
-| Ctrl + Alt + Shift + Y | Toggle block comment |
-| Ctrl/Cmd + R           | Replace              |
-| Ctrl/Cmd + Shift + R   | Replace in files     |
-| Ctrl/Cmd + F           | Find                 |
-| Ctrl/Cmd + Shift + F   | Find in files        |
+| Shortcut               | Description                  |
+| ---------------------- | ---------------------------- |
+| Alt + Shift + ↑/↓      | Move line up/down            |
+| Ctrl + D               | Duplicate line               |
+| Ctrl + Y               | Delete line                  |
+| Ctrl + Backspace       | Delete last word             |
+| Ctrl + Delete          | Delete next word             |
+| Ctrl + Shift + Y       | Toggle line comment          |
+| Ctrl + Alt + Shift + Y | Toggle block comment         |
+| Ctrl + Alt + Shift + R | Reval active file in sidebar |
+| Ctrl/Cmd + R           | Replace                      |
+| Ctrl/Cmd + Shift + R   | Replace in files             |
+| Ctrl/Cmd + F           | Find                         |
+| Ctrl/Cmd + Shift + F   | Find in files                |
 
-These shortcuts are configured to be equal among IDEA, VSCode and Notepad++.
+These shortcuts are configured to be equal among IDEA, VSCode and (mostly) Notepad++.
 
 ## Browser (Chrome / Firefox)
 
