@@ -1,3 +1,7 @@
 _definitions.js
 _playground.js
 _playground/
+
+# yalc files: https://www.npmjs.com/package/yalc
+.yalc/
+yalc.lock
