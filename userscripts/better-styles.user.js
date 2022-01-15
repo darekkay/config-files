@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.1.1
+// @version         2.1.2
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -39,6 +39,7 @@ if (page.url.indexOf('news.ycombinator.com') > -1) {
     .comhead font { color: #5a5a5a !important }
     input { color: black !important; }
     textarea {background-color: #E0E0E0 !important; border-left: 12px solid #CCCCCC !important; }
+    font[color="#000000"] { color: #a3b72c !important; }
   `);
 }
 
