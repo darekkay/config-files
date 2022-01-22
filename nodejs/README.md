@@ -96,6 +96,8 @@ n prune              # Remove all versions except the current version
 pm2 start apps.yml                  # load all apps defined in apps.yml
 pm2 save                            # save process list
 pm2 reload apps.yml [--update-env]  # reload all apps
+pm2 stop all                        # stop all apps
+pm2 delete all                      # delete all apps
 
 pm2 list              # list all processes
 pm2 monit             # monitor all processes
@@ -103,8 +105,6 @@ pm2 describe 0        # display all information about a specific process
 
 pm2 logs [app]        # display logs
 pm2 reset [process]   # reset meta data (restarted time...)
-
-pm2 install typescript   # Add Typescript support
 ```
 
 - [Update pm2](http://pm2.keymetrics.io/docs/usage/update-pm2/)
@@ -124,6 +124,8 @@ pm2 set pm2-logrotate:retain 50
 pm2 set pm2-logrotate:rotateInterval "0 1 1 1 *"
 pm2 set pm2-logrotate:workerInterval 3600
 ```
+
+- TypeScript support is not very good. Instead, compile TS code to JS.
 
 ## node-gyp
 
