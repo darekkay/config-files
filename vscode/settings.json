@@ -41,6 +41,7 @@
   "files.associations": {
     "*.html5": "html",
     "*.icls": "xml",
+    "*.reg": "ini",
     "*.todo": "markdown",
     ".aliases": "shellscript",
     ".prettierrc": "yaml"

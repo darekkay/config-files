@@ -22,6 +22,8 @@
   - [Windows 10](https://winaero.com/blog/change-or-disable-the-shortcut-text-for-shortcuts-in-windows-10/)
 - Disable Game Bar
   - ☐ Settings → Gaming → Game Bar → Record game clips, screenshots, and broadcast using Game bar
+- Activate clipboard history (WIN + V)
+  - ☑ Settings → Clipboard → Clipboard History
 
 ## Commands
 
@@ -45,6 +47,11 @@
 
 - [pacman](http://www2.futureware.at/~nickoe/msys2-mirror/msys/x86_64/)
   - [rsync](https://blog.tiger-workshop.com/add-rsync-to-git-bash-for-windows/)
+
+## Enable Group Policy Editor in Home edition
+
+- Run `enable-gpedit.bat`
+- https://windowsreport.com/enable-gpedit-windows-11/
 
 ## Enforce privacy & security
 
