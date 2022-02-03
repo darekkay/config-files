@@ -29,7 +29,7 @@ alias ntl='ntl -A -s 25'
 alias inst='sudo apt-get install'
 alias update='sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y'
 
-## Applications
+# Applications
 alias xy='XYplorer.exe $(pwd)'
 # alias start=open    # Mac alias
 
@@ -86,7 +86,7 @@ gitc() {
 
 # Npm
 npm4all() {
-  find . -mindepth 1 -maxdepth 2 -type f -name 'package.json' -prune -exec sh -c 'echo ${0%????????????}; npm --prefix ${0%????????????} $1' {} "$1" \;
+  find . -mindepth 1 -maxdepth 3 -type f -name 'package.json' -prune -exec sh -c 'echo ${0%????????????}; npm --prefix ${0%????????????} $1' {} "$1" \;
 }
 
 # Yarn

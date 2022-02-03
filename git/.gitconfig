@@ -134,9 +134,9 @@
   pf = push --force-with-lease
 
   # Push master branch to all remotes
-  pa = !git remote | xargs -L1 -I R git push R master
+  pa = !git remote | xargs -I R git push R master
   pushall = !git pa
-  paf = !git remote | xargs -L1 -I R git push R master --force-with-lease
+  paf = !git remote | xargs -I R git push R master --force-with-lease
 
   # Add and commit all changes and new files
   ca = "!f() { git add . && git commit -m \"$1\"; }; f"
