@@ -71,3 +71,11 @@ git tag | xargs git tag -d
 [includeIf "gitdir:~/personal/"]
   path = .gitconfig-personal
 ```
+
+## Ignore commits
+
+- https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt
+
+```shell
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+```
