@@ -24,6 +24,7 @@
   - ☐ Settings → Gaming → Game Bar → Record game clips, screenshots, and broadcast using Game bar
 - Activate clipboard history (WIN + V)
   - ☑ Settings → Clipboard → Clipboard History
+- [Disable Intel display power saving technology](https://superuser.com/questions/1487069/how-to-disable-intel-display-power-saving-technology)
 
 ## Commands
 

@@ -1,5 +1,12 @@
 # PuTTY
 
+## Putty Eclectide color theme
+
+![Putty Eclectide color theme](putty-eclectide.png)
+
+- [Color scheme file](putty-eclectide.reg) (Replace `SESSION_NAME` before executing)
+- [Blog post](https://darekkay.com/blog/my-putty-color-scheme/)
+
 ## Move PuTTY sessions to another computer
 
 PuTTY stores all the session information in Windows registry:

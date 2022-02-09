@@ -135,3 +135,8 @@ If you decide to share IDE project files with other developers, share:
  - All the .iml module files that can be located in different module directories (applies to IntelliJ IDEA)
 
 [Source](https://intellij-support.jetbrains.com/hc/en-us/articles/206544839)
+
+## Bugs
+
+- [Run menu shows "Nothing here"](https://youtrack.jetbrains.com/issue/IDEA-228180)
+  - Disable Gradle plugin

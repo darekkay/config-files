@@ -8,6 +8,7 @@
   "workbench.settings.editor": "json",
   "workbench.enableExperiments": false,
   "workbench.tips.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
 
   // Editor
 
@@ -17,7 +18,7 @@
   "editor.scrollBeyondLastLine": false,
   "editor.mouseWheelZoom": true,
   "editor.minimap.enabled": false,
-  "editor.renderIndentGuides": false,
+  "editor.guides.indentation": false,
   "editor.renderWhitespace": "all",
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
@@ -60,12 +61,18 @@
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.rendererType": "dom",
 
+  // Security
+
+  "security.workspace.trust.enabled": false,
+
   // Telemetry
 
   "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "telemetry.enableCrashReporter": false,
 
   // Update
+
   "update.showReleaseNotes": false,
 
   // Extensions
@@ -145,7 +152,6 @@
 
   // GitLens
 
-  "gitlens.advanced.telemetry.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false

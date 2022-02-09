@@ -3,3 +3,6 @@
 127.0.0.1 google-analytics.com
 127.0.0.1 www.google-analytics.com
 127.0.0.1 ssl.google-analytics.com
+
+# Disable GlyphFinder updates
+127.0.0.1 ueber.fra1.digitaloceanspaces.com
