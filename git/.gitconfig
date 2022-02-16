@@ -31,23 +31,42 @@
 [color]
   ui = true
 
+
 [diff]
   # Default diff tool
-  tool = p4merge
+  tool = bc
+
+[difftool "bc"]
+  # Beyond Compare
+  path = C:/Program Files/Beyond Compare/BComp.exe
+
+  # Mac
+  # Run Beyond Compare and Select "Install Command Line Tools" in app menu
+  # path = /usr/local/bin/bcomp
+  # trustExitCode = true
 
 [difftool "p4merge"]
-  # Path to p4merge.exe (cmd is deprecated)
+  # P4Merge
   path = C:/Program Files/Perforce/p4merge.exe
 
   # Mac
   # path = /Applications/p4merge.app/Contents/MacOS/p4merge
 
+
 [merge]
   # Default merge tool
-  tool = p4merge
+  tool = bc
+
+[mergetool "bc"]
+  # Beyond Compare
+  path = C:/Program Files/Beyond Compare/BComp.exe
+
+  # Mac
+  # path = /usr/local/bin/bcomp
+  # trustExitCode = true
 
 [mergetool "p4merge"]
-  # Path to p4merge.exe (cmd is deprecated)
+  # P4Merge
   path = C:/Program Files/Perforce/p4merge.exe
 
   # Mac
@@ -57,6 +76,7 @@
   keepBackup = false       # Don't create .orig files
   prompt = false           # Don't prompt before each invocation of the merge tool
   trustexitcode = false
+
 
 [interactive]
   # Delta interactive diff filter
