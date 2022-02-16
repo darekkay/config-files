@@ -1,0 +1,5 @@
+"Selected Items"
+  run """BComp.exe"" <selitems>";
+
+"Current Panes"
+  run """BComp.exe"" ""<get path 1>"" ""<get path 2>""";
