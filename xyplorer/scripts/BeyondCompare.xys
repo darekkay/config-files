@@ -1,5 +1,15 @@
-"Selected Items"
+"Current panes"
+  run """BComp.exe"" ""<get path 1>"" ""<get path 2>""";
+
+"Selected items"
+  end ("<curitem>"==""),  "No file selected. Script cancelled.";
   run """BComp.exe"" <selitems>";
 
-"Current Panes"
-  run """BComp.exe"" ""<get path 1>"" ""<get path 2>""";
+"Selected items (both panes)"
+  focus "P1";
+  end ("<curitem>"==""),  "No file selected. Script cancelled.";
+  $leftFile = <curitem>;
+  focus "P2";
+  end ("<curitem>"==""),  "No file selected. Script cancelled.";
+  $rightFile = <curitem>;
+  run """BComp.exe"" ""$leftFile"" ""$rightFile""";
