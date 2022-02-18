@@ -204,5 +204,15 @@
   {
     "key": "ctrl+shift+alt+r",
     "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+
+  // Close all editors in group
+  {
+    "key": "ctrl+shift+f4",
+    "command": "workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
   }
 ]
