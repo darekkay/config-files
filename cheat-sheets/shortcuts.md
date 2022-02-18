@@ -33,6 +33,7 @@
 | Ctrl/Cmd + Shift + R   | Replace in files             |
 | Ctrl/Cmd + F           | Find                         |
 | Ctrl/Cmd + Shift + F   | Find in files                |
+| Ctrl + Alt + Shift + R | Reveal in sidebar            |
 
 These shortcuts are configured to be equal among IDEA, VSCode and (mostly) Notepad++.
 
