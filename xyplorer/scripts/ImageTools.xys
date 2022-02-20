@@ -10,6 +10,9 @@ include "include/shared.xys";
 "Album Art"
   runSelected("C:\Program Files\ImageMagick\convert.exe", "-resize 1:1^!^> -resize 500x500^> §file ""cover-art.jpg""");
 
+"Autorotate (EXIF)"
+  runSelected("C:\Program Files\ImageMagick\mogrify.exe", "-auto-orient §file");
+
 // ----------------------------------------------------------------------------
 "Primitive"
   runSelected("C:\Users\User\go\bin\primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1 -s 730");
