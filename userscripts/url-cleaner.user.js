@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            URL Cleaner
-// @version         1.1.1
+// @version         1.2
 // @description     Clean URLs from unnecessary parameters
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -11,6 +11,7 @@
 // @include         http*://*amazon.com/*
 // @include         http*://*facebook.com/*
 // @include         http*://*goodreads.com/*
+// @include         http*://*hellofresh.de/recipes/*
 // @include         http*://*imdb.com/*
 // @include         http*://*reddit.com /*
 // @include         http*://*stackoverflow.blog/*
@@ -87,6 +88,7 @@ const queryParameterFilter = {
 
   "goodreads.com": ["from_search", "from_srp", "qid", "rank"],
 
+  "hellofresh.de": ["to-instructions", "week"],
 
   "imdb.com": ["ref_"],
 
