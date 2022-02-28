@@ -1,6 +1,7 @@
 ! Low quality
 geeksforgeeks.org
 gutefrage.net
+moyens.net
 pinterest.com
 pinterest.de
 quora.com

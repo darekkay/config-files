@@ -10,6 +10,7 @@
 ! Low quality
 duckduckgo.com##[data-domain*="geeksforgeeks.org"]
 duckduckgo.com##[data-domain*="gutefrage.net"]
+duckduckgo.com##[data-domain*="moyens.net"]
 duckduckgo.com##[data-domain*="pinterest.com"]
 duckduckgo.com##[data-domain*="pinterest.de"]
 duckduckgo.com##[data-domain*="quora.com"]
@@ -245,6 +246,7 @@ duckduckgo.com##[data-domain*="zsharp.org"]
 ! Low quality
 google.*##.g:has(a[href*="geeksforgeeks.org"])
 google.*##.g:has(a[href*="gutefrage.net"])
+google.*##.g:has(a[href*="moyens.net"])
 google.*##.g:has(a[href*="pinterest.com"])
 google.*##.g:has(a[href*="pinterest.de"])
 google.*##.g:has(a[href*="quora.com"])
