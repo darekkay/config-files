@@ -18,6 +18,9 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 - `hello-fresh-copy.user.js`
   - Copy Hello Fresh recipes.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hello-fresh-copy.user.js)
+- `hn-avatars.user.js`
+  - Display generated avatars next to usernames.
+  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hn-avatars.user.js)
 - `hn-new-tab.user.js`
   - Open Hacker News comment threads in a new tab.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hn-new-tab.user.js)
