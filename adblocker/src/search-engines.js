@@ -16,6 +16,16 @@ let output = `! Title: Search engine domains
 const source = readFileSync(join(__dirname, "search-engines.txt"), "utf-8");
 const fileLines = source.split("\n");
 
+// Domains
+output += "\n! Domains\n\n";
+fileLines.forEach(line => {
+  if (line.trim() === "" || line.startsWith("!")) {
+    output += `${line}\n`;
+  } else {
+    output += `*://${line}/*\n`;
+  }
+});
+
 // DuckDuckGo
 output += "\n! DuckDuckGo\n\n";
 fileLines.forEach(line => {
