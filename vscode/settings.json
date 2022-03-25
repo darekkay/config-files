@@ -23,6 +23,7 @@
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
   "editor.accessibilitySupport": "off",
+  "editor.wordBasedSuggestions": false,
 
   // Window
 
