@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.1.2
+// @version         2.1.3
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -68,38 +68,10 @@ else if (page.url.indexOf('stackoverflow.com') > -1) {
 
 else if (page.url.indexOf('todoist.com') > -1) {
 
-  // general
-  GM_addStyle(`
-    body { font-family: '.SFNSDisplay-Regular','Segoe UI','Helvetica',Arial,sans-serif !important; }
-    #left_menu { background-color: #fff !important; border-left: 1px solid #f1f1f1 !important; }
-  `);
-
-  // underline URLs in task names
-  GM_addStyle(`.ex_link, .task_item a { text-decoration: underline !important; }`);
-
   // smaller paddings in the navigation bar
   GM_addStyle(`
-    .generic_left_list td.td_color .counter_color, .generic_left_list td.menu .icon { height: 20px !important; }
-    .generic_left_list td.name, .generic_left_list td.counter, .generic_left_list td.menu { height: 20px !important; line-height: 20px !important; }
-    .generic_left_list li table td { padding-top: 5px !important; padding-bottom: 5px !important; }
-    .generic_left_list .drag_and_drop_handler { padding-top: 2px !important; }
-    .generic_left_list .arrow { margin-top: 3px !important; }
-    #top_filters { padding-top: 4px !important; }
     #top_filters .filter, #top_filters .favorite_item { padding-top: 3px !important; padding-bottom: 3px !important; }
-    #left_menu_tabs { margin-top: 18px !important; }
-  `);
-
-  // smaller paddings in the task bar
-  GM_addStyle(`
-    .task_item_details { padding-top: 6px !important; padding-bottom: 6px !important; }
-    #editor .drag_and_drop_handler { margin-top: -3px !important; }
-    #editor .arrow { margin-top: 5px !important; }
-  `);
-
-  // hide projects dropdown
-  GM_addStyle(`
-    .expansion_panel:nth-child(2) .panel_summary { display: none; }
-    #top_filters { border-bottom: 1px solid #f1f1f1; }
+    [data-sidebar-list-item="true"] > div { padding-top: 3px !important; padding-bottom: 3px !important; }
   `);
 }
 
