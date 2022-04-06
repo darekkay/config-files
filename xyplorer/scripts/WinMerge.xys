@@ -1,5 +1,14 @@
+"Current Panes"
+  run """WinMergeU.exe"" /e /r ""<get path 1>"" ""<get path 2>""";
+
 "Selected Items"
   run """WinMergeU.exe"" /e <selitems>";
 
-"Current Panes"
-  run """WinMergeU.exe"" /e /r ""<get path 1>"" ""<get path 2>""";
+"Selected items (both panes)"
+  focus "P1";
+  end ("<curitem>"==""),  "No file selected. Script cancelled.";
+  $leftFile = <curitem>;
+  focus "P2";
+  end ("<curitem>"==""),  "No file selected. Script cancelled.";
+  $rightFile = <curitem>;
+  run """WinMergeU.exe"" /e /r ""$leftFile"" ""$rightFile""";
