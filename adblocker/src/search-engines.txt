@@ -12,6 +12,7 @@ w3schools.com
 
 ! Copycats
 ! Related project: https://github.com/quenhus/uBlock-Origin-dev-filter
+! Get updates: https://github.com/quenhus/uBlock-Origin-dev-filter/compare/da36035d0e2022addbfad3ca3274476111511d58..main
 1r1g.com
 360wiki.ru
 5axxw.com
@@ -21,6 +22,7 @@ alltodev.com
 alwaysemmyhope.com
 amuddycup.com
 androidrepo.com
+angularquestions.com
 answacode.com
 answer-id.com
 answeright.com
@@ -83,6 +85,7 @@ coderoad.in
 coderoad.ru
 coderquestion.ru
 codersatellite.com
+codeutility.org
 codewdw.com
 configrouter.com
 coredump.biz
@@ -96,6 +99,7 @@ desenv-web-rp.com
 devbugfix.com
 developreference.com
 devfaq.fr
+dockerquestions.com
 docway.net
 dogovori.info
 domainelespailles.net
@@ -166,6 +170,7 @@ icourban.com
 innominds.com
 intellipaat.com
 isolution.pro
+issueantenna.com
 issueexplorer.com
 issues-world.com
 it-mure.jp.net
@@ -207,6 +212,7 @@ narkive.jp
 newbedev.com
 news24lite.com
 noblenaz.org
+npm.io
 npmmirror.com
 nuomiphp.com
 ohandroid.com
@@ -234,6 +240,7 @@ py4u.net
 python-stack.de
 python.engineering
 pythonawesome.com
+pythonfixing.com
 pythonissues.com
 pythonrepo.com
 pythonshowcase.com
@@ -265,6 +272,7 @@ qi-u.com
 quabr.com
 quares.ru
 question-it.com
+reactquestions.com
 readintrend.com
 recalll.co
 reposhub.com
@@ -290,6 +298,7 @@ softwareuser.asklobster.com
 soinside.com
 sprosi.pro
 sqlite.in
+stackallflow.com
 stackanswers.net
 stackfault.net
 stackfinder.jp.net

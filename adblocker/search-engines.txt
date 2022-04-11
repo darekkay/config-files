@@ -21,6 +21,7 @@
 
 ! Copycats
 ! Related project: https://github.com/quenhus/uBlock-Origin-dev-filter
+! Get updates: https://github.com/quenhus/uBlock-Origin-dev-filter/compare/da36035d0e2022addbfad3ca3274476111511d58..main
 *://1r1g.com/*
 *://360wiki.ru/*
 *://5axxw.com/*
@@ -30,6 +31,7 @@
 *://alwaysemmyhope.com/*
 *://amuddycup.com/*
 *://androidrepo.com/*
+*://angularquestions.com/*
 *://answacode.com/*
 *://answer-id.com/*
 *://answeright.com/*
@@ -92,6 +94,7 @@
 *://coderoad.ru/*
 *://coderquestion.ru/*
 *://codersatellite.com/*
+*://codeutility.org/*
 *://codewdw.com/*
 *://configrouter.com/*
 *://coredump.biz/*
@@ -105,6 +108,7 @@
 *://devbugfix.com/*
 *://developreference.com/*
 *://devfaq.fr/*
+*://dockerquestions.com/*
 *://docway.net/*
 *://dogovori.info/*
 *://domainelespailles.net/*
@@ -171,9 +175,11 @@
 *://i-harness.com/*
 *://ibootweb.com/*
 *://iboxshare.com/*
+*://icourban.com/*
 *://innominds.com/*
 *://intellipaat.com/*
 *://isolution.pro/*
+*://issueantenna.com/*
 *://issueexplorer.com/*
 *://issues-world.com/*
 *://it-mure.jp.net/*
@@ -215,6 +221,7 @@
 *://newbedev.com/*
 *://news24lite.com/*
 *://noblenaz.org/*
+*://npm.io/*
 *://npmmirror.com/*
 *://nuomiphp.com/*
 *://ohandroid.com/*
@@ -242,6 +249,7 @@
 *://python-stack.de/*
 *://python.engineering/*
 *://pythonawesome.com/*
+*://pythonfixing.com/*
 *://pythonissues.com/*
 *://pythonrepo.com/*
 *://pythonshowcase.com/*
@@ -273,6 +281,7 @@
 *://quabr.com/*
 *://quares.ru/*
 *://question-it.com/*
+*://reactquestions.com/*
 *://readintrend.com/*
 *://recalll.co/*
 *://reposhub.com/*
@@ -283,6 +292,7 @@
 *://ruphp.com/*
 *://rustrepo.com/*
 *://safehavenpetrescue.org/*
+*://salesjobinfo.com/*
 *://sch22.org/*
 *://scholarship.edu.vn/*
 *://secret-bases.co.uk/*
@@ -297,6 +307,7 @@
 *://soinside.com/*
 *://sprosi.pro/*
 *://sqlite.in/*
+*://stackallflow.com/*
 *://stackanswers.net/*
 *://stackfault.net/*
 *://stackfinder.jp.net/*
@@ -397,6 +408,7 @@ duckduckgo.com##[data-domain*="w3schools.com"]
 
 ! Copycats
 ! Related project: https://github.com/quenhus/uBlock-Origin-dev-filter
+! Get updates: https://github.com/quenhus/uBlock-Origin-dev-filter/compare/da36035d0e2022addbfad3ca3274476111511d58..main
 duckduckgo.com##[data-domain*="1r1g.com"]
 duckduckgo.com##[data-domain*="360wiki.ru"]
 duckduckgo.com##[data-domain*="5axxw.com"]
@@ -406,6 +418,7 @@ duckduckgo.com##[data-domain*="alltodev.com"]
 duckduckgo.com##[data-domain*="alwaysemmyhope.com"]
 duckduckgo.com##[data-domain*="amuddycup.com"]
 duckduckgo.com##[data-domain*="androidrepo.com"]
+duckduckgo.com##[data-domain*="angularquestions.com"]
 duckduckgo.com##[data-domain*="answacode.com"]
 duckduckgo.com##[data-domain*="answer-id.com"]
 duckduckgo.com##[data-domain*="answeright.com"]
@@ -468,6 +481,7 @@ duckduckgo.com##[data-domain*="coderoad.in"]
 duckduckgo.com##[data-domain*="coderoad.ru"]
 duckduckgo.com##[data-domain*="coderquestion.ru"]
 duckduckgo.com##[data-domain*="codersatellite.com"]
+duckduckgo.com##[data-domain*="codeutility.org"]
 duckduckgo.com##[data-domain*="codewdw.com"]
 duckduckgo.com##[data-domain*="configrouter.com"]
 duckduckgo.com##[data-domain*="coredump.biz"]
@@ -481,6 +495,7 @@ duckduckgo.com##[data-domain*="desenv-web-rp.com"]
 duckduckgo.com##[data-domain*="devbugfix.com"]
 duckduckgo.com##[data-domain*="developreference.com"]
 duckduckgo.com##[data-domain*="devfaq.fr"]
+duckduckgo.com##[data-domain*="dockerquestions.com"]
 duckduckgo.com##[data-domain*="docway.net"]
 duckduckgo.com##[data-domain*="dogovori.info"]
 duckduckgo.com##[data-domain*="domainelespailles.net"]
@@ -547,9 +562,11 @@ duckduckgo.com##[data-domain*="husl.ru"]
 duckduckgo.com##[data-domain*="i-harness.com"]
 duckduckgo.com##[data-domain*="ibootweb.com"]
 duckduckgo.com##[data-domain*="iboxshare.com"]
+duckduckgo.com##[data-domain*="icourban.com"]
 duckduckgo.com##[data-domain*="innominds.com"]
 duckduckgo.com##[data-domain*="intellipaat.com"]
 duckduckgo.com##[data-domain*="isolution.pro"]
+duckduckgo.com##[data-domain*="issueantenna.com"]
 duckduckgo.com##[data-domain*="issueexplorer.com"]
 duckduckgo.com##[data-domain*="issues-world.com"]
 duckduckgo.com##[data-domain*="it-mure.jp.net"]
@@ -591,6 +608,7 @@ duckduckgo.com##[data-domain*="narkive.jp"]
 duckduckgo.com##[data-domain*="newbedev.com"]
 duckduckgo.com##[data-domain*="news24lite.com"]
 duckduckgo.com##[data-domain*="noblenaz.org"]
+duckduckgo.com##[data-domain*="npm.io"]
 duckduckgo.com##[data-domain*="npmmirror.com"]
 duckduckgo.com##[data-domain*="nuomiphp.com"]
 duckduckgo.com##[data-domain*="ohandroid.com"]
@@ -618,6 +636,7 @@ duckduckgo.com##[data-domain*="py4u.net"]
 duckduckgo.com##[data-domain*="python-stack.de"]
 duckduckgo.com##[data-domain*="python.engineering"]
 duckduckgo.com##[data-domain*="pythonawesome.com"]
+duckduckgo.com##[data-domain*="pythonfixing.com"]
 duckduckgo.com##[data-domain*="pythonissues.com"]
 duckduckgo.com##[data-domain*="pythonrepo.com"]
 duckduckgo.com##[data-domain*="pythonshowcase.com"]
@@ -649,6 +668,7 @@ duckduckgo.com##[data-domain*="qi-u.com"]
 duckduckgo.com##[data-domain*="quabr.com"]
 duckduckgo.com##[data-domain*="quares.ru"]
 duckduckgo.com##[data-domain*="question-it.com"]
+duckduckgo.com##[data-domain*="reactquestions.com"]
 duckduckgo.com##[data-domain*="readintrend.com"]
 duckduckgo.com##[data-domain*="recalll.co"]
 duckduckgo.com##[data-domain*="reposhub.com"]
@@ -659,6 +679,7 @@ duckduckgo.com##[data-domain*="routinepanic.com"]
 duckduckgo.com##[data-domain*="ruphp.com"]
 duckduckgo.com##[data-domain*="rustrepo.com"]
 duckduckgo.com##[data-domain*="safehavenpetrescue.org"]
+duckduckgo.com##[data-domain*="salesjobinfo.com"]
 duckduckgo.com##[data-domain*="sch22.org"]
 duckduckgo.com##[data-domain*="scholarship.edu.vn"]
 duckduckgo.com##[data-domain*="secret-bases.co.uk"]
@@ -673,6 +694,7 @@ duckduckgo.com##[data-domain*="softwareuser.asklobster.com"]
 duckduckgo.com##[data-domain*="soinside.com"]
 duckduckgo.com##[data-domain*="sprosi.pro"]
 duckduckgo.com##[data-domain*="sqlite.in"]
+duckduckgo.com##[data-domain*="stackallflow.com"]
 duckduckgo.com##[data-domain*="stackanswers.net"]
 duckduckgo.com##[data-domain*="stackfault.net"]
 duckduckgo.com##[data-domain*="stackfinder.jp.net"]
@@ -773,6 +795,7 @@ google.*##.g:has(a[href*="w3schools.com"])
 
 ! Copycats
 ! Related project: https://github.com/quenhus/uBlock-Origin-dev-filter
+! Get updates: https://github.com/quenhus/uBlock-Origin-dev-filter/compare/da36035d0e2022addbfad3ca3274476111511d58..main
 google.*##.g:has(a[href*="1r1g.com"])
 google.*##.g:has(a[href*="360wiki.ru"])
 google.*##.g:has(a[href*="5axxw.com"])
@@ -782,6 +805,7 @@ google.*##.g:has(a[href*="alltodev.com"])
 google.*##.g:has(a[href*="alwaysemmyhope.com"])
 google.*##.g:has(a[href*="amuddycup.com"])
 google.*##.g:has(a[href*="androidrepo.com"])
+google.*##.g:has(a[href*="angularquestions.com"])
 google.*##.g:has(a[href*="answacode.com"])
 google.*##.g:has(a[href*="answer-id.com"])
 google.*##.g:has(a[href*="answeright.com"])
@@ -844,6 +868,7 @@ google.*##.g:has(a[href*="coderoad.in"])
 google.*##.g:has(a[href*="coderoad.ru"])
 google.*##.g:has(a[href*="coderquestion.ru"])
 google.*##.g:has(a[href*="codersatellite.com"])
+google.*##.g:has(a[href*="codeutility.org"])
 google.*##.g:has(a[href*="codewdw.com"])
 google.*##.g:has(a[href*="configrouter.com"])
 google.*##.g:has(a[href*="coredump.biz"])
@@ -857,6 +882,7 @@ google.*##.g:has(a[href*="desenv-web-rp.com"])
 google.*##.g:has(a[href*="devbugfix.com"])
 google.*##.g:has(a[href*="developreference.com"])
 google.*##.g:has(a[href*="devfaq.fr"])
+google.*##.g:has(a[href*="dockerquestions.com"])
 google.*##.g:has(a[href*="docway.net"])
 google.*##.g:has(a[href*="dogovori.info"])
 google.*##.g:has(a[href*="domainelespailles.net"])
@@ -923,9 +949,11 @@ google.*##.g:has(a[href*="husl.ru"])
 google.*##.g:has(a[href*="i-harness.com"])
 google.*##.g:has(a[href*="ibootweb.com"])
 google.*##.g:has(a[href*="iboxshare.com"])
+google.*##.g:has(a[href*="icourban.com"])
 google.*##.g:has(a[href*="innominds.com"])
 google.*##.g:has(a[href*="intellipaat.com"])
 google.*##.g:has(a[href*="isolution.pro"])
+google.*##.g:has(a[href*="issueantenna.com"])
 google.*##.g:has(a[href*="issueexplorer.com"])
 google.*##.g:has(a[href*="issues-world.com"])
 google.*##.g:has(a[href*="it-mure.jp.net"])
@@ -967,6 +995,7 @@ google.*##.g:has(a[href*="narkive.jp"])
 google.*##.g:has(a[href*="newbedev.com"])
 google.*##.g:has(a[href*="news24lite.com"])
 google.*##.g:has(a[href*="noblenaz.org"])
+google.*##.g:has(a[href*="npm.io"])
 google.*##.g:has(a[href*="npmmirror.com"])
 google.*##.g:has(a[href*="nuomiphp.com"])
 google.*##.g:has(a[href*="ohandroid.com"])
@@ -994,6 +1023,7 @@ google.*##.g:has(a[href*="py4u.net"])
 google.*##.g:has(a[href*="python-stack.de"])
 google.*##.g:has(a[href*="python.engineering"])
 google.*##.g:has(a[href*="pythonawesome.com"])
+google.*##.g:has(a[href*="pythonfixing.com"])
 google.*##.g:has(a[href*="pythonissues.com"])
 google.*##.g:has(a[href*="pythonrepo.com"])
 google.*##.g:has(a[href*="pythonshowcase.com"])
@@ -1025,6 +1055,7 @@ google.*##.g:has(a[href*="qi-u.com"])
 google.*##.g:has(a[href*="quabr.com"])
 google.*##.g:has(a[href*="quares.ru"])
 google.*##.g:has(a[href*="question-it.com"])
+google.*##.g:has(a[href*="reactquestions.com"])
 google.*##.g:has(a[href*="readintrend.com"])
 google.*##.g:has(a[href*="recalll.co"])
 google.*##.g:has(a[href*="reposhub.com"])
@@ -1035,6 +1066,7 @@ google.*##.g:has(a[href*="routinepanic.com"])
 google.*##.g:has(a[href*="ruphp.com"])
 google.*##.g:has(a[href*="rustrepo.com"])
 google.*##.g:has(a[href*="safehavenpetrescue.org"])
+google.*##.g:has(a[href*="salesjobinfo.com"])
 google.*##.g:has(a[href*="sch22.org"])
 google.*##.g:has(a[href*="scholarship.edu.vn"])
 google.*##.g:has(a[href*="secret-bases.co.uk"])
@@ -1049,6 +1081,7 @@ google.*##.g:has(a[href*="softwareuser.asklobster.com"])
 google.*##.g:has(a[href*="soinside.com"])
 google.*##.g:has(a[href*="sprosi.pro"])
 google.*##.g:has(a[href*="sqlite.in"])
+google.*##.g:has(a[href*="stackallflow.com"])
 google.*##.g:has(a[href*="stackanswers.net"])
 google.*##.g:has(a[href*="stackfault.net"])
 google.*##.g:has(a[href*="stackfinder.jp.net"])
