@@ -1,7 +1,7 @@
 include "include/shared.xys";
 
 "Convert to MP4"
-  runSelected("HandBrakeCLI", "-i §file -o ""§base.mp4""");
+  runSelected("ffmpeg", "-i §file ""§base.mp4""");
 
 "Convert to PDF"
   runSelected("ebook-convert.exe", "§file ""§base.pdf""");
