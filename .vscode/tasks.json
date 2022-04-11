@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "node build.js",
+      "options": {
+        "cwd": "adblocker/src"
+      },
+      "group": "build",
+      "label": "Build adblocker filter lists"
+    }
+  ]
+}

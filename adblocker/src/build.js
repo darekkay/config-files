@@ -47,3 +47,4 @@ fileLines.forEach(line => {
 });
 
 writeFileSync(join(__dirname, "..", "search-engines.txt"), output);
+console.log("Updated 'search-engines' filter list.")
