@@ -29,6 +29,7 @@ imdb.com##[data-testid="title-details-companycredits"]
 imdb.com##[data-testid="title-hero-proupsell"]
 imdb.com##[data-testid="videos-section"]
 imdb.com##a[href^='https://pro.imdb.com/']
+imgur.com##.BottomRecirc
 minecraft.gamepedia.com###siderail_minecraft_gamepedia
 netflix.com##.billboard-row
 psprices.com##.ad-placeholder
