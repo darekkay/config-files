@@ -30,7 +30,7 @@
 - [Mouse Down Blow Up](https://www.xyplorer.com/highlights.php#mdbu)
 - [Paper folders](https://www.xyplorer.com/release_14.30.php#PF)
 - [Quick select](https://www.xyplorer.com/release_15.00.php#QuickSelect)
-- [Sync Folderrs](https://www.xyplorer.com/release_18.40.php#Sync)
+- [Sync Folders](https://www.xyplorer.com/release_18.40.php#Sync)
 - [Tabsets](https://www.xyplorer.com/release_10.70.php#tabsets)
 
 ## Scripts

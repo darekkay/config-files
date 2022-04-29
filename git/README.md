@@ -65,6 +65,14 @@ editor = "mate -w""
 git tag | xargs git tag -d
 ```
 
+## Pull a branch without checkout
+
+- https://stackoverflow.com/a/17722977/1116549
+
+```
+git fetch origin main:main
+```
+
 ## Conditional configuration
 
 ```

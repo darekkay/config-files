@@ -137,6 +137,7 @@
   my = log --graph --pretty=my --author='darekkay' --since=2.weeks
 
   # Common shortcuts
+  aa = add --all
   co = checkout
   cm = checkout master
   cd = checkout develop
@@ -151,6 +152,7 @@
   ph = push -u origin HEAD
 
   # Force-push the changes (safer than "-f")
+  # It will halt the push operation if someone has pushed to the same branch while you were working on it (and haven’t pulled any changes)
   pf = push --force-with-lease
 
   # Push master branch to all remotes
@@ -179,7 +181,7 @@
   amend = commit --amend --reuse-message=HEAD
 
   # Amend the currently staged files to another commit
-  fixup = "!f() { git commit --fixup $1 && GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash ${1}~1; }; f"
+  fixup = "!f() { git commit --fixup $1 && GIT_SEQUENCE_EDITOR=: git rebase -i --committer-date-is-author-date --autosquash ${1}~1; }; f"
 
   # Delete all fully-merged branches except master, develop and the current one
   bd = "!f() { git branch | grep -v '^  master$' | grep -v '^  main$' | grep -v '^  develop$' | grep -v ^* | xargs git branch -d; }; f"
