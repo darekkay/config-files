@@ -164,7 +164,7 @@
   ca = "!f() { git add . && git commit -m \"$1\"; }; f"
 
   # Interactive rebase for the last x commits
-  rb = "!f() { git rebase -i HEAD~\"$1\"; }; f"
+  rb = "!f() { git rebase -i HEAD~\"$1\" --committer-date-is-author-date ; }; f"
 
   # View the current working tree status using the short format
   s = status -s
