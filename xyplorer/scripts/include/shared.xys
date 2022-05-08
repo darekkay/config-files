@@ -9,7 +9,7 @@ function escapePath($string) {
 //   §path - full path
 //   §base - base file name
 //   §ext  - file extension
-function runSelected($command, $argumentsTemplate) {
+function runSelected($command, $argumentsTemplate, $wait) {
   foreach($item, <get selecteditemspathnames |>) {
     $path = getpathcomponent($item, "path");
     $base = getpathcomponent($item, "base");
@@ -22,7 +22,7 @@ function runSelected($command, $argumentsTemplate) {
     $arguments = replace($arguments, "§ext", $ext);
     // echo $arguments;
     // echo """$command"" $arguments";
-    run """$command"" $arguments";
+    run """$command"" $arguments", , $wait;
   }
 }
 

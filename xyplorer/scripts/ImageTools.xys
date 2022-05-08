@@ -8,24 +8,42 @@ include "include/shared.xys";
   runSelected("imagemin", "§file > ""§base-preview.§ext""");
 
 "Album Art"
-  runSelected("C:\Program Files\ImageMagick\convert.exe", "-resize 1:1^!^> -resize 500x500^> §file ""cover-art.jpg""");
+  runSelected("magick.exe", "convert -resize 1:1^!^> -resize 500x500^> §file ""cover-art.jpg""");
 
-"Autorotate (EXIF)"
-  runSelected("C:\Program Files\ImageMagick\mogrify.exe", "-auto-orient §file");
+"Prepare for Publish"
+  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash §file", 1);
+  runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
+  runSelected("magick.exe", "convert -resize x375> §file ""§base-small.§ext""");
+
 
 // ----------------------------------------------------------------------------
-"Primitive"
-  runSelected("C:\Users\User\go\bin\primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1 -s 730");
-  runSelected("C:\Users\User\go\bin\primitive.exe", "-i §file -o ""p-§base-2x.jpg"" -n 1000 -m 1 -s 1460");
+"EXIF"
+
+"Strip irrelevant metadata|||1"
+  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash §file");
+
+"Strip all metadata|||1"
+  runSelected("exiftool.exe", "-all= §file");
+
+"-1h|||1"
+  runSelected("exiftool.exe", """-AllDates-=0:0:0 1:0:0"" §file");
+
+"+1h|||1"
+  runSelected("exiftool.exe", """-AllDates+=0:0:0 1:0:0"" §file");
 
 
 // ----------------------------------------------------------------------------
 "Misc"
 
+"Autorotate|||1"
+  runSelected("mogrify.exe", "-auto-orient §file");
+
 "Combine into a favicon|||1"
-  run """C:\Program Files\ImageMagick\convert.exe"" <get selecteditemspathnames ' '> favicon.ico";
+  run """magick.exe"" ""convert <get selecteditemspathnames '"" ""'>"" favicon.ico";
 
 "Add grey border|||1"
-  runSelected("C:\Program Files\ImageMagick\convert.exe", "-border 1 -bordercolor ""#dfe1e2"" §file ""§base-border.§ext""");
+  runSelected("magick.exe", "convert -border 1 -bordercolor ""#dfe1e2"" §file ""§base-border.§ext""");
 
-  // "-resize 1:1\!\> -resize 500x500\> §file ""cover-art.jpg"""
+"Primitive|||1"
+  runSelected("primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1 -s 730");
+  runSelected("primitive.exe", "-i §file -o ""p-§base-2x.jpg"" -n 1000 -m 1 -s 1460");
