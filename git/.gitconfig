@@ -4,7 +4,7 @@
   safecrlf = false            # Don't warn about converting between CRLF and LF
   filemode = false            # Ignore file mode changes (recommended for Windows)
   trustctime = false          # Ignore ctime differences between the index and the working tree
-  useBuiltinFSMonitor = true  # Use built-in file system watcher
+  fsmonitor = true            # Use built-in file system watcher
 
   # Unix
   # autocrlf = input   # Prevent checking in CRLF files
