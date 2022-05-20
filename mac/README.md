@@ -19,7 +19,7 @@ Run `./config.sh` to initialize custom settings.
 - Lock the Dock on the primary monitor
   - ☐ System Preferences → Mission Control → Displays have separate Spaces
 - Disable thesaurus:
-  - ☐ System Preferences > Trackpad > Look up & data detectors
+  - ☐ System Preferences → Trackpad → Look up & data detectors
 - Make modal buttons toggable
   - ☑ System Preferences → Keyboard → Shortcuts → Full Keyboard Access → All Controls
 - Enable natural text selection
@@ -27,6 +27,8 @@ Run `./config.sh` to initialize custom settings.
 - Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
 - Save screenshots [immediately](https://osxdaily.com/2019/08/02/disable-screenshot-thumbnail-preview-mac/)
   - ☐ Screenshot (App) → Options → Show Floating Thumbnail
+- Turn off Power Nap to save energy:
+  - ☐ System Preferences → Battery → Power Adapter → Enable Power Nap
 
 ## Features
 
@@ -50,6 +52,18 @@ Run `./config.sh` to initialize custom settings.
 ## Transition from Windows
 
 - Refresh Hotkey: `F5` (Windows) → `Command + R` (Mac)
+
+## Find bundler ID:
+
+```bash
+# Method 1
+osascript -e 'id of app "SomeApp"'
+
+# Method 2
+mdls -name kMDItemCFBundleIdentifier -r SomeApp.app
+```
+
+https://stackoverflow.com/questions/39464668/how-to-get-bundle-id-of-mac-application
 
 ## Apps
 
@@ -83,6 +97,20 @@ brew install --cask font-aldrich
 - [iTerm integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
 - [Alfred Fakeum](https://github.com/deanishe/alfred-fakeum)
   - Change workflow snippet key to `xxfake` and remove `\\` prefix
+
+### AltTab
+
+- Exceptions:
+
+```
+com.apple.finder
+com.cisco.anyconnect.gui
+com.cisco.webexmeetingsapp
+com.glyphfinder.app
+com.initex.proxifier.macosx
+```
+
+Note: Paste those entries and then replace line feeds manually
 
 ## Oh My Zsh Configuration
 
