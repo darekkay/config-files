@@ -17,6 +17,7 @@ export PATH="$VOLTA_HOME/tools/image/yarn/1.22.10/bin:$PATH"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cd..='cd ..'
+alias root='cd $(git rev-parse --show-toplevel)'
 
 # List files
 alias l='ls -al --color=auto --group-directories-first'

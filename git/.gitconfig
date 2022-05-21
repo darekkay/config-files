@@ -55,7 +55,7 @@
 
 [merge]
   # Default merge tool
-  tool = bc
+  tool = p4merge
 
 [mergetool "bc"]
   # Beyond Compare
@@ -128,10 +128,9 @@
 
 [alias]
   # Log
-  lg   = log --graph --pretty=custom
-  lga  = log --graph --pretty=custom --all
-  q    = log --graph --pretty=custom --first-parent -20      # Quick overview
-  # log --graph --pretty=custom --all --not origin/gh-pages  # Hide origin/gh-pages branch
+  lg   = log --graph --pretty=my
+  lga  = log --graph --pretty=my --all
+  q    = log --graph --pretty=my --first-parent -20      # Quick overview
 
   # My commits in the last 2 weeks
   my = log --graph --pretty=my --author='darekkay' --since=2.weeks
