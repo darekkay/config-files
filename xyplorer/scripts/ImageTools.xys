@@ -15,6 +15,13 @@ include "include/shared.xys";
   runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
   runSelected("magick.exe", "convert -resize x375> §file ""§base-small.§ext""");
 
+"Resize"
+
+"Medium|||1"
+  runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
+
+"Photo frame (folder)|||1"
+  run "mogrify.exe -resize x1000> -path ""<get path>"" *.jpg";
 
 // ----------------------------------------------------------------------------
 "EXIF"
@@ -47,3 +54,6 @@ include "include/shared.xys";
 "Primitive|||1"
   runSelected("primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1 -s 730");
   runSelected("primitive.exe", "-i §file -o ""p-§base-2x.jpg"" -n 1000 -m 1 -s 1460");
+
+"Preview LUTs|||1"
+  run "lut-preview.sh ""<get path>"""
