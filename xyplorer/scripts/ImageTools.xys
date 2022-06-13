@@ -17,8 +17,14 @@ include "include/shared.xys";
 
 "Resize"
 
-"Medium|||1"
+"Medium size|||1"
   runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
+
+"Medium+ size|||1"
+  runSelected("magick.exe", "convert -resize x1500> §file ""§base-medium.§ext""");
+
+"Lower quality|||1"
+  runSelected("mogrify.exe", "-quality 85 §file");
 
 "Photo frame (folder)|||1"
   run "mogrify.exe -resize x1000> -path ""<get path>"" *.jpg";
@@ -47,6 +53,9 @@ include "include/shared.xys";
 
 "Combine into a favicon|||1"
   run """magick.exe"" ""convert <get selecteditemspathnames '"" ""'>"" favicon.ico";
+
+"Extract JPEG from RAW|||1"
+  runSelected("exiftool.exe", "-b -JpgFromRaw -w _CR3.JPG §file -execute -TagsFromFile §file -all:all ""§base_CR3.JPG""");
 
 "Add grey border|||1"
   runSelected("magick.exe", "convert -border 1 -bordercolor ""#dfe1e2"" §file ""§base-border.§ext""");
