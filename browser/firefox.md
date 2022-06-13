@@ -31,6 +31,8 @@
   - Settings → Search → Search Shortcuts → Remove all checkmarks
 - Disable dark mode on web pages:
   - `layout.css.prefers-color-scheme.content-override: 1`
+- Display [punycode domains](https://www.xudongz.com/blog/2017/idn-phishing/):
+  - `network.IDN_show_punycode: true`
 
 Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
 
