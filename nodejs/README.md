@@ -60,16 +60,6 @@ yarn config set yarn-offline-mirror ~/AppData/Roaming/yarn-offline
 yarn config set yarn-offline-mirror-pruning true
 ```
 
-## volta
-
-- [volta.sh](https://volta.sh/)
-
-```bash
-curl https://get.volta.sh | bash
-volta install node@16
-volta install yarn
-```
-
 ## n - version manager
 
 - [n](https://github.com/tj/n)
