@@ -10,6 +10,9 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
+# Disable Spotlight service
+sudo mdutil -a -i off
+
 # -----------------------------------------------
 # General UI/UX
 # -----------------------------------------------
