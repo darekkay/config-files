@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.1.3
+// @version         2.2.0
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
@@ -10,7 +10,6 @@
 // @include         http*://news.ycombinator.com/*
 // @include         http*://*slack.com/messages/*
 // @include         http*://stackoverflow.com/*
-// @include         http*://*todoist.com/app*
 // @include         http*://*play.google.com/music/*
 // @include         http*://*themagiccafe.com*
 
@@ -59,20 +58,6 @@ else if (page.url.indexOf('slack.com') > -1) {
 
 else if (page.url.indexOf('stackoverflow.com') > -1) {
   GM_addStyle(`.tagged-interesting {background: none !important;}`);
-}
-
-
-// ======================== //
-// ======== Todoist ======= //
-// ======================== //
-
-else if (page.url.indexOf('todoist.com') > -1) {
-
-  // smaller paddings in the navigation bar
-  GM_addStyle(`
-    #top_filters .filter, #top_filters .favorite_item { padding-top: 3px !important; padding-bottom: 3px !important; }
-    [data-sidebar-list-item="true"] > div { padding-top: 3px !important; padding-bottom: 3px !important; }
-  `);
 }
 
 
