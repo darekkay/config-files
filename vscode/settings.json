@@ -45,6 +45,7 @@
     "*.icls": "xml",
     "*.reg": "ini",
     "*.todo": "markdown",
+    "*.todo.txt": "markdown",
     ".aliases": "shellscript",
     ".prettierrc": "yaml"
   },
