@@ -34,10 +34,15 @@
     renameitem($new, $item, 3,);
   }
 
-"Audio (Artist - Title)"
-    setting "BackgroundFileOps", 0;
-    foreach($file, <get SelectedItemsPathNames |>, , "e") {
-        if (getpathcomponent($file, "ext") LikeI "mp3") {
-            renameitem(report("{prop:#mp3.artist} - {prop:#mp3.title}", $file), $file, 1+4);
-        }
+"Audio (Artist - Track - Title)"
+  setting "BackgroundFileOps", 0;
+  foreach($file, <get SelectedItemsPathNames |>, , "e") {
+    if (getpathcomponent($file, "ext") LikeI "mp3") {
+      $trackNumber = report("{prop:#mp3.track}", $file);
+      if (strlen($trackNumber) == 1) {
+        // left-pad zero
+        $trackNumber = "0$trackNumber";
+      }
+      renameitem(report("{prop:#mp3.artist} - $trackNumber - {prop:#mp3.title}", $file), $file, 1+4);
     }
+  }

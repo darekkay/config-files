@@ -38,3 +38,6 @@ include "include/shared.xys";
 
 "Convert SVG to PNG"
   runSelected("svgexport", "§file ""§base.png"" 70%");
+
+"Convert to MP3"
+  runSelected("ffmpeg", "-i §file -vn -ar 44100 -ac 2 -b:a 320k ""§base.mp3""");

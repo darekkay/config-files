@@ -9,9 +9,14 @@ include "include/shared.xys";
 
 "Directory Report"
   ::Load('DirectoryReport');
-  
+
 "Pandoc"
   ::Load('Pandoc');
 
 "Everything"
   ::Load('Everything');
+
+"Misc"
+
+"Demucs|||1"
+  runSelected("demucs", "§file");
