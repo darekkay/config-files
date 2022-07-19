@@ -109,7 +109,8 @@
   ff = only
 
 [push]
-  default = simple               # Push mode for centralized workflows
+  default = simple          # Push mode for centralized workflows
+  autoSetupRemote = true    # Push new branches and set upstream tracking automatically
 
 [merge]
   # Automatically stash/unstash the working directory before/after merging
