@@ -13,6 +13,23 @@ sudo -v
 # Disable Spotlight service
 sudo mdutil -a -i off
 
+# Keyboard Mapping
+# https://discussions.apple.com/thread/251108215?login=true
+# https://damieng.com/blog/2015/04/24/make-home-end-keys-behave-like-windows-on-mac-os-x/
+
+mkdir -p $HOME/Library/KeyBindings
+echo '{
+/* Remap Home / End keys to be correct */
+"\UF729" = "moveToBeginningOfLine:"; /* Home */
+"\UF72B" = "moveToEndOfLine:"; /* End */
+"$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+"$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+"^\UF729" = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+"^\UF72B" = "moveToEndOfDocument:"; /* Ctrl + End */
+"$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+"$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
+}' > $HOME/Library/KeyBindings/DefaultKeyBinding.dict
+
 # -----------------------------------------------
 # General UI/UX
 # -----------------------------------------------
