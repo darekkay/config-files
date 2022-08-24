@@ -1,3 +1,5 @@
+# XYplorer
+
 ## Settings
 
 - Automatically save settings after a certain time
