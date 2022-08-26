@@ -12,7 +12,6 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "homepage": "https://darekkay.com/config-files",
   "keywords": [],
   "license": "MIT",
   "private": true,
