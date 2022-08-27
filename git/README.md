@@ -82,7 +82,8 @@ git fetch origin main:main
 
 ## Ignore commits
 
-- https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt
+- [--ignore-revs-file](https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt)
+- [How to exclude commits from git blame](https://www.stefanjudis.com/today-i-learned/how-to-exclude-commits-from-git-blame/)
 
 ```shell
 git config blame.ignoreRevsFile .git-blame-ignore-revs

@@ -53,3 +53,27 @@ render(<nav><button>Click me</button></nav>);
 const navigation = screen.getByRole("navigation");
 const button = within(navigation).getByRole("button");
 ```
+
+## `act` utilities
+
+```js
+// Wait for all queueMicrotask() callbacks
+function flushMicrotasks() {
+  return act(() => Promise.resolve())
+}
+
+// Wait for all requestAnimationFrame() callbacks
+function nextFrame() {
+  return act(() =>
+    new Promise((resolve) => requestAnimationFrame(() => resolve()))
+  )
+}
+
+// Wait for setTimeout() callbacks
+async function sleep(ms) {
+  await act(() => new Promise((resolve) => setTimeout(resolve, ms)))
+  await nextFrame()
+}
+```
+
+- [Source](https://twitter.com/diegohaz/status/1560525455383461888)
