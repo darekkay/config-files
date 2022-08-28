@@ -18,6 +18,8 @@
 *://stackshare.io/*
 *://tutorialspoint.com/*
 *://w3schools.com/*
+*://w3schools.io/*
+*://w3schools.in/*
 
 ! Copycats
 ! Related project 1: https://github.com/quenhus/uBlock-Origin-dev-filter
@@ -489,6 +491,8 @@ duckduckgo.com##[data-domain*="slant.co"]
 duckduckgo.com##[data-domain*="stackshare.io"]
 duckduckgo.com##[data-domain*="tutorialspoint.com"]
 duckduckgo.com##[data-domain*="w3schools.com"]
+duckduckgo.com##[data-domain*="w3schools.io"]
+duckduckgo.com##[data-domain*="w3schools.in"]
 
 ! Copycats
 ! Related project 1: https://github.com/quenhus/uBlock-Origin-dev-filter
@@ -960,6 +964,8 @@ google.*##.g:has(a[href*="slant.co"])
 google.*##.g:has(a[href*="stackshare.io"])
 google.*##.g:has(a[href*="tutorialspoint.com"])
 google.*##.g:has(a[href*="w3schools.com"])
+google.*##.g:has(a[href*="w3schools.io"])
+google.*##.g:has(a[href*="w3schools.in"])
 
 ! Copycats
 ! Related project 1: https://github.com/quenhus/uBlock-Origin-dev-filter

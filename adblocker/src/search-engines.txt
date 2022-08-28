@@ -9,6 +9,8 @@ slant.co
 stackshare.io
 tutorialspoint.com
 w3schools.com
+w3schools.io
+w3schools.in
 
 ! Copycats
 ! Related project 1: https://github.com/quenhus/uBlock-Origin-dev-filter
