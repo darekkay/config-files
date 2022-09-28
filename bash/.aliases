@@ -50,6 +50,7 @@ git4all() {
 
 alias s='git s'
 alias q='git q'
+alias ff='git fa && echo "" && git q && echo "" && git s'
 alias amend='git add . && git amend'
 
 alias push-all='git4all "push --quiet"'
