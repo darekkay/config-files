@@ -1,15 +1,16 @@
 <scheme name="Tomorrow Evening" version="142" parent_scheme="Default">
   <metaInfo>
-    <property name="created">2020-04-17T18:13:51</property>
+    <property name="created">2022-10-06T21:22:35</property>
     <property name="ide">idea</property>
-    <property name="ideVersion">2019.3.2.0.0</property>
-    <property name="modified">2021-05-04T20:17:52</property>
+    <property name="ideVersion">2022.2.2.0.0</property>
+    <property name="modified">2022-10-06T21:22:47</property>
+    <property name="originalScheme">Tomorrow Evening</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="b9ca4a" />
     <option name="ANNOTATIONS_COLOR" value="b2c0c6" />
     <option name="CARET_COLOR" value="bbbbbb" />
-    <option name="CARET_ROW_COLOR" value="282a2e" />
+    <option name="CARET_ROW_COLOR" value="1d3857" />
     <option name="CONSOLE_BACKGROUND_KEY" value="1c1c1c" />
     <option name="DELETED_LINES_COLOR" value="e35374" />
     <option name="DOCUMENTATION_COLOR" value="46484a" />
@@ -33,8 +34,10 @@
     <option name="GUTTER_BACKGROUND" value="1c1c1c" />
     <option name="HTML_TAG_TREE_LEVEL0" value="" />
     <option name="INDENT_GUIDE" value="373737" />
+    <option name="LOOKUP_COLOR" value="" />
     <option name="METHOD_SEPARATORS_COLOR" value="5b5a4e" />
     <option name="MODIFIED_LINES_COLOR" value="61afef" />
+    <option name="NOTIFICATION_BACKGROUND" value="1d3857" />
     <option name="RECENT_LOCATIONS_SELECTION" value="383838" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="574300" />
     <option name="RIGHT_MARGIN_COLOR" value="323232" />
@@ -547,6 +550,31 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
+    <option name="GRAZIE_ADJECTIVE">
+      <value>
+        <option name="FOREGROUND" value="e78c45" />
+      </value>
+    </option>
+    <option name="GRAZIE_ADVERB">
+      <value>
+        <option name="FOREGROUND" value="9cdcfe" />
+      </value>
+    </option>
+    <option name="GRAZIE_CONJUNCTION">
+      <value>
+        <option name="FOREGROUND" value="b9ca4a" />
+      </value>
+    </option>
+    <option name="GRAZIE_NOUN">
+      <value>
+        <option name="FOREGROUND" value="e35374" />
+      </value>
+    </option>
+    <option name="GRAZIE_VERB">
+      <value>
+        <option name="FOREGROUND" value="61afef" />
+      </value>
+    </option>
     <option name="GROOVY_KEYWORD" baseAttributes="JAVA_KEYWORD" />
     <option name="HTTP_REQUEST_MULTIPART_BOUNDARY" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE" />
     <option name="HTTP_REQUEST_PARAMETER_NAME">
@@ -661,6 +689,11 @@
     <option name="JADE_STATEMENTS">
       <value>
         <option name="FOREGROUND" value="b9ca4a" />
+      </value>
+    </option>
+    <option name="JS.DECORATOR">
+      <value>
+        <option name="FOREGROUND" value="e78c45" />
       </value>
     </option>
     <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
@@ -967,6 +1000,14 @@
       </value>
     </option>
     <option name="XML_PROLOGUE" baseAttributes="TEXT" />
+    <option name="XPATH.FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="XPATH.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="XPATH.XPATH_NAME">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+        <option name="BACKGROUND" value="1c1c1c" />
+      </value>
+    </option>
     <option name="YAML_ANCHOR">
       <value>
         <option name="FOREGROUND" value="61afef" />
