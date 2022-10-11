@@ -1,7 +1,22 @@
 #!/usr/bin/env sh
 
+brew upgrade
+
 # Git
 brew install git
+
+# coreutils: https://formulae.brew.sh/formula/coreutils
+brew install coreutils
+
+# findutils: https://formulae.brew.sh/formula/findutils
+brew install findutils
+
+# dos2unix: https://formulae.brew.sh/formula/dos2unix
+brew install dos2unix
+
+# fzf
+brew install fzf
+$(brew --prefix)/opt/fzf/install
 
 # Delta: https://github.com/dandavison/delta
 brew install git-delta
