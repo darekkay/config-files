@@ -83,3 +83,9 @@ export LESS="$LESS -Q"
 
 # Ignore commands starting with a space within bash history
 setopt HIST_IGNORE_SPACE
+
+# Use the same history for all shells
+setopt SHARE_HISTORY
+
+# Deduplicate history
+setopt HIST_IGNORE_DUPS
