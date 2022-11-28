@@ -52,6 +52,7 @@ Run `./config.sh` to initialize custom settings.
 | Ctrl + Alt + Right | Move window to right half (Rectangle) |
 | Ctrl + Alt + Up    | Maximize window (Rectangle)           |
 | Ctrl + Alt + Left  | Restore window (Rectangle)            |
+| Cmd + Shift + 4    | Screenshot ("Space" to select window) |
 
 ## Transition from Windows
 
