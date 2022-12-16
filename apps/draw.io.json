@@ -1,0 +1,62 @@
+{
+  "defaultFonts": [
+    "Saikon Medium",
+    "Titillium Web",
+    "Consolas"
+  ],
+  "defaultEdgeStyle": {
+    "sketch": "1",
+    "fontFamily": "Saikon Medium",
+    "fontColor": "#1f303e",
+    "fontSize": "15",
+    "edgeStyle": "orthogonalEdgeStyle",
+    "rounded": "0",
+    "jettySize": "auto",
+    "orthogonalLoop": "1",
+    "fillColor": "#dae8fc",
+    "strokeColor": "#2d2e2f"
+  },
+  "defaultVertexStyle": {
+    "sketch": "1",
+    "fontFamily": "Saikon Medium",
+    "fontColor": "#1f303e",
+    "fontSize": "15",
+    "fillStyle": "solid"
+  },
+  "customColorSchemes": [
+    [
+      {
+        "fill": "#ffffff",
+        "stroke": "#1f303e"
+      },
+      {
+        "fill": "#f0f0ec",
+        "stroke": "#76766a"
+      },
+      {
+        "fill": "#cfe8ff",
+        "stroke": "#2378c3"
+      },
+      {
+        "fill": "#c5ee93",
+        "stroke": "#538200"
+      },
+      {
+        "fill": "#fdcec8",
+        "stroke": "#c05600"
+      },
+      {
+        "fill": "#fee685",
+        "stroke": "#947100"
+      },
+      {
+        "fill": "#fdcec8",
+        "stroke": "#e52207"
+      },
+      {
+        "fill": "#ede3ff",
+        "stroke": "#8168b3"
+      }
+    ]
+  ]
+}
