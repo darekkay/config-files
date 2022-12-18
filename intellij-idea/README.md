@@ -126,6 +126,10 @@ Use high-contrast scrollbars
 Disable popup message for debugging websites
   - ☑ Build, Execution, Deployment → Debugger → Allow unsigned requests
 
+## Registry
+
+- ☑ `markdown.experimental.frontmatter.support.enable`
+
 ## Config folder
 
 - Help → Edit Custom Properties
