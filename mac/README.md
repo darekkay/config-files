@@ -80,6 +80,15 @@ To ignore the "Malicious software" warning:
 
 https://support.apple.com/en-gb/guide/mac-help/mchleab3a043/mac
 
+## Open Chrome with a certain URL
+
+```
+open -a "Google Chrome" https://example.com https://example.net
+```
+
+https://superuser.com/questions/716943/how-can-i-open-chrome-from-the-command-line-with-specific-pages-in-tabs-in-mac-o
+
+
 ## Apps
 
 - [Homebrew](https://brew.sh/)
