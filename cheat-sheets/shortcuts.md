@@ -103,6 +103,7 @@ These shortcuts are configured to be equal among IDEA, VSCode and (mostly) Notep
 | ---------------- | ------------------------- |
 | Ctrl + M         | Open a new OneNote window |
 | Ctrl + Shift + N | Apply normal style        |
+| Ctrl + PgDn/PgUp | Open previous/next page   |
 
 - [OneNote Shortcuts](http://office.microsoft.com/en-us/onenote-help/keyboard-shortcuts-in-onenote-2013-HA102749248.aspx)
 
