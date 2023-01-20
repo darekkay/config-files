@@ -39,7 +39,3 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 - `usdb.user.js`
   - Open USDB songs in a new tab.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/usdb.user.js)
-
-## External scripts
-
-* [Tweak New Twitter](https://greasyfork.org/en/scripts/387773-tweak-new-twitter)
