@@ -53,6 +53,7 @@
   // Git
 
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
 
   // npm
 
