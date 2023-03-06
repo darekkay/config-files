@@ -34,4 +34,5 @@ brew install qview
 brew install --cask rectangle
 
 # Fonts
+brew tap homebrew/cask-fonts
 brew install --cask font-aldrich font-anaheim font-anton font-assistant font-cuprum font-dosis font-fira-code font-gudea font-lato font-noto-sans font-nunito-sans font-open-sans font-oswald font-redacted-script
