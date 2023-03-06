@@ -1,4 +1,5 @@
 ! Low quality
+bild.de
 geeksforgeeks.org
 gutefrage.net
 moyens.net
@@ -8,7 +9,10 @@ quora.com
 slant.co
 stackshare.io
 tutorialspoint.com
+w3docs.com
+w3schools.blog
 w3schools.com
+w3school.com.cn
 w3schools.io
 w3schools.in
 

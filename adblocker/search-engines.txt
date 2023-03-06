@@ -8,6 +8,7 @@
 ! Domains
 
 ! Low quality
+*://bild.de/*
 *://geeksforgeeks.org/*
 *://gutefrage.net/*
 *://moyens.net/*
@@ -17,7 +18,10 @@
 *://slant.co/*
 *://stackshare.io/*
 *://tutorialspoint.com/*
+*://w3docs.com/*
+*://w3schools.blog/*
 *://w3schools.com/*
+*://w3school.com.cn/*
 *://w3schools.io/*
 *://w3schools.in/*
 
@@ -481,6 +485,7 @@
 ! DuckDuckGo
 
 ! Low quality
+duckduckgo.com##[data-domain*="bild.de"]
 duckduckgo.com##[data-domain*="geeksforgeeks.org"]
 duckduckgo.com##[data-domain*="gutefrage.net"]
 duckduckgo.com##[data-domain*="moyens.net"]
@@ -490,7 +495,10 @@ duckduckgo.com##[data-domain*="quora.com"]
 duckduckgo.com##[data-domain*="slant.co"]
 duckduckgo.com##[data-domain*="stackshare.io"]
 duckduckgo.com##[data-domain*="tutorialspoint.com"]
+duckduckgo.com##[data-domain*="w3docs.com"]
+duckduckgo.com##[data-domain*="w3schools.blog"]
 duckduckgo.com##[data-domain*="w3schools.com"]
+duckduckgo.com##[data-domain*="w3school.com.cn"]
 duckduckgo.com##[data-domain*="w3schools.io"]
 duckduckgo.com##[data-domain*="w3schools.in"]
 
@@ -954,6 +962,7 @@ duckduckgo.com##[data-domain*="zzun.app"]
 ! Google
 
 ! Low quality
+google.*##.g:has(a[href*="bild.de"])
 google.*##.g:has(a[href*="geeksforgeeks.org"])
 google.*##.g:has(a[href*="gutefrage.net"])
 google.*##.g:has(a[href*="moyens.net"])
@@ -963,7 +972,10 @@ google.*##.g:has(a[href*="quora.com"])
 google.*##.g:has(a[href*="slant.co"])
 google.*##.g:has(a[href*="stackshare.io"])
 google.*##.g:has(a[href*="tutorialspoint.com"])
+google.*##.g:has(a[href*="w3docs.com"])
+google.*##.g:has(a[href*="w3schools.blog"])
 google.*##.g:has(a[href*="w3schools.com"])
+google.*##.g:has(a[href*="w3school.com.cn"])
 google.*##.g:has(a[href*="w3schools.io"])
 google.*##.g:has(a[href*="w3schools.in"])
 
