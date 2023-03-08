@@ -46,6 +46,7 @@
     "*.reg": "ini",
     "*.todo": "markdown",
     "*.todo.txt": "markdown",
+    "*.webc": "html",
     ".aliases": "shellscript",
     ".prettierrc": "yaml"
   },
