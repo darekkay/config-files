@@ -49,6 +49,7 @@
 *://answerlib.com/*
 *://antwortenhier.me/*
 *://anycodings.com/*
+*://appsloveworld.com/*
 *://arip-photo.org/*
 *://article.docway.net/*
 *://ask-dev.ru/*
@@ -526,6 +527,7 @@ duckduckgo.com##[data-domain*="answeright.com"]
 duckduckgo.com##[data-domain*="answerlib.com"]
 duckduckgo.com##[data-domain*="antwortenhier.me"]
 duckduckgo.com##[data-domain*="anycodings.com"]
+duckduckgo.com##[data-domain*="appsloveworld.com"]
 duckduckgo.com##[data-domain*="arip-photo.org"]
 duckduckgo.com##[data-domain*="article.docway.net"]
 duckduckgo.com##[data-domain*="ask-dev.ru"]
@@ -1003,6 +1005,7 @@ google.*##.g:has(a[href*="answeright.com"])
 google.*##.g:has(a[href*="answerlib.com"])
 google.*##.g:has(a[href*="antwortenhier.me"])
 google.*##.g:has(a[href*="anycodings.com"])
+google.*##.g:has(a[href*="appsloveworld.com"])
 google.*##.g:has(a[href*="arip-photo.org"])
 google.*##.g:has(a[href*="article.docway.net"])
 google.*##.g:has(a[href*="ask-dev.ru"])
