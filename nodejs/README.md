@@ -9,7 +9,6 @@
 
 ## Global packages
 
-- [@squoosh/cli](https://www.npmjs.com/package/@squoosh/cli) - Image converter (especially AVIF)
 - [alex](https://www.npmjs.com/package/alex) - Catch insensitive, inconsiderate writing
 - [cloc](https://www.npmjs.com/package/cloc) - Count lines of code
 - [evaluatory](https://github.com/darekkay/evaluatory) - Web page evaluation with a focus on accessibility
@@ -24,7 +23,7 @@
   - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
 
 ```bash
-npm install -g @squoosh/cli alex cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog
+npm install -g alex cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog
 ```
 
 ## Other packages

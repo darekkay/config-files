@@ -18,14 +18,11 @@ include "include/shared.xys";
 "Convert to PNG"
   runSelected("convert.exe", "-background transparent §file ""§base.png""");
 
-// "Convert to AVIF (Image Magick)"
-// runSelected("convert.exe", "-background transparent -define heic:speed=2 §file ""§base.avif""");
+"Convert to AVIF (Image Magick)"
+runSelected("convert.exe", "-background transparent -define heic:speed=2 §file ""§base.avif""");
 
 // "Convert to AVIF (avifenc)"
 // runSelected("avifenc", "--speed 2 --output ""§base.avif"" §file");
-
-"Convert to AVIF (Squoosh)"
-  runSelected("squoosh-cli", "--avif '{speed:2}' §file");
 
 "Convert to WEBP (75)"
   runSelected("convert.exe", "-background transparent -quality 75 §file ""§base.webp""");
