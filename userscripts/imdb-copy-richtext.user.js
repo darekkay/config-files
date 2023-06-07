@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name            IMDB Copy (Richtext)
-// @version         1.2.0
+// @version         2.0.0
 // @description     Create a TODO out of the current IMDB site
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
+// @icon            https://www.imdb.com/favicon.ico
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-richtext.user.js
 // @run-at          document-end
 
-// @include         http*://*imdb.com/*
+// @match           https://www.imdb.com/*
 
 // @grant           GM_addStyle
 // ==/UserScript==

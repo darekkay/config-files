@@ -6,33 +6,21 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 
 ## Scripts
 
-- `amazon-smile.user.js`
-  - Auto-redirect to Amazon Smile.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/amazon-smile.user.js)
 - `better-styles.user.js`
   - My custom website CSS changes.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/better-styles.user.js)
 - `enforce-english.user.js`
   - Enforce English page versions.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js)
-- `hello-fresh-copy.user.js`
-  - Copy Hello Fresh recipes.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hello-fresh-copy.user.js)
 - `hn-avatars.user.js`
   - Display generated avatars next to usernames.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hn-avatars.user.js)
 - `hn-new-tab.user.js`
   - Open Hacker News comment threads in a new tab.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hn-new-tab.user.js)
-- `imdb-copy-markdown.user.js`
-  - Copy IMDB link as markdown.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-markdown.user.js)
 - `imdb-copy-richtext.user.js`
   - Copy IMDB link as richtext.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-richtext.user.js)
-- `steam-discovery-queue.user.js`
-  - Steam rewards 3 Summer/Winter Sale Trading Cards per day for browsing the [Discovery Queue](http://store.steampowered.com/explore/). This script automates the process.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/steam-discovery-queue.user.js)
 - `url-cleaner.user.js`
   - Clean URLs from unnecessary parameters.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/url-cleaner.user.js)

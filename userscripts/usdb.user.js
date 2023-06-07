@@ -1,12 +1,15 @@
 // ==UserScript==
 // @name            UltraStarDB
-// @version         1.0.0
+// @version         2.0.0
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/usdb.user.js
-// @include         http*://usdb.animux.de/*
 // @grant           none
 // @run-at          document-end
+
+// @match           http://usdb.animux.de/*
+// @match           https://usdb.animux.de/*
+
 // ==/UserScript==
 
 // open songs in a new tab

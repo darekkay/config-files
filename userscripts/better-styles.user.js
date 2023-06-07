@@ -1,17 +1,14 @@
 // ==UserScript==
 // @name            Better Styles
-// @version         2.2.0
+// @version         3.0.0
 // @description     Custom website styles
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/better-styles.user.js
 // @run-at          document-start
 
-// @include         http*://news.ycombinator.com/*
-// @include         http*://*slack.com/messages/*
-// @include         http*://stackoverflow.com/*
-// @include         http*://*play.google.com/music/*
-// @include         http*://*themagiccafe.com*
+// @match           https://news.ycombinator.com/*
+// @match           https://themagiccafe.com/*
 
 // @grant           GM_addStyle
 // ==/UserScript==
@@ -40,24 +37,6 @@ if (page.url.indexOf('news.ycombinator.com') > -1) {
     textarea {background-color: #E0E0E0 !important; border-left: 12px solid #CCCCCC !important; }
     font[color="#000000"] { color: #a3b72c !important; }
   `);
-}
-
-
-// ======================== //
-// ========= Slack ======== //
-// ======================== //
-
-else if (page.url.indexOf('slack.com') > -1) {
-  GM_addStyle(`.message.left, .message.joined { display: none; }`);
-}
-
-
-// ======================== //
-// ===== Stackoverflow ==== //
-// ======================== //
-
-else if (page.url.indexOf('stackoverflow.com') > -1) {
-  GM_addStyle(`.tagged-interesting {background: none !important;}`);
 }
 
 

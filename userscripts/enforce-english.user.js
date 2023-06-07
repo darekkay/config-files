@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name            Enforce English page versions
-// @version         1.0.3
+// @version         2.0.0
 // @description     Automatically redirect to an English version for some services
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js
 // @run-at          document-start
 
-// @include         http*://developer.mozilla.org/*
-// @include         http*://addons.mozilla.org/*
-// @include         http*://docs.microsoft.com/*
+// @match           https://developer.mozilla.org/*
+// @match           https://addons.mozilla.org/*
+// @match           https://docs.microsoft.com/*
 
 // @grant           GM_addStyle
 // ==/UserScript==

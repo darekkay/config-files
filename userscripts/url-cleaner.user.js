@@ -1,22 +1,21 @@
 // ==UserScript==
 // @name            URL Cleaner
-// @version         1.2
+// @version         2.0.0
 // @description     Clean URLs from unnecessary parameters
 // @author          Darek Kay <hello@darekkay.com>
 // @namespace       https://darekkay.com
 // @downloadURL     https://github.com/darekkay/config-files/raw/master/userscripts/url-cleaner.user.js
 // @run-at          document-start
 
-// @include         http*://*amazon.de/*
-// @include         http*://*amazon.com/*
-// @include         http*://*facebook.com/*
-// @include         http*://*goodreads.com/*
-// @include         http*://*hellofresh.de/recipes/*
-// @include         http*://*imdb.com/*
-// @include         http*://*reddit.com /*
-// @include         http*://*stackoverflow.blog/*
-// @include         http*://*twitter.com/*
-// @include         http*://*youtube.com/*
+// @match           https://www.amazon.de/*
+// @match           https://www.amazon.com/*
+// @match           https://www.facebook.com/*
+// @match           https://www.goodreads.com/*
+// @match           https://www.imdb.com/*
+// @match           https://www.reddit.com /*
+// @match           https://www.youtube.com/*
+// @match           https://stackoverflow.blog/*
+// @match           https://twitter.com/*
 
 // ==/UserScript==
 
