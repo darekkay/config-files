@@ -33,6 +33,8 @@
   - `layout.css.prefers-color-scheme.content-override: 1`
 - Display [punycode domains](https://www.xudongz.com/blog/2017/idn-phishing/):
   - `network.IDN_show_punycode: true`
+- Increase number of parallel connections:
+  - `network.http.max-persistent-connections-per-server`
 
 Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
 
