@@ -1,51 +1,52 @@
 ! Title: Darek Kay's custom filters
 ! Homepage: https://github.com/darekkay/config-files/
 
+! Custom filters
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image
 ||themagiccafe.com/forums/images/header2.gif
-9gag.com##.board-system
-9gag.com##.cp-background
-9gag.com##.featured-tag
-9gag.com##.section-sidebar
-9gag.com###sidebar
-9gag.com##.signup-list-banner
-bahn.de###hafasImgBar
-bahn.de##footer > .notice
-chess24.com##.bubble
-css-tricks.com##.fem-sidebar-ad
-fandom.com##.article-featured-video
-filmweb.pl##.facebookLoginButton
-filmweb.pl##.FilmActionBox
-filmweb.pl###skyBanner
-hoerzu.images.dvbdata.com
-imdb.com##.ipc-page-section:has([data-testid="photos-title"])
-imdb.com##[class*="Hero__ProLinkBelowLarge"]
-imdb.com##[class^="TitleMainRightRailGroup__SidebarContainer"]
-imdb.com##[data-testid='banner-container']
-imdb.com##[data-testid="contribution"]
-imdb.com##[data-testid="title-cast-proupsell"]
-imdb.com##[data-testid="title-details-companycredits"]
-imdb.com##[data-testid="title-hero-proupsell"]
-imdb.com##[data-testid="videos-section"]
-imdb.com##a[href^='https://pro.imdb.com/']
-imgur.com##.BottomRecirc
-minecraft.gamepedia.com###siderail_minecraft_gamepedia
-netflix.com##.billboard-row
-psprices.com##.ad-placeholder
-psprices.com##.promo__ads_off
-stackexchange.com##.js-consent-banner
-stackoverflow.com##.community-bulletin.module
-suppenkaspar-magdeburg.de##.diywebLogo
-suppenkaspar-magdeburg.de###emotion-header-img
-tabs.ultimate-guitar.com##.is_sticky_player
-tabs.ultimate-guitar.com##video
-theverge.com##.m-privacy-consent
-twitter.com##[aria-label="Timeline: Trending now"]
-twitter.com##[aria-label="Who to follow"]
-unsplash.com##[rel="sponsored"]
-wikia.com##.featured-video__wrapper
-wikipedia.org##.banner
+||9gag.com##.board-system
+||9gag.com##.cp-background
+||9gag.com##.featured-tag
+||9gag.com##.section-sidebar
+||9gag.com###sidebar
+||9gag.com##.signup-list-banner
+||bahn.de###hafasImgBar
+||bahn.de##footer > .notice
+||chess24.com##.bubble
+||css-tricks.com##.fem-sidebar-ad
+||fandom.com##.article-featured-video
+||filmweb.pl##.facebookLoginButton
+||filmweb.pl##.FilmActionBox
+||filmweb.pl###skyBanner
+||hoerzu.images.dvbdata.com
+||imdb.com##.ipc-page-section:has([data-testid="photos-title"])
+||imdb.com##[class*="Hero__ProLinkBelowLarge"]
+||imdb.com##[class^="TitleMainRightRailGroup__SidebarContainer"]
+||imdb.com##[data-testid='banner-container']
+||imdb.com##[data-testid="contribution"]
+||imdb.com##[data-testid="title-cast-proupsell"]
+||imdb.com##[data-testid="title-details-companycredits"]
+||imdb.com##[data-testid="title-hero-proupsell"]
+||imdb.com##[data-testid="videos-section"]
+||imdb.com##a[href^='https://pro.imdb.com/']
+||imgur.com##.BottomRecirc
+||minecraft.gamepedia.com###siderail_minecraft_gamepedia
+||netflix.com##.billboard-row
+||psprices.com##.ad-placeholder
+||psprices.com##.promo__ads_off
+||stackexchange.com##.js-consent-banner
+||stackoverflow.com##.community-bulletin.module
+||suppenkaspar-magdeburg.de##.diywebLogo
+||suppenkaspar-magdeburg.de###emotion-header-img
+||tabs.ultimate-guitar.com##.is_sticky_player
+||tabs.ultimate-guitar.com##video
+||theverge.com##.m-privacy-consent
+||twitter.com##[aria-label="Timeline: Trending now"]
+||twitter.com##[aria-label="Who to follow"]
+||unsplash.com##[rel="sponsored"]
+||wikia.com##.featured-video__wrapper
+||wikipedia.org##.banner
 
 ! Cookie banners
 ###cookie-banner

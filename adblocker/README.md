@@ -17,3 +17,4 @@
 - [EasyList Cookie List](https://easylist-downloads.adblockplus.org/easylist-cookie.txt)
 - [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/)
 - [Bypass Paywalls](https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt)
+- [ClearURLs for uBo](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) by DandelionSprout
