@@ -28,10 +28,7 @@ npm install -g alex cloc evaluatory fixpack get-changelog-cli http-server imagem
 
 ## Other packages
 
-- [alex](https://github.com/get-alex/alex) - Catch insensitive, inconsiderate writing
-- [create-react-app](https://github.com/facebook/create-react-app) - React boilerplate
 - [envinfo](https://github.com/tabrindle/envinfo) - Development environment report
-- [gulp](https://gruntjs.com/) - Streaming build system
 
 ## npm
 
