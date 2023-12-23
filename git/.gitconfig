@@ -131,7 +131,7 @@
   # Log
   lg   = log --graph --pretty=my
   lga  = log --graph --pretty=my --all
-  q    = log --graph --pretty=my --first-parent -20      # Quick overview
+  q    = log --graph --pretty=my --first-parent -12      # Quick overview
 
   # My commits in the last 2 weeks
   my = log --graph --pretty=my --author='darekkay' --since=2.weeks
