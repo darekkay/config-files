@@ -6,9 +6,6 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 
 ## Scripts
 
-- `better-styles.user.js`
-  - My custom website CSS changes.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/better-styles.user.js)
 - `enforce-english.user.js`
   - Enforce English page versions.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/enforce-english.user.js)
@@ -18,9 +15,6 @@ When using [**Tampermonkey**](https://chrome.google.com/webstore/detail/tampermo
 - `hn-new-tab.user.js`
   - Open Hacker News comment threads in a new tab.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/hn-new-tab.user.js)
-- `imdb-copy-richtext.user.js`
-  - Copy IMDB link as richtext.
-  - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/imdb-copy-richtext.user.js)
 - `url-cleaner.user.js`
   - Clean URLs from unnecessary parameters.
   - [Install](https://github.com/darekkay/config-files/raw/master/userscripts/url-cleaner.user.js)
