@@ -32,7 +32,9 @@ Run `./config.sh` to initialize custom settings.
   - Preferences → Keyboard → Press 🌐 to `Do Nothing`
 - Disable hot corners:
   - Preferences → Desktop & Screen Saver → Screen Saver → Hot Corners
-
+- Enable Three-Finger Drag
+  - ☑ System Preferences → Accessibility → Trackpad Options → Use trackpad for dragging
+  - Dragging style: Three-Finger Drag
 
 ## Features
 

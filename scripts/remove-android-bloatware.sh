@@ -64,6 +64,9 @@ adb shell pm uninstall -k --user 0 com.samsung.android.samsungpass
 # Samsung Push Service
 adb shell pm uninstall -k --user 0 com.sec.spp.push
 
+# Samsung Smart Switch
+adb shell pm uninstall -k --user 0 com.sec.android.easyMover
+
 # Samsung Smart Things
 adb shell pm uninstall -k --user 0 com.samsung.android.oneconnect
 
