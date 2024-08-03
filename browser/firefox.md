@@ -13,6 +13,10 @@
 
 - Disable telemetry:
   - ☐ Options → Privacy & Security → Firefox Data Collection and Use
+- Enable Cookie Banner Blocker
+  - ☑ Options → Privacy & Security → Cookie Banner Blocker → Automatically refuse cookie banners
+- Disable privacy-preserving ad measurement
+  - ☐ Options → Privacy & Security → Website Advertising Preferences → Allow websites to perform privacy-preserving ad measurement
 - Disable background update service:
   - ☐ Options → Automatically install updates → When Firefox Developer Edition is not running
 - Use logical tab order:
@@ -35,6 +39,7 @@
   - `network.IDN_show_punycode: true`
 - Increase number of parallel connections:
   - `network.http.max-persistent-connections-per-server`
+
 
 Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
 
