@@ -22,6 +22,8 @@ Run `./config.sh` to initialize custom settings.
   - ☐ System Preferences → Trackpad → Look up & data detectors
 - Make modal buttons toggable
   - ☑ System Preferences → Keyboard → Shortcuts → Use keyboard navigation to move focus between controls
+- Disable Power Nap
+  - System Preferences → Battery → Power Nap → Wake for network access: never
 - Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
 - Save screenshots [immediately](https://osxdaily.com/2019/08/02/disable-screenshot-thumbnail-preview-mac/)
   - ☐ Screenshot (App) → Options → Show Floating Thumbnail
