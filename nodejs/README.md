@@ -23,7 +23,7 @@
   - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
 
 ```bash
-npm install -g alex cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog
+npm install -g a11y-contrast alex cloc evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog
 ```
 
 ## Other packages

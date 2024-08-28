@@ -49,6 +49,11 @@
 - [pacman](http://www2.futureware.at/~nickoe/msys2-mirror/msys/x86_64/)
   - [rsync](https://blog.tiger-workshop.com/add-rsync-to-git-bash-for-windows/)
 
+Unpack zst files:
+
+- Get `zstd.exe` from PeaZip portable
+- Unpack: `zstd.exe -d <file>`
+
 ## Enable Group Policy Editor in Home edition
 
 - Run `enable-gpedit.bat`

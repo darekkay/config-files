@@ -8,6 +8,7 @@
   - Disable `align-issue-labels`, `clean-rich-text-editor`, `extend-diff-expander`, `hide-own-stars`, `suggest-commit-title-limit`.
 - [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- [SponsorBlock](https://addons.mozilla.org/de/firefox/addon/sponsorblock/)
 
 ## Settings
 

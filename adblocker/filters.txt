@@ -33,6 +33,7 @@
 ||imgur.com##.BottomRecirc
 ||minecraft.gamepedia.com###siderail_minecraft_gamepedia
 ||netflix.com##.billboard-row
+||pons.com##.ad_topslot:style(height: 0 !important)
 ||psprices.com##.ad-placeholder
 ||psprices.com##.promo__ads_off
 ||stackexchange.com##.js-consent-banner
