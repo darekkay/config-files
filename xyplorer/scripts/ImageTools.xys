@@ -1,42 +1,51 @@
 include "include/shared.xys";
 
 // ----------------------------------------------------------------------------
+"Prepare"
+
+"Prepare for share|||1"
+  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash -overwrite_original §file", 1);
+  runSelected("mogrify.exe", "-quality 85 -resize x1500> §file");
+
+"Prepare for publish|||1"
+  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash -overwrite_original §file", 1);
+  runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
+  runSelected("magick.exe", "convert -quality 85 -resize x375> §file ""§base-small.§ext""");
+  runSelected("magick.exe", "convert -quality 85 -resize x375> §file ""§base-small.webp""");
+  runSelected("magick.exe", "convert -background white -gravity center §file -resize 1000x1000 -extent 1000x1000 ""§base-instagram.jpg""");
+
+// ----------------------------------------------------------------------------
+"Album cover"
+  runSelected("magick.exe", "convert -resize 1:1^!^> -resize 500x500^> §file ""cover-art.jpg""");
+
 "Optimize"
   runSelected("imagemin", "§file --out-dir=""§path""");
 
-"Optimize [Preview]"
-  runSelected("imagemin", "§file > ""§base-preview.§ext""");
-
-"Album Art"
-  runSelected("magick.exe", "convert -resize 1:1^!^> -resize 500x500^> §file ""cover-art.jpg""");
-
-"Prepare for Publish"
-  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash §file", 1);
-  runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
-  runSelected("magick.exe", "convert -resize x375> §file ""§base-small.§ext""");
-
+// ----------------------------------------------------------------------------
 "Resize"
 
-"Medium size|||1"
-  runSelected("magick.exe", "convert -resize x1000> §file ""§base-medium.§ext""");
+"Height 1500px|||1"
+  runSelected("mogrify.exe", "-resize x1500> §file");
 
-"Medium+ size|||1"
-  runSelected("magick.exe", "convert -resize x1500> §file ""§base-medium.§ext""");
+"Height 2000px|||1"
+  runSelected("mogrify.exe", "-resize x2000> §file");
 
 "Lower quality|||1"
   runSelected("mogrify.exe", "-quality 85 §file");
-
-"Photo frame (folder)|||1"
-  run "mogrify.exe -resize x1000> -path ""<get path>"" *.jpg";
 
 // ----------------------------------------------------------------------------
 "EXIF"
 
 "Strip irrelevant metadata|||1"
-  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash §file");
+  runSelected("exiftool.exe", "-all= -tagsfromfile @ -AllDates -Make -Model -LensModel -Artist -FNumber -ISO -ExposureTime -ExposureProgram -ExposureMode -ExposureCompensation -FocalLength -WhiteBalance -Flash -overwrite_original §file");
 
 "Strip all metadata|||1"
-  runSelected("exiftool.exe", "-all= §file");
+  runSelected("exiftool.exe", "-all= -overwrite_original §file");
+
+"Strip rating|||1"
+  runSelected("exiftool.exe", "-rating= -overwrite_original §file");
+
+"-|||1"
 
 "-1h|||1"
   runSelected("exiftool.exe", """-AllDates-=0:0:0 1:0:0"" §file");
@@ -44,12 +53,18 @@ include "include/shared.xys";
 "+1h|||1"
   runSelected("exiftool.exe", """-AllDates+=0:0:0 1:0:0"" §file");
 
+"+1s|||1"
+  runSelected("exiftool.exe", """-AllDates+=0:0:0 0:0:1"" §file");
+
 
 // ----------------------------------------------------------------------------
 "Misc"
 
 "Autorotate|||1"
   runSelected("mogrify.exe", "-auto-orient §file");
+
+"Instagram|||1"
+  runSelected("magick.exe", "convert -background white -gravity center §file -resize 1000x1000 -extent 1000x1000 ""§base-instagram.jpg""");
 
 "Combine into a favicon|||1"
   run """magick.exe"" ""convert <get selecteditemspathnames '"" ""'>"" favicon.ico";
@@ -63,6 +78,3 @@ include "include/shared.xys";
 "Primitive|||1"
   runSelected("primitive.exe", "-i §file -o ""p-§base.jpg"" -n 1000 -m 1 -s 730");
   runSelected("primitive.exe", "-i §file -o ""p-§base-2x.jpg"" -n 1000 -m 1 -s 1460");
-
-"Preview LUTs|||1"
-  run "lut-preview.sh ""<get path>"""

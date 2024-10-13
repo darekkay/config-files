@@ -9,23 +9,38 @@ include "include/shared.xys";
 "Convert to AZW3"
   runSelected("ebook-convert.exe", "§file ""§base.azw3""");
 
+"Convert to MOBI"
+  runSelected("ebook-convert.exe", "§file ""§base.mobi""");
+
 "Convert to ICO"
-  runSelected("convert.exe", "-background transparent §file ""§base.ico""");
+  runSelected("convert.exe", "§file ""§base.ico""");
 
 "Convert to JPG"
-  runSelected("convert.exe", "-background transparent §file ""§base.jpg""");
+  runSelected("convert.exe", "§file ""§base.jpg""");
+
+"Convert to JPG (75)"
+  runSelected("convert.exe", "-quality 75 §file ""§base.jpg""");
 
 "Convert to PNG"
   runSelected("convert.exe", "-background transparent §file ""§base.png""");
 
 "Convert to AVIF (Image Magick)"
-runSelected("convert.exe", "-background transparent -define heic:speed=2 §file ""§base.avif""");
+  runSelected("convert.exe", "-background transparent -define heic:speed=2 §file ""§base.avif""");
+
+"Convert to AVIF (FFmpeg)"
+  runSelected("C:\Program Files\ffmpeg\bin\ffmpeg.exe", "-i §file -c:v libaom-av1 -still-picture 1 ""§base.avif""");
 
 // "Convert to AVIF (avifenc)"
 // runSelected("avifenc", "--speed 2 --output ""§base.avif"" §file");
 
 "Convert to WEBP (75)"
   runSelected("convert.exe", "-background transparent -quality 75 §file ""§base.webp""");
+
+"Convert to WEBP (90)"
+  runSelected("convert.exe", "-background transparent -quality 90 §file ""§base.webp""");
+
+"Convert to WEBP (75, lossless)"
+  runSelected("convert.exe", "-background transparent -quality 75 -define webp:lossless=true §file ""§base.webp""");
 
 // "Convert to WEBP (90)"
 //  runSelected("convert.exe", "-background transparent -quality 90 §file ""§base.webp""");
