@@ -155,10 +155,10 @@
   # It will halt the push operation if someone has pushed to the same branch while you were working on it (and haven’t pulled any changes)
   pf = push --force-with-lease
 
-  # Push master branch to all remotes
-  pa = !git remote | xargs -I R git push R master
+  # Push current branch to all remotes
+  pa = !git remote | xargs -I R git push R
   pushall = !git pa
-  paf = !git remote | xargs -I R git push R master --force-with-lease
+  paf = !git remote | xargs -I R git push R --force-with-lease
 
   # Add and commit all changes and new files
   ca = "!f() { git add . && git commit -m \"$1\"; }; f"
