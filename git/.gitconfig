@@ -31,6 +31,13 @@
 [color]
   ui = true
 
+[branch]
+  # Sort branches by the most recent commit date
+  sort = -committerdate
+
+[tag]
+  # Use proper version sorting
+  sort = version:refname
 
 [diff]
   # Default diff tool
@@ -103,6 +110,7 @@
 
 [fetch]
   prune = true              # Always prune when fetching
+  all = true                # Fetch all remotes
 
 [pull]
   # Allow only fast-forward merges when pulling
@@ -111,6 +119,7 @@
 [push]
   default = simple          # Push mode for centralized workflows
   autoSetupRemote = true    # Push new branches and set upstream tracking automatically
+  followTags = true         # Push tags automatically
 
 [merge]
   # Automatically stash/unstash the working directory before/after merging

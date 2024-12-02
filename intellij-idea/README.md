@@ -126,6 +126,9 @@ Use high-contrast scrollbars
 Disable popup message for debugging websites
   - ☑ Build, Execution, Deployment → Debugger → Allow unsigned requests
 
+Improve [TypeScript support](https://blog.jetbrains.com/webstorm/2023/12/try-the-future-typescript-engine-with-the-webstorm-next-program/)
+  - ☑ Languages & Frameworks → TypeScript → Use types from server
+
 ## Registry
 
 - ☑ `markdown.experimental.frontmatter.support.enable`
