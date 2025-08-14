@@ -10,6 +10,10 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
+# Create ~/.ssh with correct permissions
+mkdir -p ~/.ssh
+chmod -R u+xr,go-rwx ~/.ssh
+
 # Disable Spotlight service
 sudo mdutil -a -i off
 

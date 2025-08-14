@@ -4,44 +4,55 @@ Run `./config.sh` to initialize custom settings.
 
 ## Settings
 
-- Scale display (if necessary)
-  - System Preferences → Displays → Scaled
-- Switch Function Keys
-  - ☑ System Preferences → Keyboard → Use F1, F2, etc. keys as standard function keys
+### System Settings
+
 - Always show scroll bars
-  - System Preferences → General → Show scroll bars: Always
+  - General → Show scroll bars: Always
+- Scale display (if necessary)
+  - Displays → Scaled
+- Turn off brightness adjustment
+  - ☐ Displays → Automatically adjust brightness
+- Lock the Dock on the primary monitor
+  - ☐ Mission Control → Displays have separate Spaces
+- Switch Function Keys
+  - ☑ Keyboard → Use F1, F2, etc. keys as standard function keys
+- Make modal buttons toggable
+  - ☑ Keyboard → Shortcuts → Use keyboard navigation to move focus between controls
+- Disable character viewer on `Fn` click
+  - Keyboard → Press 🌐 to `Do Nothing`
+- Disable global Spotlight shortcut
+  - ☐ Keyboard → Shortcuts → Spotlight → Show Spotlight search
+- Disable thesaurus:
+  - ☐ Trackpad → Look up & data detectors
+- Disable Power Nap
+  - Battery → Power Nap → Wake for network access: never
+- Disable hot corners:
+  - Desktop & Screen Saver → Screen Saver → Hot Corners
+- Disable startup sound
+  - ☐ Sound → Play sound on startup
+
+### Custom shortcuts
+
+System Settings → Keyboard → Keyboard Shortcuts...
+
+- Keyboard → Move focus to next window: Option + Tab
+
+### Finder
+
 - Show address bar in Finder
   - Finder → View → Show Path Bar
 - Set default Finder options
   - Finder → View → Show View Options → ... → Use as defaults
-- Move Toolbar between monitors
-  - Slide down on the touchpad on the monitor which should display the Toolbar
-- Lock the Dock on the primary monitor
-  - ☐ System Preferences → Mission Control → Displays have separate Spaces
-- Disable thesaurus:
-  - ☐ System Preferences → Trackpad → Look up & data detectors
-- Make modal buttons toggable
-  - ☑ System Preferences → Keyboard → Shortcuts → Use keyboard navigation to move focus between controls
-- Disable Power Nap
-  - System Preferences → Battery → Power Nap → Wake for network access: never
-- Correct .ssh folder permissions: `chmod -R u+xr,go-rwx ~/.ssh`
+- Drag'n'drop home folder to Finder Favourites
+
+### Other
+
 - Save screenshots [immediately](https://osxdaily.com/2019/08/02/disable-screenshot-thumbnail-preview-mac/)
   - ☐ Screenshot (App) → Options → Show Floating Thumbnail
-- Drag'n'drop home folder to Finder Favourites
 - Align icons on desktop
   - Right click desktop → Sort By → Snap to Grid
-- Disable character viewer on `Fn` click
-  - Preferences → Keyboard → Press 🌐 to `Do Nothing`
-- Disable hot corners:
-  - Preferences → Desktop & Screen Saver → Screen Saver → Hot Corners
-- Enable Three-Finger Drag
-  - ☑ System Preferences → Accessibility → Trackpad Options → Use trackpad for dragging
-  - Dragging style: Three-Finger Drag
-
-## Features
-
-- Autostart
-  - System Preferences → Users & Groups → Login Items
+- Move Toolbar between monitors
+  - Slide down on the touchpad on the monitor which should display the Toolbar
 
 ## Shortcuts
 
@@ -92,25 +103,34 @@ open -a "Google Chrome" https://example.com https://example.net
 
 https://superuser.com/questions/716943/how-can-i-open-chrome-from-the-command-line-with-specific-pages-in-tabs-in-mac-o
 
-
 ## Apps
 
 - [Homebrew](https://brew.sh/)
   - [XCode Command Line Tools](https://mac.install.guide/commandlinetools/index.html) will be installed as part of Homebrew installation.
+  - [Python 3](https://formulae.brew.sh/formula/python@3.13) ([Notes](https://docs.brew.sh/Homebrew-and-Python))
+- [Cork](https://corkmac.app/)
 - [Alfred](https://www.alfredapp.com/)
 - [iTerm2](https://www.iterm2.com/downloads.html)
-- [RetinaCapture](https://www.retinacapture.com/)
-- [Visual Studio Code](https://code.visualstudio.com/Download)
+- [RetinaCapture](https://www.retinacapture.com/) (Gumroad)
+- [qView](https://github.com/jurplel/qView/releases)
+  - [Run unsigned software](https://github.com/jurplel/qView/issues/744)
 
 No longer needed:
 
 - [Sensible Side Buttons](https://sensible-side-buttons.archagon.net/) - Support for additional mouse buttons
 - [TextMate](https://macromates.com/)
 
+### Open at Login
+
+System Settings → General → Login Items & Extensions → Open at Login
+
+- 1Password
+- Alfred
+- Rectangle
+
 ### Homebrew
 
 - Run `setup.sh` to install common apps
-  - [qView](https://interversehq.com/qview/)
   - [Install fonts with homebrew](https://changelog.com/posts/you-can-install-fonts-with-homebrew)
 
 ```
@@ -123,12 +143,33 @@ brew install --cask font-aldrich
 ### Alfred
 
 - [Snippets](../cheat-sheets/snippets.md)
-- [iTerm integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
-- [Alfred Fakeum](https://github.com/deanishe/alfred-fakeum)
-  - Change workflow snippet key to `xxfake` and remove `\\` prefix
-- [Remove Spotlight shortcuts](https://www.alfredapp.com/help/troubleshooting/cmd-space/) to assign `Cmd` + `Space`
-- Preferences → Default Results → Setup fallback results
-- ☑ Preferences → Clipboard History → Keep plain text / images history
+  - ☑ Preferences → Features → Snippets → Automatically expand snippets by keyword
+- Clipboard History
+  - Preferences → Features → Clipboard History → Shortcut: Shift + Command + V
+- [Add Kagi search engine](https://help.kagi.com/kagi/getting-started/application-integrations.html#alfred)
+  - Preferences → Features → Default Results → Setup fallback results → Kagi
+- Settings
+  - [Remove Spotlight shortcuts](https://www.alfredapp.com/help/troubleshooting/cmd-space/) to assign `Cmd` + `Space`
+  - ☑ Preferences → Features → Clipboard History → Keep plain text / images history
+- Workflows and Integrations
+  - [System Settings](https://alfred.app/workflows/alfredapp/system-settings/)
+  - [iTerm integration](https://github.com/vitorgalvao/custom-alfred-iterm-scripts)
+
+### Rectangle
+
+- Shortcuts
+  - Left Half: ^⌥←
+  - Right Half: ^⌥→
+  - Maximize: ^⌥↑
+  - Restore: ^⌥↓
+  - Next Display: ^⌥⌘→
+  - Previous Display: ^⌥⌘←
+
+- Snapping
+  - ☑ Snap windows by dragging
+  - Left Half | Maximize | Right Half
+
+- ☑ Launch on login
 
 ### AltTab
 
@@ -147,3 +188,5 @@ Note: Paste those entries and then replace line feeds manually
 ## Oh My Zsh Configuration
 
 - [Gist](https://gist.github.com/kevin-smets/8568070)
+- [ZSH](../bash/README.md)
+- [Hack font](https://github.com/source-foundry/Hack)

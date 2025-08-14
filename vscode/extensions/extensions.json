@@ -1,0 +1,12 @@
+[
+  {
+    "identifier": { "id": "darekkay.darekkay.tomorrow" },
+    "version": "0.0.1",
+    "location": {
+      "$mid": 1,
+      "path": "...",
+      "scheme": "file"
+    },
+    "relativeLocation": "darekkay.tomorrow"
+  }
+]

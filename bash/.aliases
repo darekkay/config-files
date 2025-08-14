@@ -1,3 +1,6 @@
+# Mac: Add Homebrew Python aliases to PATH
+# export PATH="/opt/homebrew/opt/python/libexec/bin:$PATH"
+
 # Set Node.js RAM
 export NODE_OPTIONS=--max-old-space-size=8096
 
@@ -178,7 +181,7 @@ convertlf () {
     -name .git -prune -o \
     -name .idea -prune -o \
     -name node_modules -prune \
-  \) -type f -print0 | xargs -0 unix2dos -ic | xargs -d '\n' unix2dos
+  \) -type f -print0 | gxargs -0 unix2dos -ic | gxargs -d '\n' unix2dos
 }
 
 # Find all files with Windows line endings (CRLF)
@@ -187,7 +190,7 @@ findcrlf () {
     -name .git -prune -o \
     -name .idea -prune -o \
     -name node_modules -prune \
-  \) -type f -print0 | xargs -0 dos2unix -ic
+  \) -type f -print0 | gxargs -0 dos2unix -ic
 }
 
 # Convert all files with Windows line endings (CRLF) into Unix line endings (LF)
@@ -196,7 +199,7 @@ convertcrlf () {
     -name .git -prune -o \
     -name .idea -prune -o \
     -name node_modules -prune \
-  \) -type f -print0 | xargs -0 dos2unix -ic | xargs -d '\n' dos2unix
+  \) -type f -print0 | gxargs -0 dos2unix -ic | gxargs -d '\n' dos2unix
 }
 
 # Show all colors
