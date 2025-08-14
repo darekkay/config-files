@@ -36,10 +36,13 @@ abe ace ade
 
 ## Plugins
 
-- [npm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm): Adds completion and aliases for `npm` commands.
-- [yarn](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn): Adds completion and aliases for `yarn` commands.
-- [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo): Press double ESC to add `sudo` to the previous command.
-- `zsh-autosuggestions`: Suggest commands from history.
+- Built-in
+  - [npm](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/npm): Adds completion and aliases for `npm` commands.
+  - [yarn](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn): Adds completion and aliases for `yarn` commands.
+  - [sudo](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/sudo): Press double ESC to add `sudo` to the previous command.
+- 3rd-party
+  - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions): Suggest commands from history.
+  - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting): Colors while typing.
 
 # Cron
 
