@@ -21,6 +21,9 @@ brew install findutils
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
+# gawk
+brew install gawk
+
 # Git
 brew install git
 
@@ -32,6 +35,9 @@ brew install imagemagick
 
 # jq: https://formulae.brew.sh/formula/jq
 brew install jq
+
+# Mole: https://formulae.brew.sh/formula/mole
+brew install mole
 
 # Node.js: https://formulae.brew.sh/formula/node
 brew install node

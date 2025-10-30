@@ -42,16 +42,27 @@
   - `network.http.max-persistent-connections-per-server`
 
 
-Other `about:config` [privacy settings](https://spyware.neocities.org/articles/firefox.html):
+Other `about:config` [privacy](https://spyware.neocities.org/articles/firefox.html) and [anti-ai](https://rubenerd.com/mozillas-latest-quagmire/) settings:
 
 ```
+browser.ml.chat.enabled: false
+browser.ml.chat.menu: false
+browser.ml.chat.page: false
+browser.ml.chat.sideba: false
+browser.ml.enable: false
+browser.ml.linkPreview.enable: false
 browser.newtabpage.activity-stream.feeds.telemetry: false
-browser.newtabpage.activity-stream.telemetry: false
-browser.shell.checkDefaultBrowser: false
-datareporting.healthreport.uploadEnabled: false
-datareporting.policy.dataSubmissionEnabled: false
-network.captive-portal-service.enabled: false
-toolkit.telemetry.server: "data:,"
 browser.newtabpage.activity-stream.showSponsored: false
 browser.newtabpage.activity-stream.showSponsoredTopSites: false
+browser.newtabpage.activity-stream.telemetry: false
+browser.shell.checkDefaultBrowser: false
+browser.tabs.groups.smart.enabled: false
+browser.tabs.groups.smart.userEnable: false
+datareporting.healthreport.uploadEnabled: false
+datareporting.policy.dataSubmissionEnabled: false
+extensions.ml.enabled: false
+network.captive-portal-service.enabled: false
+pdfjs.enableAltTextModelDownload: false
+pdfjs.enableGuessAltTex: false
+toolkit.telemetry.server: "data:,"
 ```

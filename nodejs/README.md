@@ -17,13 +17,14 @@
 - [http-server](https://www.npmjs.com/package/http-server) - Local HTTP server
   - `http-server --cors`
 - [imagemin-cli](https://www.npmjs.com/package/imagemin-cli) - Image minifier
+- [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) - Markdown linter
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates) - Upgrade package.json dependencies
 - [ntl](https://www.npmjs.com/package/ntl) - List and run npm tasks
 - [release-it](https://www.npmjs.com/package/release-it) - Automate versioning and package publishing tasks.
   - [@release-it/keep-a-changelog](https://github.com/release-it/keep-a-changelog) - Keep a Changelog plugin
 
 ```bash
-npm install -g a11y-contrast alex evaluatory fixpack get-changelog-cli http-server imagemin-cli npm-check-updates ntl release-it @release-it/keep-a-changelog
+npm install -g a11y-contrast alex evaluatory fixpack get-changelog-cli http-server imagemin-cli markdownlint-cli2 npm-check-updates ntl release-it @release-it/keep-a-changelog
 ```
 
 ## Other packages
