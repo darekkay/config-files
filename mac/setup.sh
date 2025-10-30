@@ -5,6 +5,9 @@ brew upgrade
 # coreutils: https://formulae.brew.sh/formula/coreutils
 brew install coreutils
 
+# dev-toys: https://formulae.brew.sh/cask/devtoys
+brew install --cask devtoys
+
 # dos2unix: https://formulae.brew.sh/formula/dos2unix
 brew install dos2unix
 
@@ -21,6 +24,9 @@ brew install findutils
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 
+# gawk
+brew install gawk
+
 # Git
 brew install git
 
@@ -32,6 +38,9 @@ brew install imagemagick
 
 # jq: https://formulae.brew.sh/formula/jq
 brew install jq
+
+# Mole: https://formulae.brew.sh/formula/mole
+brew install mole
 
 # Node.js: https://formulae.brew.sh/formula/node
 brew install node
@@ -53,4 +62,4 @@ brew install yt-dlp
 
 # Fonts
 brew tap homebrew/cask-fonts
-brew install --cask font-aldrich font-anaheim font-anton font-assistant font-cuprum font-dosis font-fira-code font-gudea font-lato font-noto-sans font-nunito-sans font-open-sans font-oswald font-redacted-script
+brew install --cask font-aldrich font-anaheim font-anton font-assistant font-barlow font-cuprum font-dosis font-fira-code font-gudea font-lato font-noto-sans font-nunito-sans font-open-sans font-oswald font-source-sans-3 font-redacted-script
