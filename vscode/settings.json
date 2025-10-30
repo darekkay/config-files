@@ -56,6 +56,9 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "always",
 
+  // AI
+  "chat.disableAIFeatures": true,
+
   // npm
 
   "npm.enableScriptExplorer": true,

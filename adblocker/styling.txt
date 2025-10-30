@@ -5,18 +5,13 @@
 brandur.org##article:style(font-family: "Nunito", Arial, sans-serif !important)
 tonsky.me##body:style(background: none !important)
 
-! Deemphasize Twitter images and videos without an accessible label
-! https://meyerweb.com/eric/thoughts/2021/01/01/highlighting-accessible-twitter-content/
-twitter.com##div[aria-label="Image"]:hover:style(filter: grayscale(1) contrast(0.5))
-twitter.com##div[aria-label="Embedded video"]:hover:style(filter: grayscale(1) contrast(0.5))
-
 ! Pokewiki mobile version
 pokewiki.de###pw-sidebar-menu1:style(width: 100% !important; max-width: 995px !important;)
 pokewiki.de###gl-content-wrapper:style(width: 100% !important; max-width: 995px !important;)
 pokewiki.de###gl-content:style(width: 100% !important; max-width: 995px !important;)
 pokewiki.de###pw-logobar:style(width: 100% !important; max-width: 995px !important;)
 
-!Hacker News dark theme
+! Hacker News dark theme
 news.ycombinator.com##body:style(color: #CCCCCC !important; background-color: #1A1A1A !important; )
 news.ycombinator.com##table:style(background-color: #2B2B2B !important; )
 news.ycombinator.com##input:style(background-color: #DFDFDF !important; )
@@ -33,3 +28,6 @@ news.ycombinator.com##.c5a, .c88, .c9c:style(color: #999 !important; )
 news.ycombinator.com##input:style(color: black !important; )
 news.ycombinator.com##textarea:style(background-color: #E0E0E0 !important; border-left: 12px solid #CCCCCC !important; )
 news.ycombinator.com##font[color="#000000"]:style(color: #a3b72c !important; )
+
+! Move recommended videos further down
+youtube.com###secondary:style( margin-top: 1500px !important;)

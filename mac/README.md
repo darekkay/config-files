@@ -22,6 +22,8 @@ Run `./config.sh` to initialize custom settings.
   - Keyboard → Press 🌐 to `Do Nothing`
 - Disable global Spotlight shortcut
   - ☐ Keyboard → Shortcuts → Spotlight → Show Spotlight search
+- Disable keyboard smart features
+  - ☐ Keyboard → Text Input → Edit → ...
 - Disable thesaurus:
   - ☐ Trackpad → Look up & data detectors
 - Disable Power Nap

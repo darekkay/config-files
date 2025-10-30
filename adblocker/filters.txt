@@ -5,12 +5,7 @@
 ||themagiccafe.com/forums/images/banners/$image
 ||themagiccafe.com/forums/images/bserved.gif$image
 ||themagiccafe.com/forums/images/header2.gif
-||9gag.com##.board-system
-||9gag.com##.cp-background
-||9gag.com##.featured-tag
-||9gag.com##.section-sidebar
-||9gag.com###sidebar
-||9gag.com##.signup-list-banner
+||9gag.com
 ||bahn.de###hafasImgBar
 ||bahn.de##footer > .notice
 ||chess24.com##.bubble
@@ -56,3 +51,12 @@
 
 ! Medium sites sticky footer
 ##.js-stickyFooter
+
+! Block Google Sign-In popups on websites
+||accounts.google.com/gsi/*$xhr,script,3p
+
+! WhatsApp status bubble
+web.whatsapp.com##[data-testid="navbar-primary-section"] [role="status"]
+
+! Hide Pixelfed Stories
+pixelfed.social##.story-carousel-component
