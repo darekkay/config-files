@@ -1,4 +1,0 @@
-include "include/shared.xys";
-
-"Play"
-  run play();

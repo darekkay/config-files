@@ -1,4 +1,0 @@
-include "include/shared.xys";
-
-// Extract selected archives into separate folders
-runSelected("7z.exe", "x §file -spe -aou -o""§base""");
